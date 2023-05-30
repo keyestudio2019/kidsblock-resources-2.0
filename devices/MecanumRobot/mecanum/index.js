@@ -21,7 +21,7 @@ const MecanumRobot = formatMessage => ({
     connectionSmallIconURL: 'asset/mecanumRobot_small.svg',
     programMode: ['upload'],
     programLanguage: ['block', 'cpp'],
-    tags: ['kit'],
+    tags: ['robot'],
     deviceExtensions: ['MecanumRobot'],
     deviceExtensionsCompatible: 'arduinoUno',
     //helpLink: 'https://wiki.keyestudio.com/KS0486_Keyestudio_PLUS_Development_Board_(Black_And_Eco-friendly)'

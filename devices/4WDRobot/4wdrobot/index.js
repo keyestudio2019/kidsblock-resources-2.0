@@ -21,7 +21,7 @@ const BT4WDRobot = formatMessage => ({
     connectionSmallIconURL: 'asset/4wdrobot_small.svg',
     programMode: ['upload'],
     programLanguage: ['block', 'cpp'],
-    tags: ['kit'],
+    tags: ['robot'],
     deviceExtensions: ['4WDRobot'],
     deviceExtensionsCompatible: 'arduinoUno',
     helpLink: 'https://keyestudio-wiki.readthedocs.io/en/latest/docs/arduino/KS0428.html'

@@ -21,7 +21,7 @@ const TankRobot = formatMessage => ({
     connectionSmallIconURL: 'asset/tankrobot_small.svg',
     programMode: ['upload'],
     programLanguage: ['block', 'cpp'],
-    tags: ['kit'],
+    tags: ['robot'],
     deviceExtensions: ['TankRobot'],
     deviceExtensionsCompatible: 'arduinoUno',
     helpLink: 'https://keyestudio-wiki.readthedocs.io/en/latest/docs/arduino/KS0428.html'

@@ -21,7 +21,7 @@ const BeetlebotEsp32 = formatMessage => ({
     connectionSmallIconURL: 'asset/esp32robot_small.svg',
     programMode: ['upload'],
     programLanguage: ['block', 'cpp'],
-    tags: ['kit'],
+    tags: ['robot'],
     deviceExtensions: ['Beetlebot_esp32'],
     deviceExtensionsCompatible: 'arduinoEsp32',
     helpLink: 'https://ks5002-keyestudio-beetlebot-robot-for-stem-education-scratch.readthedocs.io/en/latest/'

@@ -21,7 +21,7 @@ const TurtleRobot = formatMessage => ({
     connectionSmallIconURL: 'asset/turtlerobot_small.svg',
     programMode: ['upload'],
     programLanguage: ['block', 'cpp'],
-    tags: ['kit'],
+    tags: ['robot'],
     deviceExtensions: ['TurtleRobot'],
     deviceExtensionsCompatible: 'arduinoUno',
     helpLink: 'https://keyestudio-wiki.readthedocs.io/en/latest/docs/arduino/KS0464.html'

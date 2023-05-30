@@ -21,7 +21,7 @@ const Beetlebot = formatMessage => ({
     connectionSmallIconURL: 'asset/beetlebot_small.svg',
     programMode: ['upload'],
     programLanguage: ['block', 'cpp'],
-    tags: ['kit'],
+    tags: ['robot'],
     deviceExtensions: ['Beetlebot'],
     deviceExtensionsCompatible: 'arduinoNano_arduinoUno',
     helpLink: 'https://ks0543-keyestudio-beetlebot-3-in1-robot-scratch-tutorials.readthedocs.io/en/latest/'

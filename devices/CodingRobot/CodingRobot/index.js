@@ -21,7 +21,7 @@ const CodingRobot = formatMessage => ({
     connectionSmallIconURL: 'asset/codingrobot_small.svg',
     programMode: ['upload'],
     programLanguage: ['block', 'cpp'],
-    tags: ['kit'],
+    tags: ['robot'],
     deviceExtensions: ['CodingRobot'],
     deviceExtensionsCompatible: 'arduinoUno',
     //helpLink: 'https://keyestudio-wiki.readthedocs.io/en/latest/docs/arduino/KS0464.html'
