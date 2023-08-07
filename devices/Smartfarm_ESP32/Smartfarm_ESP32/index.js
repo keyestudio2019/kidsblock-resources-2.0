@@ -3,7 +3,7 @@ const Smartfarm_ESP32 = formatMessage => ({
     deviceId: 'Smartfarm_arduinoEsp32',
     manufactor: 'keyestudio',
     leanMore: 'https://wiki.keyestudio.com/',
-    iconURL: 'asset/smartfarm.png',
+    iconURL: 'asset/smartfarm.jpg',
     description: formatMessage({
         id: 'SmartfarmESP32.description',
         default: 'Smart farm kit for ESP32',

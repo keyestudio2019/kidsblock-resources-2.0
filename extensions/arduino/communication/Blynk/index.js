@@ -13,7 +13,7 @@ const  blynk= formatMessage => ({
     description: formatMessage({
         id: 'blynk.description',
         default: 'ESP32/ESP8266 物联网.',
-        description: 'BlynkIOT for ESP32/ESP8266 '
+        description: 'BlynkIOT for ESP32/ESP8266 Module'
     }),
     featured: true,
     blocks: 'blocks.js',
@@ -22,7 +22,7 @@ const  blynk= formatMessage => ({
     msg: 'msg.js',
     library: 'lib',
     tags: ['communication'],
-    helpLink: 'https://keyestudio.com'
+    helpLink: 'https://keyestudioi.com'
 });
 
 module.exports = blynk;

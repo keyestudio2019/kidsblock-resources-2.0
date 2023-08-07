@@ -251,6 +251,7 @@ Blockly.Arduino.dht_init = function (block) {
     const mode = this.getFieldValue('MODE');
 
     Blockly.Arduino.includes_.dht_init = `#include <DHT.h>`;
+    Blockly.Arduino.setups_.dht_init = `dht_${no}.begin();`;
     Blockly.Arduino.definitions_[`dht_init_${no}`] = `DHT dht_${no}(${pin}, ${mode});`;
     return '';
 };
@@ -262,8 +263,7 @@ Blockly.Arduino.dht_readHumidity = function (block) {
 
 Blockly.Arduino.dht_readTemperature = function (block) {
     const no = Blockly.Arduino.valueToCode(block, 'NO', Blockly.Arduino.ORDER_ATOMIC);
-    const unit = this.getFieldValue('UNIT');
-    return [`dht_${no}.readTemperature(${unit})`, Blockly.Arduino.ORDER_ATOMIC];
+    return [`dht_${no}.readTemperature()`, Blockly.Arduino.ORDER_ATOMIC];
 };
 
 //servo
@@ -309,83 +309,145 @@ Blockly.Arduino.motor130 = function (block) {
 
 
 // 1602 LCD
-    Blockly.Arduino.lcd_init = function (block) {
-        const addr = block.getFieldValue('ADDR');
+Blockly.Arduino.lcd_init = function (block) {
+    const addr = block.getFieldValue('ADDR');
 
-        Blockly.Arduino.includes_.lcd_init = `#include <Wire.h>\n#include <LiquidCrystal_I2C.h>`;
-        Blockly.Arduino.definitions_.lcd_init = `LiquidCrystal_I2C lcd(${addr}, 16, 2);`;
+    Blockly.Arduino.includes_.lcd_init = `#include <Wire.h>\n#include <LiquidCrystal_I2C.h>`;
+    Blockly.Arduino.definitions_.lcd_init = `LiquidCrystal_I2C lcd(${addr}, 16, 2);`;
 
-        return `lcd.begin();\n`;
+    return `lcd.begin();\n`;
     };
 
     Blockly.Arduino.lcd_setCursorPosition = function (block) {
-        const x = Blockly.Arduino.valueToCode(block, 'X', Blockly.Arduino.ORDER_ATOMIC);
-        const y = Blockly.Arduino.valueToCode(block, 'Y', Blockly.Arduino.ORDER_ATOMIC);
+    const x = Blockly.Arduino.valueToCode(block, 'X', Blockly.Arduino.ORDER_ATOMIC);
+    const y = Blockly.Arduino.valueToCode(block, 'Y', Blockly.Arduino.ORDER_ATOMIC);
 
-        return `lcd.setCursor(${x}, ${y});\n`;
+    return `lcd.setCursor(${x}, ${y});\n`;
     };
 
     Blockly.Arduino.lcd_print = function (block) {
-        const data = Blockly.Arduino.valueToCode(block, 'DATA', Blockly.Arduino.ORDER_ATOMIC);
+    const data = Blockly.Arduino.valueToCode(block, 'DATA', Blockly.Arduino.ORDER_ATOMIC);
 
-        return `lcd.print(${data});\n`;
+    return `lcd.print(${data});\n`;
     };
 
     Blockly.Arduino.lcd_clear = function () {
-        return `lcd.clear();\n`;
+    return `lcd.clear();\n`;
     };
 
     Blockly.Arduino.lcd_setBackLight = function (block) {
-        const state = block.getFieldValue('STATE');
+    const state = block.getFieldValue('STATE');
 
-        if (state === 'on') {
-            return `lcd.backlight();\n`;
-        }
-        return `lcd.noBacklight();\n`;
+    if (state === 'on') {
+        return `lcd.backlight();\n`;
+    }
+    return `lcd.noBacklight();\n`;
     };
 
     Blockly.Arduino.lcd_setCursorStyle = function (block) {
-        const state = block.getFieldValue('STATE');
-        const style = block.getFieldValue('STYLE');
+    const state = block.getFieldValue('STATE');
+    const style = block.getFieldValue('STYLE');
 
-        let code = '';
+    let code = '';
 
-        if (state === 'display') {
-            code += `lcd.cursor();\n`;
-        } else {
-            code += `lcd.noCursor();\n`;
-        }
+    if (state === 'display') {
+        code += `lcd.cursor();\n`;
+    } else {
+        code += `lcd.noCursor();\n`;
+    }
 
-        if (style === 'blink') {
-            code += `lcd.blink();\n`;
-        } else {
-            code += `lcd.noBlink();\n`;
-        }
+    if (style === 'blink') {
+        code += `lcd.blink();\n`;
+    } else {
+        code += `lcd.noBlink();\n`;
+    }
 
-        return code;
-    };
+    return code;
+};
 
 
 Blockly.Arduino.wifi_init = function (block) {
     const ssid = Blockly.Arduino.valueToCode(block, 'SSID', Blockly.Arduino.ORDER_ATOMIC);
     const passwd = Blockly.Arduino.valueToCode(block, 'PASSWD', Blockly.Arduino.ORDER_ATOMIC);
 
-    Blockly.Arduino.includes_.wifi_init = '#include <WiFi.h>\n#include <ESPmDNS.h>\n#include <WiFiClient.h>\n';
-    Blockly.Arduino.definitions_.wifi_init = 'const char* ssid = '+ssid+';\nconst char* password = '+passwd+';\nWiFiServer server(80);\n';
-    Blockly.Arduino.setups_['wifi_setup'] = 'Serial.begin(115200);\n   WiFi.begin(ssid, password);\n   while (WiFi.status() != WL_CONNECTED) {\n   delay(500);\n   Serial.print(".");\n    }\n    Serial.println("");\n    Serial.print("Connected to ");\n    Serial.println(ssid);\n    Serial.print("IP address: ");\n    Serial.println(WiFi.localIP());\n    server.begin();\n    Serial.println("TCP server started");\n    MDNS.addService("http", "tcp", 80);\n';
+    Blockly.Arduino.includes_.wifi_init = '#include <WiFi.h>\n';
+    Blockly.Arduino.definitions_.wifi_init = 'const char* ssid = '+ssid+';\nconst char* password = '+passwd+';\n';
+    Blockly.Arduino.setups_['wifi_setup'] = 'WiFi.begin(ssid, password);\n  while (WiFi.status() != WL_CONNECTED) {\n    delay(500);\n  }';
 
-    return `WiFiClient client = server.available();\n    if (!client) {\n        return;\n    }\n    while(client.connected() && !client.available()){\n        delay(1);\n    }\n    String req = client.readStringUntil('\\r');\n    int addr_start = req.indexOf(' ');\n    int addr_end = req.indexOf(' ', addr_start + 1);\n    if (addr_start == -1 || addr_end == -1) {\n        Serial.print("Invalid request: ");\n        Serial.println(req);\n        return;\n    }\nreq = req.substring(addr_start + 1, addr_end);\n`;
+    return '';
 };
 
 
+// Blockly.Arduino.wifi_read = function () {
+//     return [`req`, Blockly.Arduino.ORDER_ATOMIC];
+// };
 
-Blockly.Arduino.wifi_read = function () {
-    return [`req`, Blockly.Arduino.ORDER_ATOMIC];
 
-
+Blockly.Arduino.wifi_read_ip = function () {
+    return [`WiFi.localIP()`, Blockly.Arduino.ORDER_ATOMIC]
 };
-   
+
+Blockly.Arduino.wifi_client_init = function (block) {
+
+    return 'WiFiClient client = server.available();\n';
+};
+
+Blockly.Arduino.wifi_client_connected = function (block) {
+
+    Blockly.Arduino.definitions_.wifi_client_connected = 'WiFiServer server(80);\n';
+    Blockly.Arduino.setups_.wifi_client_connected = 'server.begin();\n';
+
+    return [`(client == 0 && client.connected() == 0)`, Blockly.Arduino.ORDER_ATOMIC];
+};
+
+Blockly.Arduino.wifi_read_data = function (block) {
+
+    return [`request`, Blockly.Arduino.ORDER_ATOMIC];
+};
+
+Blockly.Arduino.wifi_send_data = function (block) {
+
+    Blockly.Arduino.includes_.wifi_send_data = '#include <DHT.h>\n';
+
+    Blockly.Arduino.definitions_.wifi_send_data = 'DHT dht_1(17, 11);\n';
+
+    Blockly.Arduino.setups_.wifi_send_data = 
+        'pinMode(27,OUTPUT);\n' +
+        '  pinMode(35,INPUT);\n' +
+        '  pinMode(34,INPUT);\n' +
+        '  pinMode(32,INPUT);\n' +
+        '  pinMode(33,INPUT);\n' +
+        '  pinMode(19,OUTPUT);\n' +
+        '  dht_1.begin();\n';
+
+    Blockly.Arduino.definitions_[`dataHandle_`] = 
+        'String dataHandle(int data)\n'+
+        '{\n'+
+        '  int percentage = (data / 4095.0) * 100;\n'+
+
+        '  char hexString[3];\n'+
+        '  sprintf(hexString, "%02X", percentage);\n'+
+        '  return hexString;\n'+
+        '}\n';
+
+    return 'String request = "";\n' +
+            'if (client.available())\n' + 
+            '{\n' +
+                '  request = client.readStringUntil(\'s\');\n' +
+            '}\n'+
+            'String dataBuffer = "";\n' + 
+            'dataBuffer+=String((int(dht_1.readTemperature())),HEX);\n' + 
+            'dataBuffer+=String((int(dht_1.readHumidity())),HEX);\n' + 
+            'dataBuffer+=dataHandle(analogRead(32) * 1.8);\n' + 
+            'dataBuffer+=dataHandle(analogRead(34));\n' + 
+            'dataBuffer+=dataHandle(analogRead(33) * 1.8);\n' + 
+            'dataBuffer+=dataHandle(analogRead(35));\n' + 
+            'client.print(dataBuffer);\n' + 
+            'delay(500);\n';
+};
+
     return Blockly;
 }
+
 
 exports = addGenerator;

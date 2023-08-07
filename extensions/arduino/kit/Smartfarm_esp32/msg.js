@@ -57,7 +57,7 @@ function addMsg (Blockly) {
         HC_SR04_READ_DISTANCE: 'HC-SR04 trig pin %1 echo pin %2 read distance %3',
         DHT_CATEGORY: 'DHT11',
         DHT_INIT: 'init dht11 %1 pin %2 mode %3',
-        DHT_READ_TEMPERATURE: 'dht11 %1 read temperature %2',
+        DHT_READ_TEMPERATURE: 'dht11 %1 read temperature',
         DHT_READ_HUMIDITY: 'dht11 %1 read humidity',
         KS_SERVO_CATEGORY: 'Servo',
         KS_SERVO_ANGLE: 'servo PIN#%1 channel%2 degree%3 delay%4',
@@ -79,7 +79,12 @@ function addMsg (Blockly) {
         LCD_STYLE_NOBLINK: 'no-blink',
         WIFI_CATEGORY: 'WIFI',
         WIFI_INIT: 'wifi connect ssid:%1 password:%2',
-        WIFI_READ: 'WiFi read'
+        // WIFI_READ: 'WiFi read',
+        WIFI_READ_IP: 'WiFi read ip',
+        WIFI_CLIENT_INIT: 'WiFi client init',
+        WIFI_CLIENT_CONNECTED: 'WiFi not connected to client',
+        WIFI_READ_DATA: 'WiFi read data',
+        WIFI_SEND_DATA: 'WiFi send data'
    
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
@@ -138,7 +143,7 @@ function addMsg (Blockly) {
         HC_SR04_READ_DISTANCE: '超声波传感器 trig 引脚 %1 echo 引脚 %2 读取距离 %3',
         DHT_CATEGORY: '温湿度',
         DHT_INIT: '初始化 温湿度 %1 引脚 %2 型号 %3',
-        DHT_READ_TEMPERATURE: '温湿度 %1 读取温度 %2',
+        DHT_READ_TEMPERATURE: '温湿度 %1 读取温度',
         DHT_READ_HUMIDITY: '温湿度 %1 读取湿度',
         KS_SERVO_CATEGORY: '舵机',
         KS_SERVO_ANGLE: '舵机 引脚%1 通道%2 角度%3 延时(毫秒)%4',
@@ -160,7 +165,12 @@ function addMsg (Blockly) {
         LCD_STYLE_NOBLINK: '不闪烁',
         WIFI_CATEGORY: 'WIFI',
         WIFI_INIT: '连接WiFi 名称%1 密码%2',
-        WIFI_READ: 'WiFi 读取数据'
+        // WIFI_READ: 'WiFi 读取数据',
+        WIFI_READ_IP: 'WiFi 读取IP',
+        WIFI_CLIENT_INIT: 'WiFi 初始化客户端',
+        WIFI_CLIENT_CONNECTED: 'WiFi 没有连接客户端',
+        WIFI_READ_DATA: 'WiFi 读取数据',
+        WIFI_SEND_DATA: 'WiFi 发送数据'
         
     });
 

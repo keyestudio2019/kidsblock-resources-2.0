@@ -6,7 +6,7 @@ const kidsUno = formatMessage => ({
     author: 'kidsbits',
     description: formatMessage({
         id: 'kidsUno.description',
-        default: 'Uno kidsUno',
+        default: 'kidsUno Development Board',
         description: 'Description of kidsUno'
     }),
     featured: true,

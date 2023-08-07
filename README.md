@@ -1,3 +1,12 @@
+V1.6.5:
+
+add tank robot v2.0 kit<br>
+add frog robot kit<br>
+add keybot robot kit<br>
+add 4x4x4 led cube kit <br>
+add RGB led cube kit<br>
+add ESP32 smart farm kit
+
 V1.6.4:
 
 add Inventor kit for Arduino<br>

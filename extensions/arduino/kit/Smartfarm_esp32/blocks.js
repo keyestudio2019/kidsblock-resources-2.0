@@ -815,13 +815,6 @@ Blockly.Blocks.relay = {
                     {
                         type: 'input_value',
                         name: 'NO'
-                    },
-                    {
-                        type: 'field_dropdown',
-                        name: 'UNIT',
-                        options: [
-                            ['℃', 'false'],
-                            ['℉', 'true']]
                     }
                 ],
                 colour: color12,
@@ -1172,11 +1165,11 @@ Blockly.Blocks.relay = {
         }
     };
 
-    Blockly.Blocks.wifi_read = {
+    Blockly.Blocks.wifi_read_ip = {
         init: function () {
             this.jsonInit({
                 message0: '%1',
-                message1: Blockly.Msg.WIFI_READ,
+                message1: Blockly.Msg.WIFI_READ_IP,
                 args0: [
                     {
                         type: 'field_image',
@@ -1193,6 +1186,112 @@ Blockly.Blocks.relay = {
             });
         }
     };
+
+    Blockly.Blocks.wifi_client_init = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.WIFI_CLIENT_INIT,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: wifiIconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                ],
+                colour: color16,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+    Blockly.Blocks.wifi_client_connected = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.WIFI_CLIENT_CONNECTED,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: wifiIconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                ],
+                colour: color16,
+                extensions: ['output_boolean']
+            });
+        }
+    };
+
+    Blockly.Blocks.wifi_read_data = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.WIFI_READ_DATA,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: wifiIconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                ],
+                colour: color16,
+                extensions: ['output_number']
+            });
+        }
+    };
+
+    Blockly.Blocks.wifi_send_data = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.WIFI_SEND_DATA,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: wifiIconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                ],
+                colour: color16,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+    // Blockly.Blocks.wifi_read = {
+    //     init: function () {
+    //         this.jsonInit({
+    //             message0: '%1',
+    //             message1: Blockly.Msg.WIFI_READ,
+    //             args0: [
+    //                 {
+    //                     type: 'field_image',
+    //                     src: wifiIconUrl,
+    //                     width: 50,
+    //                     height: 27
+    //                 }
+    //             ],
+    //             args1: [
+                    
+    //             ],
+    //             colour: color16,
+    //             extensions: ['output_number']
+    //         });
+    //     }
+    // };
 
     return Blockly;
 }

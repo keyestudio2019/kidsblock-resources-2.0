@@ -6,7 +6,7 @@ const UnoMax = formatMessage => ({
     author: 'keyes',
     description: formatMessage({
         id: 'UnoMax.description',
-        default: 'UnoMax',
+        default: 'UnoMax Development Board',
         description: 'Description of UnoMax'
     }),
     featured: true,
