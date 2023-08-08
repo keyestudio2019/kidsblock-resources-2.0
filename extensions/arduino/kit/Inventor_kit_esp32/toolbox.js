@@ -416,23 +416,6 @@ function addToolbox () {
 
     </block>
 </category>
-<category name="%{BKY_WIFI_CATEGORY}" id="WIFI_CATEGORY" colour="#2f4f4f" secondaryColour="#2f4f4f">
-    <block type="wifi_init" id="wifi_init">
-        <value name="SSID">
-            <shadow type="text">
-                <field name="TEXT">ChinaNet-2.4G-0DF0</field>
-            </shadow>
-        </value>
-        <value name="PASSWD">
-            <shadow type="text">
-                <field name="TEXT">ChinaNet@233</field>
-            </shadow>
-        </value>
-    </block>
-
-   <block type="wifi_read" id="wifi_read">
-   </block>
-</category>
 `;
 }
 exports = addToolbox;

@@ -104,9 +104,9 @@ function addMsg (Blockly) {
         IR_DATA: 'Received data',
         IR_READ: 'Read the data',
         IR_REFRESH: 'Refresh data',
-        WIFI_CATEGORY: 'ESP32 WIFI',
-        WIFI_INIT: 'wifi connect ssid:%1 password:%2',
-        WIFI_READ: 'WiFi read',
+        // WIFI_CATEGORY: 'ESP32 WIFI',
+        // WIFI_INIT: 'wifi connect ssid:%1 password:%2',
+        // WIFI_READ: 'WiFi read',
    
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
@@ -212,9 +212,9 @@ function addMsg (Blockly) {
         IR_DATA: '接收到红外遥控的数据',
         IR_READ: '读取红外接收数据',
         IR_REFRESH: '刷新红外接收数据',
-        WIFI_CATEGORY: 'ESP32 WIFI',
-        WIFI_INIT: '连接WiFi 名称%1 密码%2',
-        WIFI_READ: 'WiFi 读取数据',
+        // WIFI_CATEGORY: 'ESP32 WIFI',
+        // WIFI_INIT: '连接WiFi 名称%1 密码%2',
+        // WIFI_READ: 'WiFi 读取数据',
         
     });
     return Blockly;

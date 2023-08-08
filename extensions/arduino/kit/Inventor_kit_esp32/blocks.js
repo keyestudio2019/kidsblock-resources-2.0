@@ -1805,56 +1805,56 @@ Blockly.Blocks.ir_refresh = {
 
 
 
-Blockly.Blocks.wifi_init = {
-    init: function () {
-        this.jsonInit({
-            message0: '%1',
-            message1: Blockly.Msg.WIFI_INIT,
-            args0: [
-                {
-                    type: 'field_image',
-                    src: wifiIconUrl,
-                    width: 50,
-                    height: 27
-                }
-            ],
-            args1: [
-                {
-                    type: 'input_value',
-                    name: 'SSID'
-                },
-                {
-                    type: 'input_value',
-                    name: 'PASSWD'
-                }
-            ],
-            colour: color19,
-            extensions: ['shape_statement']
-        });
-    }
-};
+// Blockly.Blocks.wifi_init = {
+//     init: function () {
+//         this.jsonInit({
+//             message0: '%1',
+//             message1: Blockly.Msg.WIFI_INIT,
+//             args0: [
+//                 {
+//                     type: 'field_image',
+//                     src: wifiIconUrl,
+//                     width: 50,
+//                     height: 27
+//                 }
+//             ],
+//             args1: [
+//                 {
+//                     type: 'input_value',
+//                     name: 'SSID'
+//                 },
+//                 {
+//                     type: 'input_value',
+//                     name: 'PASSWD'
+//                 }
+//             ],
+//             colour: color19,
+//             extensions: ['shape_statement']
+//         });
+//     }
+// };
 
-Blockly.Blocks.wifi_read = {
-    init: function () {
-        this.jsonInit({
-            message0: '%1',
-            message1: Blockly.Msg.WIFI_READ,
-            args0: [
-                {
-                    type: 'field_image',
-                    src: wifiIconUrl,
-                    width: 50,
-                    height: 27
-                }
-            ],
-            args1: [
+// Blockly.Blocks.wifi_read = {
+//     init: function () {
+//         this.jsonInit({
+//             message0: '%1',
+//             message1: Blockly.Msg.WIFI_READ,
+//             args0: [
+//                 {
+//                     type: 'field_image',
+//                     src: wifiIconUrl,
+//                     width: 50,
+//                     height: 27
+//                 }
+//             ],
+//             args1: [
                 
-            ],
-            colour: color19,
-            extensions: ['output_number']
-        });
-    }
-};
+//             ],
+//             colour: color19,
+//             extensions: ['output_number']
+//         });
+//     }
+// };
 
     return Blockly;
 }

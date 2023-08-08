@@ -90,7 +90,7 @@ function addToolbox () {
 
 <category name="%{BKY_LED_CATEGORY}" id="BKY_LED_CATEGORY" colour="#573e00" secondaryColour="#573e00">
     <block type="LED_setLEDState" id="LED_setLEDState">
-        <field name="pin">D9</field>
+        <field name="pin">9</field>
     </block>
     <block type="led_analog" id="led_analog">
     <field name="PIN">9</field>>
@@ -105,7 +105,7 @@ function addToolbox () {
 
 <category name="%{BKY_ATBUZZER_CATEGORY}" id="BKY_ATBUZZER_CATEGORY" colour="#00bfff" secondaryColour="#00bfff">
     <block type="ATbuzzerState" id="ATbuzzerState">
-        <field name="pin">D9</field>
+        <field name="pin">9</field>
     </block>
 </category>
 

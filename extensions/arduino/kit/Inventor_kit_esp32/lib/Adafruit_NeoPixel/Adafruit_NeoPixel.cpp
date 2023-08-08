@@ -2334,8 +2334,8 @@ void Adafruit_NeoPixel::setPixelColor(
 void Adafruit_NeoPixel::setPixelColor(uint16_t n, uint32_t c) {
   if(n < numLEDs) {
     uint8_t *p,
-      r = (uint8_t)(c >> 16),
-      g = (uint8_t)(c >>  8),
+      r = (uint8_t)(c >> 8),
+      g = (uint8_t)(c >> 16),
       b = (uint8_t)c;
     if(brightness) { // See notes in setBrightness()
       r = (r * brightness) >> 8;
