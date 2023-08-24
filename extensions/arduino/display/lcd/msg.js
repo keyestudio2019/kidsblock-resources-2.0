@@ -16,6 +16,33 @@ function addMsg (Blockly) {
         LCD_STYLE_BLINK: 'blink',
         LCD_STYLE_NOBLINK: 'no-blink'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['de'], {
+       
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['es'], {
+       
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['fr'], {
+        
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['ja'], {
+        
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['ko'], {
+        
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['pl'], {
+       
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['pt'], {
+        
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['ru'], {
+        
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['zh-tw'], {
+        
+    });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
         LCD_CATEGORY: 'LCD1602 IIC',
         LCD_INIT: '初始化 lcd I2C 地址 %1',

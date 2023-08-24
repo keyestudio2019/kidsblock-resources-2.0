@@ -581,6 +581,37 @@ Blockly.Blocks.singleProbe_readValue = {
         }
     };
 
+    Blockly.Blocks.matrix8_16_display = {
+        init: function() {
+          this.jsonInit({
+            message0: '%1',
+            message1: Blockly.Msg.MATRIX8_16_DISPLAY,
+            args0: [
+                {
+                    type: 'field_image',
+                    src: matrix_iic_IconUrl,
+                    width: 50,
+                    height: 27
+                }
+            ],
+            args1: [
+              {
+                type: "field_vertical_separator"
+              },
+              {
+                type: "input_value",
+                name: "MATRIX_SIXTEEN"
+              }
+        
+            ],
+            category: Blockly.Categories.pen,
+            extensions: ["colours_pen","scratch_extension"],
+            colour: color9,
+            extensions: ['shape_statement']
+          });
+        }
+      };
+
     Blockly.Blocks.matrix8_16_face = {
         init: function () {
             this.jsonInit({
@@ -607,8 +638,8 @@ Blockly.Blocks.singleProbe_readValue = {
                             ['♥', 'matrix_heart'],
                             ['↑', 'matrix_front'],
                             ['↓', 'matrix_back'],
-                            ['←', 'matrix_right'],
-                            ['→', 'matrix_left'],
+                            ['→', 'matrix_right'],
+                            ['←', 'matrix_left'],
                             ['STOP', 'matrix_stop'],
                             ],
                     }

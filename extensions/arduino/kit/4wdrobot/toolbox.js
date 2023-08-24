@@ -170,6 +170,14 @@ function addToolbox () {
         <field name="SCL">A5</field>>
     </block>
 
+    <block type="matrix8_16_display" id="matrix8_16_display">
+    <value name="MATRIX_SIXTEEN">
+        <shadow type="matrix_sixteen">
+             <field name="MATRIX_SIXTEEN">0000000000</field>
+        </shadow>
+     </value>
+  </block>
+
     <block type="matrix8_16_face" id="matrix8_16_face">
 
     </block>

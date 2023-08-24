@@ -112,7 +112,7 @@ function addToolbox () {
 
 </category>
 
-<category name="%{BKY_KS_SERVO_CATEGORY}" id="KS_SERVO_CATEGORY" colour="#FF6F00" secondaryColour="#FF6F00">
+<category name="%{BKY_KS_SERVO_CATEGORY}" id="KS_SERVO_CATEGORY" colour="#7700FF" secondaryColour="#7700FF">
     <block type="ks_servo_angle" id="ks_servo_angle">
         <field name="pin">10</field>>
         <value name="angle">
@@ -133,7 +133,7 @@ function addToolbox () {
 
 </category>
 
-<category name="%{BKY_HC_SR04_CATEGORY}" id="HC_SR04_CATEGORY" colour="#D39DDB" secondaryColour="#D39DDB">
+<category name="%{BKY_HC_SR04_CATEGORY}" id="HC_SR04_CATEGORY" colour="#42CCFF" secondaryColour="#42CCFF">
                 <block type="hc_sr04_read_distance" id="hc_sr04_read_distance">
                     <field name="trig_pin">12</field>>
                     <field name="echo_pin">13</field>>
@@ -141,11 +141,19 @@ function addToolbox () {
 </category>
 
 
-<category name="%{BKY_MATRIX8_16_CATEGORY}" id="MATRIX8_16_CATEGORY" colour="#42CCFF" secondaryColour="#42CCFF">
+<category name="%{BKY_MATRIX8_16_CATEGORY}" id="MATRIX8_16_CATEGORY" colour="#0000ff" secondaryColour="#0000ff">
     <block type="matrix8_16_init" id="matrix8_16_init">
         <field name="SDA">A4</field>>
         <field name="SCL">A5</field>>
     </block>
+
+    <block type="matrix8_16_display" id="matrix8_16_display">
+    <value name="MATRIX_SIXTEEN">
+        <shadow type="matrix_sixteen">
+             <field name="MATRIX_SIXTEEN">0000000000</field>
+        </shadow>
+     </value>
+     </block>
 
     <block type="matrix8_16_face" id="matrix8_16_face">
 
@@ -158,7 +166,7 @@ function addToolbox () {
 </category>
 
 
-<category name="%{BKY_IR_CATEGORY}" id="IR_CATEGORY" colour="#FF3399" secondaryColour="#FF3399">
+<category name="%{BKY_IR_CATEGORY}" id="IR_CATEGORY" colour="#008000" secondaryColour="#008000">
     <block type="ir_init" id="ir_init">
         <field name="pin">12</field>>
     </block>

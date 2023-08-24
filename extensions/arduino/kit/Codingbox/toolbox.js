@@ -297,6 +297,14 @@ function addToolbox () {
 </value>
 </block>
 
+<block type="matrix_iic_display" id="matrix_iic_display">
+  <value name="MATRIX_EIGHT">
+      <shadow type="matrix_eight">
+           <field name="MATRIX_EIGHT">0000000000</field>
+      </shadow>
+   </value>
+</block>
+
 <block type="matrix_iic_face" id="matrix_iic_face">
 
 </block>

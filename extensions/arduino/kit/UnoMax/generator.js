@@ -330,18 +330,20 @@ function addGenerator (Blockly) {
     };
 
 
-    //****************8*16 MatirxDisplay*******************
+    //****************8*16 MatrixDisplay*******************
 
-    Blockly.Arduino.MatirxDisplay_init = function (block) {
+    Blockly.Arduino.MatrixDisplay_init = function (block) {
      
-        Blockly.Arduino.includes_.MatirxDisplay_init = `#include <Wire.h>\n#include <Keyestudio_GFX.h>\n#include <Keyestudio_LEDBackpack.h>`;
-        Blockly.Arduino.definitions_.MatirxDisplay_init = `Keyestudio_8x16matrix matrix = Keyestudio_8x16matrix();`;
+        Blockly.Arduino.includes_.MatrixDisplay_init = `#include <Wire.h>\n#include <Keyestudio_GFX.h>\n#include <Keyestudio_LEDBackpack.h>`;
+        Blockly.Arduino.definitions_.MatrixDisplay_init = `Keyestudio_8x16matrix matrix = Keyestudio_8x16matrix();`;
         Blockly.Arduino.setups_[`matrix`] = 'matrix.begin(0x70);\n';
         return ``;
     };
 
+    
+
 //****************显示点*******************************
-    Blockly.Arduino.MatirxDisplay_drawPixel = function (block) {
+    Blockly.Arduino.MatrixDisplay_drawPixel = function (block) {
         const x = Blockly.Arduino.valueToCode(block, 'X', Blockly.Arduino.ORDER_ATOMIC);
         const y = Blockly.Arduino.valueToCode(block, 'Y', Blockly.Arduino.ORDER_ATOMIC);
        
@@ -351,7 +353,7 @@ function addGenerator (Blockly) {
     };
 
 //****************显示直线*******************************
-    Blockly.Arduino.MatirxDisplay_drawLine = function (block) {
+    Blockly.Arduino.MatrixDisplay_drawLine = function (block) {
         const x0 = Blockly.Arduino.valueToCode(block, 'X0', Blockly.Arduino.ORDER_ATOMIC);
         const y0 = Blockly.Arduino.valueToCode(block, 'Y0', Blockly.Arduino.ORDER_ATOMIC);
         const x1 = Blockly.Arduino.valueToCode(block, 'X1', Blockly.Arduino.ORDER_ATOMIC);
@@ -362,7 +364,7 @@ function addGenerator (Blockly) {
 
 
 //****************显示长方形*******************************
-    Blockly.Arduino.MatirxDisplay_drawrectangle = function (block) {
+    Blockly.Arduino.MatrixDisplay_drawrectangle = function (block) {
         const x0 = Blockly.Arduino.valueToCode(block, 'X0', Blockly.Arduino.ORDER_ATOMIC);
         const y0 = Blockly.Arduino.valueToCode(block, 'Y0', Blockly.Arduino.ORDER_ATOMIC);
         const l1 = Blockly.Arduino.valueToCode(block, 'L1', Blockly.Arduino.ORDER_ATOMIC);
@@ -372,7 +374,7 @@ function addGenerator (Blockly) {
     };
 
 //****************显示圆形*******************************
-    Blockly.Arduino.MatirxDisplay_drawcircle = function (block) {
+    Blockly.Arduino.MatrixDisplay_drawcircle = function (block) {
         const x0 = Blockly.Arduino.valueToCode(block, 'X0', Blockly.Arduino.ORDER_ATOMIC);
         const y0 = Blockly.Arduino.valueToCode(block, 'Y0', Blockly.Arduino.ORDER_ATOMIC);
         const r0 = Blockly.Arduino.valueToCode(block, 'R0', Blockly.Arduino.ORDER_ATOMIC);
@@ -382,7 +384,7 @@ function addGenerator (Blockly) {
 
 
 //****************显示文本和数字*******************************
-    Blockly.Arduino.MatirxDisplay_showChar = function (block) {
+    Blockly.Arduino.MatrixDisplay_showChar = function (block) {
         const text = Blockly.Arduino.valueToCode(block, 'TEXT', Blockly.Arduino.ORDER_ATOMIC);
        
 
@@ -391,7 +393,7 @@ function addGenerator (Blockly) {
 
 
 //****************显示文本和数字滚动*******************************
-    Blockly.Arduino.MatirxDisplay_show_loop = function (block) {
+    Blockly.Arduino.MatrixDisplay_show_loop = function (block) {
         const number = Blockly.Arduino.valueToCode(block, 'NUMBER', Blockly.Arduino.ORDER_ATOMIC);
     
       
@@ -399,8 +401,36 @@ function addGenerator (Blockly) {
              
     };
 
+    Blockly.Arduino.MatrixDisplay_display = function (block) {
+
+        var varName = Blockly.Arduino.valueToCode(this, 'MATRIX_SIXTEEN', Blockly.Arduino.ORDER_ASSIGNMENT);
+        var a = new Array();
+        for (var i = 0; i < 8; i++) {
+          a[i] = new Array();
+          for (var j = 0; j < 8; j++) {
+            a[i][j] = varName[i*8+j];
+          }
+        }
+        var code = '{';
+        for (var i = 0; i < 8; i++) {
+          var tmp = ""
+          for (var j = 0; j < 8; j++) {
+            tmp += a[i][j];
+          }
+          tmp = (parseInt(tmp, 2)).toString(16)
+          if (tmp.length == 1) tmp = "0" + tmp;
+          code += '0x' + tmp + ((i != 8) ? ',' : '');
+        }
+        code += '};';
+
+        Blockly.Arduino.definitions_[`1matrix_image`] = 'unsigned char matrix_image[] = '+code+''
+        
+        return `matrix.clear();\nmatrix.drawBitmap(0, 0, matrix_image, 8, 16, LED_ON);\nmatrix.writeDisplay();\n`;
+
+    };
+
 //****************显示图片*******************************
-    Blockly.Arduino.MatirxDisplay_image = function (block) {
+    Blockly.Arduino.MatrixDisplay_image = function (block) {
 
         const image = block.getFieldValue('IMAGE');
 

@@ -791,42 +791,7 @@ function addBlocks (Blockly) {
         }
     };
 
-    Blockly.Blocks.matrix_iic_piexl = {
-        init: function () {
-            this.jsonInit({
-                message0: '%1',
-                message1: Blockly.Msg.MATRIX_IIC_PIEXL,
-                args0: [
-                    {
-                        type: 'field_image',
-                        src: matrix_iic_IconUrl,
-                        width: 50,
-                        height: 27
-                    }
-                ],
-                args1: [
-                    {
-                        type: 'input_value',
-                        name: 'xVal'
-                    },
-                    {
-                        type: 'input_value',
-                        name: 'yVal'
-                    },
-                    {
-                        type: 'field_dropdown',
-                        name: 'state',
-                        options: [
-                            ['HIGH', 'HIGH'],
-                            ['LOW', 'LOW']
-                            ],
-                    }
-                ],
-                colour: color6,
-                extensions: ['shape_statement']
-            });
-        }
-    };
+
 
     Blockly.Blocks.matrix_iic_refresh = {
         init: function () {

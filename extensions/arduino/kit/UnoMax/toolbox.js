@@ -250,13 +250,21 @@ function addToolbox () {
 </category>
 
 
-<category name="%{BKY_MATIRXDISPLAY_CATEGORY}" id="MATIRXDISPLAY_CATEGORY" colour="#20b2aa" secondaryColour="#20b2aa">
+<category name="%{BKY_MATRIXDISPLAY_CATEGORY}" id="MATRIXDISPLAY_CATEGORY" colour="#20b2aa" secondaryColour="#20b2aa">
 
-    <block type="MatirxDisplay_init" id="MatirxDisplay_init">
+    <block type="MatrixDisplay_init" id="MatrixDisplay_init">
     </block>
 
+    <block type="MatrixDisplay_display" id="MatrixDisplay_display">
+    <value name="MATRIX_SIXTEEN">
+        <shadow type="matrix_sixteen">
+             <field name="MATRIX_SIXTEEN">0000000000</field>
+        </shadow>
+     </value>
+     </block>
+
     
-    <block type="MatirxDisplay_drawPixel" id="MatirxDisplay_drawPixel">
+    <block type="MatrixDisplay_drawPixel" id="MatrixDisplay_drawPixel">
         <value name="X">
             <shadow type="math_whole_number">
                 <field name="NUM">0</field>
@@ -269,7 +277,7 @@ function addToolbox () {
         </value>
     </block>
 
-    <block type="MatirxDisplay_drawLine" id="MatirxDisplay_drawLine">
+    <block type="MatrixDisplay_drawLine" id="MatrixDisplay_drawLine">
         <value name="X0">
             <shadow type="math_whole_number">
                 <field name="NUM">0</field>
@@ -292,7 +300,7 @@ function addToolbox () {
         </value>
     </block>
 
-    <block type="MatirxDisplay_drawrectangle" id="MatirxDisplay_drawrectangle">
+    <block type="MatrixDisplay_drawrectangle" id="MatrixDisplay_drawrectangle">
         <value name="X0">
             <shadow type="math_whole_number">
                 <field name="NUM">0</field>
@@ -315,7 +323,7 @@ function addToolbox () {
         </value>
     </block>
 
-    <block type="MatirxDisplay_drawcircle" id="MatirxDisplay_drawcircle">
+    <block type="MatrixDisplay_drawcircle" id="MatrixDisplay_drawcircle">
         <value name="X0">
             <shadow type="math_whole_number">
                 <field name="NUM">0</field>
@@ -333,7 +341,7 @@ function addToolbox () {
         </value>
     </block>
 
-    <block type="MatirxDisplay_showChar" id="MatirxDisplay_showChar">
+    <block type="MatrixDisplay_showChar" id="MatrixDisplay_showChar">
    
           <value name="TEXT">
              <shadow type="text">
@@ -343,7 +351,7 @@ function addToolbox () {
     </block>
 
 
-    <block type="MatirxDisplay_show_loop" id="MatirxDisplay_show_loop">
+    <block type="MatrixDisplay_show_loop" id="MatrixDisplay_show_loop">
             <value name="NUMBER">
                 <shadow type="math_whole_number">
                      <field name="NUM">123456789</field>
@@ -351,7 +359,7 @@ function addToolbox () {
            </value>
     </block>
 
-    <block type="MatirxDisplay_image" id="MatirxDisplay_image">
+    <block type="MatrixDisplay_image" id="MatrixDisplay_image">
         <value name="IMAGE">
           <shadow type="text">
              <field name="IMAGE"></field>

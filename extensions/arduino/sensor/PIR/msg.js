@@ -5,6 +5,42 @@ function addMsg (Blockly) {
         AM412_CATEGORY: 'pir',
         AM412_READ_VALUE: 'read interface %1 thermotherelectric infrared motion sensor'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['de'], {
+        AM412_CATEGORY: 'pir',
+        AM412_READ_VALUE: 'Schnittstelle %1 thermoelektrischen Infrarot-Bewegungssensor lesen'
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['es'], {
+        AM412_CATEGORY: 'pir',
+        AM412_READ_VALUE: 'interfaz de lectura %1 sensor de movimiento infrarrojo termoeléctrico'
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['fr'], {
+        AM412_CATEGORY: 'pir',
+        AM412_READ_VALUE: 'lecture de l"interface %1 capteur de mouvement thermoélectrique infrarouge'
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['ja'], {
+        AM412_CATEGORY: 'pir',
+        AM412_READ_VALUE: 'インターフェイス %1 熱電赤外線モーション センサーを読み取り'
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['ko'], {
+        AM412_CATEGORY: '피르',
+        AM412_READ_VALUE: '인터페이스 %1 열전기 적외선 모션 센서 읽기'
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['pl'], {
+        AM412_CATEGORY: 'pir',
+        AM412_READ_VALUE: 'odczyt interfejsu %1 termotermoelektryczny czujnik ruchu na podczerwień'
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['pt'], {
+        AM412_CATEGORY: 'pir',
+        AM412_READ_VALUE: 'ler interface %1 sensor de movimento infravermelho termoelétrico'
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['ru'], {
+        AM412_CATEGORY: 'пир',
+        AM412_READ_VALUE: 'чтение интерфейса %1 термотермоэлектрического инфракрасного датчика движения'
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['zh-tw'], {
+        AM412_CATEGORY: '紅外運動傳感器',
+        AM412_READ_VALUE: '讀取接口 %1 熱釋電紅外運動傳感器'
+    });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
         AM412_CATEGORY: '红外运动传感器',
         AM412_READ_VALUE: '读取接口 %1 热释电红外运动传感器'

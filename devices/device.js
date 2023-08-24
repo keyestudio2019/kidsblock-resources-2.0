@@ -18,9 +18,10 @@ module.exports = [
     'kidsEsp_arduinoEsp32',
     'ESP8266_arduinoEsp8266',
 
-    //Esp32 for microPython
-    'microPythonEsp32',
     //other
+    'arduinoRaspberryPiPico',
+    'arduinoK210MaixDock',
+    'arduinoK210Maixduino',
     'microbitV2',
     'makeyMakey',
     

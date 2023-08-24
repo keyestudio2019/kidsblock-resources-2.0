@@ -771,6 +771,38 @@ const secondaryColour = '#CD5C5C';
     };
 
    
+    Blockly.Blocks.matrix_iic_display = {
+        init: function() {
+          this.jsonInit({
+            message0: '%1',
+            message1: Blockly.Msg.MATRIX_IIC_DISPLAY,
+            args0: [
+                {
+                    type: 'field_image',
+                    src: matrix_iic_IconUrl,
+                    width: 50,
+                    height: 27
+                }
+            ],
+            args1: [
+              {
+                type: "field_vertical_separator"
+              },
+              {
+                type: "input_value",
+                name: "MATRIX_EIGHT"
+              }
+        
+            ],
+            category: Blockly.Categories.pen,
+            extensions: ["colours_pen","scratch_extension"],
+            colour: color6,
+            extensions: ['shape_statement']
+          });
+        }
+      };
+
+
     Blockly.Blocks.matrix_iic_face = {
         init: function () {
             this.jsonInit({
@@ -797,8 +829,8 @@ const secondaryColour = '#CD5C5C';
                             ['♥', 'matrix_heart'],
                             ['↑', 'matrix_front'],
                             ['↓', 'matrix_back'],
-                            ['←', 'matrix_right'],
-                            ['→', 'matrix_left'],
+                            ['→', 'matrix_right'],
+                            ['←', 'matrix_left'],
                             ['STOP', 'matrix_stop'],
                             ],
                     }

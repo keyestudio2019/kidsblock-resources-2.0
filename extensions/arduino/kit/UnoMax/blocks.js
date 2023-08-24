@@ -869,12 +869,12 @@ Blockly.Blocks.rgbLedStrip_show = {
 };
 
 
-    // 8*16 MatirxDisplay
+    // 8*16 MatrixDisplay
 
-    Blockly.Blocks.MatirxDisplay_init = {
+    Blockly.Blocks.MatrixDisplay_init = {
         init: function () {
             this.jsonInit({
-                message0: Blockly.Msg.MatirxDisplay_INIT,
+                message0: Blockly.Msg.MatrixDisplay_INIT,
                 args0: [
                     {
                         type: 'field_image',
@@ -889,10 +889,42 @@ Blockly.Blocks.rgbLedStrip_show = {
         }
     };
 
-    Blockly.Blocks.MatirxDisplay_drawPixel = {
+    Blockly.Blocks.MatrixDisplay_display = {
+        init: function() {
+          this.jsonInit({
+            message0: '%1',
+            message1: Blockly.Msg.MatrixDisplay_DISPLAY,
+            args0: [
+                {
+                    type: 'field_image',
+                    src: matrix_IconUrl,
+                    width: 50,
+                    height: 27
+                }
+            ],
+            args1: [
+              {
+                type: "field_vertical_separator"
+              },
+              {
+                type: "input_value",
+                name: "MATRIX_SIXTEEN"
+              }
+        
+            ],
+            category: Blockly.Categories.pen,
+            extensions: ["colours_pen","scratch_extension"],
+            colour: color8,
+            extensions: ['shape_statement']
+          });
+        }
+      };
+
+
+    Blockly.Blocks.MatrixDisplay_drawPixel = {
         init: function () {
             this.jsonInit({
-                message0: Blockly.Msg.MatirxDisplay_DRAWPIXEL,
+                message0: Blockly.Msg.MatrixDisplay_DRAWPIXEL,
                 args0: [
                     {
                         type: 'input_value',
@@ -909,10 +941,10 @@ Blockly.Blocks.rgbLedStrip_show = {
         }
     };
 
-    Blockly.Blocks.MatirxDisplay_drawLine = {
+    Blockly.Blocks.MatrixDisplay_drawLine = {
         init: function () {
             this.jsonInit({
-                message0: Blockly.Msg.MatirxDisplay_DRAWLINE,
+                message0: Blockly.Msg.MatrixDisplay_DRAWLINE,
                 args0: [
                     {
                         type: 'input_value',
@@ -939,10 +971,10 @@ Blockly.Blocks.rgbLedStrip_show = {
         }
     };
 
-    Blockly.Blocks.MatirxDisplay_drawrectangle = {
+    Blockly.Blocks.MatrixDisplay_drawrectangle = {
         init: function () {
             this.jsonInit({
-                message0: Blockly.Msg.MatirxDisplay_DRAWRECTANGLE,
+                message0: Blockly.Msg.MatrixDisplay_DRAWRECTANGLE,
                 args0: [
                     {
                         type: 'input_value',
@@ -970,10 +1002,10 @@ Blockly.Blocks.rgbLedStrip_show = {
     };
   
 
-    Blockly.Blocks.MatirxDisplay_drawcircle = {
+    Blockly.Blocks.MatrixDisplay_drawcircle = {
         init: function () {
             this.jsonInit({
-                message0: Blockly.Msg.MatirxDisplay_DRAWCIRCLE,
+                message0: Blockly.Msg.MatrixDisplay_DRAWCIRCLE,
                 args0: [
                     {
                         type: 'input_value',
@@ -996,11 +1028,11 @@ Blockly.Blocks.rgbLedStrip_show = {
         }
     };
 
-    Blockly.Blocks.MatirxDisplay_showChar = {
+    Blockly.Blocks.MatrixDisplay_showChar = {
         init: function () {
             this.jsonInit({
                 message0: '%1',
-                message1: Blockly.Msg.MatirxDisplay_SHOWCHAR,
+                message1: Blockly.Msg.MatrixDisplay_SHOWCHAR,
                 args0: [
                     {
                         type: 'field_image',
@@ -1022,11 +1054,11 @@ Blockly.Blocks.rgbLedStrip_show = {
         }
     };
 
-    Blockly.Blocks.MatirxDisplay_show_loop = {
+    Blockly.Blocks.MatrixDisplay_show_loop = {
         init: function () {
             this.jsonInit({
                 message0: '%1',
-                message1: Blockly.Msg.MatirxDisplay_SHOW_LOOP,
+                message1: Blockly.Msg.MatrixDisplay_SHOW_LOOP,
                 args0: [
                     {
                         type: 'field_image',
@@ -1050,11 +1082,11 @@ Blockly.Blocks.rgbLedStrip_show = {
 
 
 
-    Blockly.Blocks.MatirxDisplay_image = {
+    Blockly.Blocks.MatrixDisplay_image = {
         init: function () {
             this.jsonInit({
                 message0: '%1',
-                message1: Blockly.Msg.MatirxDisplay_IMAGE,
+                message1: Blockly.Msg.MatrixDisplay_IMAGE,
                 args0: [
                     {
                         type: 'field_image',

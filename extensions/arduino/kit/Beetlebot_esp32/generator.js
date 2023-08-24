@@ -283,13 +283,7 @@ function addGenerator (Blockly) {
         return 'matrix.showLedMatrix('+matrix_face+',0,0);\n';
     };
 
-    Blockly.Arduino.matrix_iic_piexl = function (block) {
-        const xVal = Blockly.Arduino.valueToCode(block, 'xVal', Blockly.Arduino.ORDER_ATOMIC);
-        const yVal = Blockly.Arduino.valueToCode(block, 'yVal', Blockly.Arduino.ORDER_ATOMIC);
-        const matrix_state = this.getFieldValue('state');
 
-        return 'myMatrix.drawPixel('+xVal+'-0,'+yVal+'-0,'+matrix_state+');\n';
-    };
 
     Blockly.Arduino.matrix_iic_refresh = function (block) {
         return 'matrix.show();\n';
