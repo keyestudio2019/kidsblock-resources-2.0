@@ -1,3 +1,0 @@
-CubeInit	KEYWORD2
-CubeClearBuffer	KEYWORD2
-CubePlayPattern	KEYWORD2

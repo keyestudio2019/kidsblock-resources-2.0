@@ -25,7 +25,6 @@ function addBlocks (Blockly) {
         }
     };
 
-
     Blockly.Blocks.RGBcube_all = {
         init: function () {
             this.jsonInit({
@@ -158,6 +157,51 @@ function addBlocks (Blockly) {
         }
     };
 
+    Blockly.Blocks.RGBcube_single2 = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.RGBCUBE_SINGLE2,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: RGBcube_IconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'input_value',
+                        name: 'X'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'Y'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'Z'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'red'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'green'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'blue'
+                    }
+                ],
+                colour: color,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
     Blockly.Blocks.RGBcube_line = {
         init: function () {
             this.jsonInit({
@@ -253,6 +297,63 @@ function addBlocks (Blockly) {
             });
         }
     };
+
+    Blockly.Blocks.RGBcube_line2 = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.RGBCUBE_LINE2,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: RGBcube_IconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'input_value',
+                        name: 'X1'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'Y1'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'Z1'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'X2'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'Y2'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'Z2'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'R'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'G'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'B'
+                    }
+                ],
+                colour: color,
+                extensions: ['shape_statement']
+            });
+        }
+    };
     
     Blockly.Blocks.RGBcube_plane = {
         init: function () {
@@ -301,6 +402,47 @@ function addBlocks (Blockly) {
                             [Blockly.Msg.WHITE, 'WHITE'],
                             [Blockly.Msg.YELLOW, 'YELLOW']
                             ],
+                    }
+                ],
+                colour: color,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+    Blockly.Blocks.RGBcube_plane2 = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.RGBCUBE_PLANE2,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: RGBcube_IconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'input_value',
+                        name: 'AXIS'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'LAY'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'R',
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'G',
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'B',
                     }
                 ],
                 colour: color,
@@ -392,6 +534,67 @@ function addBlocks (Blockly) {
                             [Blockly.Msg.BLACK, 'BLACK'],
                             [Blockly.Msg.YELLOW, 'YELLOW']
                             ],
+                    }
+                ],
+                colour: color,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+    Blockly.Blocks.RGBcube_sphere2 = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.RGBCUBE_SPHERE2,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: RGBcube_IconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'input_value',
+                        name: 'X'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'Y'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'Z'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'SIZE'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'R1'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'G1'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'B1'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'R2'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'G2'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'B2'
                     }
                 ],
                 colour: color,
@@ -514,6 +717,79 @@ function addBlocks (Blockly) {
                             [Blockly.Msg.WHITE, 'WHITE'],
                             [Blockly.Msg.YELLOW, 'YELLOW']
                             ],
+                    }
+                ],
+                colour: color,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+    Blockly.Blocks.RGBcube_box2 = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.RGBCUBE_BOX2,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: RGBcube_IconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'input_value',
+                        name: 'X1'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'Y1'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'Z1'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'X2'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'Y2'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'Z2'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'R1'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'G1'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'B1'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'STYLE'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'R2'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'G2'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'B2'
                     }
                 ],
                 colour: color,

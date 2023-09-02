@@ -9,7 +9,8 @@ function addBlocks (Blockly) {
     const color9 = '#930093';
 
     const secondaryColour = '#CD5C5C';
-  
+    const wifiIconUrl = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gU3ZnIFZlY3RvciBJY29ucyA6IGh0dHA6Ly93d3cub25saW5ld2ViZm9udHMuY29tL2ljb24gLS0+Cgo8c3ZnCiAgIHZlcnNpb249IjEuMSIKICAgeD0iMHB4IgogICB5PSIwcHgiCiAgIHZpZXdCb3g9IjAgMCA5ODAuMDM5ODYgODYxLjI5OTk5IgogICBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDAwIDEwMDAiCiAgIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgIGlkPSJzdmcxMCIKICAgc29kaXBvZGk6ZG9jbmFtZT0iV2lGaS5zdmciCiAgIHdpZHRoPSI5ODAuMDM5ODYiCiAgIGhlaWdodD0iODYxLjI5OTk5IgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjIuMiAoNzMyYTAxZGE2MywgMjAyMi0xMi0wOSkiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnMKICAgaWQ9ImRlZnMxNCIgLz48c29kaXBvZGk6bmFtZWR2aWV3CiAgIGlkPSJuYW1lZHZpZXcxMiIKICAgcGFnZWNvbG9yPSIjZmZmZmZmIgogICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgYm9yZGVyb3BhY2l0eT0iMC4yNSIKICAgaW5rc2NhcGU6c2hvd3BhZ2VzaGFkb3c9IjIiCiAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgIGlua3NjYXBlOmRlc2tjb2xvcj0iI2QxZDFkMSIKICAgc2hvd2dyaWQ9ImZhbHNlIgogICBzaG93Z3VpZGVzPSJmYWxzZSIKICAgaW5rc2NhcGU6em9vbT0iMC41MzU5ODY5NCIKICAgaW5rc2NhcGU6Y3g9IjQ5MC42ODM2IgogICBpbmtzY2FwZTpjeT0iNDQ0Ljk3MzUzIgogICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEyODAiCiAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9Ijk0NSIKICAgaW5rc2NhcGU6d2luZG93LXg9IjEyNzEiCiAgIGlua3NjYXBlOndpbmRvdy15PSItOSIKICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMSIKICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnMTAiPjxzb2RpcG9kaTpndWlkZQogICAgIHBvc2l0aW9uPSIxODcuODEwNzcsLTEzNi42ODIzMyIKICAgICBvcmllbnRhdGlvbj0iLTAuNzA3MTA2NzgsLTAuNzA3MTA2NzgiCiAgICAgaWQ9Imd1aWRlMTYiCiAgICAgaW5rc2NhcGU6bG9ja2VkPSJmYWxzZSIgLz48L3NvZGlwb2RpOm5hbWVkdmlldz4KPG1ldGFkYXRhCiAgIGlkPSJtZXRhZGF0YTIiPiBTdmcgVmVjdG9yIEljb25zIDogaHR0cDovL3d3dy5vbmxpbmV3ZWJmb250cy5jb20vaWNvbiA8L21ldGFkYXRhPgo8ZwogICBpZD0iZzgiCiAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMC4wNzg0MDYsLTY5LjMpIgogICBzdHlsZT0iZmlsbDojZmZmZmZmIj48cGF0aAogICAgIGQ9Im0gNDk4LjUsNjkuMyBjIC0xNzYuMiwwIC0zNTIuNCw3MS40IC00NzguMiwxOTQuNSAtMTguNSwyMy44IC0xMS45LDY4LjggMTkuOSw3OS40IDIxLjIsNy45IDQ1LDEuMyA1OS42LC0xNS45IDEzMy44LC0xMjMuMSAzMjguNSwtMTc5LjkgNTA4LjcsLTE0NC4yIDExMS4zLDIxLjIgMjE4LjYsNzQuMSAyOTkuNCwxNTMuNSAyNS4yLDE5LjggNjguOSwxMS45IDc5LjUsLTE4LjUgNi42LC0yMi41IDEuMywtNDkgLTE3LjIsLTYyLjIgQyA4NDQuMiwxMzguMSA2NzIsNjkuMyA0OTguNSw2OS4zIFogbSAtOCwyMDUuMSBjIC04Mi4xLDIuNiAtMTY0LjMsMjMuOCAtMjM0LjUsNjYuMiAtMzguNCwyMi41IC03NC4yLDQ5IC0xMDIsODIgLTE1LjksMTkuOCAtMTEuOSw1MC4zIDcuOSw2Ni4yIDE5LjksMTcuMiA1MS43LDE1LjkgNzAuMiwtMS4zIEMgMzA5LDQwOCA0MjQuMywzNjUuNyA1MzUuNSwzNzguOSBjIDg2LjEsNy45IDE3MC45LDQ2LjMgMjMwLjUsMTA4LjUgMTguNSwxNy4yIDUwLjMsMTguNSA3MC4yLDEuMyAxOS45LC0xNS45IDIzLjgsLTQ2LjMgNy45LC02Ni4yIEMgODEyLjMsMzg2LjggNzcyLjYsMzU3LjcgNzMxLjUsMzMzLjggNjU3LjQsMjkyLjkgNTc0LDI3My4xIDQ5MC41LDI3NC40IFogbSA2LjYsMjA1LjEgYyAtNDcuNywxLjMgLTk2LjcsMTQuNiAtMTM3LjgsMzkuNyAtMjMuOCwxNC42IC00Ni40LDMwLjQgLTYzLjYsNTEuNiAtMjEuMiwzMy4xIDkuMyw4MC43IDQ3LjcsNzguMSAyMy44LC0xLjMgMzguNCwtMjMuOCA1NywtMzQuNCAzOS43LC0yNy44IDg4LjgsLTQxIDEzNi40LC0yOS4xIDM1LjgsNS4zIDY2LjIsMjcuOCA5MS40LDUyLjkgMTguNSwxNS45IDQ5LDEzLjIgNjQuOSwtNS4zIDE4LjUsLTE3LjIgMjEuMiwtNDkgMi42LC02OC44IC01MC4yLC01MS42IC0xMjMuMSwtODcuNCAtMTk4LjYsLTg0LjcgeiIKICAgICBpZD0icGF0aDQiCiAgICAgc3R5bGU9ImZpbGw6I2ZmZmZmZiIgLz48cGF0aAogICAgIGQ9Im0gNDk5LjgsNjk3LjggYyAtNjQuOSwwIC0xMTcuOSw1MS42IC0xMTcuOSwxMTYuNCAwLDYzLjUgNTMsMTE2LjQgMTE3LjksMTE2LjQgNjQuOSwwIDExNi42LC01Mi45IDExNi42LC0xMTYuNCAwLC02NC44IC01MS43LC0xMTYuNCAtMTE2LjYsLTExNi40IHoiCiAgICAgaWQ9InBhdGg2IgogICAgIHN0eWxlPSJmaWxsOiNmZmZmZmYiIC8+PC9nPgo8L3N2Zz4K';
+ 
 
     const digitalPins = Blockly.getMainWorkspace().getFlyout()
         .getFlyoutItems()
@@ -800,12 +801,20 @@ Blockly.Blocks.oled_stopScroll = {
 };   
 
 //
-    Blockly.Blocks.wifi_init = {
+     Blockly.Blocks.wifi_init = {
         init: function () {
             this.jsonInit({
-                //message0: '%1',
-                message0: Blockly.Msg.WIFI_INIT,
+                message0: '%1',
+                message1: Blockly.Msg.WIFI_INIT,
                 args0: [
+                    {
+                        type: 'field_image',
+                        src: wifiIconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
                     {
                         type: 'input_value',
                         name: 'SSID'
@@ -821,16 +830,16 @@ Blockly.Blocks.oled_stopScroll = {
         }
     };
 
-    Blockly.Blocks.wifi_read = {
+    Blockly.Blocks.wifi_read_ip = {
         init: function () {
             this.jsonInit({
                 message0: '%1',
-                message1: Blockly.Msg.WIFI_READ,
+                message1: Blockly.Msg.WIFI_READ_IP,
                 args0: [
                     {
                         type: 'field_image',
-                        //src: irIconUrl,
-                        width: 0,
+                        src: wifiIconUrl,
+                        width: 50,
                         height: 27
                     }
                 ],
@@ -843,6 +852,68 @@ Blockly.Blocks.oled_stopScroll = {
         }
     };
 
+    Blockly.Blocks.wifi_client_init = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.WIFI_CLIENT_INIT,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: wifiIconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                ],
+                colour: color9,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+    Blockly.Blocks.wifi_client_connected = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.WIFI_CLIENT_CONNECTED,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: wifiIconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                ],
+                colour: color9,
+                extensions: ['output_boolean']
+            });
+        }
+    };
+
+    Blockly.Blocks.wifi_read_data = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.WIFI_READ_DATA,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: wifiIconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                ],
+                colour: color9,
+                extensions: ['output_number']
+            });
+        }
+    };
 
     return Blockly;
 }

@@ -14,7 +14,7 @@ function addBlocks (Blockly) {
     Blockly.Blocks.pir_readValue = {
         init: function () {
             this.jsonInit({
-                message0: Blockly.Msg.pir_READ_VALUE,
+                message0: Blockly.Msg.PIR_READ_VALUE,
                 args0: [
                     {
                         type: 'field_dropdown',
