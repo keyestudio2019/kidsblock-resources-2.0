@@ -383,9 +383,29 @@ function addToolbox () {
 
 <category name="%{BKY_MATIRXDISPLAY_CATEGORY}" id="MATIRXDISPLAY_CATEGORY" colour="#008080" secondaryColour="#008080">
     <block type="MatirxDisplay_init" id="MatirxDisplay_init">
-        <field name="CS">2</field>
+        <field name="CS">10</field>
     </block>
     <sep gap="36"/>
+
+    <block type="matrix_display_graph" id="matrix_display_graph">
+    <value name="MATRIX_EIGHT">
+        <shadow type="matrix_eight">
+             <field name="MATRIX_EIGHT">0000000000</field>
+        </shadow>
+     </value>
+
+         <value name="NUMBER">
+            <shadow type="math_whole_number">
+                <field name="NUM">1</field>
+            </shadow>
+     </value>
+     <value name="VAR">
+     <shadow type="text">
+         <field name="TEXT">matrix1</field>
+     </shadow>
+    </value>
+     </block>
+
     <block type="MatirxDisplay_drawPixel" id="MatirxDisplay_drawPixel">
         <value name="X">
             <shadow type="math_whole_number">
@@ -453,6 +473,7 @@ function addToolbox () {
 
     <block type="MatirxDisplay_fill" id="MatirxDisplay_fill"></block>
     <block type="MatirxDisplay_refresh" id="MatirxDisplay_refresh"></block>
+    <block type="MatirxDisplay_clean" id="MatirxDisplay_clean"></block>
     <sep gap="36"/>
     <block type="MatirxDisplay_setBrightness" id="MatirxDisplay_setBrightness">
         <value name="BRT">

@@ -22,7 +22,7 @@ const ESP32plus = formatMessage => ({
     programMode: ['realtime', 'upload'],
     programLanguage: ['block', 'cpp'],
     tags: ['arduino'],
-    deviceExtensions: ['ESP32plus_esp32'],
+    deviceExtensions: ['ESP32plus'],
     deviceExtensionsCompatible: 'arduinoEsp32',
     helpLink: 'https://www.keyestudio.com/)'
 });

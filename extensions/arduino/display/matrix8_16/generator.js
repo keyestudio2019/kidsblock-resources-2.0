@@ -120,10 +120,14 @@ function addGenerator (Blockly) {
         }
         code += '};';
 
-        Blockly.Arduino.definitions_[`1matrix_image`] = 'unsigned char matrix_image[] = '+code+''
+        const image = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
+        matrix_image= image.replace(/\"/g,'');
+        const no = Blockly.Arduino.valueToCode(block, 'NUMBER', Blockly.Arduino.ORDER_ATOMIC);
+
+        Blockly.Arduino.definitions_[`matrix_${no}`] = 'unsigned char '+matrix_image+'[] = '+code+''
         
 
-        return 'matrix_display(matrix_image);\n';
+        return 'matrix_display('+matrix_image+');\n';
     };
 
 

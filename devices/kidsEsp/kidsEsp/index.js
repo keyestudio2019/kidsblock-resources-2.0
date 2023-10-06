@@ -19,7 +19,7 @@ const kidsEsp = formatMessage => ({
     useAutoScan: false,
     connectionIconURL: 'asset/kidsesp_big.svg',
     connectionSmallIconURL: 'asset/kidsesp_small.svg',
-    programMode: ['realtime', 'upload'],
+    programMode: ['upload'],
     programLanguage: ['block', 'cpp'],
     tags: ['arduino'],
     deviceExtensions: ['kidsEsp_esp32'],

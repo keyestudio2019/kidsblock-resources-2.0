@@ -472,8 +472,15 @@ function addBlocks (Blockly) {
               {
                 type: "input_value",
                 name: "MATRIX_SIXTEEN"
-              }
-        
+              },
+              {
+                type: 'input_value',
+                name: 'NUMBER'
+               },
+               {
+                type: 'input_value',
+                name: 'VAR'
+               } 
             ],
             category: Blockly.Categories.pen,
             extensions: ["colours_pen","scratch_extension"],

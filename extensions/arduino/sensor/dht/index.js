@@ -5,7 +5,7 @@ const dht = formatMessage => ({
     }),
     extensionId: 'dht',
     version: '1.0.0',
-    supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo','arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
+    supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo','arduinoMega2560'],
     author: 'keyes',
     iconURL: `asset/dht.png`,
     description: formatMessage({

@@ -1580,6 +1580,45 @@ Blockly.Blocks.tm1650_state = {
         }
     };
 
+    Blockly.Blocks.matrix_display_graph = {
+        init: function() {
+          this.jsonInit({
+            message0: '%1',
+            message1: Blockly.Msg.MATRIX_DISPLAY_GRAPH,
+            args0: [
+                {
+                    type: 'field_image',
+                    src: matrix_iic_IconUrl,
+                    width: 50,
+                    height: 27
+                }
+            ],
+            args1: [
+              {
+                type: "field_vertical_separator"
+              },
+              {
+                type: "input_value",
+                name: "MATRIX_EIGHT"
+              },
+              {
+                type: 'input_value',
+                name: 'NUMBER'
+               },
+               {
+                type: 'input_value',
+                name: 'VAR'
+               } 
+        
+            ],
+            category: Blockly.Categories.pen,
+            extensions: ["colours_pen","scratch_extension"],
+            colour: color17,
+            extensions: ['shape_statement']
+          });
+        }
+      };
+
     Blockly.Blocks.MatirxDisplay_drawPixel = {
         init: function () {
             this.jsonInit({
@@ -1841,6 +1880,17 @@ Blockly.Blocks.tm1650_state = {
         init: function () {
             this.jsonInit({
                 message0: Blockly.Msg.MATIRXDISPLAY_REFRESH,
+                colour: color17,
+                secondaryColour: secondaryColour,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+    Blockly.Blocks.MatirxDisplay_clean = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.MATIRXDISPLAY_CLEAN,
                 colour: color17,
                 secondaryColour: secondaryColour,
                 extensions: ['shape_statement']

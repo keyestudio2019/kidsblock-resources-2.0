@@ -791,7 +791,15 @@ const secondaryColour = '#CD5C5C';
               {
                 type: "input_value",
                 name: "MATRIX_EIGHT"
-              }
+              },
+                             {
+                type: 'input_value',
+                name: 'NUMBER'
+               },
+               {
+                type: 'input_value',
+                name: 'VAR'
+               } 
         
             ],
             category: Blockly.Categories.pen,

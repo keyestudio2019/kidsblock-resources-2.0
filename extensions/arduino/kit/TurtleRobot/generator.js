@@ -231,7 +231,6 @@ Blockly.Arduino.matrix_iic_show_loop = function (block) {
 };
 
 Blockly.Arduino.matrix_iic_display = function (block) {
-
     var varName = Blockly.Arduino.valueToCode(this, 'MATRIX_EIGHT', Blockly.Arduino.ORDER_ASSIGNMENT);
     var a = new Array();
     for (var i = 0; i < 8; i++) {
@@ -252,7 +251,11 @@ Blockly.Arduino.matrix_iic_display = function (block) {
     }
     code += '};';
 
-    Blockly.Arduino.definitions_[`matrix_image`] = 'uint8_t matrix_image[8]='+code+''
+    const image = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
+        matrix_image= image.replace(/\"/g,'');
+        const no = Blockly.Arduino.valueToCode(block, 'NUMBER', Blockly.Arduino.ORDER_ATOMIC);
+
+    Blockly.Arduino.definitions_[`matrix_${no}`] = 'uint8_t '+matrix_image+'[8]='+code+''
 
     Blockly.Arduino.definitions_[`1matrix_display`] = 'int matrix_display(uint8_t led_array[8])'+
         '{\n'+
@@ -268,9 +271,8 @@ Blockly.Arduino.matrix_iic_display = function (block) {
         '  }\n'+
         '}\n';
 
-        return 'matrix_display(matrix_image);\n';
+        return 'matrix_display('+matrix_image+');\n';
     };
-
 Blockly.Arduino.matrix_iic_face = function (block) {
         Blockly.Arduino.definitions_[`1matrix_face`] = 
         'uint8_t matrix_smile[8]={0x42,0xa5,0xa5,0x00,0x00,0x24,0x18,0x00};\n'+

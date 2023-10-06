@@ -22,7 +22,7 @@ const unov4 = formatMessage => ({
     programMode: ['realtime', 'upload'],
     programLanguage: ['block', 'cpp'],
     tags: ['arduino'],
-    deviceExtensions: ['unov4.0'],
+    deviceExtensions: ['unov4'],
     deviceExtensionsCompatible: 'arduinoUno',
     //helpLink: 'https://wiki.keyestudio.com/KS0486_Keyestudio_PLUS_Development_Board_(Black_And_Eco-friendly)'
 });

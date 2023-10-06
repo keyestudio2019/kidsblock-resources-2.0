@@ -30,24 +30,6 @@ function addToolbox () {
             </value>
         </block>
 
-        <block type="RGBcube_single" id="RGBcube_single">
-            <value name="red">
-                <shadow type="math_uint8_number">
-                    <field name="NUM">0</field>
-                </shadow>
-            </value>
-            <value name="green">
-                <shadow type="math_uint8_number">
-                    <field name="NUM">0</field>
-                </shadow>
-            </value>
-            <value name="blue">
-                <shadow type="math_uint8_number">
-                    <field name="NUM">0</field>
-                </shadow>
-            </value>
-        </block>
-
         <block type="RGBcube_single2" id="RGBcube_single2">
             <value name="X">
                 <shadow type="math_whole_number">
@@ -288,6 +270,9 @@ function addToolbox () {
                     <field name="NUM">0</field>
                 </shadow>
             </value>
+        </block>
+        
+        <block type="RGBcube_light_effect" id="RGBcube_light_effect">
         </block>
 
     </category>`;

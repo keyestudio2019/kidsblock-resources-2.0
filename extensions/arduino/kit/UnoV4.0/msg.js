@@ -338,3 +338,4 @@ function addMsg (Blockly) {
 }
 
 exports = addMsg;
+

@@ -7,7 +7,7 @@ const IR_send = formatMessage => ({
     extensionId: 'IR_send',
     version: '1.0.0',
     type: 'arduino',
-    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
+    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560'],
     author: 'keyes',
     iconURL: `asset/ir_send.png`,
     description: formatMessage({

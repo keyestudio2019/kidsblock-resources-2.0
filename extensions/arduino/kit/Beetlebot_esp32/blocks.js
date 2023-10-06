@@ -753,6 +753,255 @@ function addBlocks (Blockly) {
         }
     };
 
+    Blockly.Blocks.matrix_iic_display = {
+        init: function() {
+          this.jsonInit({
+            message0: '%1',
+            message1: Blockly.Msg.MATRIX_IIC_DISPLAY,
+            args0: [
+                {
+                    type: 'field_image',
+                    src: matrix_iic_IconUrl,
+                    width: 50,
+                    height: 27
+                }
+            ],
+            args1: [
+              {
+                type: "field_vertical_separator"
+              },
+              {
+                type: "input_value",
+                name: "MATRIX_EIGHT"
+              },
+              {
+                type: 'input_value',
+                name: 'NUMBER'
+               },
+               {
+                type: 'input_value',
+                name: 'VAR'
+               } 
+        
+            ],
+            category: Blockly.Categories.pen,
+            extensions: ["colours_pen","scratch_extension"],
+            colour: color6,
+            extensions: ['shape_statement']
+          });
+        }
+      };
+
+
+      Blockly.Blocks.matrix_iic_piexl = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.MATRIX_IIC_PIEXL,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: matrix_iic_IconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'input_value',
+                        name: 'xVal'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'yVal'
+                    },
+                    {
+                        type: 'field_dropdown',
+                        name: 'state',
+                        options: [
+                            ['HIGH', 'HIGH'],
+                            ['LOW', 'LOW']
+                            ],
+                    }
+                ],
+                colour: color6,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+
+    Blockly.Blocks.matrix_iic_drawLine = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.matrix_iic_DRAWLINE,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: matrix_iic_IconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'input_value',
+                        name: 'X0'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'Y0'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'X1'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'Y1'
+                    }
+                
+                ],
+                colour: color6,
+              
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+    Blockly.Blocks.matrix_iic_drawrectangle = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.matrix_iic_DRAWRECTANGLE,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: matrix_iic_IconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'input_value',
+                        name: 'X0'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'Y0'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'L1'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'W1'
+                    }
+                
+                ],
+                colour: color6,
+        
+                extensions: ['shape_statement']
+            });
+        }
+    };
+  
+
+    Blockly.Blocks.matrix_iic_drawcircle = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.matrix_iic_DRAWCIRCLE,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: matrix_iic_IconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'input_value',
+                        name: 'X0'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'Y0'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'R0'
+                    }
+                 
+                ],
+                colour: color6,
+          
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+    Blockly.Blocks.matrix_iic_showChar = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.matrix_iic_SHOWCHAR,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: matrix_iic_IconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                  
+                    {
+                        type: 'input_value',
+                        name: 'TEXT'
+                    }
+                ],
+                colour: color6,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+    Blockly.Blocks.matrix_iic_show_loop = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.matrix_iic_SHOW_LOOP,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: matrix_iic_IconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                
+                    {
+                        type: 'input_value',
+                        name: 'MESSAGE'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'SPEED'
+                    }
+                ],
+                colour: color6,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+
     Blockly.Blocks.matrix_iic_face = {
         init: function () {
             this.jsonInit({

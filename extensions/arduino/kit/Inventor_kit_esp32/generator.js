@@ -431,10 +431,58 @@ Blockly.Arduino.tm1650_state = function (block) {
         const cs = block.getFieldValue('CS');
 
         Blockly.Arduino.includes_.MatirxDisplay_init = `#include <SPI.h>\n#include <Adafruit_GFX.h>\n#include <Max72xxPanel.h>`;
-        Blockly.Arduino.definitions_.MatirxDisplay_init = `Max72xxPanel Matrix = Max72xxPanel(${cs}, 1, 1);`;
+        Blockly.Arduino.definitions_.MatirxDisplay_init = `Max72xxPanel Matrix = Max72xxPanel(${cs}, 1, 1);\n`+
+        'uint8_t  LEDArray[8];';
 
         return ``;
     };
+
+    Blockly.Arduino.matrix_display_graph = function (block) {
+
+        var varName = Blockly.Arduino.valueToCode(this, 'MATRIX_EIGHT', Blockly.Arduino.ORDER_ASSIGNMENT);
+        var a = new Array();
+        for (var i = 0; i < 8; i++) {
+          a[i] = new Array();
+          for (var j = 0; j < 8; j++) {
+            a[i][j] = varName[i*8+j];
+          }
+        }
+        var code = '{';
+        for (var i = 0; i < 8; i++) {
+          var tmp = ""
+          for (var j = 0; j < 8; j++) {
+            tmp += a[i][j];
+          }
+          tmp = (parseInt(tmp, 2)).toString(16)
+          if (tmp.length == 1) tmp = "0" + tmp;
+          code += '0x' + tmp + ((i != 8) ? ',' : '');
+        }
+        code += '};';
+    
+        const image = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
+        matrix_image= image.replace(/\"/g,'');
+        const no = Blockly.Arduino.valueToCode(block, 'NUMBER', Blockly.Arduino.ORDER_ATOMIC);
+
+       
+        Blockly.Arduino.definitions_[`matrix_${no}`] = 'uint8_t '+matrix_image+'[8]='+code+''
+
+    
+        Blockly.Arduino.definitions_[`1matrix_display`] = 'void matrix_display(uint8_t *led_array)'+
+            '{\n'+
+            '  for(int i=0; i<8; i++)\n'+
+            '  {\n'+
+            '    LEDArray[i]=led_array[i];\n'+
+            '    for(int j=7; j>=0; j--)\n'+
+            '    {\n'+
+            '      if((LEDArray[i]&0x01)>0)\n'+
+            '      Matrix.drawPixel(7-j, 7-i,1);\n'+
+            '      LEDArray[i] = LEDArray[i]>>1;\n'+
+            '    }\n'+
+            '  }\n'+
+            '}\n';
+    
+            return 'matrix_display('+matrix_image+');\n';
+        };
 
     Blockly.Arduino.MatirxDisplay_drawPixel = function (block) {
         const x = Blockly.Arduino.valueToCode(block, 'X', Blockly.Arduino.ORDER_ATOMIC);
@@ -490,8 +538,6 @@ Blockly.Arduino.tm1650_state = function (block) {
         'uint8_t matrix_heart[8]={0x18,0x3c,0x7e,0xff,0xff,0xff,0xe7,0x42};\n'+
         'uint8_t matrix_clear[8]={0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};\n';
 
-        Blockly.Arduino.definitions_[`matrix_display`] = 'uint8_t  LEDArray[8];\n'
-        
         Blockly.Arduino.definitions_[`2matrix_display`] = 'void matrix_display(uint8_t *led_array)'+
         '{\n'+
         '  for(int i=0; i<8; i++)\n'+
@@ -523,6 +569,11 @@ Blockly.Arduino.tm1650_state = function (block) {
     Blockly.Arduino.MatirxDisplay_refresh = function () {
         return `Matrix.write();\n`;
     };
+
+    Blockly.Arduino.MatirxDisplay_clean = function () {
+        return `Matrix.fillScreen(LOW);\n`;
+    };
+
 
     Blockly.Arduino.MatirxDisplay_setBrightness = function (block) {
         const brt = Blockly.Arduino.valueToCode(block, 'BRT', Blockly.Arduino.ORDER_ATOMIC);

@@ -869,7 +869,7 @@ function addGenerator (Blockly) {
     
     Blockly.Arduino.wifi_read_data = function (block) {
     
-        return [`request`, Blockly.Arduino.ORDER_ATOMIC];
+        return [`req`, Blockly.Arduino.ORDER_ATOMIC];
     };
     
     return Blockly;

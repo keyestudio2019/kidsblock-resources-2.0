@@ -19,10 +19,10 @@ const ESP32S = formatMessage => ({
     useAutoScan: false,
     connectionIconURL: 'asset/ESP32S_big.svg',
     connectionSmallIconURL: 'asset/ESP32S_small.svg',
-    programMode: ['realtime', 'upload'],
+    programMode: ['realtime','upload'],
     programLanguage: ['block', 'cpp'],
     tags: ['arduino'],
-    deviceExtensions: ['ESP32S_esp32'],
+    deviceExtensions: ['ESP32S'],
     deviceExtensionsCompatible: 'arduinoEsp32',
     helpLink: 'https://www.keyestudio.com/)'
 });

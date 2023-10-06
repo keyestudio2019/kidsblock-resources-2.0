@@ -400,32 +400,36 @@ function addGenerator (Blockly) {
         return `matrix.setTextSize(1);\nmatrix.setTextWrap(false);\nmatrix.setTextColor(LED_ON);\nmatrix.setRotation(1);\nfor(int8_t x=7; x>=-36; x--)\n{matrix.clear();\nmatrix.setCursor(x,0);\nmatrix.print(${number});\nmatrix.writeDisplay();\ndelay(100);};\n`;
              
     };
-
+//****************显示自定义图形*******************************
     Blockly.Arduino.MatrixDisplay_display = function (block) {
 
         var varName = Blockly.Arduino.valueToCode(this, 'MATRIX_SIXTEEN', Blockly.Arduino.ORDER_ASSIGNMENT);
         var a = new Array();
-        for (var i = 0; i < 8; i++) {
+        for (var i = 0; i < 16; i++) {
           a[i] = new Array();
           for (var j = 0; j < 8; j++) {
             a[i][j] = varName[i*8+j];
           }
         }
         var code = '{';
-        for (var i = 0; i < 8; i++) {
+        for (var i = 0; i < 16; i++) {
           var tmp = ""
           for (var j = 0; j < 8; j++) {
             tmp += a[i][j];
           }
           tmp = (parseInt(tmp, 2)).toString(16)
           if (tmp.length == 1) tmp = "0" + tmp;
-          code += '0x' + tmp + ((i != 8) ? ',' : '');
+          code += '0x' + tmp + ((i != 16) ? ',' : '');
         }
         code += '};';
 
-        Blockly.Arduino.definitions_[`1matrix_image`] = 'unsigned char matrix_image[] = '+code+''
-        
-        return `matrix.clear();\nmatrix.drawBitmap(0, 0, matrix_image, 8, 16, LED_ON);\nmatrix.writeDisplay();\n`;
+        const image = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
+        matrix_image= image.replace(/\"/g,'');
+        const no = Blockly.Arduino.valueToCode(block, 'NUMBER', Blockly.Arduino.ORDER_ATOMIC);
+
+        Blockly.Arduino.definitions_[`matrix_${no}`] = 'static const uint8_t PROGMEM '+matrix_image+'[] = '+code+''
+
+        return `matrix.clear();\nmatrix.ks_drawBitmap(${matrix_image});\nmatrix.writeDisplay();\n`;
 
     };
 

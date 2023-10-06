@@ -235,6 +235,125 @@ function addToolbox () {
 
     </block>
 
+    <block type="matrix_iic_display" id="matrix_iic_display">
+    <value name="NUMBER">
+    <shadow type="math_whole_number">
+         <field name="NUM">1</field>
+    </shadow>
+    </value>
+      <value name="MATRIX_EIGHT">
+          <shadow type="matrix_eight">
+               <field name="MATRIX_EIGHT">0000000000</field>
+          </shadow>
+       </value>
+       <value name="VAR">
+       <shadow type="text">
+           <field name="TEXT">matrix1</field>
+       </shadow>
+    </value>
+    </block>
+
+<block type="matrix_iic_piexl" id="matrix_iic_piexl">
+        <value name="xVal">
+            <shadow type="math_number">
+                <field name="NUM">0</field>
+            </shadow>
+        </value>
+
+        <value name="yVal">
+            <shadow type="math_number">
+                <field name="NUM">0</field>
+            </shadow>
+        </value>
+</block>
+
+<block type="matrix_iic_drawLine" id="matrix_iic_drawLine">
+<value name="X0">
+    <shadow type="math_whole_number">
+        <field name="NUM">0</field>
+    </shadow>
+</value>
+<value name="Y0">
+    <shadow type="math_whole_number">
+        <field name="NUM">0</field>
+    </shadow>
+</value>
+<value name="X1">
+    <shadow type="math_whole_number">
+        <field name="NUM">7</field>
+    </shadow>
+</value>
+<value name="Y1">
+    <shadow type="math_whole_number">
+        <field name="NUM">7</field>
+    </shadow>
+</value>
+</block>
+
+<block type="matrix_iic_drawrectangle" id="matrix_iic_drawrectangle">
+<value name="X0">
+    <shadow type="math_whole_number">
+        <field name="NUM">0</field>
+    </shadow>
+</value>
+<value name="Y0">
+    <shadow type="math_whole_number">
+        <field name="NUM">0</field>
+    </shadow>
+</value>
+<value name="L1">
+    <shadow type="math_whole_number">
+        <field name="NUM">2</field>
+    </shadow>
+</value>
+<value name="W1">
+    <shadow type="math_whole_number">
+        <field name="NUM">4</field>
+    </shadow>
+</value>
+</block>
+
+<block type="matrix_iic_drawcircle" id="matrix_iic_drawcircle">
+<value name="X0">
+    <shadow type="math_whole_number">
+        <field name="NUM">0</field>
+    </shadow>
+</value>
+<value name="Y0">
+    <shadow type="math_whole_number">
+        <field name="NUM">0</field>
+    </shadow>
+</value>
+<value name="R0">
+    <shadow type="math_whole_number">
+        <field name="NUM">2</field>
+    </shadow>
+</value>
+</block>
+
+<block type="matrix_iic_showChar" id="matrix_iic_showChar">
+
+  <value name="TEXT">
+     <shadow type="text">
+        <field name="TEXT">A</field>
+    </shadow>
+   </value>
+</block>
+
+
+<block type="matrix_iic_show_loop" id="matrix_iic_show_loop">
+    <value name="MESSAGE">
+        <shadow type="text">
+             <field name="TEXT">ABCD1234</field>
+        </shadow>
+   </value>
+   <value name="SPEED">
+   <shadow type="math_whole_number">
+        <field name="NUM">300</field>
+   </shadow>
+</value>
+</block>
+
     <block type="matrix_iic_face" id="matrix_iic_face">
 
     </block>

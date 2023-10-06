@@ -60,7 +60,9 @@ class Keyestudio_GFX : public Print {
     setTextSize(uint8_t s),
     setTextWrap(boolean w),
     setRotation(uint8_t r),
-    cp437(boolean x=true);
+    cp437(boolean x=true),
+	  // for keyestudio KidsBlock
+	  ks_drawBitmap(const uint8_t *bitmap);
 
 #if ARDUINO >= 100
   virtual size_t write(uint8_t);

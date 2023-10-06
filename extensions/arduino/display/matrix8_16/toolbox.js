@@ -16,6 +16,16 @@ function addToolbox () {
              <field name="MATRIX_SIXTEEN">0000000000</field>
         </shadow>
      </value>
+     <value name="NUMBER">
+            <shadow type="math_whole_number">
+                <field name="NUM">1</field>
+            </shadow>
+     </value>
+     <value name="VAR">
+     <shadow type="text">
+         <field name="TEXT">matrix1</field>
+     </shadow>
+    </value>
      </block>
 
     <block type="matrix8_16_face" id="matrix8_16_face">

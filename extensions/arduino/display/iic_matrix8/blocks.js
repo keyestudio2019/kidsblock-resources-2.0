@@ -247,14 +247,22 @@ function addBlocks (Blockly) {
                 }
             ],
             args1: [
-              {
+           
+               {
                 type: "field_vertical_separator"
-              },
-              {
+               },
+               {
                 type: "input_value",
                 name: "MATRIX_EIGHT"
-              }
-        
+               },
+               {
+                type: 'input_value',
+                name: 'NUMBER'
+               },
+               {
+                type: 'input_value',
+                name: 'VAR'
+               } 
             ],
             category: Blockly.Categories.pen,
             extensions: ["colours_pen","scratch_extension"],
@@ -263,6 +271,7 @@ function addBlocks (Blockly) {
           });
         }
       };
+
 
 
     Blockly.Blocks.matrix_iic_face = {

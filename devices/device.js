@@ -12,7 +12,7 @@ module.exports = [
     'kidsUno_arduinoUno',
     
     //Esp32 for arduino
-    'Makerbit_arduinoEsp32',
+    'EasyCoding_arduinoEsp32',
     'ESP32plus_arduinoEsp32',
     'ESP32S_arduinoEsp32',
     'kidsEsp_arduinoEsp32',
@@ -38,7 +38,6 @@ module.exports = [
 
 
     // kit
-    'cube4_arduinoUno',
     'RGBcube_arduinoLeonardo',
     'Superstarterkit_arduinoUno',
     '37Sensorkit_arduinoUno',

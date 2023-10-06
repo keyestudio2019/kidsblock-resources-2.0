@@ -111,11 +111,6 @@ function addToolbox () {
 
     </block>
 </category>
-
-
-
 `;
 }
-
-
 exports = addToolbox;

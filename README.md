@@ -1,3 +1,11 @@
+V1.6.6:
+
+Add Raspberry Pi PICO development board<br>
+Add Maixdock development board based on K210<br>
+Add Maixduino development board based on K210<br>
+Add Sentry module based on AI recognition<br>
+Add to display random images in dot matrix
+
 V1.6.5:
 
 add tank robot v2.0 kit<br>

@@ -371,6 +371,21 @@ void Keyestudio_GFX::drawBitmap(int16_t x, int16_t y,
   }
 }
 
+// 8*16 dot matrix for keyestudio KidsBlock
+void Keyestudio_GFX::ks_drawBitmap(const uint8_t *bitmap) {
+
+  int16_t i, j;
+
+  for(j=0; j<16; j++) {
+    for(i=0; i<8; i++ ) {
+      if(pgm_read_byte(bitmap + j) & (0x80 >> i)) {
+        drawPixel(7-(j/2), (j%2*8)+i, 1);
+      }
+    }
+  }
+}
+
+
 // Draw a 1-bit color bitmap at the specified x, y position from the
 // provided bitmap buffer (must be PROGMEM memory) using color as the
 // foreground color and bg as the background color.
@@ -391,6 +406,7 @@ void Keyestudio_GFX::drawBitmap(int16_t x, int16_t y,
     }
   }
 }
+
 
 //Draw XBitMap Files (*.xbm), exported from GIMP,
 //Usage: Export from GIMP to *.xbm, rename *.xbm to *.c and open in editor.

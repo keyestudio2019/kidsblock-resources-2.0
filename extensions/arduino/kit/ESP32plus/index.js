@@ -1,6 +1,6 @@
 const ESP32plus = formatMessage => ({
     name: 'ESP32plus',
-    extensionId: 'EPS32plus_esp32',
+    extensionId: 'ESP32plus',
     version: '1.0.0',
     supportDevice: ['ESP32plus_arduinoEsp32'],
     author: 'keyes',

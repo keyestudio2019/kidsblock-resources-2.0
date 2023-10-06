@@ -582,7 +582,7 @@ function addBlocks (Blockly) {
                         type: 'field_image',
                         src: motor130IconUrl,
                         width: 50,
-                        height: 50
+                        height: 27
                     }
                         
                 ],
@@ -958,7 +958,15 @@ Blockly.Blocks.matrix_iic_display = {
           {
             type: "input_value",
             name: "MATRIX_EIGHT"
-          }
+          },
+          {
+            type: 'input_value',
+            name: 'NUMBER'
+           },
+           {
+            type: 'input_value',
+            name: 'VAR'
+           } 
     
         ],
         category: Blockly.Categories.pen,

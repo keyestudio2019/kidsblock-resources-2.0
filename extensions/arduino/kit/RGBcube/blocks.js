@@ -94,68 +94,68 @@ function addBlocks (Blockly) {
         }
     };
 
-    Blockly.Blocks.RGBcube_single = {
-        init: function () {
-            this.jsonInit({
-                message0: '%1',
-                message1: Blockly.Msg.RGBCUBE_SINGLE,
-                args0: [
-                    {
-                        type: 'field_image',
-                        src: RGBcube_IconUrl,
-                        width: 50,
-                        height: 27
-                    }
-                ],
-                args1: [
-                    {
-                        type: 'field_dropdown',
-                        name: 'X',
-                        options: [
-                            ['0', '0'],
-                            ['1', '1'],
-                            ['2', '2'],
-                            ['3', '3']
-                            ]
-                    },
-                    {
-                        type: 'field_dropdown',
-                        name: 'Y',
-                        options: [
-                            ['0', '0'],
-                            ['1', '1'],
-                            ['2', '2'],
-                            ['3', '3']
-                            ]
-                    },
-                    {
-                        type: 'field_dropdown',
-                        name: 'Z',
-                        options: [
-                            ['0', '0'],
-                            ['1', '1'],
-                            ['2', '2'],
-                            ['3', '3']
-                            ]
-                    },
-                    {
-                        type: 'input_value',
-                        name: 'red',
-                    },
-                    {
-                        type: 'input_value',
-                        name: 'green',
-                    },
-                    {
-                        type: 'input_value',
-                        name: 'blue'
-                    }
-                ],
-                colour: color,
-                extensions: ['shape_statement']
-            });
-        }
-    };
+    // Blockly.Blocks.RGBcube_single = {
+    //     init: function () {
+    //         this.jsonInit({
+    //             message0: '%1',
+    //             message1: Blockly.Msg.RGBCUBE_SINGLE,
+    //             args0: [
+    //                 {
+    //                     type: 'field_image',
+    //                     src: RGBcube_IconUrl,
+    //                     width: 50,
+    //                     height: 27
+    //                 }
+    //             ],
+    //             args1: [
+    //                 {
+    //                     type: 'field_dropdown',
+    //                     name: 'X',
+    //                     options: [
+    //                         ['0', '0'],
+    //                         ['1', '1'],
+    //                         ['2', '2'],
+    //                         ['3', '3']
+    //                         ]
+    //                 },
+    //                 {
+    //                     type: 'field_dropdown',
+    //                     name: 'Y',
+    //                     options: [
+    //                         ['0', '0'],
+    //                         ['1', '1'],
+    //                         ['2', '2'],
+    //                         ['3', '3']
+    //                         ]
+    //                 },
+    //                 {
+    //                     type: 'field_dropdown',
+    //                     name: 'Z',
+    //                     options: [
+    //                         ['0', '0'],
+    //                         ['1', '1'],
+    //                         ['2', '2'],
+    //                         ['3', '3']
+    //                         ]
+    //                 },
+    //                 {
+    //                     type: 'input_value',
+    //                     name: 'red',
+    //                 },
+    //                 {
+    //                     type: 'input_value',
+    //                     name: 'green',
+    //                 },
+    //                 {
+    //                     type: 'input_value',
+    //                     name: 'blue'
+    //                 }
+    //             ],
+    //             colour: color,
+    //             extensions: ['shape_statement']
+    //         });
+    //     }
+    // };
 
     Blockly.Blocks.RGBcube_single2 = {
         init: function () {
@@ -790,6 +790,44 @@ function addBlocks (Blockly) {
                     {
                         type: 'input_value',
                         name: 'B2'
+                    }
+                ],
+                colour: color,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+    Blockly.Blocks.RGBcube_light_effect = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.RGBCUBE_LIGHT_EFFECT,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: RGBcube_IconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'LIGHT_EFFECT',
+                        options: [
+                            [Blockly.Msg.COLOURFADER1, 'colourFader1();'],
+                            [Blockly.Msg.COLOURFADER2, 'colourFader2();'],
+                            [Blockly.Msg.TUNING1, 'tuning1();'],
+                            [Blockly.Msg.TUNING2, 'tuning2();'],
+                            [Blockly.Msg.TUNING3, 'tuning3();'],
+                            [Blockly.Msg.FRAME, 'frame();'],
+                            [Blockly.Msg.HERTBEAT, 'Heartbeat();'],
+                            [Blockly.Msg.RAINSTORM, 'Rainstorm(10);'],
+                            [Blockly.Msg.RANDOMCOLOURS, 'RandomColours();'],
+                            [Blockly.Msg.SPHERE, 'Sphere();'],
+                            [Blockly.Msg.LASERSHOW, 'laserShow();']
+                        ],
                     }
                 ],
                 colour: color,

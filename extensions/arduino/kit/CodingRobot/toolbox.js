@@ -245,11 +245,21 @@ function addToolbox () {
 </block>
 
 <block type="matrix_iic_display" id="matrix_iic_display">
+<value name="NUMBER">
+<shadow type="math_whole_number">
+     <field name="NUM">1</field>
+</shadow>
+</value>
   <value name="MATRIX_EIGHT">
       <shadow type="matrix_eight">
            <field name="MATRIX_EIGHT">0000000000</field>
       </shadow>
    </value>
+   <value name="VAR">
+   <shadow type="text">
+       <field name="TEXT">matrix1</field>
+   </shadow>
+</value>
 </block>
 
 <block type="matrix_iic_face" id="matrix_iic_face">
