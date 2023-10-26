@@ -9,7 +9,7 @@ const remote = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/ir_receiver_Sensor.png`,
+    iconURL: `asset/ir_receiver_Sensor.jpg`,
     description: formatMessage({
         id: 'remote.description',
         default: 'Infrared receiving module',

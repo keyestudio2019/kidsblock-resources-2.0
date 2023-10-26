@@ -2,7 +2,7 @@ const Inventor_ESP32 = formatMessage => ({
     name: 'Inventor kit for ESP32',
     deviceId: 'Inventor_arduinoEsp32',
     manufactor: 'keyestudio',
-    leanMore: 'https://wiki.keyestudio.com/',
+    leanMore: 'https://fks0001-keyestudio-esp32-core-board-scratch.readthedocs.io/en/latest/',
     iconURL: 'asset/Inventor.jpg',
     description: formatMessage({
         id: 'InventorESP32.description',
@@ -24,7 +24,7 @@ const Inventor_ESP32 = formatMessage => ({
     tags: ['kit'],
     deviceExtensions: ['Inventor_ESP32'],
     deviceExtensionsCompatible: 'arduinoEsp32',
-    helpLink: 'https://wiki.keyestudio.com/'
+    helpLink: 'https://fks0001-keyestudio-esp32-core-board-scratch.readthedocs.io/en/latest/'
 });
 
 module.exports = Inventor_ESP32;

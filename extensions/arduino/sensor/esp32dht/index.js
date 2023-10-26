@@ -7,7 +7,7 @@ const esp32dht = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/dht.png`,
+    iconURL: `asset/dht.jpg`,
     description: formatMessage({
         id: 'esp32dht.description',
         default: 'DHT Temperature and humidity sensor module for ESP32'

@@ -9,7 +9,7 @@ const keypad4_4 = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560'],
     author: 'keyes',
-    iconURL: `asset/keypad4.png`,
+    iconURL: `asset/keypad4.jpg`,
     description: formatMessage({
         id: 'keypad4_4.description',
         default: '4*4 Key pad module',

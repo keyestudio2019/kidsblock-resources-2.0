@@ -9,7 +9,7 @@ const fourDigitClockDisplay = formatMessage => ({
      supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32'],
     author: 'keyes',
-    iconURL: `asset/fourDigitClockDisplay.png`,
+    iconURL: `asset/fourDigitClockDisplay.jpg`,
     description: formatMessage({
         id: 'fourDigitClockDisplay.description',
         default: '4-digit clock display module based on TM1637.'

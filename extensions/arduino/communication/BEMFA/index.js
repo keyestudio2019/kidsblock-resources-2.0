@@ -8,7 +8,7 @@ const BEMFA = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/BEMFA.png`,
+    iconURL: `asset/BEMFA.jpg`,
     description: formatMessage({
         id: 'BEMFA.description',
         default: '物联网开源app、小程序制作.',

@@ -90,6 +90,44 @@ function addToolbox () {
 </category>
 
 
+<category name="%{BKY_ROBOT_CATEGORY}" id="ROBOT_CATEGORY" colour="#0000ff" secondaryColour="#0000ff">
+
+     <block type="robot_forward" id="robot_forward">
+       <value name="SPEED">
+         <shadow type="math_uint8_number">
+            <field name="NUM">200</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="robot_back" id="robot_back">
+      <value name="SPEED">
+       <shadow type="math_uint8_number">
+           <field name="NUM">200</field>
+       </shadow>
+      </value>
+    </block>
+
+    <block type="robot_left" id="robot_left">
+      <value name="SPEED">
+        <shadow type="math_uint8_number">
+           <field name="NUM">200</field>
+        </shadow>
+      </value>
+    </block>
+
+  <block type="robot_right" id="robot_right">
+    <value name="SPEED">
+      <shadow type="math_uint8_number">
+       <field name="NUM">200</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="robot_stop" id="robot_stop">
+  </block>
+
+</category>
+
 <category name="%{BKY_BUZZER_CATEGORY}" id="BUZZER_CATEGORY" colour="#573e00" secondaryColour="#573e00">
     <block type="buzzer_tone" id="buzzer_tone">
         <field name="PIN">6</field>
@@ -107,6 +145,19 @@ function addToolbox () {
         <field name="PIN">6</field>
     </block>
     
+</category>
+
+<category name="%{BKY_SOUND_CATEGORY}" id="SOUND_CATEGORY" colour="#32cd32" secondaryColour="#32cd32">
+    <block type="sound_readValue" id="sound_readValue">
+        <field name="pin">A0</field>
+    </block>
+</category>
+
+<category name="%{BKY_HC_SR04_CATEGORY}" id="HC_SR04_CATEGORY" colour="#7700FF" secondaryColour="#7700FF">
+                <block type="hc_sr04_read_distance" id="hc_sr04_read_distance">
+                    <field name="trig_pin">2</field>>
+                    <field name="echo_pin">3</field>>
+                </block>
 </category>
 
 <category name="%{BKY_MOTOR130_CATEGORY}" id="MOTOR130_CATEGORY" colour="#FF6F00" secondaryColour="#FF6F00">
@@ -129,18 +180,26 @@ function addToolbox () {
 
 </category>
 
-
-
-<category name="%{BKY_HC_SR04_CATEGORY}" id="HC_SR04_CATEGORY" colour="#7700FF" secondaryColour="#7700FF">
-                <block type="hc_sr04_read_distance" id="hc_sr04_read_distance">
-                    <field name="trig_pin">2</field>>
-                    <field name="echo_pin">3</field>>
-                </block>
-</category>
-
-
 <category name="%{BKY_MATRIX_IIC_CATEGORY}" id="MATRIX_PIN_CATEGORY" colour="#008000" secondaryColour="#008000">
 <block type="matrix_iic_init" id="matrix_iic_init">
+</block>
+
+<block type="matrix_iic_display" id="matrix_iic_display">
+<value name="NUMBER">
+<shadow type="math_whole_number">
+     <field name="NUM">1</field>
+</shadow>
+</value>
+  <value name="MATRIX_EIGHT">
+      <shadow type="matrix_eight">
+           <field name="MATRIX_EIGHT">0000000000</field>
+      </shadow>
+   </value>
+   <value name="VAR">
+   <shadow type="text">
+       <field name="TEXT">matrix1</field>
+   </shadow>
+</value>
 </block>
 
 <block type="matrix_iic_piexl" id="matrix_iic_piexl">
@@ -240,24 +299,6 @@ function addToolbox () {
    <value name="SPEED">
    <shadow type="math_whole_number">
         <field name="NUM">300</field>
-   </shadow>
-</value>
-</block>
-
-<block type="matrix_iic_display" id="matrix_iic_display">
-<value name="NUMBER">
-<shadow type="math_whole_number">
-     <field name="NUM">1</field>
-</shadow>
-</value>
-  <value name="MATRIX_EIGHT">
-      <shadow type="matrix_eight">
-           <field name="MATRIX_EIGHT">0000000000</field>
-      </shadow>
-   </value>
-   <value name="VAR">
-   <shadow type="text">
-       <field name="TEXT">matrix1</field>
    </shadow>
 </value>
 </block>

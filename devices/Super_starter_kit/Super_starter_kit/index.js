@@ -3,7 +3,7 @@ const Superstarterkit = formatMessage => ({
     deviceId: 'Superstarterkit_arduinoUno',
     manufactor: 'keyestudio',
     leanMore: 'https://wiki.keyestudio.com',
-    iconURL: 'asset/super_starter_kit.png',
+    iconURL: 'asset/super_starter_kit.jpg',
     description: formatMessage({
         id: 'Super_starter_kit.description',
         default: 'Super starter kit',

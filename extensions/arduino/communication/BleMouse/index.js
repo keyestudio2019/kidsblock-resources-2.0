@@ -7,7 +7,7 @@ const BleMouse = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['arduinoEsp32'],
     author: 'keyes',
-    iconURL: `asset/BleMouse.png`,
+    iconURL: `asset/BleMouse.jpg`,
     description: formatMessage({
         id: 'BleMouse.description',
         default: 'Bluetooth mouse for ESP32.'

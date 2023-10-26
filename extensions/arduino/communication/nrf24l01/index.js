@@ -5,7 +5,7 @@ const nrf24l01 = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32'],
     author: 'keyes',
-    iconURL: `asset/nrf24l01.png`,
+    iconURL: `asset/nrf24l01.jpg`,
     description: formatMessage({
         id: 'nrf24l01.description',
         default: '2.4G RF transceiver module.'

@@ -7,7 +7,7 @@ const BleKeyboard = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['arduinoEsp32'],
     author: 'keyes',
-    iconURL: `asset/BleKeyboard.png`,
+    iconURL: `asset/BleKeyboard.jpg`,
     description: formatMessage({
         id: 'BleKeyboard.description',
         default: '"Bluetooth keyboard for ESP32.'

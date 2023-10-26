@@ -106,7 +106,53 @@ function addGenerator (Blockly) {
         var judge = this.getFieldValue('judge');
         return [`${val1} ${judge} ${val2}`, Blockly.Arduino.ORDER_ATOMIC];
     }; 
+      //robot move
 
+      Blockly.Arduino.robot_forward = function (block) {
+     
+        const val = Blockly.Arduino.valueToCode(block, 'SPEED', Blockly.Arduino.ORDER_ATOMIC);
+
+        Blockly.Arduino.setups_[`robot_s`] = 'pinMode(13, OUTPUT);\n  pinMode(11, OUTPUT);\n  pinMode(12, OUTPUT);\n  pinMode(3, OUTPUT);\n';
+       
+       
+        return 'digitalWrite(13,LOW);\nanalogWrite(11,'+val+');\ndigitalWrite(12,LOW);\nanalogWrite(3,'+val+');\n';
+    };
+  
+    Blockly.Arduino.robot_back = function (block) {
+     
+        const val = Blockly.Arduino.valueToCode(block, 'SPEED', Blockly.Arduino.ORDER_ATOMIC);
+
+        Blockly.Arduino.setups_[`robot_s`] = 'pinMode(13, OUTPUT);\n  pinMode(11, OUTPUT);\n  pinMode(12, OUTPUT);\n  pinMode(3, OUTPUT);\n';
+
+        return 'digitalWrite(13,HIGH);\nanalogWrite(11,'+val+');\ndigitalWrite(12,HIGH);\nanalogWrite(3,'+val+');\n';
+    };
+
+    Blockly.Arduino.robot_left = function (block) {
+     
+        const val = Blockly.Arduino.valueToCode(block, 'SPEED', Blockly.Arduino.ORDER_ATOMIC);
+
+        Blockly.Arduino.setups_[`robot_s`] = 'pinMode(13, OUTPUT);\n  pinMode(11, OUTPUT);\n  pinMode(12, OUTPUT);\n  pinMode(3, OUTPUT);\n';
+
+        return 'digitalWrite(13,HIGH);\nanalogWrite(11,'+val+');\ndigitalWrite(12,LOW);\nanalogWrite(3,'+val+');\n';
+    };
+
+    Blockly.Arduino.robot_right = function (block) {
+     
+        const val = Blockly.Arduino.valueToCode(block, 'SPEED', Blockly.Arduino.ORDER_ATOMIC);
+
+        Blockly.Arduino.setups_[`robot_s`] = 'pinMode(13, OUTPUT);\n  pinMode(11, OUTPUT);\n  pinMode(12, OUTPUT);\n  pinMode(3, OUTPUT);\n';
+
+        return 'digitalWrite(13,LOW);\nanalogWrite(11,'+val+');\ndigitalWrite(12,HIGH);\nanalogWrite(3,'+val+');\n';
+    };
+
+    Blockly.Arduino.robot_stop = function (block) {
+     
+        const val = Blockly.Arduino.valueToCode(block, 'SPEED', Blockly.Arduino.ORDER_ATOMIC);
+
+        Blockly.Arduino.setups_[`robot_s`] = 'pinMode(13, OUTPUT);\n  pinMode(11, OUTPUT);\n  pinMode(12, OUTPUT);\n  pinMode(3, OUTPUT);\n';
+
+        return 'digitalWrite(13,LOW);\nanalogWrite(11,LOW);\ndigitalWrite(12,LOW);\nanalogWrite(3,LOW);\n';
+    };
 
     Blockly.Arduino.motor130_digital = function (block) {
         const pin1 = block.getFieldValue('IN1');

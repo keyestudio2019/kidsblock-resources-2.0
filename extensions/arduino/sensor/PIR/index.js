@@ -8,7 +8,7 @@ const pir = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo',
     'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyestudio',
-    iconURL: `asset/pir.png`,
+    iconURL: `asset/pir.jpg`,
     description: formatMessage({
         id: 'pir.description',
         default: 'pir sensor module.'

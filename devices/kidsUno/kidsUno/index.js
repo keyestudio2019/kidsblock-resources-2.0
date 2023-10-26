@@ -3,7 +3,7 @@ const kidsUno = formatMessage => ({
     deviceId: 'kidsUno_arduinoUno',
     manufactor: 'kidsbits',
     leanMore: 'https://www.keyestudio.com/products/2020-new-keyestudio-plus-development-board-with-type-c-interface-usb-cable-compatible-with-arduino-uno-r3',
-    iconURL: 'asset/arduinoUno.png',
+    iconURL: 'asset/arduinoUno.jpg',
     description: formatMessage({
         id: 'kidsUno.description',
         default: 'kidsUno.',

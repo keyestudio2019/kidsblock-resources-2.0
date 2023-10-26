@@ -2,7 +2,7 @@ const Inventor = formatMessage => ({
     name: 'Inventor kit for arduino',
     deviceId: 'Inventor_arduinoUno',
     manufactor: 'keyestudio',
-    leanMore: 'https://wiki.keyestudio.com/',
+    leanMore: 'https://fks0002-keyestudio-nano-scratch.readthedocs.io/en/latest/',
     iconURL: 'asset/Inventor.jpg',
     description: formatMessage({
         id: 'Inventor.description',
@@ -24,7 +24,7 @@ const Inventor = formatMessage => ({
     tags: ['kit'],
     deviceExtensions: ['Inventor'],
     deviceExtensionsCompatible: 'arduinoUno',
-    helpLink: 'https://wiki.keyestudio.com/'
+    helpLink: 'https://fks0002-keyestudio-nano-scratch.readthedocs.io/en/latest//'
 });
 
 module.exports = Inventor;

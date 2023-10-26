@@ -7,8 +7,8 @@ const Sentry = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32'],
-    author: 'Wei',
-    iconURL: `asset/icon.png`,
+    author: 'keyes',
+    iconURL: `asset/icon.jpg`,
     description: formatMessage({
         id: 'Sentry.description',
         default: 'Visual recognition AI camera.'
@@ -21,7 +21,7 @@ const Sentry = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['sensor'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: 'https://www.keyestudio.com'
 });
 
 module.exports = Sentry;

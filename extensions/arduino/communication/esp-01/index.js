@@ -8,7 +8,7 @@ const beetle_wifi = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560','arduinoEsp32','arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/wifi_01.png`,
+    iconURL: `asset/wifi_01.jpg`,
     description: formatMessage({
         id: 'beetle_wifi.description',
         default: 'wifi communication'

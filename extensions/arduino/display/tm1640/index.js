@@ -7,7 +7,7 @@ const tm1640 = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['unoCore'],
     author: 'keyestudio',
-    iconURL: `asset/tm1640.png`,
+    iconURL: `asset/tm1640.jpg`,
     description: formatMessage({
         id: 'tm1640.description',
         default: 'LED Matrix module based on Tm1640.'

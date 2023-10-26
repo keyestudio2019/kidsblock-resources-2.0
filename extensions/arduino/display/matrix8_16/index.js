@@ -9,7 +9,7 @@ const matrix8_16 = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/matrix8_16.png`,
+    iconURL: `asset/matrix8_16.jpg`,
     description: formatMessage({
         id: 'matrix8_16.description',
         default: 'Matrix 8*16 AiP1640',

@@ -3,7 +3,7 @@ const ESP32plus = formatMessage => ({
     deviceId: 'ESP32plus_arduinoEsp32',
     manufactor: 'keyestudio',
     leanMore: 'https://www.keyestudio.com/',
-    iconURL: 'asset/ESP32plus.png',
+    iconURL: 'asset/ESP32plus.jpg',
     description: formatMessage({
         id: 'ESP32plus.description',
         default: 'ESP32 PLUS',

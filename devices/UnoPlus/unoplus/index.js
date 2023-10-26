@@ -3,7 +3,7 @@ const unoPlus = formatMessage => ({
     deviceId: 'unoPlus_arduinoUno',
     manufactor: 'keyestudio',
     leanMore: 'https://www.keyestudio.com/products/2020-new-keyestudio-plus-development-board-with-type-c-interface-usb-cable-compatible-with-arduino-uno-r3',
-    iconURL: 'asset/unoplus.png',
+    iconURL: 'asset/unoplus.jpg',
     description: formatMessage({
         id: 'unoPlus.description',
         default: 'Uno Plus',

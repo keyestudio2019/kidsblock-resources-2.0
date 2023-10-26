@@ -7,7 +7,7 @@ const ws2812b = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560'],
     author: 'keyestudio',
-    iconURL: `asset/ws2812b.png`,
+    iconURL: `asset/ws2812b.jpg`,
     description: formatMessage({
         id: 'ws2812b.description',
         default: 'LED Matrix module based on ws2812.'

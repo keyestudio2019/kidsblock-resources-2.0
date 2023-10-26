@@ -3,7 +3,7 @@ const CodingRobot = formatMessage => ({
     deviceId: 'CodingRobot_arduinoUno',
     manufactor: 'kidsbits',
     //leanMore: 'https://keyestudio-wiki.readthedocs.io/en/latest/docs/arduino/KS0464.html',
-    iconURL: 'asset/codingrobot.png',
+    iconURL: 'asset/codingrobot.jpg',
     description: formatMessage({
         id: 'CodingRobot.description',
         default: 'CodingRobot',

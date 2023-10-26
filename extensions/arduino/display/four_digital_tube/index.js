@@ -9,7 +9,7 @@ const four_tube = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560'],
     author: 'keyes',
-    iconURL: `asset/Four_Digital_Tube.png`,
+    iconURL: `asset/Four_Digital_Tube.jpg`,
     description: formatMessage({
         id: 'four_tube.description',
         default: '4 digit digital tube IIC communication',

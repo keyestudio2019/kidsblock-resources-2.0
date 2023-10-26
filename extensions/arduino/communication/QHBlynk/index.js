@@ -9,7 +9,7 @@ const  QDP_blynk= formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoEsp32'],
     author: 'QDProbot',
-    iconURL: `asset/classicsblynk.png`,
+    iconURL: `asset/classicsblynk.jpg`,
     description: formatMessage({
         id: 'QDP_blynk.description',
         default: '简单快速应用连接Blynk平台.',

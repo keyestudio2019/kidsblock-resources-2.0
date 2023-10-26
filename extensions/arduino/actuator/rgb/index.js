@@ -9,7 +9,7 @@ const ks_rgb = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560'],
     author: 'keyes',
-    iconURL: `asset/ks_rgb.png`,
+    iconURL: `asset/ks_rgb.jpg`,
     description: formatMessage({
         id: 'ks_rgb.description',
         default: 'RGB LED',

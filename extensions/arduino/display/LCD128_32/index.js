@@ -9,7 +9,7 @@ const lcd128_32 = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560'],
     author: 'keyes',
-    iconURL: `asset/lcd128_32.png`,
+    iconURL: `asset/lcd128_32.jpg`,
     description: formatMessage({
         id: 'lcd128_32.description',
         default: 'LCD 128*32 screen',

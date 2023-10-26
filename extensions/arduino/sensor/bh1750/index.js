@@ -9,7 +9,7 @@ const bh1750 = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/bh1750.png`,
+    iconURL: `asset/bh1750.jpg`,
     description: formatMessage({
         id: 'bh1750.description',
         default: 'BH1750 Ambient Light Sensor',

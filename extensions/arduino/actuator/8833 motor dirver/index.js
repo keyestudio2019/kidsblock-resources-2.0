@@ -9,7 +9,7 @@ const motor8833 = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyestudio',
-    iconURL: `asset/8833.png`,
+    iconURL: `asset/8833.jpg`,
     description: formatMessage({
         id: 'motor8833.description',
         default: 'Driving DC motor',

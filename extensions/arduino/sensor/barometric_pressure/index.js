@@ -9,7 +9,7 @@ const barometric_pressure = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560'],
     author: 'keyes',
-    iconURL: `asset/bp.png`,
+    iconURL: `asset/bp.jpg`,
     description: formatMessage({
         id: 'barometric_pressure.description',
         default: 'BMP388 temperature and pressure sensor',

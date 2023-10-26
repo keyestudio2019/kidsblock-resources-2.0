@@ -9,7 +9,7 @@ const sd_card = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560','arduinoEsp32'],
     author: 'keyes',
-    iconURL: `asset/sd_card.png`,
+    iconURL: `asset/sd_card.jpg`,
     description: formatMessage({
         id: 'sd_card.description',
         default: 'SD card, used to increase memory',

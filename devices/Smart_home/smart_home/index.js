@@ -3,7 +3,7 @@ const Smarthome = formatMessage => ({
     deviceId: 'Smarthome_arduinoUno',
     manufactor: 'keyestudio',
     leanMore: 'https://wiki.keyestudio.com/',
-    iconURL: 'asset/smarthome.png',
+    iconURL: 'asset/smarthome.jpg',
     description: formatMessage({
         id: 'Smarthome.description',
         default: 'Smart_home',

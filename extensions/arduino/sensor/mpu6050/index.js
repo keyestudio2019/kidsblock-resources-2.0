@@ -9,7 +9,7 @@ const mpu6050 = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560','arduinoEsp32'],
     author: 'keyes',
-    iconURL: `asset/mpu6050.png`,
+    iconURL: `asset/mpu6050.jpg`,
     description: formatMessage({
         id: 'mpu6050.description',
         default: 'MPU6050 6 axis acceleration gyro sensor',

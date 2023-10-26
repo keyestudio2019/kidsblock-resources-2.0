@@ -9,7 +9,7 @@ const t_18b20 = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/t_18b20.png`,
+    iconURL: `asset/t_18b20.jpg`,
     description: formatMessage({
         id: 't_18b20.description',
         default: '18b20 temperature sensor',

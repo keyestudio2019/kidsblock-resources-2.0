@@ -3,7 +3,7 @@ const unov4 = formatMessage => ({
     deviceId: 'unov4.0_arduinoUno',
     manufactor: 'keyestudio',
     //leanMore: 'https://www.keyestudio.com/products/2020-new-keyestudio-plus-development-board-with-type-c-interface-usb-cable-compatible-with-arduino-uno-r3',
-    iconURL: 'asset/unov4.png',
+    iconURL: 'asset/unov4.jpg',
     description: formatMessage({
         id: 'unov4.description',
         default: 'uno v4.0',

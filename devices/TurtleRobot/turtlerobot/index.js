@@ -3,7 +3,7 @@ const TurtleRobot = formatMessage => ({
     deviceId: 'TurtleRobot_arduinoUno',
     manufactor: 'keyestudio',
     leanMore: 'https://keyestudio-wiki.readthedocs.io/en/latest/docs/arduino/KS0464.html',
-    iconURL: 'asset/turtleRobot.png',
+    iconURL: 'asset/turtleRobot.jpg',
     description: formatMessage({
         id: 'TurtleRobot.description',
         default: 'TurtleRobot',

@@ -8,7 +8,7 @@ const ESP_WEB = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['arduinoEsp32','arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/webpage.png`,
+    iconURL: `asset/webpage.jpg`,
     description: formatMessage({
         id: 'ESP_WEB.description',
         default: '网页上控制设备的编程平台.',

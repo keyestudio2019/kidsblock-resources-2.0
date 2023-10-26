@@ -8,7 +8,7 @@ const tilt = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo',
     'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyestudio',
-    iconURL: `asset/tilt.png`,
+    iconURL: `asset/tilt.jpg`,
     description: formatMessage({
         id: 'tilt.description',
         default: 'tilt sensor switch.'

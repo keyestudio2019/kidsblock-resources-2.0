@@ -16,7 +16,7 @@ const Inventor_ESP32 = formatMessage => ({
     toolbox: 'toolbox.js',
     msg: 'msg.js',
     library: 'lib',
-    helpLink: 'https://wiki.keyestudio.com)'
+    helpLink: 'https://fks0001-keyestudio-esp32-core-board-scratch.readthedocs.io/en/latest/'
 });
 
 module.exports = Inventor_ESP32;

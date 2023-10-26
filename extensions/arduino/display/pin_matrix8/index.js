@@ -9,7 +9,7 @@ const pin_matrix = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560'],
     author: 'keyes',
-    iconURL: `asset/pin_matrix.png`,
+    iconURL: `asset/pin_matrix.jpg`,
     description: formatMessage({
         id: 'pin_matrix.description',
         default: 'Matrix 8*8, pin connection',

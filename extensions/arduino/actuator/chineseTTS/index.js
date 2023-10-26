@@ -8,7 +8,7 @@ const chineseTTS = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/chineseTTS.png`,
+    iconURL: `asset/chineseTTS.jpg`,
     description: formatMessage({
         id: 'chineseTTS.description',
         default: 'Text to speech module based on SYN6288, support Chinese and English letters and numbers.'

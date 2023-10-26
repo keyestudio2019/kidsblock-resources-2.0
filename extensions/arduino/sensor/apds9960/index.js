@@ -9,7 +9,7 @@ const apds9960 = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo',
         'arduinoMega2560'], // TODO 待测试
     author: 'keyes',
-    iconURL: `asset/apds9960.png`,
+    iconURL: `asset/apds9960.jpg`,
     description: formatMessage({
         id: 'apds9960.description',
         default: 'APDS9960 gesture recognition module'

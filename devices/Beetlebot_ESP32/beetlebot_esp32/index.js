@@ -3,7 +3,7 @@ const BeetlebotEsp32 = formatMessage => ({
     deviceId: 'Beetlebot_arduinoEsp32',
     manufactor: 'keyestudio',
     leanMore: 'https://ks5002-keyestudio-beetlebot-robot-for-stem-education-scratch.readthedocs.io/en/latest/',
-    iconURL: 'asset/beetlebot.png',
+    iconURL: 'asset/beetlebot.jpg',
     description: formatMessage({
         id: 'BeetlebotEsp32.description',
         default: 'Beetlebot ESP32',

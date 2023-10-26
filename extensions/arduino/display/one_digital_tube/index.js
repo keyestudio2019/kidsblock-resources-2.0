@@ -9,7 +9,7 @@ const one_tube = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/one_tube.png`,
+    iconURL: `asset/one_tube.jpg`,
     description: formatMessage({
         id: 'one_tube.description',
         default: 'One Digital Tube module.',

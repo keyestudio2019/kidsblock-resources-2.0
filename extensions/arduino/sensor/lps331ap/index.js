@@ -9,7 +9,7 @@ const lps331ap = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560'],
     author: 'keyes',
-    iconURL: `asset/lps331ap.png`,
+    iconURL: `asset/lps331ap.jpg`,
     description: formatMessage({
         id: 'lps331ap.description',
         default: 'lps331ap baro pressure sensor',

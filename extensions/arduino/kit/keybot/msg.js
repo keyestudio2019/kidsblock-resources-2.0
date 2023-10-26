@@ -32,8 +32,13 @@ function addMsg (Blockly) {
         KS_LOGIC_LABEL:'logic',
         KS_judge:'%1 %2 %3',
 
-
-        MOTOR130_CATEGORY: 'DC Motor',
+        ROBOT_CATEGORY: 'Run',
+        ROBOT_FORWARD: 'Robot run forward speed%1',
+        ROBOT_BACK: 'Robot run back speed%1',
+        ROBOT_LEFT: 'Robot turn left speed%1',
+        ROBOT_RIGHT: 'Robot turn right speed%1',
+        ROBOT_STOP: 'Robot stop',
+        MOTOR130_CATEGORY: 'Motor',
         MOTOR130_DIGITAL: 'Motor INA#%1 State%2 INB#%3 State%4',
         MOTOR130_ANALOG: 'Motor INA#%1 State%2 INB#%3 analogWrite%4',
         HC_SR04_CATEGORY: 'Ultrasonic',
@@ -69,8 +74,13 @@ function addMsg (Blockly) {
         KS_LOGIC_LABEL:'Logik',
         KS_judge:'%1 %2 %3',
 
-
-        MOTOR130_CATEGORY: 'Gleichstrommotor',
+        ROBOT_CATEGORY: 'Fahrt',
+        ROBOT_FORWARD: 'Roboter läuft vorwärts mit Geschwindigkeit %1',
+        ROBOT_BACK: 'Roboter läuft zurück mit Geschwindigkeit %1',
+        ROBOT_LEFT: 'Roboter dreht sich nach links, Geschwindigkeit %1',
+        ROBOT_RIGHT: 'Roboter dreht rechts, Geschwindigkeit %1',
+        ROBOT_STOP: 'Roboter stop',
+        MOTOR130_CATEGORY: 'Motor',
         MOTOR130_DIGITAL: 'Motor INA#%1 Status%2 INB#%3 Status%4',
         MOTOR130_ANALOG: 'Motor INA#%1 State%2 INB#%3 analogWrite%4',
         HC_SR04_CATEGORY: 'Ultraschall',
@@ -106,8 +116,13 @@ function addMsg (Blockly) {
         KS_LOGIC_LABEL:'lógica',
         KS_judge:'%1 %2 %3',
 
-
-        MOTOR130_CATEGORY: 'Motor CC',
+        ROBOT_CATEGORY: 'Paseo',
+        ROBOT_FORWARD: 'Robot corre hacia adelante velocidad%1',
+        ROBOT_BACK: 'Velocidad de retroceso del robot%1',
+        ROBOT_LEFT: 'Robot gira a la izquierda velocidad%1',
+        ROBOT_RIGHT: 'Robot gira a la derecha velocidad%1',
+        ROBOT_STOP: 'Parada del robot',
+        MOTOR130_CATEGORY: 'Motor',
         MOTOR130_DIGITAL: 'Motor INA#%1 Estado%2 INB#%3 Estado%4',
         MOTOR130_ANALOG: 'Motor INA#%1 Estado%2 INB#%3 analogWrite%4',
         HC_SR04_CATEGORY: 'Ultrasónico',
@@ -142,9 +157,14 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'logique',
          KS_judge:'%1 %2 %3',
+         ROBOT_CATEGORY:'Conduire',
+         ROBOT_FORWARD: 'Vitesse d"avancement du robot%1',
+         ROBOT_BACK: 'Vitesse de retour du robot %1',
+         ROBOT_LEFT: 'Le robot tourne à gauche à la vitesse %1',
+         ROBOT_RIGHT: 'Le robot tourne à droite à la vitesse %1',
+         ROBOT_STOP: 'Arrêt du robot',
 
-
-         MOTOR130_CATEGORY: 'Moteur CC',
+         MOTOR130_CATEGORY: 'Moteur',
          MOTOR130_DIGITAL: 'Moteur INA#%1 État%2 INB#%3 État%4',
          MOTOR130_ANALOG: 'Moteur INA#%1 État%2 INB#%3 analogWrite%4',
          HC_SR04_CATEGORY: 'Ultrasons',
@@ -180,8 +200,13 @@ function addMsg (Blockly) {
          KS_LOGIC_LABEL:'ロジック',
          KS_judge:'%1 %2 %3',
 
-
-         MOTOR130_CATEGORY: 'DC モーター',
+         ROBOT_CATEGORY: 'ライド',
+         ROBOT_FORWARD: 'ロボットの前進速度%1',
+         ROBOT_BACK: 'ロボットのバックバック速度%1',
+         ROBOT_LEFT: 'ロボットの左折速度%1',
+         ROBOT_RIGHT: 'ロボットの右折速度%1',
+         ROBOT_STOP: 'ロボットストップ',
+         MOTOR130_CATEGORY: 'モーター',
          MOTOR130_DIGITAL: 'モーター INA#%1 状態%2 INB#%3 状態%4',
          MOTOR130_ANALOG: 'モーター INA#%1 状態%2 INB#%3 アナログ書き込み%4',
          HC_SR04_CATEGORY: '超音波',
@@ -217,8 +242,13 @@ function addMsg (Blockly) {
          KS_LOGIC_LABEL:'논리',
          KS_judge:'%1 %2 %3',
 
-
-         MOTOR130_CATEGORY: 'DC 모터',
+         ROBOT_CATEGORY: '라이드',
+         ROBOT_FORWARD: '로봇이 전진하는 속도%1',
+         ROBOT_BACK: '로봇 런백 속도%1',
+         ROBOT_LEFT: '로봇 좌회전 속도%1',
+         ROBOT_RIGHT: '로봇 우회전 속도%1',
+         ROBOT_STOP: '로봇 중지',
+         MOTOR130_CATEGORY: '모터',
          MOTOR130_DIGITAL: '모터 INA#%1 상태%2 INB#%3 상태%4',
          MOTOR130_ANALOG: '모터 INA#%1 상태%2 INB#%3 analogWrite%4',
          HC_SR04_CATEGORY: '초음파',
@@ -254,8 +284,13 @@ function addMsg (Blockly) {
         KS_LOGIC_LABEL:'logika',
         KS_judge:'%1%2%3',
 
-
-        MOTOR130_CATEGORY: 'Silnik prądu stałego',
+        ROBOT_CATEGORY: 'Jazda',
+        ROBOT_FORWARD: 'Prędkość pracy robota do przodu%1',
+        ROBOT_BACK: 'Prędkość cofania robota%1',
+        ROBOT_LEFT: 'Robot skręca w lewo, prędkość%1',
+        ROBOT_RIGHT: 'Robot skręca w prawo, prędkość%1',
+        ROBOT_STOP: 'Zatrzymanie robota',
+        MOTOR130_CATEGORY: 'Silnik',
         MOTOR130_DIGITAL: 'Silnik INA#%1 Stan%2 INB#%3 Stan%4',
         MOTOR130_ANALOG: 'Silnik INA#%1 Stan%2 INB#%3 analogWrite%4',
         HC_SR04_CATEGORY: 'Ultradźwięki',
@@ -291,8 +326,13 @@ function addMsg (Blockly) {
          KS_LOGIC_LABEL:'lógica',
          KS_judge:'%1 %2 %3',
 
-
-         MOTOR130_CATEGORY: 'Motor DC',
+         ROBOT_CATEGORY: "Passeio",
+         ROBOT_FORWARD: 'Velocidade de avanço do robô%1',
+         ROBOT_BACK: 'Velocidade de retorno do robô%1',
+         ROBOT_LEFT: 'Robô vira à esquerda velocidade%1',
+         ROBOT_RIGHT: 'Velocidade de curva à direita do robô%1',
+         ROBOT_STOP: 'Parada do robô',
+         MOTOR130_CATEGORY: 'Motor',
          MOTOR130_DIGITAL: 'Motor INA#%1 Estado%2 INB#%3 Estado%4',
          MOTOR130_ANALOG: 'Motor INA#%1 Estado%2 INB#%3 analogWrite%4',
          HC_SR04_CATEGORY: 'Ultrassônico',
@@ -328,8 +368,13 @@ function addMsg (Blockly) {
          KS_LOGIC_LABEL: 'логика',
          KS_judge:'%1 %2 %3',
 
-
-         MOTOR130_CATEGORY: 'Двигатель постоянного тока',
+         ROBOT_CATEGORY: 'Поездка',
+         ROBOT_FORWARD: 'Скорость движения робота вперед%1',
+         ROBOT_BACK: 'Скорость движения робота назад%1',
+         ROBOT_LEFT: 'Скорость поворота робота налево%1',
+         ROBOT_RIGHT: 'Скорость поворота робота направо%1',
+         ROBOT_STOP: 'Остановка робота',
+         MOTOR130_CATEGORY: 'Двигатель',
          MOTOR130_DIGITAL: 'Двигатель INA#%1 Состояние%2 INB#%3 Состояние%4',
          MOTOR130_ANALOG: 'Motor INA#%1 State%2 INB#%3 AnalogWrite%4',
          HC_SR04_CATEGORY: 'Ультразвук',
@@ -365,11 +410,16 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'邏輯',
         KS_judge:'%1 %2 %3',
-
-        MOTOR130_CATEGORY: '直流電機',
+        ROBOT_CATEGORY: '運動',
+        ROBOT_FORWARD: '小車前進 速度為%1',
+        ROBOT_BACK: '小車後退 速度為%1',
+        ROBOT_LEFT: '小車左轉 速度為%1',
+        ROBOT_RIGHT: '小車右轉 速度為%1',
+        ROBOT_STOP: '小車停',
+        MOTOR130_CATEGORY: '電機',
         MOTOR130_DIGITAL: '電機驅動 INA#%1 電平為%2 INB#%3 電平為%4',
         MOTOR130_ANALOG: '電機驅動 INA#%1 電平為%2 INB#%3 模擬輸出值%4',
-        HC_SR04_CATEGORY: '超聲波傳感器',
+        HC_SR04_CATEGORY: '超聲波',
         HC_SR04_READ_DISTANCE: '超聲波傳感器 trig 引腳 %1 echo 引腳 %2 讀取距離 %3',
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
@@ -402,11 +452,16 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'逻辑',
         KS_judge:'%1 %2 %3',
-
-        MOTOR130_CATEGORY: '直流电机',
+        ROBOT_CATEGORY: '运动',
+        ROBOT_FORWARD: '小车前进 速度为%1',
+        ROBOT_BACK: '小车后退 速度为%1',
+        ROBOT_LEFT: '小车左转 速度为%1',
+        ROBOT_RIGHT: '小车右转 速度为%1',
+        ROBOT_STOP: '小车停止',
+        MOTOR130_CATEGORY: '电机',
         MOTOR130_DIGITAL: '电机驱动 INA#%1 电平为%2 INB#%3 电平为%4',
         MOTOR130_ANALOG: '电机驱动 INA#%1 电平为%2 INB#%3 模拟输出值%4',
-        HC_SR04_CATEGORY: '超声波传感器',
+        HC_SR04_CATEGORY: '超声波',
         HC_SR04_READ_DISTANCE: '超声波传感器 trig 引脚 %1 echo 引脚 %2 读取距离 %3',
 
     });

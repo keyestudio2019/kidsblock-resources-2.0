@@ -9,7 +9,7 @@ const pin_four_tube = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560'],
     author: 'keyes',
-    iconURL: `asset/pin_four_tube.png`,
+    iconURL: `asset/pin_four_tube.jpg`,
     description: formatMessage({
         id: 'pin_four_tube.description',
         default: '4 digit digital tube, pin connection',

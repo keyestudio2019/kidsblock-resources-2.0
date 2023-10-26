@@ -8,7 +8,7 @@ const blueButton = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo',
     'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyestudio',
-    iconURL: `asset/blueButton.png`,
+    iconURL: `asset/blueButton.jpg`,
     description: formatMessage({
         id: 'blueButton.description',
         default: 'blueButton sensor switch.'

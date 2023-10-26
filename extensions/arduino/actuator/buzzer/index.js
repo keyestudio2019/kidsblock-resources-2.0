@@ -9,7 +9,7 @@ const ks_buzzer = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560'],
     author: 'keyes',
-    iconURL: `asset/p_buzzer.png`,
+    iconURL: `asset/p_buzzer.jpg`,
     description: formatMessage({
         id: 'ks_buzzer.description',
         default: 'Passive buzzer',

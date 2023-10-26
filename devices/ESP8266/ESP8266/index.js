@@ -3,7 +3,7 @@ const ESP8266 = formatMessage => ({
     deviceId: 'ESP8266_arduinoEsp8266',
     manufactor: 'keyes',
     leanMore: 'https://www.keyestudio.com/',
-    iconURL: 'asset/ESP8266.png',
+    iconURL: 'asset/ESP8266.jpg',
     description: formatMessage({
         id: 'ESP8266.description',
         default: 'ESP8266',

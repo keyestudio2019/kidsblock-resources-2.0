@@ -9,7 +9,7 @@ const ks_stepper = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/ks_stepper.png`,
+    iconURL: `asset/ks_stepper.jpg`,
     description: formatMessage({
         id: 'ks_stepper.description',
         default: 'Stepper driver',

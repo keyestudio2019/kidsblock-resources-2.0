@@ -9,7 +9,7 @@ const digital_compass = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/HMC.png`,
+    iconURL: `asset/HMC.jpg`,
     description: formatMessage({
         id: 'digital_compass.description',
         default: 'HMC5883L 3-Axis Magnetic Electronic Compass Module',

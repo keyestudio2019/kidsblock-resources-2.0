@@ -9,7 +9,7 @@ const gesture_recognition = formatMessage => ({
     type: 'arduino',
     supportDevice: [''],
     author: 'keyes',
-    iconURL: `asset/ges.png`,
+    iconURL: `asset/ges.jpg`,
     description: formatMessage({
         id: 'gesture_recognition.description',
         default: 'gesture_recognition sensor module.',

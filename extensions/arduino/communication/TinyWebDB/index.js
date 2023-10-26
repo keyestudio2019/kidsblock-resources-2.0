@@ -8,7 +8,7 @@ const TinyWebDB = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['arduinoEsp32','arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/TinyWebDB.png`,
+    iconURL: `asset/TinyWebDB.jpg`,
     description: formatMessage({
         id: 'TinyWebDB.description',
         default: '将数据存在网络云库上读取.',

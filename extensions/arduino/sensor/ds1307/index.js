@@ -9,7 +9,7 @@ const ds1307 = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/ks_ds1307.png`,
+    iconURL: `asset/ks_ds1307.jpg`,
     description: formatMessage({
         id: 'ds1307.description',
         default: 'DS1307 real time clock module',

@@ -3,7 +3,7 @@ const SmarthomeEsp32 = formatMessage => ({
     deviceId: 'Smarthome_arduinoEsp32',
     manufactor: 'keyestudio',
     leanMore: 'https://wiki.keyestudio.com/',
-    iconURL: 'asset/smarthome_esp32.png',
+    iconURL: 'asset/smarthome_esp32.jpg',
     description: formatMessage({
         id: 'SmarthomeEsp32.description',
         default: 'Smarthome Esp32',

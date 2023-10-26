@@ -9,7 +9,7 @@ const rc522_iic = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/rc522.png`,
+    iconURL: `asset/rc522.jpg`,
     description: formatMessage({
         id: 'rc522_iic.description',
         default: 'RFID RC522,Use IIC communication',

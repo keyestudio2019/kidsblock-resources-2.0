@@ -9,7 +9,7 @@ const ks_74hc595 = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/ks_74hc595.png`,
+    iconURL: `asset/ks_74hc595.jpg`,
     description: formatMessage({
         id: 'ks_74hc595.description',
         default: '74HC595 is an 8 bit displacement cache with serial input and parallel output',

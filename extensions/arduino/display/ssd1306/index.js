@@ -7,7 +7,7 @@ const ssd1306 = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['unoCore','unoStart'],
     author: 'keyestudio',
-    iconURL: `asset/ssd1306.png`,
+    iconURL: `asset/ssd1306.jpg`,
     description: formatMessage({
         id: 'ssd1306.description',
         default: 'I2C oled display based on SSD1306 drivers.'

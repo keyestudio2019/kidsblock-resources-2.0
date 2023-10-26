@@ -2,8 +2,8 @@ const BT4WDRobot = formatMessage => ({
     name: '4WD Robot',
     deviceId: '4WDRobot_arduinoUno',
     manufactor: 'keyestudio',
-    leanMore: 'https://keyestudio-wiki.readthedocs.io/en/latest/docs/arduino/KS0428.html',
-    iconURL: 'asset/4wdrobot.png',
+    leanMore: 'https://ks0559ks0559fkeyestudio-4wd-bt-multi-purpose-car-v20-scratch.readthedocs.io/en/latest/',
+    iconURL: 'asset/4wdrobot.jpg',
     description: formatMessage({
         id: '4WDRobot.description',
         default: '4WDRobot',
@@ -24,7 +24,7 @@ const BT4WDRobot = formatMessage => ({
     tags: ['robot'],
     deviceExtensions: ['4WDRobot'],
     deviceExtensionsCompatible: 'arduinoUno',
-    helpLink: 'https://keyestudio-wiki.readthedocs.io/en/latest/docs/arduino/KS0428.html'
+    helpLink: 'https://ks0559ks0559fkeyestudio-4wd-bt-multi-purpose-car-v20-scratch.readthedocs.io/en/latest/'
 });
 
 module.exports = BT4WDRobot;

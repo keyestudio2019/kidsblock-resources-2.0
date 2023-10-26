@@ -9,7 +9,7 @@ const ds3231 = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560'],
     author: 'keyes',
-    iconURL: `asset/ds3231.png`,
+    iconURL: `asset/ds3231.jpg`,
     description: formatMessage({
         id: 'ds3231.description',
         default: 'DS3231 real time clock module',

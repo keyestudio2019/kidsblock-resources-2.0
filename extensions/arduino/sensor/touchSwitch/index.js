@@ -8,7 +8,7 @@ const touchSwitch = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo',
     'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyestudio',
-    iconURL: `asset/touchSwitch.png`,
+    iconURL: `asset/touchSwitch.jpg`,
     description: formatMessage({
         id: 'touchSwitch.description',
         default: 'touchSwitch sensor switch.'

@@ -3,7 +3,7 @@ const MegaPlus = formatMessage => ({
     deviceId: 'megaplus_arduinoMega2560',
     manufactor: 'keyestudio',
     //leanMore: 'https://www.keyestudio.com/products/2020-new-keyestudio-plus-development-board-with-type-c-interface-usb-cable-compatible-with-arduino-uno-r3',
-    iconURL: 'asset/megaplus.png',
+    iconURL: 'asset/megaplus.jpg',
     description: formatMessage({
         id: 'MegaPlus.description',
         default: 'Mega Plus',

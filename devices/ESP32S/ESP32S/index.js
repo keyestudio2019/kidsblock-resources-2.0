@@ -3,7 +3,7 @@ const ESP32S = formatMessage => ({
     deviceId: 'ESP32S_arduinoEsp32',
     manufactor: 'keyestudio',
     leanMore: 'https://www.keyestudio.com/',
-    iconURL: 'asset/ESP32S.png',
+    iconURL: 'asset/ESP32S.jpg',
     description: formatMessage({
         id: 'ESP32S.description',
         default: 'ESP32S',

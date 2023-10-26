@@ -8,7 +8,7 @@ const rgbLedStrip = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32'],
     author: 'keyes',
-    iconURL: `asset/rgbLedStrip.png`,
+    iconURL: `asset/rgbLedStrip.jpg`,
     description: formatMessage({
         id: 'rgbLedStrip.description',
         default: 'Single-wire-based RGB LED pixels and strip.'

@@ -9,7 +9,7 @@ const TFT = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560'],
     author: 'keyes',
-    iconURL: `asset/TFTscreen.png`,
+    iconURL: `asset/TFTscreen.jpg`,
     description: formatMessage({
         id: 'TFT.description',
         default: 'TFT screen',

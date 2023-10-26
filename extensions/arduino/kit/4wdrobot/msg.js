@@ -31,7 +31,12 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logic',
         KS_judge:'%1 %2 %3',
-
+        ROBOT_CATEGORY: 'Run',
+        ROBOT_FORWARD: 'Robot run forward speed%1',
+        ROBOT_BACK: 'Robot run back speed%1',
+        ROBOT_LEFT: 'Robot turn left speed%1',
+        ROBOT_RIGHT: 'Robot turn right speed%1',
+        ROBOT_STOP: 'Robot stop',
         LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'LED pin%1 out%2',
         LED_ON: 'open',
@@ -91,7 +96,12 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'Logik',
         KS_judge:'%1 %2 %3',
-
+        ROBOT_CATEGORY: 'Fahrt',
+        ROBOT_FORWARD: 'Roboter läuft vorwärts mit Geschwindigkeit %1',
+        ROBOT_BACK: 'Roboter läuft zurück mit Geschwindigkeit %1',
+        ROBOT_LEFT: 'Roboter dreht sich nach links, Geschwindigkeit %1',
+        ROBOT_RIGHT: 'Roboter dreht rechts, Geschwindigkeit %1',
+        ROBOT_STOP: 'Roboter stop',
         LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'LED-Pin%1 aus%2',
         LED_ON: 'offen',
@@ -151,8 +161,13 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'lógica',
         KS_judge:'%1 %2 %3',
-
-        CATEGORÍA_LED: 'LED',
+        ROBOT_CATEGORY: 'Paseo',
+        ROBOT_FORWARD: 'Robot corre hacia adelante velocidad%1',
+        ROBOT_BACK: 'Velocidad de retroceso del robot%1',
+        ROBOT_LEFT: 'Robot gira a la izquierda velocidad%1',
+        ROBOT_RIGHT: 'Robot gira a la derecha velocidad%1',
+        ROBOT_STOP: 'Parada del robot',
+        LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'Pin de LED%1 fuera%2',
         LED_ON: 'abierto',
         LED_OFF: 'cerrar',
@@ -211,7 +226,12 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'logique',
          KS_judge:'%1 %2 %3',
-
+         ROBOT_CATEGORY:'Conduire',
+         ROBOT_FORWARD: 'Vitesse d"avancement du robot%1',
+         ROBOT_BACK: 'Vitesse de retour du robot %1',
+         ROBOT_LEFT: 'Le robot tourne à gauche à la vitesse %1',
+         ROBOT_RIGHT: 'Le robot tourne à droite à la vitesse %1',
+         ROBOT_STOP: 'Arrêt du robot',
          LED_CATEGORY: 'DEL',
          LED_SET_LED_STATE: 'Broche LED%1 sortie%2',
          LED_ON: 'ouvert',
@@ -271,7 +291,12 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'ロジック',
          KS_judge:'%1 %2 %3',
-
+         ROBOT_CATEGORY: 'ライド',
+         ROBOT_FORWARD: 'ロボットの前進速度%1',
+         ROBOT_BACK: 'ロボットのバックバック速度%1',
+         ROBOT_LEFT: 'ロボットの左折速度%1',
+         ROBOT_RIGHT: 'ロボットの右折速度%1',
+         ROBOT_STOP: 'ロボットストップ',
          LED_CATEGORY: 'LED',
          LED_SET_LED_STATE: 'LED ピン %1 出力 %2',
          LED_ON: '開く',
@@ -331,7 +356,12 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'논리',
          KS_judge:'%1 %2 %3',
-
+         ROBOT_CATEGORY: '라이드',
+         ROBOT_FORWARD: '로봇이 전진하는 속도%1',
+         ROBOT_BACK: '로봇 런백 속도%1',
+         ROBOT_LEFT: '로봇 좌회전 속도%1',
+         ROBOT_RIGHT: '로봇 우회전 속도%1',
+         ROBOT_STOP: '로봇 중지',
          LED_CATEGORY: 'LED',
          LED_SET_LED_STATE: 'LED 핀%1 아웃%2',
          LED_ON: '열기',
@@ -391,7 +421,12 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logika',
         KS_judge:'%1%2%3',
-
+        ROBOT_CATEGORY: 'Jazda',
+        ROBOT_FORWARD: 'Prędkość pracy robota do przodu%1',
+        ROBOT_BACK: 'Prędkość cofania robota%1',
+        ROBOT_LEFT: 'Robot skręca w lewo, prędkość%1',
+        ROBOT_RIGHT: 'Robot skręca w prawo, prędkość%1',
+        ROBOT_STOP: 'Zatrzymanie robota',
         LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'LED pin%1 out%2',
         LED_ON: 'otwarty',
@@ -451,7 +486,12 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'lógica',
          KS_judge:'%1 %2 %3',
-
+         ROBOT_CATEGORY: "Passeio",
+         ROBOT_FORWARD: 'Velocidade de avanço do robô%1',
+         ROBOT_BACK: 'Velocidade de retorno do robô%1',
+         ROBOT_LEFT: 'Robô vira à esquerda velocidade%1',
+         ROBOT_RIGHT: 'Velocidade de curva à direita do robô%1',
+         ROBOT_STOP: 'Parada do robô',
          LED_CATEGORY: 'LED',
          LED_SET_LED_STATE: 'LED pino%1 fora%2',
          LED_ON: 'aberto',
@@ -511,7 +551,12 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL: 'логика',
          KS_judge:'%1 %2 %3',
-
+         ROBOT_CATEGORY: 'Поездка',
+         ROBOT_FORWARD: 'Скорость движения робота вперед%1',
+         ROBOT_BACK: 'Скорость движения робота назад%1',
+         ROBOT_LEFT: 'Скорость поворота робота налево%1',
+         ROBOT_RIGHT: 'Скорость поворота робота направо%1',
+         ROBOT_STOP: 'Остановка робота',
          LED_CATEGORY: 'LED',
          LED_SET_LED_STATE: 'LED pin%1 out%2',
          LED_ON: 'открыто',
@@ -572,6 +617,12 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'邏輯',
         KS_judge:'%1 %2 %3',
+        ROBOT_CATEGORY: '運動',
+        ROBOT_FORWARD: '小車前進 速度為%1',
+        ROBOT_BACK: '小車後退 速度為%1',
+        ROBOT_LEFT: '小車左轉 速度為%1',
+        ROBOT_RIGHT: '小車右轉 速度為%1',
+        ROBOT_STOP: '小車停',
         LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'LED 接口%1 輸出%2 ',
         LED_ON: '打開',
@@ -631,6 +682,12 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'逻辑',
         KS_judge:'%1 %2 %3',
+        ROBOT_CATEGORY: '运动',
+        ROBOT_FORWARD: '小车前进 速度为%1',
+        ROBOT_BACK: '小车后退 速度为%1',
+        ROBOT_LEFT: '小车左转 速度为%1',
+        ROBOT_RIGHT: '小车右转 速度为%1',
+        ROBOT_STOP: '小车停止',
         LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'LED 接口%1 输出%2 ',
         LED_ON: '打开',

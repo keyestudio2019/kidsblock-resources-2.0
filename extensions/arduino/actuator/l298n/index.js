@@ -9,7 +9,7 @@ const l298n = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/l298n.png`,
+    iconURL: `asset/l298n.jpg`,
     description: formatMessage({
         id: 'l298n.description',
         default: 'Common high power dual motor drive module.'

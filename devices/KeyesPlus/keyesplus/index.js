@@ -3,7 +3,7 @@ const KeyesPlus = formatMessage => ({
     deviceId: 'KeyesPlus_arduinoUno',
     manufactor: 'keyes',
     //leanMore: 'https://www.keyestudio.com/products/2020-new-keyestudio-plus-development-board-with-type-c-interface-usb-cable-compatible-with-arduino-uno-r3',
-    iconURL: 'asset/keyesplus.png',
+    iconURL: 'asset/keyesplus.jpg',
     description: formatMessage({
         id: 'KeyesPlus.description',
         default: 'Keyes Plus',

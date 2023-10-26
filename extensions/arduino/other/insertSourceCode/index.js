@@ -8,7 +8,7 @@ const insertSourceCode = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/insertSourceCode.png`,
+    iconURL: `asset/insertSourceCode.jpg`,
     description: formatMessage({
         id: 'insertSourceCode.description',
         default: 'Insert the source code directly into the blocks, so that professional ' +

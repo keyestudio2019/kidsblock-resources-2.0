@@ -16,7 +16,7 @@ const Inventor = formatMessage => ({
     toolbox: 'toolbox.js',
     msg: 'msg.js',
     library: 'lib',
-    helpLink: 'https://wiki.keyestudio.com)'
+    helpLink: 'https://fks0002-keyestudio-nano-scratch.readthedocs.io/en/latest/)'
 });
 
 module.exports = Inventor;

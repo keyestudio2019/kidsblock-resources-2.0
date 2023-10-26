@@ -9,7 +9,7 @@ const esp32buzzer = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/p_buzzer.png`,
+    iconURL: `asset/p_buzzer.jpg`,
     description: formatMessage({
         id: 'esp32buzzer.description',
         default: 'esp32 Passive buzzer',

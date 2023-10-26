@@ -9,7 +9,7 @@ const eightDigitDisplay = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo',
          'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32'],
     author: 'keyes',
-    iconURL: `asset/eightDigitDisplay.png`,
+    iconURL: `asset/eightDigitDisplay.jpg`,
     description: formatMessage({
         id: 'eightDigitDisplay.description',
         default: '8-digit display module based on MAX7219.'

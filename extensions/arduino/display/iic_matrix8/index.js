@@ -9,7 +9,7 @@ const iic_matrix = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560'],
     author: 'keyes',
-    iconURL: `asset/iic_matrix.png`,
+    iconURL: `asset/iic_matrix.jpg`,
     description: formatMessage({
         id: 'iic_matrix.description',
         default: 'Matrix 8*8 HT16K33 IIC',

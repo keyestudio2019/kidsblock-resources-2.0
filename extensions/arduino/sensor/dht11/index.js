@@ -8,7 +8,7 @@ const ks_dht11 = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo', 'arduinoMega2560'],
     author: 'kidsblock',
-    iconURL: `asset/dht.png`,
+    iconURL: `asset/dht.jpg`,
     description: formatMessage({
         id: 'ks_dht11.description',
         default: 'DHT11 temperature and humidity sensor',

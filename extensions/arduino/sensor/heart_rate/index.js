@@ -9,7 +9,7 @@ const heart_rate = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560'],
     author: 'keyes',
-    iconURL: `asset/heart.png`,
+    iconURL: `asset/heart.jpg`,
     description: formatMessage({
         id: 'heart_rate.description',
         default: 'heart_rate sensor module.',

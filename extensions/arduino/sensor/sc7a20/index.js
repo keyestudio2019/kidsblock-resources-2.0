@@ -9,7 +9,7 @@ const sc7a20 = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560'],
     author: 'keyes',
-    iconURL: `asset/sc7a20.png`,
+    iconURL: `asset/sc7a20.jpg`,
     description: formatMessage({
         id: 'sc7a20.description',
         default: 'sc7a20 3 axis acceleration sensor',

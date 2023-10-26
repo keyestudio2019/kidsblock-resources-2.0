@@ -7,7 +7,7 @@ const lightSensor = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyestudio',
-    iconURL: `asset/lightSensor.png`,
+    iconURL: `asset/lightSensor.jpg`,
     description: formatMessage({
         id: 'lightSensor.description',
         default: 'A light sensor.'

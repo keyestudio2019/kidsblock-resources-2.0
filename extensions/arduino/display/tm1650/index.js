@@ -9,7 +9,7 @@ const tm1650 = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['unoCore','unoStart'],
     author: 'keyestudio',
-    iconURL: `asset/tm1650.png`,
+    iconURL: `asset/tm1650.jpg`,
     description: formatMessage({
         id: 'tm1650.description',
         default: 'tm1650 module.',

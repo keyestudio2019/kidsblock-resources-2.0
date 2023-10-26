@@ -91,7 +91,7 @@ function addToolbox () {
     
 </category>
 
-<category name="%{BKY_BUZZER_CATEGORY}" id="BUZZER_CATEGORY" colour="#FF6F00" secondaryColour="#FF6F00">
+<category name="%{BKY_BUZZER_CATEGORY}" id="BUZZER_CATEGORY" colour="#800080" secondaryColour="#800080">
     <block type="buzzer_tone_d" id="buzzer_tone_d">
         <field name="PIN">2</field>
         <value name="dur">
@@ -111,7 +111,7 @@ function addToolbox () {
     
 </category>
 
-<category name="%{BKY_MOTOR130_CATEGORY}" id="MOTOR130_CATEGORY" colour="#FF6F00" secondaryColour="#FF6F00">
+<category name="%{BKY_MOTOR130_CATEGORY}" id="MOTOR130_CATEGORY" colour="#ff0000" secondaryColour="#ff0000">
     <block type="motor130_left" id="motor130_left">
         <field name="IN1">33</field>
 
@@ -138,7 +138,7 @@ function addToolbox () {
 
 </category>
 
-<category name="%{BKY_KS_SERVO_CATEGORY}" id="KS_SERVO_CATEGORY" colour="#FF6F00" secondaryColour="#FF6F00">
+<category name="%{BKY_KS_SERVO_CATEGORY}" id="KS_SERVO_CATEGORY" colour="#ffa500" secondaryColour="#ffa500">
     <block type="ks_servo_angle" id="ks_servo_angle">
         <field name="pin">4</field>>
         <value name="angle">
@@ -157,14 +157,14 @@ function addToolbox () {
 
 </category>
 
-<category name="%{BKY_HC_SR04_CATEGORY}" id="HC_SR04_CATEGORY" colour="#D39DDB" secondaryColour="#D39DDB">
+<category name="%{BKY_HC_SR04_CATEGORY}" id="HC_SR04_CATEGORY" colour="#d2691e" secondaryColour="#d2691e">
                 <block type="hc_sr04_read_distance" id="hc_sr04_read_distance">
                     <field name="trig_pin">5</field>>
                     <field name="echo_pin">18</field>>
                 </block>
 </category>
 
-<category name="%{BKY_BBRGBLEDSTRIP_CATEGORY}" id="BBRGBLEDSTRIP_CATEGORY" colour="#7700FF" secondaryColour="#4400B3">
+<category name="%{BKY_BBRGBLEDSTRIP_CATEGORY}" id="BBRGBLEDSTRIP_CATEGORY" colour="#00bfff" secondaryColour="#00bfff">
     <block type="bbrgbLedStrip_init" id="bbrgbLedStrip_init">
         <value name="LEN">
             <shadow type="math_number">
@@ -230,7 +230,7 @@ function addToolbox () {
     
 </category>
 
-<category name="%{BKY_MATRIX_IIC_CATEGORY}" id="MATRIX_PIN_CATEGORY" colour="#42CCFF" secondaryColour="#42CCFF">
+<category name="%{BKY_MATRIX_IIC_CATEGORY}" id="MATRIX_PIN_CATEGORY" colour="#008000" secondaryColour="#008000">
     <block type="matrix_iic_init" id="matrix_iic_init">
 
     </block>
@@ -369,7 +369,7 @@ function addToolbox () {
 
 </category>
 
-<category name="%{BKY_IR_CATEGORY}" id="IR_CATEGORY" colour="#AE00AE" secondaryColour="#930093">
+<category name="%{BKY_IR_CATEGORY}" id="IR_CATEGORY" colour="#0000ff" secondaryColour="#0000ff">
     <block type="ir_init" id="ir_init">
         <field name="pin">19</field>>
     </block>
@@ -384,7 +384,7 @@ function addToolbox () {
     </block>
 </category>
 
-<category name="%{BKY_WIFI_CATEGORY}" id="WIFI_CATEGORY" colour="#AE00AE" secondaryColour="#930093">
+<category name="%{BKY_WIFI_CATEGORY}" id="WIFI_CATEGORY" colour="#008080" secondaryColour="#008080">
     <block type="wifi_init" id="wifi_init">
         <value name="SSID">
             <shadow type="text">

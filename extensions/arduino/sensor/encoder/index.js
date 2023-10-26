@@ -9,7 +9,7 @@ const ks_encoder = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/encoder.png`,
+    iconURL: `asset/encoder.jpg`,
     description: formatMessage({
         id: 'ks_encoder.description',
         default: 'Encoder module',

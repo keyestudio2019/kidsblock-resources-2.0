@@ -107,6 +107,53 @@ function addGenerator (Blockly) {
         return [`${val1} ${judge} ${val2}`, Blockly.Arduino.ORDER_ATOMIC];
     }; 
 
+          //robot move
+
+    Blockly.Arduino.robot_forward = function (block) {
+     
+            const val = Blockly.Arduino.valueToCode(block, 'SPEED', Blockly.Arduino.ORDER_ATOMIC);
+    
+            Blockly.Arduino.setups_[`robot_s`] = 'pinMode(4, OUTPUT);\n  pinMode(6, OUTPUT);\n  pinMode(2, OUTPUT);\n  pinMode(5, OUTPUT);\n';
+           
+           
+            return 'digitalWrite(4,LOW);\nanalogWrite(6,'+val+');\ndigitalWrite(2,LOW);\nanalogWrite(5,'+val+');\n';
+        };
+      
+    Blockly.Arduino.robot_back = function (block) {
+         
+            const val = Blockly.Arduino.valueToCode(block, 'SPEED', Blockly.Arduino.ORDER_ATOMIC);
+    
+            Blockly.Arduino.setups_[`robot_s`] = 'pinMode(4, OUTPUT);\n  pinMode(6, OUTPUT);\n  pinMode(2, OUTPUT);\n  pinMode(5, OUTPUT);\n';
+    
+            return 'digitalWrite(4,HIGH);\nanalogWrite(6,'+val+');\ndigitalWrite(2,HIGH);\nanalogWrite(5,'+val+');\n';
+        };
+    
+    Blockly.Arduino.robot_left = function (block) {
+         
+            const val = Blockly.Arduino.valueToCode(block, 'SPEED', Blockly.Arduino.ORDER_ATOMIC);
+    
+            Blockly.Arduino.setups_[`robot_s`] = 'pinMode(4, OUTPUT);\n  pinMode(6, OUTPUT);\n  pinMode(2, OUTPUT);\n  pinMode(5, OUTPUT);\n';
+    
+            return 'digitalWrite(4,HIGH);\nanalogWrite(6,'+val+');\ndigitalWrite(2,LOW);\nanalogWrite(5,'+val+');\n';
+        };
+    
+    Blockly.Arduino.robot_right = function (block) {
+         
+            const val = Blockly.Arduino.valueToCode(block, 'SPEED', Blockly.Arduino.ORDER_ATOMIC);
+    
+            Blockly.Arduino.setups_[`robot_s`] = 'pinMode(4, OUTPUT);\n  pinMode(6, OUTPUT);\n  pinMode(2, OUTPUT);\n  pinMode(5, OUTPUT);\n';
+    
+            return 'digitalWrite(4,LOW);\nanalogWrite(6,'+val+');\ndigitalWrite(2,HIGH);\nanalogWrite(5,'+val+');\n';
+        };
+    
+    Blockly.Arduino.robot_stop = function (block) {
+         
+            const val = Blockly.Arduino.valueToCode(block, 'SPEED', Blockly.Arduino.ORDER_ATOMIC);
+    
+            Blockly.Arduino.setups_[`robot_s`] = 'pinMode(4, OUTPUT);\n  pinMode(6, OUTPUT);\n  pinMode(2, OUTPUT);\n  pinMode(5, OUTPUT);\n';
+    
+            return 'digitalWrite(4,LOW);\nanalogWrite(6,LOW);\ndigitalWrite(2,LOW);\nanalogWrite(5,LOW);\n';
+        };
     //buzzer
     Blockly.Arduino.buzzer_tone = function (block) {
         const pin = block.getFieldValue('PIN');
@@ -260,7 +307,7 @@ function addGenerator (Blockly) {
         const yVal = Blockly.Arduino.valueToCode(block, 'yVal', Blockly.Arduino.ORDER_ATOMIC);
         const matrix_state = this.getFieldValue('state');
 
-        return 'myMatrix.drawPixel('+xVal+'-0,'+yVal+'-0,'+matrix_state+');\n';
+        return 'myMatrix.clear();\nmyMatrix.drawPixel('+xVal+'-0,'+yVal+'-0,'+matrix_state+');\nmyMatrix.write();\n';
     };
 
 //****************显示直线*******************************
@@ -270,7 +317,7 @@ Blockly.Arduino.matrix_iic_drawLine = function (block) {
     const x1 = Blockly.Arduino.valueToCode(block, 'X1', Blockly.Arduino.ORDER_ATOMIC);
     const y1 = Blockly.Arduino.valueToCode(block, 'Y1', Blockly.Arduino.ORDER_ATOMIC);
   
-    return `myMatrix.drawLine(${x0}, ${y0}, ${x1}, ${y1},HIGH);\n`;
+    return `myMatrix.clear();\nmyMatrix.drawLine(${x0}, ${y0}, ${x1}, ${y1},HIGH);\nmyMatrix.write();\n`;
 };
 
 
@@ -281,7 +328,7 @@ Blockly.Arduino.matrix_iic_drawrectangle = function (block) {
     const l1 = Blockly.Arduino.valueToCode(block, 'L1', Blockly.Arduino.ORDER_ATOMIC);
     const w1 = Blockly.Arduino.valueToCode(block, 'W1', Blockly.Arduino.ORDER_ATOMIC);
   
-    return `myMatrix.fillRect(${x0}, ${y0}, ${l1}, ${w1},HIGH);\n`;
+    return `myMatrix.clear();\nmyMatrix.fillRect(${x0}, ${y0}, ${l1}, ${w1},HIGH);\nmyMatrix.write();\n`;
 };
 
 //****************显示圆形*******************************
@@ -290,7 +337,7 @@ Blockly.Arduino.matrix_iic_drawcircle = function (block) {
     const y0 = Blockly.Arduino.valueToCode(block, 'Y0', Blockly.Arduino.ORDER_ATOMIC);
     const r0 = Blockly.Arduino.valueToCode(block, 'R0', Blockly.Arduino.ORDER_ATOMIC);
   
-    return `myMatrix.drawCircle(${x0}, ${y0}, ${r0},HIGH);\n`;
+    return `myMatrix.clear();\nmyMatrix.drawCircle(${x0}, ${y0}, ${r0},HIGH);\nmyMatrix.write();\n`;
 };
 
 
@@ -299,7 +346,7 @@ Blockly.Arduino.matrix_iic_showChar = function (block) {
     const text = Blockly.Arduino.valueToCode(block, 'TEXT', Blockly.Arduino.ORDER_ATOMIC);
    
 
-    return `myMatrix.setTextSize(1);\nmyMatrix.setTextWrap(false);\nmyMatrix.setTextColor(HIGH);\nmyMatrix.setRotation(0);\nmyMatrix.setCursor(2,0);\nmyMatrix.print(${text});\n`;
+    return `myMatrix.clear();\nmyMatrix.setTextSize(1);\nmyMatrix.setTextWrap(false);\nmyMatrix.setTextColor(HIGH);\nmyMatrix.setRotation(0);\nmyMatrix.setCursor(2,0);\nmyMatrix.print(${text});\nmyMatrix.write();\n`;
 };
 
 
@@ -353,7 +400,7 @@ Blockly.Arduino.matrix_iic_display = function (block) {
         '  }\n'+
         '}\n';
 
-        return 'matrix_display('+matrix_image+');\n';
+        return 'myMatrix.clear();\nmatrix_display('+matrix_image+');\nmyMatrix.write();\n';
     };
 
 Blockly.Arduino.matrix_iic_face = function (block) {
@@ -387,7 +434,7 @@ Blockly.Arduino.matrix_iic_face = function (block) {
 
         const matrix_face = this.getFieldValue('face');
 
-        return 'matrix_display('+matrix_face+');\n';
+        return 'myMatrix.clear();\nmatrix_display('+matrix_face+');\nmyMatrix.write();\n';
     };
 
     Blockly.Arduino.matrix_iic_refresh = function (block) {

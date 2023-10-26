@@ -7,7 +7,7 @@ const metaSpeaker = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560'],
     author: 'keyestudio',
-    iconURL: `asset/metaSpeaker.png`,
+    iconURL: `asset/metaSpeaker.jpg`,
     description: formatMessage({
         id: 'metaSpeaker.description',
         default: 'Unlike the active buzzer, the passive buzzer can be used' +

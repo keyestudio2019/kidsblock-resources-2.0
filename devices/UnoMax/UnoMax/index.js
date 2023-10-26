@@ -3,7 +3,7 @@ const UnoMax = formatMessage => ({
     deviceId: 'UnoMax_arduinoUno',
     manufactor: 'keyestudio',
     //leanMore: 'https://www.kidsbits.cc/products/kidsbits-maker-coding-box-v10-starter-kit-for-arduino-stem-education-7-92',
-    iconURL: 'asset/UnoMax.png',
+    iconURL: 'asset/UnoMax.jpg',
     description: formatMessage({
         id: 'UnoMax.description',
         default: 'UnoMax',

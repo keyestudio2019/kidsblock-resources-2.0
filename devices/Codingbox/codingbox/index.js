@@ -3,7 +3,7 @@ const Codingbox = formatMessage => ({
     deviceId: 'Codingbox_arduinoUno',
     manufactor: 'kidsbits',
     leanMore: 'https://www.kidsbits.cc/products/kidsbits-maker-coding-box-v10-starter-kit-for-arduino-stem-education-7-92',
-    iconURL: 'asset/codingbox.png',
+    iconURL: 'asset/codingbox.jpg',
     description: formatMessage({
         id: 'Codingbox.description',
         default: 'Codingbox',

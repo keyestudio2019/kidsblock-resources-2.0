@@ -9,7 +9,7 @@ const  blynk= formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoEsp32','arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/blynk.png`,
+    iconURL: `asset/blynk.jpg`,
     description: formatMessage({
         id: 'blynk.description',
         default: 'ESP32/ESP8266 物联网.',

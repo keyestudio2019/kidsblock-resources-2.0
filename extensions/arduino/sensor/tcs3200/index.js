@@ -5,7 +5,7 @@ const tcs3200 = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo',
         'arduinoMega2560'],
     author: 'keyes',
-    iconURL: `asset/tcs3200.png`,
+    iconURL: `asset/tcs3200.jpg`,
     description: formatMessage({
         id: 'tcs3200.description',
         default: 'Color sensor module based on TCS3200.'

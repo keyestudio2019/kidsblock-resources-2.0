@@ -3,7 +3,7 @@ const NanoPlus = formatMessage => ({
     deviceId: 'nanoplus_arduinoUno',
     manufactor: 'keyestudio',
     //leanMore: 'https://www.keyestudio.com/products/2020-new-keyestudio-plus-development-board-with-type-c-interface-usb-cable-compatible-with-arduino-uno-r3',
-    iconURL: 'asset/nanoplus.png',
+    iconURL: 'asset/nanoplus.jpg',
     description: formatMessage({
         id: 'NanoPlus.description',
         default: 'Nano Plus',

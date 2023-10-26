@@ -9,7 +9,7 @@ const LED = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyestudio',
-    iconURL: `asset/LED.png`,
+    iconURL: `asset/LED.jpg`,
     description: formatMessage({
         id: 'LED.description',
         default: ' led module.',

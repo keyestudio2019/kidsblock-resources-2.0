@@ -16,7 +16,7 @@ const BT4WDRobot = formatMessage => ({
     toolbox: 'toolbox.js',
     msg: 'msg.js',
     library: 'lib',
-    helpLink: 'https://www.keyestudio.com/'
+    helpLink: 'https://ks0559ks0559fkeyestudio-4wd-bt-multi-purpose-car-v20-scratch.readthedocs.io/en/latest/'
 });
 
 module.exports = BT4WDRobot;

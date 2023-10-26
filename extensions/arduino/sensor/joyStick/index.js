@@ -8,7 +8,7 @@ const joyStick = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo',
     'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyestudio',
-    iconURL: `asset/joyStick.png`,
+    iconURL: `asset/joyStick.jpg`,
     description: formatMessage({
         id: 'joyStick.description',
         default: 'a joyStick module.'

@@ -88,6 +88,43 @@ function addToolbox () {
     
 </category>
 
+<category name="%{BKY_ROBOT_CATEGORY}" id="ROBOT_CATEGORY" colour="#0000ff" secondaryColour="#0000ff">
+
+     <block type="robot_forward" id="robot_forward">
+       <value name="SPEED">
+         <shadow type="math_uint8_number">
+            <field name="NUM">200</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="robot_back" id="robot_back">
+      <value name="SPEED">
+       <shadow type="math_uint8_number">
+           <field name="NUM">200</field>
+       </shadow>
+      </value>
+    </block>
+
+    <block type="robot_left" id="robot_left">
+      <value name="SPEED">
+        <shadow type="math_uint8_number">
+           <field name="NUM">200</field>
+        </shadow>
+      </value>
+    </block>
+
+  <block type="robot_right" id="robot_right">
+    <value name="SPEED">
+      <shadow type="math_uint8_number">
+       <field name="NUM">200</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="robot_stop" id="robot_stop">
+  </block>
+
+</category>
 
 <category name="%{BKY_MOTOR130_CATEGORY}" id="MOTOR130_CATEGORY" colour="#E30B5C" secondaryColour="#E30B5C">
     <block type="motor130_digital" id="motor130_digital">
@@ -110,7 +147,7 @@ function addToolbox () {
 </category>
 
 
-<category name="%{BKY_HC_SR04_CATEGORY}" id="HC_SR04_CATEGORY" colour="#3F00FF" secondaryColour="#3F00FF">
+<category name="%{BKY_HC_SR04_CATEGORY}" id="HC_SR04_CATEGORY" colour="#008000" secondaryColour="#008000">
                 <block type="hc_sr04_read_distance" id="hc_sr04_read_distance">
                     <field name="trig_pin">A0</field>>
                     <field name="echo_pin">2</field>>

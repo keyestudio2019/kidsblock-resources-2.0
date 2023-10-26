@@ -8,7 +8,7 @@ const magneticSensor = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo',
     'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyestudio',
-    iconURL: `asset/magneticSensor.png`,
+    iconURL: `asset/magneticSensor.jpg`,
     description: formatMessage({
         id: 'magneticSensor.description',
         default: 'magneticSensor sensor switch.'

@@ -8,7 +8,7 @@ const pca9685 = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/pca9685.png`,
+    iconURL: `asset/pca9685.jpg`,
     description: formatMessage({
         id: 'pca9685.description',
         default: 'The 16 channel PWM driver module based on PCA9685, uses IIC bus for communication.'

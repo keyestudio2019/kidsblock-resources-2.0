@@ -74,7 +74,7 @@ function addMsg (Blockly) {
         MPU6050_INIT: 'init MPU6050',
         MPU6050_REFRESH: 'MPU6050 refresh data',
 
-        MPU6050: 'MPU605 read %1',
+        MPU6050_READ: 'MPU605 read %1',
         WIFI_CATEGORY: 'WIFI',
         WIFI_INIT: 'wifi connect ssid:%1 password:%2',
         WIFI_READ: 'WiFi read', 
@@ -159,7 +159,7 @@ function addMsg (Blockly) {
         MPU6050_INIT: 'MPU6050 initialisieren',
         MPU6050_REFRESH: 'MPU6050 Daten aktualisieren',
 
-        MPU6050: 'MPU605 hat %1 gelesen',
+        MPU6050_READ: 'MPU605 hat %1 gelesen',
         WIFI_CATEGORY: 'WIFI',
         WIFI_INIT: 'wifi connect ssid:%1 passwort:%2',
         WIFI_READ: 'WiFi lesen',
@@ -243,7 +243,7 @@ function addMsg (Blockly) {
         MPU6050_INIT: 'iniciar MPU6050',
         MPU6050_REFRESH: 'MPU6050 actualizar datos',
 
-        MPU6050: 'MPU605 lectura %1',
+        MPU6050_READ: 'MPU605 lectura %1',
         WIFI_CATEGORÍA: 'WIFI',
         WIFI_INIT: 'wifi connect ssid:%1 contraseña:%2',
         WIFI_READ: 'Lectura WiFi',
@@ -327,7 +327,7 @@ function addMsg (Blockly) {
          MPU6050_INIT: 'init MPU6050',
          MPU6050_REFRESH: 'MPU6050 actualiser les données',
 
-         MPU6050: 'MPU605 a lu %1',
+         MPU6050_READ: 'MPU605 a lu %1',
          WIFI_CATEGORY: 'WIFI',
          WIFI_INIT: 'ssid de connexion wifi:%1 mot de passe:%2',
          WIFI_READ: 'Lecture Wi-Fi',
@@ -411,7 +411,7 @@ function addMsg (Blockly) {
          MPU6050_INIT: 'MPU6050 の初期化',
          MPU6050_REFRESH: 'MPU6050リフレッシュデータ',
 
-         MPU6050: 'MPU605 読み取り %1',
+         MPU6050_READ: 'MPU605 読み取り %1',
          WIFI_CATEGORY: 'WIFI',
          WIFI_INIT: 'WiFi 接続 ssid:%1 パスワード:%2',
          WIFI_READ: 'WiFi 読み取り',
@@ -495,7 +495,7 @@ function addMsg (Blockly) {
          MPU6050_INIT: '초기화 MPU6050',
          MPU6050_REFRESH: 'MPU6050 리프레시 데이터',
 
-         MPU6050: 'MPU605 읽기 %1',
+         MPU6050_READ: 'MPU605 읽기 %1',
          WIFI_CATEGORY: '와이파이',
          WIFI_INIT: 'wifi 연결 ssid:%1 비밀번호:%2',
          WIFI_READ: '와이파이 읽기',
@@ -579,7 +579,7 @@ function addMsg (Blockly) {
         MPU6050_INIT: 'zainicjuj MPU6050',
         MPU6050_REFRESH: 'Odśwież dane MPU6050',
 
-        MPU6050: 'MPU605 odczyt %1',
+        MPU6050_READ: 'MPU605 odczyt %1',
         WIFI_CATEGORY: 'WIFI',
         WIFI_INIT: 'identyfikator SSID połączenia Wi-Fi:%1 hasło:%2',
         WIFI_READ: 'Odczyt Wi-Fi',
@@ -663,7 +663,7 @@ function addMsg (Blockly) {
          MPU6050_INIT: 'iniciar MPU6050',
          MPU6050_REFRESH: 'Dados de atualização do MPU6050',
 
-         MPU6050: 'MPU605 leu %1',
+         MPU6050_READ: 'MPU605 leu %1',
          WIFI_CATEGORY: 'WIFI',
          WIFI_INIT: 'wifi connect ssid:%1 senha:%2',
          WIFI_READ: 'Leitura WiFi',
@@ -747,7 +747,7 @@ function addMsg (Blockly) {
          MPU6050_INIT: 'инициализировать MPU6050',
          MPU6050_REFRESH: 'обновить данные MPU6050',
 
-         MPU6050: 'MPU605 прочитал %1',
+         MPU6050_READ: 'MPU605 прочитал %1',
          WIFI_CATEGORY: "WI-FI",
          WIFI_INIT: 'ssid для подключения к Wi-Fi:%1, пароль:%2',
          WIFI_READ: 'Чтение WiFi',

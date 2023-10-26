@@ -3,7 +3,7 @@ const unoMaker = formatMessage => ({
     deviceId: 'unoMaker_arduinoUno',
     manufactor: 'keyestudio',
     leanMore: 'https://www.keyestudio.com/products/2020-new-keyestudio-plus-development-board-with-type-c-interface-usb-cable-compatible-with-arduino-uno-r3',
-    iconURL: 'asset/unomaker.png',
+    iconURL: 'asset/unomaker.jpg',
     description: formatMessage({
         id: 'unoMaker.description',
         default: 'Uno Maker',

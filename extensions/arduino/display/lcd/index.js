@@ -8,7 +8,7 @@ const lcd = formatMessage => ({
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32'],
     author: 'keyes',
-    iconURL: `asset/lcd.png`,
+    iconURL: `asset/lcd.jpg`,
     description: formatMessage({
         id: 'lcd.description',
         default: '1602 liquid crystal display which based on I2C bus.'

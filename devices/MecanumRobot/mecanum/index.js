@@ -3,7 +3,7 @@ const MecanumRobot = formatMessage => ({
     deviceId: 'MecanumRobot_arduinoUno',
     manufactor: 'keyestudio',
     //leanMore: 'https://www.keyestudio.com/products/2020-new-keyestudio-plus-development-board-with-type-c-interface-usb-cable-compatible-with-arduino-uno-r3',
-    iconURL: 'asset/mecanumRobot.png',
+    iconURL: 'asset/mecanumRobot.jpg',
     description: formatMessage({
         id: 'MecanumRobot.description',
         default: 'MecanumRobot',

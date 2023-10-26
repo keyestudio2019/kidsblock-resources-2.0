@@ -9,7 +9,7 @@ const esp32motor = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/motor130.png`,
+    iconURL: `asset/motor130.jpg`,
     description: formatMessage({
         id: 'esp32motor.description',
         default: 'Driving DC motor',

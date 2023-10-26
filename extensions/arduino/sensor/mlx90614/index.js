@@ -9,7 +9,7 @@ const mlx90614 = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/mlx.png`,
+    iconURL: `asset/mlx.jpg`,
     description: formatMessage({
         id: 'mlx90614.description',
         default: 'MLX90614 Digital non-contact infrared temperature sensor',

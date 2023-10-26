@@ -3,7 +3,7 @@ const TankRobot = formatMessage => ({
     deviceId: 'TankRobot_arduinoUno',
     manufactor: 'keyestudio',
     leanMore: 'https://keyestudio-wiki.readthedocs.io/en/latest/docs/arduino/KS0428.html',
-    iconURL: 'asset/tankRobot.png',
+    iconURL: 'asset/tankRobot.jpg',
     description: formatMessage({
         id: 'TankRobot.description',
         default: 'TankRobot',

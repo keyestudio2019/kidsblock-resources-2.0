@@ -3,7 +3,7 @@ const Sensor37kit = formatMessage => ({
     deviceId: '37Sensorkit_arduinoUno',
     manufactor: 'keyestudio',
     leanMore: 'https://wiki.keyestudio.com/',
-    iconURL: 'asset/37Sensorkit.png',
+    iconURL: 'asset/37Sensorkit.jpg',
     description: formatMessage({
         id: '37Sensorkit.description',
         default: '37 sensor kit',

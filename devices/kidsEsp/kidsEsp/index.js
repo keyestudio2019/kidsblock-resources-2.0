@@ -3,7 +3,7 @@ const kidsEsp = formatMessage => ({
     deviceId: 'kidsEsp_arduinoEsp32',
     manufactor: 'kidsbits',
     leanMore: 'https://www.keyestudio.com/products/2020-new-keyestudio-plus-development-board-with-type-c-interface-usb-cable-compatible-with-arduino-uno-r3',
-    iconURL: 'asset/kidsEsp.png',
+    iconURL: 'asset/kidsEsp.jpg',
     description: formatMessage({
         id: 'kidsEsp.description',
         default: 'arduinoEsp32',

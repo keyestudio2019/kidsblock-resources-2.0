@@ -9,7 +9,7 @@ const lm35 = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/lm35.png`,
+    iconURL: `asset/lm35.jpg`,
     description: formatMessage({
         id: 'lm35.description',
         default: 'Temperature LM35',

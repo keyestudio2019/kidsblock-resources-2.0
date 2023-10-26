@@ -8,7 +8,7 @@ const ESP_WEB_PRO = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['arduinoEsp32','arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/webpage.png`,
+    iconURL: `asset/webpage.jpg`,
     description: formatMessage({
         id: 'ESP_WEB_PRO.description',
         default: 'Devices Controlling on Web Page.',

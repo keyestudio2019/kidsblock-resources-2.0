@@ -9,7 +9,7 @@ const ks_servo = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/servo.png`,
+    iconURL: `asset/servo.jpg`,
     description: formatMessage({
         id: 'ks_servo.description',
         default: 'Servo driver',

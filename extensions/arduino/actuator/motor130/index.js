@@ -9,7 +9,7 @@ const motor130 = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560'],
     author: 'keyes',
-    iconURL: `asset/motor130.png`,
+    iconURL: `asset/motor130.jpg`,
     description: formatMessage({
         id: 'motor130.description',
         default: 'Driving DC motor',

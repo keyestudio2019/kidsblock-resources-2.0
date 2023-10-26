@@ -9,7 +9,7 @@ const ks_adxl345 = formatMessage => ({
     type: 'arduino',
     supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
-    iconURL: `asset/ks_adxl345.png`,
+    iconURL: `asset/ks_adxl345.jpg`,
     description: formatMessage({
         id: 'ks_adxl345.description',
         default: 'adxl345 3 axis acceleration sensor',

@@ -3,7 +3,7 @@ const Beetlebot = formatMessage => ({
     deviceId: 'Beetlebot_arduinoUno',
     manufactor: 'keyestudio',
     leanMore: 'https://ks0543-keyestudio-beetlebot-3-in1-robot-scratch-tutorials.readthedocs.io/en/latest/',
-    iconURL: 'asset/beetlebot.png',
+    iconURL: 'asset/beetlebot.jpg',
     description: formatMessage({
         id: 'Beetlebot.description',
         default: 'Beetlebot',

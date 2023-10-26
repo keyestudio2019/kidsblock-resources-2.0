@@ -3,7 +3,7 @@ const EasyCoding = formatMessage => ({
     deviceId: 'EasyCoding_arduinoEsp32',
     manufactor: 'keyestudio',
     leanMore: 'https://wiki.keyestudio.com/',
-    iconURL: 'asset/EasyCoding.png',
+    iconURL: 'asset/EasyCoding.jpg',
     description: formatMessage({
         id: 'EasyCoding.description',
         default: 'EasyCoding',

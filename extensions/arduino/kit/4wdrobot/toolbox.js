@@ -91,6 +91,44 @@ function addToolbox () {
     
 </category>
 
+<category name="%{BKY_ROBOT_CATEGORY}" id="ROBOT_CATEGORY" colour="#0000ff" secondaryColour="#0000ff">
+
+     <block type="robot_forward" id="robot_forward">
+       <value name="SPEED">
+         <shadow type="math_uint8_number">
+            <field name="NUM">200</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="robot_back" id="robot_back">
+      <value name="SPEED">
+       <shadow type="math_uint8_number">
+           <field name="NUM">200</field>
+       </shadow>
+      </value>
+    </block>
+
+    <block type="robot_left" id="robot_left">
+      <value name="SPEED">
+        <shadow type="math_uint8_number">
+           <field name="NUM">200</field>
+        </shadow>
+      </value>
+    </block>
+
+  <block type="robot_right" id="robot_right">
+    <value name="SPEED">
+      <shadow type="math_uint8_number">
+       <field name="NUM">200</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="robot_stop" id="robot_stop">
+  </block>
+
+</category>
+
 <category name="%{BKY_LED_CATEGORY}" id="BKY_LED_CATEGORY" colour="#FF6F00" secondaryColour="#FF6F00">
     <block type="LED_setLEDState" id="LED_setLEDState">
         <field name="pin">9</field>
@@ -164,7 +202,7 @@ function addToolbox () {
 </category>
 
 
-<category name="%{BKY_MATRIX8_16_CATEGORY}" id="MATRIX8_16_CATEGORY" colour="#0000ff" secondaryColour="#0000ff">
+<category name="%{BKY_MATRIX8_16_CATEGORY}" id="MATRIX8_16_CATEGORY" colour="#00ff00" secondaryColour="#00ff00">
     <block type="matrix8_16_init" id="matrix8_16_init">
         <field name="SDA">A4</field>>
         <field name="SCL">A5</field>>

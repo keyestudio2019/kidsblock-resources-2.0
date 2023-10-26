@@ -48,9 +48,7 @@ module.exports = [
     'Beetlebot_arduinoEsp32',
     'Smarthome_arduinoEsp32',
     'Smartfarm_arduinoEsp32',
-   
-   
-    
+
     //'arduinoUno',
     //'arduinoMega2560',
     //'arduinoMini',
