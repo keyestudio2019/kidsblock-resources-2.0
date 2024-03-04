@@ -3,9 +3,9 @@
 /* eslint-disable require-jsdoc */
 function addGenerator (Blockly) {
     Blockly.Arduino.lcd128_init = function (block) {
-        Blockly.Arduino.includes_.include_lcd128_init = `#include <lcd128_32_io.h>\n`;
-        Blockly.Arduino.definitions_[`lcd128_var`] = `lcd Lcd(A4,A5);\n`;
-        Blockly.Arduino.setups_['lcd128_setup'] = 'Lcd.Init();\n';
+        Blockly.Arduino.includes_.include_lcd128_init = `#include <lcd.h>\n`;
+        Blockly.Arduino.definitions_[`lcd128_var`] = `lcd Lcd;\n`;
+        Blockly.Arduino.setups_['lcd128_setup'] ='Lcd.Init();\nLcd.Clear();';
         return '';
     };
 

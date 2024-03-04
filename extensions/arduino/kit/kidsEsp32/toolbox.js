@@ -378,10 +378,10 @@ function addToolbox () {
 
 <block type="wifi_client_connected" id="wifi_client_connected"></block>
 
+<block type="wifi_read_connected" id="wifi_read_connected"></block>
+
 <block type="wifi_read_data" id="wifi_read_data"></block>
 </category>
-
-
 
 `;
 }

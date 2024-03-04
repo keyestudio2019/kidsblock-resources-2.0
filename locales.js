@@ -1,5 +1,7 @@
 module.exports = {
     'en': {
+     
+        'ECO.description':'Eco-friendly house kit for arduino',
         'RGBcube.description':'RGB LED Cube Kit',
         'SmartfarmESP32.description':'Smart Farm Kit for ESP32',
         'InventorESP32.description':'Inventor Starter Kit for ESP32',
@@ -19,7 +21,7 @@ module.exports = {
         'unov4.description': 'A very good entry-level control board for electronic programming.',
         'ESP32S.description': 'A powerful control board with Wi-Fi and Bluetooth.',
         'ESP32plus.description': 'UNO compatible control board with Wi-Fi and Bluetooth.',
-        'kidsEsp.description': 'kids STEM education main control board based on ESP32.',
+        'kidsIOT.description': 'kids STEM education main control board based on ESP32.',
         'kidsUno.description': 'kids STEM education main control board based on UNO.',
         'unoPlus.description': 'The classic programming entry Plus control board for easy connection of sensors.',
         'unoMaker.description': 'A starter control board that can be programmed to connect sensors using alligator clips.',
@@ -129,6 +131,7 @@ module.exports = {
         'keypad4_4.description': '4*4 Key pad module',
     },
     'es': {
+       'ECO.description':'Kit de casa ecológico para arduino',
        'RGBcube.description': 'Kit de cubo LED RGB',
        'SmartfarmESP32.description':'Kit de granja inteligente para ESP32',
        'InventorESP32.description':'Kit de inicio de Inventor para ESP32',
@@ -148,7 +151,7 @@ module.exports = {
        'unov4.description': 'Una placa de control de nivel de entrada muy buena para la programación electrónica.',
        'ESP32S.description': 'Una potente placa de control con Wi-Fi y Bluetooth.',
        'ESP32plus.description': 'Placa de control compatible con UNO con Wi-Fi y Bluetooth.',
-       'kidsEsp.description': 'tablero de control principal de educación STEM para niños basado en ESP32.',
+       'kidsIOT.description': 'tablero de control principal de educación STEM para niños basado en ESP32.',
        'kidsUno.description': 'tablero de control principal de educación STEM para niños basado en UNO.',
        'unoPlus.description': 'La clásica placa de control de entrada de programación Plus para una fácil conexión de sensores.',
        'unoMaker.description': 'Un tablero de control de arranque que se puede programar para conectar sensores usando pinzas de cocodrilo.',
@@ -259,6 +262,7 @@ module.exports = {
     },
 
     'de': {
+        'ECO.description':'Umweltfreundliches Hausset für Arduino',
         'RGBcube.description':'RGB LED Cube Kit',
         'SmartfarmESP32.description':'Smart Farm Kit für ESP32',
         'InventorESP32.description':'Inventor Starter Kit für ESP32',
@@ -278,7 +282,7 @@ module.exports = {
         'unov4.description': 'Eine sehr gute Einsteiger-Steuerplatine für die elektronische Programmierung.',
         'ESP32S.description': 'Eine leistungsstarke Steuerplatine mit WLAN und Bluetooth.',
         'ESP32plus.description': 'UNO-kompatibles Steuerboard mit WLAN und Bluetooth.',
-        'kidsEsp.description': 'Hauptsteuerplatine für die MINT-Ausbildung für Kinder basierend auf ESP32.',
+        'kidsIOT.description': 'Hauptsteuerplatine für die MINT-Ausbildung für Kinder basierend auf ESP32.',
         'kidsUno.description': 'Hauptkontrolltafel für die MINT-Ausbildung für Kinder basierend auf UNO.',
         'unoPlus.description': 'Die klassische Programmier-Einstiegs-Plus-Steuerplatine zum einfachen Anschluss von Sensoren.',
         'unoMaker.description': 'Eine Starter-Steuerplatine, die so programmiert werden kann, dass Sensoren mithilfe von Krokodilklemmen angeschlossen werden.',
@@ -387,6 +391,7 @@ module.exports = {
          'keypad4_4.description': '4*4 Tastaturmodul',
     },
     'fr': {
+        'ECO.description':'Kit maison écologique pour arduino',
         'RGBcube.description':'Kit Cube LED RVB',
         'SmartfarmESP32.description':'Kit de ferme intelligente pour ESP32',
         'InventorESP32.description':'Kit de démarrage Inventor pour ESP32',
@@ -406,7 +411,7 @@ module.exports = {
         'unov4.description': 'Une très bonne carte de contrôle d"entrée de gamme pour la programmation électronique.',
         'ESP32S.description': 'Une carte de contrôle puissante avec Wi-Fi et Bluetooth.',
         'ESP32plus.description': 'Carte de commande compatible UNO avec Wi-Fi et Bluetooth.',
-        'kidsEsp.description': 'tableau de commande principal de l"éducation STEM pour enfants basé sur ESP32.',
+        'kidsIOT.description': 'tableau de commande principal de l"éducation STEM pour enfants basé sur ESP32.',
         'kidsUno.description': 'tableau de contrôle principal de l"éducation STEM pour enfants basé sur UNO.',
         'unoPlus.description': 'La carte de commande d"entrée de programmation classique Plus pour une connexion facile des capteurs.',
         'unoMaker.description': 'Une carte de contrôle de démarrage qui peut être programmée pour connecter des capteurs à l"aide de pinces crocodiles.',
@@ -515,6 +520,7 @@ module.exports = {
          'keypad4_4.description': 'Module de clavier 4*4',
     },
     'ja': {
+        'ECO.description':'Arduino用の環境に優しいハウスキット',
         'RGBcube.description':'RGB LED キューブ キット',
         'SmartfarmESP32.description':'ESP32 用スマート ファーム キット',
         'InventorESP32.description':'ESP32 用 Inventor スターター キット',
@@ -534,7 +540,7 @@ module.exports = {
         'unov4.description': '電子プログラミング用の非常に優れたエントリーレベルの制御ボードです。',
         'ESP32S.description': 'Wi-Fi と Bluetooth を備えた強力なコントロール ボード。',
         'ESP32plus.description': 'Wi-Fi と Bluetooth を備えた UNO 互換コントロール ボード。',
-        'kidsEsp.description': 'ESP32 に基づく子供向け STEM 教育メイン制御ボード。',
+        'kidsIOT.description': 'ESP32 に基づく子供向け STEM 教育メイン制御ボード。',
         'kidsUno.description': 'UNO に基づく子供向け STEM 教育メイン制御ボード。',
         'unoPlus.description': 'センサーを簡単に接続できるクラシックなプログラミングエントリーPlusコントロールボード。',
         'unoMaker.description': 'ワニ口クリップを使用してセンサーを接続するようにプログラムできるスターター コントロール ボード。',
@@ -644,6 +650,7 @@ module.exports = {
          'keypad4_4.description': '4*4 キーパッドモジュール',
     },
     'ko': {
+        'ECO.description':'아두이노용 친환경 하우스 키트',
         'RGBcube.description':'RGB LED 큐브 키트',
         'SmartfarmESP32.description':'ESP32용 스마트 팜 키트',
         'InventorESP32.description':'ESP32용 발명가 스타터 키트',
@@ -663,7 +670,7 @@ module.exports = {
         'unov4.description': '전자 프로그래밍을 위한 매우 우수한 보급형 제어 보드입니다.',
         'ESP32S.description': 'Wi-Fi 및 Bluetooth를 갖춘 강력한 제어 보드.',
         'ESP32plus.description': 'Wi-Fi 및 Bluetooth를 지원하는 UNO 호환 제어 보드.',
-        'kidsEsp.description': 'ESP32 기반의 어린이 STEM 교육 메인 컨트롤 보드.',
+        'kidsIOT.description': 'ESP32 기반의 어린이 STEM 교육 메인 컨트롤 보드.',
         'kidsUno.description': 'UNO 기반의 어린이 STEM 교육 메인 컨트롤 보드',
         'unoPlus.description': '손쉬운 센서 연결을 위한 고전적인 프로그래밍 항목 플러스 제어 보드.',
         'unoMaker.description': '악어 클립을 사용하여 센서를 연결하도록 프로그래밍할 수 있는 스타터 제어 보드',
@@ -772,6 +779,7 @@ module.exports = {
          'keypad4_4.description': '4*4 키패드 모듈',
     },
     'pl': {
+        'ECO.description':'Ekologiczny zestaw domowy dla Arduino',
         'RGBcube.description':'Zestaw kostki LED RGB',
         'SmartfarmESP32.description': 'Zestaw inteligentnej farmy dla ESP32',
         'InventorESP32.description':'Zestaw startowy wynalazcy dla ESP32',
@@ -791,7 +799,7 @@ module.exports = {
         'unov4.description': 'Bardzo dobra podstawowa płytka sterująca do programowania elektronicznego.',
         'ESP32S.description': 'Wydajna płyta sterująca z Wi-Fi i Bluetooth.',
         'ESP32plus.description': 'Płyta kontrolna kompatybilna z UNO z Wi-Fi i Bluetooth.',
-        'kidsEsp.description': 'główna tablica kontrolna edukacji STEM dla dzieci oparta na ESP32.',
+        'kidsIOT.description': 'główna tablica kontrolna edukacji STEM dla dzieci oparta na ESP32.',
         'kidsUno.description': 'główna tablica kontrolna edukacji STEM dla dzieci oparta na UNO.',
         'unoPlus.description': 'Klasyczna płyta kontrolna Plus do łatwego podłączania czujników.',
         'unoMaker.description': 'Płytka kontrolna rozrusznika, którą można zaprogramować do podłączania czujników za pomocą zacisków krokodylkowych.',
@@ -900,6 +908,7 @@ module.exports = {
          'keypad4_4.description': '4*4 Moduł klawiatury',
     },
     'pt': {
+        'ECO.description':'Kit doméstico ecológico para arduino',
         'RGBcube.description':'RGB LED Cube Kit',
         'SmartfarmESP32.description':'Smart Farm Kit para ESP32',
         'InventorESP32.description':'Inventor Starter Kit para ESP32',
@@ -919,7 +928,7 @@ module.exports = {
         'unov4.description': 'Uma boa placa de controle de nível básico para programação eletrônica.',
         'ESP32S.description': 'Uma poderosa placa de controle com Wi-Fi e Bluetooth.',
         'ESP32plus.description': 'Placa de controle compatível com UNO com Wi-Fi e Bluetooth.',
-        'kidsEsp.description': 'placa de controle principal de educação STEM infantil baseada em ESP32.',
+        'kidsIOT.description': 'placa de controle principal de educação STEM infantil baseada em ESP32.',
         'kidsUno.description': 'placa de controle principal de educação STEM para crianças baseada em UNO.',
         'unoPlus.description': 'A placa de controle Plus de entrada de programação clássica para fácil conexão de sensores.',
         'unoMaker.description': 'Uma placa de controle inicial que pode ser programada para conectar sensores usando garras jacaré.',
@@ -1029,6 +1038,7 @@ module.exports = {
          'keypad4_4.description': 'Módulo de teclado 4*4',
     },
     'ru': {
+        'ECO.description':'Экологичный домашний комплект для Arduino',
         'RGBcube.description':'Набор светодиодных кубов RGB',
         'SmartfarmESP32.description':'Комплект Smart Farm для ESP32',
         'InventorESP32.description':'Начальный комплект Inventor для ESP32',
@@ -1048,7 +1058,7 @@ module.exports = {
         'unov4.description': 'Очень хорошая плата управления начального уровня для электронного программирования.',
         'ESP32S.description': 'Мощная плата управления с Wi-Fi и Bluetooth.',
         'ESP32plus.description': 'Плата управления, совместимая с UNO, с Wi-Fi и Bluetooth.',
-        'kidsEsp.description': 'Основная плата управления обучением STEM для детей на основе ESP32.',
+        'kidsIOT.description': 'Основная плата управления обучением STEM для детей на основе ESP32.',
         'kidsUno.description': 'Основная плата управления для обучения детей STEM на базе UNO.',
         'unoPlus.description': 'Классический вход для программирования. Плата управления Plus для простого подключения датчиков.',
         'unoMaker.description': 'Плата управления пусковым устройством, которую можно запрограммировать для подключения датчиков с помощью зажимов типа "крокодил".',
@@ -1158,7 +1168,7 @@ module.exports = {
     },
 
     'zh-cn': {
-
+        'ECO.description':'基于Arduino的生态小屋学习套装',
         'RGBcube.description':'RGB 光立方套装',
         'SmartfarmESP32.description':'基于ESP32的智慧农场套装',
         'InventorESP32.description':'基于ESP32的发明家学习套装',
@@ -1178,7 +1188,7 @@ module.exports = {
         'unov4.description':'很好的电子编程入门控制板.',
         'ESP32S.description':'功能强大且带有 Wi-Fi 和 蓝牙的控制板.',
         'ESP32plus.description':'兼容UNO且带有 Wi-Fi 和 蓝牙的控制板.',
-        'kidsEsp.description':'基于ESP32的少儿STEM教育主控板.',
+        'kidsIOT.description':'基于ESP32的少儿STEM教育主控板.',
         'kidsUno.description':'基于UNO的少儿STEM教育主控板.',
         'unoPlus.description':'方便连接传感器的经典编程入门Plus控制板.',
         'unoMaker.description':'可以使用鳄鱼夹连接传感器的编程入门控制板.',
@@ -1291,6 +1301,7 @@ module.exports = {
         'keypad4_4.description': '4*4 矩阵按键',
     },
     'zh-tw': {
+        'ECO.description':'基於Arduino的生態小屋學習套裝',
         'RGBcube.description':'RGB 光立方套裝',
         'SmartfarmESP32.description':'基於ESP32的智慧農場套裝',
         'InventorESP32.description':'基於ESP32的發明家學習套裝',
@@ -1310,7 +1321,7 @@ module.exports = {
         'unov4.description':'很好的電子編程入門控制板.',
         'ESP32S.description':'功能強大且帶有 Wi-Fi 和 藍牙的控制板.',
         'ESP32plus.description':'兼容UNO且帶有 Wi-Fi 和 藍牙的控制板.',
-        'kidsEsp.description':'基於ESP32的少兒STEM教育主控板.',
+        'kidsIOT.description':'基於ESP32的少兒STEM教育主控板.',
         'kidsUno.description':'基於UNO的少兒STEM教育主控板.',
         'unoPlus.description':'方便連接傳感器的經典編程入門Plus控制板.',
         'unoMaker.description':'可以使用鱷魚夾連接傳感器的編程入門控制板.',

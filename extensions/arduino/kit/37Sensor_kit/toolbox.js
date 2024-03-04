@@ -160,7 +160,7 @@ function addToolbox () {
     <block type="ir_send" id="ir_send">
         <value name="pin">
             <shadow type="math_number">
-                <field name="NUM">A3</field>
+                <field name="NUM">D3</field>
             </shadow>
         </value>
         <value name="DATA">
@@ -178,7 +178,7 @@ function addToolbox () {
     <block type="ir_send_raw" id="ir_send_raw">
         <value name="pin">
             <shadow type="math_number">
-                <field name="NUM">A3</field>
+                <field name="NUM">D3</field>
             </shadow>
         </value>
         <value name="ARRAY">

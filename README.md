@@ -1,6 +1,11 @@
+V1.6.8:
+
+Add ESP32 Easy coding development board<br>
+add Smart Eco-Friendly House kit
+
 V1.6.7:
 
-*********************************
+Added German, Spanish, French, Portuguese, Japanese, Russian, Korean, Polish
 
 
 V1.6.6:

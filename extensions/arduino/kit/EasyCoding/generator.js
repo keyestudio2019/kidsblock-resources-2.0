@@ -109,15 +109,15 @@ function addGenerator (Blockly) {
 
 
     Blockly.Arduino['Button_readState'] = function(block) {
-        var arg0 = block.getFieldValue('pin') || '16';
+        var arg0 = block.getFieldValue('pin') || '0';
         var code = "(digitalRead(" + arg0 + ")==0)";
         // const pin = Blockly.Arduino.valueToCode(block, 'pin', Blockly.Arduino.ORDER_ATOMIC);
         Blockly.Arduino.setups_.Button_init = `pinMode(${arg0}, INPUT);`;
         return [code, Blockly.Arduino.ORDER_ATOMIC];
-    };
+    }; 
 
     Blockly.Arduino['Button_readValue'] = function(block) {
-        var arg0 = block.getFieldValue('pin') || '16';
+        var arg0 = block.getFieldValue('pin') || '0';
         var code = "digitalRead(" + arg0 + ")";
         Blockly.Arduino.setups_.Button_init = `pinMode(${arg0}, INPUT);`;
         return [code, Blockly.Arduino.ORDER_ATOMIC];
@@ -212,7 +212,7 @@ Blockly.Arduino.AHT20_21 = function() {
       code+='ledStrip.setPixelColor(i, arry[i]*'+color+');\n';
       code+='}\n';
       code+='ledStrip.show();\n'
-      code+='delay(1000);\n'
+      code+='delay(1);\n'
       return code;
       };
 
@@ -340,15 +340,14 @@ Blockly.Arduino.AHT20_21 = function() {
         return [code, Blockly.Arduino.ORDER_ATOMIC];
     };
 
-    Blockly.Arduino['voltage_readValue'] = function(block) {
-        var arg0 = block.getFieldValue('PIN');
-        var code = "analogRead(" + arg0 + ")*(3.3/4095)";
-        return [code, Blockly.Arduino.ORDER_ATOMIC];
+
+    Blockly.Arduino.current_readValue = function () {
+        return [`(analogRead(36)/20/0.1*(3.3/4095))`, Blockly.Arduino.ORDER_ATOMIC];
     };
-    Blockly.Arduino['current_readValue'] = function(block) {
-        var arg0 = block.getFieldValue('PIN');
-        var code = "analogRead(" + arg0 + ")/20/0.1*(3.3/4095)";
-        return [code, Blockly.Arduino.ORDER_ATOMIC];
+
+    Blockly.Arduino.sd_type = function (block) {
+
+        return [`card.type()`, Blockly.Arduino.ORDER_ATOMIC];
     };
 
 
@@ -372,51 +371,70 @@ Blockly.Arduino.AHT20_21 = function() {
     Blockly.Arduino.wifi_init = function (block) {
         const ssid = Blockly.Arduino.valueToCode(block, 'SSID', Blockly.Arduino.ORDER_ATOMIC);
         const passwd = Blockly.Arduino.valueToCode(block, 'PASSWD', Blockly.Arduino.ORDER_ATOMIC);
-
-        Blockly.Arduino.includes_.wifi_init = '#include <WiFi.h>\n#include <ESPmDNS.h>\n#include <WiFiClient.h>\n';
-        Blockly.Arduino.definitions_.wifi_init = 'const char* ssid = '+ssid+';\nconst char* password = '+passwd+';\nWiFiServer server(80);\n';
-        Blockly.Arduino.setups_['wifi_setup'] = 'Serial.begin(115200);\n   WiFi.begin(ssid, password);\n   while (WiFi.status() != WL_CONNECTED) {\n   delay(500);\n   Serial.print(".");\n    }\n    Serial.println("");\n    Serial.print("Connected to ");\n    Serial.println(ssid);\n    Serial.print("IP address: ");\n    Serial.println(WiFi.localIP());\n    server.begin();\n    Serial.println("TCP server started");\n    MDNS.addService("http", "tcp", 80);\n';
-
-        return `WiFiClient client = server.available();\n    if (!client) {\n        return;\n    }\n    while(client.connected() && !client.available()){\n        delay(1);\n    }\n    String req = client.readStringUntil('\\r');\n    int addr_start = req.indexOf(' ');\n    int addr_end = req.indexOf(' ', addr_start + 1);\n    if (addr_start == -1 || addr_end == -1) {\n        Serial.print("Invalid request: ");\n        Serial.println(req);\n        return;\n    }\nreq = req.substring(addr_start + 1, addr_end);\n`;
-    };
-
-
     
-    Blockly.Arduino.wifi_read = function () {
-        return [`req`, Blockly.Arduino.ORDER_ATOMIC];
-
-
+        Blockly.Arduino.includes_.wifi_init = '#include <WiFi.h>\n';
+        Blockly.Arduino.definitions_.wifi_init = 'const char* ssid = '+ssid+';\nconst char* password = '+passwd+';\n';
+        Blockly.Arduino.setups_['wifi_setup'] = 'WiFi.begin(ssid, password);\n  while (WiFi.status() != WL_CONNECTED) {\n    delay(500);\n  }';
+    
+        return '';
     };
 
-
+    Blockly.Arduino.wifi_read_ip = function () {
+        return [`WiFi.localIP()`, Blockly.Arduino.ORDER_ATOMIC];
+    };
+    
   
     Blockly.Arduino.sd_init = function (block) {
             const cs = Blockly.Arduino.valueToCode(block, 'cs', Blockly.Arduino.ORDER_ATOMIC);
+            const mosi = Blockly.Arduino.valueToCode(block, 'mosi', Blockly.Arduino.ORDER_ATOMIC);
+            const miso = Blockly.Arduino.valueToCode(block, 'miso', Blockly.Arduino.ORDER_ATOMIC);
+            const sck = Blockly.Arduino.valueToCode(block, 'sck', Blockly.Arduino.ORDER_ATOMIC);
+
             Blockly.Arduino.includes_.include_sd_init = `#include <mySD.h>\n#include <SPI.h>\n`;
+            Blockly.Arduino.definitions_.sd_init='File myFile;\n'
+            +'Sd2Card card;\n'
+            +'SdVolume volume;\n'
+            +'SdFile root;\n'
+            +'\n#define s_cs ' + cs
+            +'\n#define s_mosi ' + mosi
+            +'\n#define s_miso ' + miso
+            +'\n#define s_sck ' + sck
+            +'\nuint32_t volumesize;\n';
             
-            Blockly.Arduino.setups_['begin'] = 'SD.begin('+cs+');';
+            Blockly.Arduino.setups_['begin'] = 
+            'pinMode(s_cs, OUTPUT);\n' + 
+            '  while (!card.init(SPI_HALF_SPEED, s_cs, s_mosi, s_miso, s_sck)) {\n'+
+            '    return;\n'+
+            '  }\n'+
+            '  if (!SD.begin(s_cs, s_mosi, s_miso, s_sck)) {\n'+
+            '    return;\n'+
+            '  }\n'+
+            '  if (!volume.init(card)) {\n'+
+            '    return;\n'+
+            '  }';
+
             return '';
         };
+
+    Blockly.Arduino.sd_refresh = function (block) {
+        const code = 'volumesize = volume.blocksPerCluster();\n'+
+        'volumesize *= volume.clusterCount();\n'+
+        'volumesize *= 512;\n';
+        return code;
+    };
     
     Blockly.Arduino.sd_type = function (block) {
-            const cs = Blockly.Arduino.valueToCode(block, 'cs', Blockly.Arduino.ORDER_ATOMIC);
-            Blockly.Arduino.definitions_[`sd2`] = `Sd2Card card;`;
-            Blockly.Arduino.setups_['begin'] = 'card.init(SPI_HALF_SPEED, '+cs+');\n';
-            return ['card.type()',Blockly.Arduino.ORDER_ATOMIC];
+
+            return [`card.type()`, Blockly.Arduino.ORDER_ATOMIC];
         };
     
     Blockly.Arduino.sd_list = function (block) {
-            const cs = Blockly.Arduino.valueToCode(block, 'cs', Blockly.Arduino.ORDER_ATOMIC);
-            Blockly.Arduino.definitions_[`sd2`] = `Sd2Card card;\nSdFile root;\nSdVolume volume;\n`;
-            Blockly.Arduino.setups_['begin'] = 'card.init(SPI_HALF_SPEED, '+cs+');\n  volume.init(card);\n';
-            return 'root.openRoot(volume);\n root.ls(LS_R | LS_DATE | LS_SIZE);\n';
+
+            return 'root.openRoot(volume);\nroot.ls(LS_R | LS_DATE | LS_SIZE);\n';
         };
     
     Blockly.Arduino.sd_var = function (block) {
             const unit = this.getFieldValue('unit');
-            const cs = Blockly.Arduino.valueToCode(block, 'cs', Blockly.Arduino.ORDER_ATOMIC);
-            Blockly.Arduino.definitions_[`sd2`] = `Sd2Card card;\nSdVolume volume;\n`;
-            Blockly.Arduino.setups_['begin'] = 'card.init(SPI_HALF_SPEED, '+cs+');\n  volume.init(card);\n';
             return [''+unit+'',Blockly.Arduino.ORDER_ATOMIC];
         };
     
@@ -434,12 +452,11 @@ Blockly.Arduino.AHT20_21 = function() {
     
     Blockly.Arduino.sd_read = function (block) {
             const file = Blockly.Arduino.valueToCode(block, 'file', Blockly.Arduino.ORDER_ATOMIC);
-            Blockly.Arduino.definitions_[`SD`] = `File datafile;`;
-            const code = 'datafile = SD.open('+file+');\n'+
-            '  while(datafile.available()) {\n'+
-            '   Serial.write(datafile.read());\n'+
+            const code = 'myFile = SD.open('+file+');\n'+
+            '  while(myFile.available()) {\n'+
+            '   Serial.write(myFile.read());\n'+
             '  }\n'+
-            '  datafile.close();\n';
+            '  myFile.close();\n';
             return code;
         };
     
@@ -447,15 +464,21 @@ Blockly.Arduino.AHT20_21 = function() {
             const file = Blockly.Arduino.valueToCode(block, 'file', Blockly.Arduino.ORDER_ATOMIC);
             const data = Blockly.Arduino.valueToCode(block, 'data', Blockly.Arduino.ORDER_ATOMIC);
             const unit = this.getFieldValue('unit');
-            Blockly.Arduino.definitions_[`SD`] = `File datafile;`;
-            const code = 'datafile = SD.open('+file+', FILE_WRITE);\n'+
-            '  if(datafile){\n'+
-            '   datafile.print('+data+');\n'+
+            const code = 'myFile = SD.open('+file+', FILE_WRITE);\n'+
+            '  if(myFile){\n'+
+            '   myFile.print('+data+');\n'+
             '   '+unit+'\n'+
-            '   datafile.close();\n'+
+            '   myFile.close();\n'+
             '  }\n';
             return code;
         }; 
+
+    //light
+    Blockly.Arduino.lightSensor_readValue = function(block) {
+        var arg0 = block.getFieldValue('pin');
+        var code = "analogRead(" + arg0 + ")";
+        return [code, Blockly.Arduino.ORDER_ATOMIC];
+    };
 
     return Blockly;
 

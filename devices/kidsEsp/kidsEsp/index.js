@@ -1,11 +1,11 @@
 const kidsEsp = formatMessage => ({
-    name: 'kidsEsp',
+    name: 'kidsIOT',
     deviceId: 'kidsEsp_arduinoEsp32',
     manufactor: 'kidsbits',
-    leanMore: 'https://www.keyestudio.com/products/2020-new-keyestudio-plus-development-board-with-type-c-interface-usb-cable-compatible-with-arduino-uno-r3',
+    //leanMore: 'https://www.keyestudio.com/products/2020-new-keyestudio-plus-development-board-with-type-c-interface-usb-cable-compatible-with-arduino-uno-r3',
     iconURL: 'asset/kidsEsp.jpg',
     description: formatMessage({
-        id: 'kidsEsp.description',
+        id: 'kidsIOT.description',
         default: 'arduinoEsp32',
         description: 'Description for the arduinoEsp32 ESP32 device'
     }),

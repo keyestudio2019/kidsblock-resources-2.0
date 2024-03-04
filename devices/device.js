@@ -41,6 +41,7 @@ module.exports = [
     'RGBcube_arduinoLeonardo',
     'Superstarterkit_arduinoUno',
     '37Sensorkit_arduinoUno',
+    'ECO_arduinoUno',
     'Smarthome_arduinoUno',
     'Inventor_arduinoUno',
     'Codingbox_arduinoUno',

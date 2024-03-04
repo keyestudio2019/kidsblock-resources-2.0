@@ -894,6 +894,27 @@ Blockly.Blocks.oled_stopScroll = {
         }
     };
 
+    Blockly.Blocks.wifi_read_connected = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.WIFI_READ_CONNECTED,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: wifiIconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                ],
+                colour: color9,
+                extensions: ['output_boolean']
+            });
+        }
+    };
+
     Blockly.Blocks.wifi_read_data = {
         init: function () {
             this.jsonInit({

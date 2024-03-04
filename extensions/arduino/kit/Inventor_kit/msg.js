@@ -250,7 +250,7 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'lógica',
         KS_judge:'%1 %2 %3',
-        CATEGORÍA_LED: 'LED',
+        LED_CATEGORY: 'LED',
         LED_SET_LED_STATE: 'Pin de LED%1 fuera%2',
         LED_ANALOG: 'LED %1 escritura analógica%2 ',
         ATBUZZER_CATEGORY: 'Zumbador',

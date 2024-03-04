@@ -93,10 +93,10 @@ return `
 
 <category name="%{BKY_BUTTON_CATEGORY}" id="BUTTON_CATEGORY" colour="#87cefa" secondaryColour="#3373CC">
     <block type="Button_readState" id="Button_readState">
-        <field name="pin">16</field>
+        <field name="pin">0</field>
     </block>
     <block type="Button_readValue" id="Button_readValue">
-        <field name="pin">16</field>
+        <field name="pin">0</field>
     </block>
 </category>
 
@@ -268,16 +268,9 @@ return `
     </block>
 </category>
 
-<category name="%{BKY_VOLTAGE_CATEGORY}" id="VOLTAGE_CATEGORY" colour="#ff1493" secondaryColour="#BA55D3">
-    <block type="voltage_readValue" id="voltage_readValue">
-        <field name="PIN">39</field>
-    </block>
-</category>
 
 <category name="%{BKY_CURRENT_CATEGORY}" id="CURRENT_CATEGORY" colour="#ff1493" secondaryColour="#BA55D3">
-    <block type="current_readValue" id="current_readValue">
-        <field name="PIN">36</field>
-    </block>
+    <block type="current_readValue" id="current_readValue"></block>
 </category>
 
 <category name="%{BKY_MPU6050_CATEGORY}" id="MPU6050_CATEGORY" colour="#8a2be2" secondaryColour="#BBBB00" >
@@ -294,12 +287,17 @@ return `
     </block>
 </category>
 
+<category name="%{BKY_LIGHTSENSOR_CATEGORY}" id="LIGHTSENSOR_CATEGORY" colour="#9acd32" secondaryColour="#9acd32">
+    <block type="lightSensor_readValue" id="lightSensor_readValue">
+        <field name="pin">39</field>
+    </block>
+</category>
 
-<category name="%{BKY_WIFI_CATEGORY}" id="WIFI_CATEGORY" colour="#ffd700" secondaryColour="#930093">
+<category name="%{BKY_WIFI_CATEGORY}" id="WIFI_CATEGORY" colour="#ffd700" secondaryColour="#ffd700">
     <block type="wifi_init" id="wifi_init">
         <value name="SSID">
             <shadow type="text">
-                <field name="TEXT">ChinaNet-2.4G-0DF0</field>
+                <field name="TEXT">ChinaNet_2.4G</field>
             </shadow>
         </value>
         <value name="PASSWD">
@@ -309,42 +307,41 @@ return `
         </value>
     </block>
 
-   <block type="wifi_read" id="wifi_read">
-   </block>
-   
+    <block type="wifi_read_ip" id="wifi_read_ip"></block>
 </category>
 
 <category name="%{BKY_SD_CATEGORY}" id="SD_CATEGORY" colour="#20b2aa" secondaryColour="#42CCFF">
     <block type="sd_init" id="sd_init">
     	<value name="cs">
             <shadow type="math_number">
-                <field name="NUM">2</field>
+                <field name="NUM">5</field>
+            </shadow>
+        </value>
+        <value name="mosi">
+            <shadow type="math_number">
+                <field name="NUM">23</field>
+            </shadow>
+        </value>
+        <value name="miso">
+            <shadow type="math_number">
+                <field name="NUM">19</field>
+            </shadow>
+        </value>
+        <value name="sck">
+            <shadow type="math_number">
+                <field name="NUM">18</field>
             </shadow>
         </value>
     </block>
+    <block type="sd_refresh" id="sd_refresh"></block>
 
     <block type="sd_type" id="sd_type">
-    	<value name="cs">
-            <shadow type="math_number">
-                <field name="NUM">2</field>
-            </shadow>
-        </value>
     </block>
 
     <block type="sd_list" id="sd_list">
-    	<value name="cs">
-            <shadow type="math_number">
-                <field name="NUM">2</field>
-            </shadow>
-        </value>
     </block>
 
     <block type="sd_var" id="sd_var">
-    	<value name="cs">
-            <shadow type="math_number">
-                <field name="NUM">2</field>
-            </shadow>
-        </value>
     </block>
 
     <block type="sd_judge" id="sd_judge">
@@ -385,6 +382,8 @@ return `
     </block>
 
 </category>`;
+
+
 
 }
 exports = addToolbox;

@@ -7,7 +7,7 @@ const sc7a20 = formatMessage => ({
     extensionId: 'sc7a20',
     version: '1.0.0',
     type: 'arduino',
-    supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560'],
+    supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560','arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
     iconURL: `asset/sc7a20.jpg`,
     description: formatMessage({

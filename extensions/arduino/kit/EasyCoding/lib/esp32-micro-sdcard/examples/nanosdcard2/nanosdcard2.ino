@@ -27,7 +27,7 @@ File myFile;
 //     Arduino Ethernet shield: pin 4
 //     Adafruit SD shields and modules: pin 10
 //     Sparkfun SD shield: pin 8
-const int chipSelect = 4;
+const int chipSelect = 5;
 
 void setup()
 {
@@ -45,7 +45,7 @@ void setup()
   // or the SD library functions will not work. 
    pinMode(SS, OUTPUT);
    
-  if (!SD.begin(17, 14, 12, 15)) {
+  if (!SD.begin(chipSelect, 23, 19, 18)) {
     Serial.println("initialization failed!");
     return;
   }

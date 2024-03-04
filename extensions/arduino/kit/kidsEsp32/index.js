@@ -1,11 +1,11 @@
 const kidsEsp = formatMessage => ({
-    name: 'kidsEsp',
+    name: 'kidsIOT',
     extensionId: 'kidsEsp_esp32',
     version: '1.0.0',
     supportDevice: ['kidsEsp_arduinoEsp32'],
     author: 'keyes',
     description: formatMessage({
-        id: 'kidsEsp.description',
+        id: 'kidsIOT.description',
         default: 'kidsEsp ESP32',
         description: 'Description of kidsEsp'
     }),

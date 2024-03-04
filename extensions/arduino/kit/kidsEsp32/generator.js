@@ -836,40 +836,45 @@ function addGenerator (Blockly) {
     Blockly.Arduino.wifi_init = function (block) {
         const ssid = Blockly.Arduino.valueToCode(block, 'SSID', Blockly.Arduino.ORDER_ATOMIC);
         const passwd = Blockly.Arduino.valueToCode(block, 'PASSWD', Blockly.Arduino.ORDER_ATOMIC);
-    
+
         Blockly.Arduino.includes_.wifi_init = '#include <WiFi.h>\n';
         Blockly.Arduino.definitions_.wifi_init = 'const char* ssid = '+ssid+';\nconst char* password = '+passwd+';\n';
-        Blockly.Arduino.setups_['wifi_setup'] = 'WiFi.begin(ssid, password);\n  while (WiFi.status() != WL_CONNECTED) {\n    delay(500);\n  }';
-    
+        Blockly.Arduino.setups_['wifi_init'] = 'WiFi.begin(ssid, password);\n'+
+        '  while (WiFi.status() != WL_CONNECTED) {\n'+
+        '    delay(500);\n'+
+        '  }\n';
         return '';
     };
     
-    
     // Blockly.Arduino.wifi_read = function () {
     //     return [`req`, Blockly.Arduino.ORDER_ATOMIC];
-    // };
-    
+    // };   
     
     Blockly.Arduino.wifi_read_ip = function () {
         return [`WiFi.localIP()`, Blockly.Arduino.ORDER_ATOMIC]
     };
-    
+
     Blockly.Arduino.wifi_client_init = function (block) {
-    
-        return 'WiFiClient client = server.available();\n';
+
+        Blockly.Arduino.definitions_.wifi_Server_init = 'WiFiServer server(80);\n';
+        Blockly.Arduino.setups_['server_begin'] = 'server.begin();';
+
+        return 'WiFiClient client = server.available();\nString request = "";\n';
     };
     
     Blockly.Arduino.wifi_client_connected = function (block) {
     
-        Blockly.Arduino.definitions_.wifi_client_connected = 'WiFiServer server(80);\n';
-        Blockly.Arduino.setups_.wifi_client_connected = 'server.begin();\n';
-    
         return [`(client == 0 && client.connected() == 0)`, Blockly.Arduino.ORDER_ATOMIC];
+    };
+
+    Blockly.Arduino.wifi_read_connected = function (block) {
+    
+        return [`client.available()`, Blockly.Arduino.ORDER_ATOMIC];
     };
     
     Blockly.Arduino.wifi_read_data = function (block) {
     
-        return [`req`, Blockly.Arduino.ORDER_ATOMIC];
+        return [`request`, Blockly.Arduino.ORDER_ATOMIC];
     };
     
     return Blockly;
