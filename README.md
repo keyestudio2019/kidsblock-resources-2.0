@@ -1,3 +1,8 @@
+V1.6.9:
+
+Add Keyes STEM development board<br>
+add ESP32 270 servo
+
 V1.6.8:
 
 Add ESP32 Easy coding development board<br>

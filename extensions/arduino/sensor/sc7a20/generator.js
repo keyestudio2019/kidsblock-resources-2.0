@@ -5,9 +5,17 @@ function addGenerator (Blockly) {
     Blockly.Arduino.sc7a20_read = function (block) {
         Blockly.Arduino.includes_.include_SC7A20_init = `#include <SC7A20.h>\n`;
         Blockly.Arduino.definitions_[`SC7A20_1`] = `SC7A20_Class SC7A20;\n`;
-        Blockly.Arduino.setups_['SC7A20_getAddress'] = 'SC7A20.begin();\n  SC7A20.measure();\n';
+        Blockly.Arduino.setups_['SC7A20_getAddress'] = 'SC7A20.begin();\n';
         const unit = this.getFieldValue('unit');
         return [`${unit}`, Blockly.Arduino.ORDER_ATOMIC];
+    };
+
+    Blockly.Arduino.sc7a20_tumble_handle = function () {
+        Blockly.Arduino.includes_.include_SC7A20_init = `#include <SC7A20.h>\n`;
+        Blockly.Arduino.definitions_[`SC7A20_1`] = `SC7A20_Class SC7A20;\n`;
+        Blockly.Arduino.setups_['SC7A20_getAddress'] = 'SC7A20.begin();\n';
+
+        return [`SC7A20.tumble_handle()`, Blockly.Arduino.ORDER_ATOMIC]
     };
 
     return Blockly;

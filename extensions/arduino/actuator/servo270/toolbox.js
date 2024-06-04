@@ -7,15 +7,10 @@ function addToolbox () {
     return `
 <category name="%{BKY_KS_SERVO_CATEGORY}" id="KS_SERVO_CATEGORY" colour="#FF6F00" secondaryColour="#FF6F00" iconURI="${ksservoIconUrl}">
     <block type="ks_servo270_angle" id="ks_servo270_angle">
-        <field name="pin">3</field>>
+        <field name="pin">12</field>>
         <value name="angle">
             <shadow type="math_number">
                 <field name="NUM">90</field>
-            </shadow>
-        </value>
-        <value name="time">
-            <shadow type="math_number">
-                <field name="NUM">200</field>
             </shadow>
         </value>
     </block>

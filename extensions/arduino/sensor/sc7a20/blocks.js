@@ -23,11 +23,33 @@ function addBlocks (Blockly) {
                         type: 'field_dropdown',
                         name: 'unit',
                         options: [
-                            ['X-Accel', 'SC7A20.accel_X'],
-                            ['Y-Accel', 'SC7A20.accel_Y'],
-                            ['Z-Accel', 'SC7A20.accel_Z'],
+                            ['X-Accel', 'SC7A20.readAccelX()'],
+                            ['Y-Accel', 'SC7A20.readAccelY()'],
+                            ['Z-Accel', 'SC7A20.readAccelZ()'],
                             ]
                     }
+                ],
+                colour: color,
+                extensions: ['output_number']
+            });
+        }
+    };
+
+    Blockly.Blocks.sc7a20_tumble_handle = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.SC7A20_TUMBLE_HANDLE,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: adxlIconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                    
                 ],
                 colour: color,
                 extensions: ['output_number']

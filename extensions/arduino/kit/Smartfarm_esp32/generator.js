@@ -412,7 +412,7 @@ Blockly.Arduino.wifi_send_data = function (block) {
     Blockly.Arduino.definitions_.wifi_send_data = 'DHT dht_1(17, 11);\n';
 
     Blockly.Arduino.setups_.wifi_send_data = 
-        'pinMode(27,OUTPUT);\n' +
+        '  pinMode(27,OUTPUT);\n' +
         '  pinMode(35,INPUT);\n' +
         '  pinMode(34,INPUT);\n' +
         '  pinMode(32,INPUT);\n' +

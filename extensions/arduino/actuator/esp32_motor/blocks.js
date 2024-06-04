@@ -98,8 +98,8 @@ function addBlocks (Blockly) {
                         type: 'field_dropdown',
                         name: 'CH',
                         options: [
-                            ['CH0 (LT0)', '1'],
-                            ['CH1 (LT0)', '2'],
+                            ['CH0 (LT0)', '0'],
+                            ['CH1 (LT0)', '1'],
                             ['CH2 (LT1)', '2'],
                             ['CH3 (LT1)', '3'],
                             ['CH4 (LT2)', '4'],

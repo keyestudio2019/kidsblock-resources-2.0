@@ -24,9 +24,9 @@ function addBlocks (Blockly) {
                         type: 'field_dropdown',
                         name: 'VAL',
                         options: [
-                            [Blockly.Msg.BUTTON, 'rocker.B'],
-                            [Blockly.Msg.X, 'rocker.X'],
-                            [Blockly.Msg.Y, 'rocker.Y']]
+                            [Blockly.Msg.BUTTON, 'rocker.readB()'],
+                            [Blockly.Msg.X, 'rocker.readX()'],
+                            [Blockly.Msg.Y, 'rocker.readY()']]
                     },
                 ],
                 colour: color,

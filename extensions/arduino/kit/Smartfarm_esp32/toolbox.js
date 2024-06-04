@@ -209,8 +209,8 @@ return `
 <category name="%{BKY_KS_SERVO_CATEGORY}" id="KS_SERVO_CATEGORY" colour="#7b68ee" secondaryColour="#7b68ee">
    <block type="ks_servo_angle" id="ks_servo_angle">
 
-   <field name="pin">IO5</field>>
-   <field name="CH">CH0</field>>
+   <field name="pin">5</field>>
+   <field name="CH">0</field>>
 
    <value name="angle">
     <shadow type="math_number">

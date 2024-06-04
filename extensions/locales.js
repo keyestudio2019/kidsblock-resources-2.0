@@ -1,6 +1,6 @@
 module.exports = {
     'en': {
-     
+        'keyesSTEM.description':'STEM programming education development board with on board 1.8-inch TFT screen',
         'ECO.description':'Eco-friendly house kit for arduino',
         'RGBcube.description':'RGB LED Cube Kit',
         'SmartfarmESP32.description':'Smart Farm Kit for ESP32',
@@ -131,6 +131,7 @@ module.exports = {
         'keypad4_4.description': '4*4 Key pad module',
     },
     'es': {
+       'keyesSTEM.description':'Placa de desarrollo educativo de programación STEM con pantalla TFT integrada de 1,8 pulgadas',
        'ECO.description':'Kit de casa ecológico para arduino',
        'RGBcube.description': 'Kit de cubo LED RGB',
        'SmartfarmESP32.description':'Kit de granja inteligente para ESP32',
@@ -262,6 +263,7 @@ module.exports = {
     },
 
     'de': {
+        'keyesSTEM.description':'Entwicklungsboard für die STEM-Programmierausbildung mit integriertem 1,8-Zoll-TFT-Bildschirm',
         'ECO.description':'Umweltfreundliches Hausset für Arduino',
         'RGBcube.description':'RGB LED Cube Kit',
         'SmartfarmESP32.description':'Smart Farm Kit für ESP32',
@@ -391,6 +393,7 @@ module.exports = {
          'keypad4_4.description': '4*4 Tastaturmodul',
     },
     'fr': {
+        'keyesSTEM.description':'Carte de développement de l"éducation à la programmation STEM avec écran TFT de 1,8 pouces intégré',
         'ECO.description':'Kit maison écologique pour arduino',
         'RGBcube.description':'Kit Cube LED RVB',
         'SmartfarmESP32.description':'Kit de ferme intelligente pour ESP32',
@@ -520,6 +523,7 @@ module.exports = {
          'keypad4_4.description': 'Module de clavier 4*4',
     },
     'ja': {
+        'keyesSTEM.description':'1.8 インチ TFT スクリーンを搭載した STEM プログラミング教育開発ボード',
         'ECO.description':'Arduino用の環境に優しいハウスキット',
         'RGBcube.description':'RGB LED キューブ キット',
         'SmartfarmESP32.description':'ESP32 用スマート ファーム キット',
@@ -650,6 +654,7 @@ module.exports = {
          'keypad4_4.description': '4*4 キーパッドモジュール',
     },
     'ko': {
+        'keyesSTEM.description': '1.8인치 TFT 화면이 내장된 STEM 프로그래밍 교육 개발 보드',
         'ECO.description':'아두이노용 친환경 하우스 키트',
         'RGBcube.description':'RGB LED 큐브 키트',
         'SmartfarmESP32.description':'ESP32용 스마트 팜 키트',
@@ -779,6 +784,7 @@ module.exports = {
          'keypad4_4.description': '4*4 키패드 모듈',
     },
     'pl': {
+        'keyesSTEM.description':'Płyta rozwojowa programowania STEM z wbudowanym ekranem TFT o przekątnej 1,8 cala',
         'ECO.description':'Ekologiczny zestaw domowy dla Arduino',
         'RGBcube.description':'Zestaw kostki LED RGB',
         'SmartfarmESP32.description': 'Zestaw inteligentnej farmy dla ESP32',
@@ -908,6 +914,7 @@ module.exports = {
          'keypad4_4.description': '4*4 Moduł klawiatury',
     },
     'pt': {
+        'keyesSTEM.description':'Placa de desenvolvimento educacional de programação STEM com tela TFT de 1,8 polegadas integrada',
         'ECO.description':'Kit doméstico ecológico para arduino',
         'RGBcube.description':'RGB LED Cube Kit',
         'SmartfarmESP32.description':'Smart Farm Kit para ESP32',
@@ -1038,6 +1045,7 @@ module.exports = {
          'keypad4_4.description': 'Módulo de teclado 4*4',
     },
     'ru': {
+        'keyesSTEM.description':'Плата для разработки образовательных программ STEM со встроенным 1,8-дюймовым TFT-экраном',
         'ECO.description':'Экологичный домашний комплект для Arduino',
         'RGBcube.description':'Набор светодиодных кубов RGB',
         'SmartfarmESP32.description':'Комплект Smart Farm для ESP32',
@@ -1168,6 +1176,7 @@ module.exports = {
     },
 
     'zh-cn': {
+        'keyesSTEM.description':'板载1.8英寸TFT屏STEM编程教育开发板',
         'ECO.description':'基于Arduino的生态小屋学习套装',
         'RGBcube.description':'RGB 光立方套装',
         'SmartfarmESP32.description':'基于ESP32的智慧农场套装',
@@ -1257,10 +1266,6 @@ module.exports = {
         'TFT.name': 'TFT彩屏',
         'TFT.description': 'TFT彩屏',
         'oled.description': 'I2C oled 显示屏.',
-
-
-        'dht11.description': 'DHT11 temperature and humidity sensor module.',
-        'hc-sr04.description': 'HC-SR04 distance measurement module.',
         'dht11.description': 'DHT11 温湿度传感器模块.',
         'hc-sr04.description': 'HC_SR04 超声波测距模块.',
         'ultrasonic': '超声波模块',
@@ -1301,6 +1306,7 @@ module.exports = {
         'keypad4_4.description': '4*4 矩阵按键',
     },
     'zh-tw': {
+        'keyesSTEM.description':'板载1.8英寸TFT屏STEM编程教育开发板',
         'ECO.description':'基於Arduino的生態小屋學習套裝',
         'RGBcube.description':'RGB 光立方套裝',
         'SmartfarmESP32.description':'基於ESP32的智慧農場套裝',
@@ -1390,9 +1396,6 @@ module.exports = {
         'TFT.name': 'TFT彩屏',
         'TFT.description': 'TFT彩屏',
         'oled.description': 'I2C oled 顯示屏.',
-  
-        'dht11.description': 'DHT11 temperature and humidity sensor module.',
-        'hc-sr04.description': 'HC-SR04 distance measurement module.',
         'dht11.description': 'DHT11 溫濕度傳感器模塊.',
         'hc-sr04.description': 'HC_SR04 超聲波測距模塊.',
         'ultrasonic': '超聲波模塊',

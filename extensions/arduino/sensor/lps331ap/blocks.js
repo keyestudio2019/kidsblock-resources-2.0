@@ -23,8 +23,8 @@ function addBlocks (Blockly) {
                         type: 'field_dropdown',
                         name: 'data',
                         options: [
-                            ['pressure', 'LPS331AP.pressure'],
-                            ['Temperature', 'LPS331AP.temperature']
+                            ['pressure', 'LPS331AP.readPressure()'],
+                            ['Temperature', 'LPS331AP.readTemperature()']
                             ]
                     }
                 ],

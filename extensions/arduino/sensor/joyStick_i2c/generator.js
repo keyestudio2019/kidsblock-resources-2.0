@@ -6,7 +6,7 @@ function addGenerator (Blockly) {
         Blockly.Arduino.definitions_['include_Wire'] = '#include <Wire.h>';
         Blockly.Arduino.includes_.include_joystick_init = `#include <Rocker.h>`;
         Blockly.Arduino.definitions_[`joystick_data`] = `ROCKER rocker;`;
-        Blockly.Arduino.setups_['getAddress'] = 'Wire.begin();\nrocker.begin();\n';
+        Blockly.Arduino.setups_['getAddress'] ='Wire.begin();\nrocker.begin();\n';
         const val = this.getFieldValue('VAL');
         return [`${val}`, Blockly.Arduino.ORDER_ATOMIC];
     };

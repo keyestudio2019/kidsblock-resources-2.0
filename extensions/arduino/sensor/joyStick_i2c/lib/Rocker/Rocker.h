@@ -27,7 +27,10 @@ public:
     int B;
     //bool begin(uint8_t address = I2C_ADDR, TwoWire &wirePort = Wire);
     void begin(uint8_t address = I2C_ADDR, TwoWire &wirePort = Wire);
-    void measure(void);
+    //void measure(void);
+    int readB(void);
+    uint16_t readX(void);
+    uint16_t readY(void);
 };
 
 #endif

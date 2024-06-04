@@ -4,6 +4,7 @@ module.exports = [
     'unov4.0_arduinoUno',
     'unoPlus_arduinoUno',
     'KeyesPlus_arduinoUno',
+    'KeyesSTEM_arduinoUno',
     'unoMaker_arduinoUno',
     'UnoMax_arduinoUno',
     'megaplus_arduinoMega2560',

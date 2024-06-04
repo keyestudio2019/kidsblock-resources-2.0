@@ -7,9 +7,8 @@ function addToolbox () {
     
     return `
 <category name="%{BKY_SC7A20_CATEGORY}" id="SC7A20_CATEGORY" colour="#42CCFF" secondaryColour="#42CCFF" iconURI="${adxlIconUrl}">
-    <block type="sc7a20_read" id="sc7a20_read">
-
-    </block>
+    <block type="sc7a20_read" id="sc7a20_read"></block>
+    <block type="sc7a20_tumble_handle" id="sc7a20_tumble_handle"></block>
 </category>`;
 }
 

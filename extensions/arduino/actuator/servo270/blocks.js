@@ -11,6 +11,7 @@ function addBlocks (Blockly) {
         .getField('PIN')
         .getOptions();
 
+
     Blockly.Blocks.ks_servo270_angle = {
         init: function () {
             this.jsonInit({
@@ -34,10 +35,6 @@ function addBlocks (Blockly) {
                     {
                         type: 'input_value',
                         name: 'angle'
-                    },
-                    {
-                        type: 'input_value',
-                        name: 'time'
                     }
                 ],
                 colour: color,

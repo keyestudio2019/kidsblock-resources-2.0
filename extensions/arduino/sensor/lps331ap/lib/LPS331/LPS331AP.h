@@ -42,6 +42,8 @@ private:
     TwoWire *_i2cPort;
     float *_Pressure;
     float *_Temperature;
+    float pressure;
+    float temperature;
     void IIC_Write_Byte(uint8_t reg, uint8_t data);
     void IIC_Read_Byte(uint8_t reg, uint8_t* buf, int lenght);
     bool IsExist();
@@ -49,8 +51,8 @@ private:
 
 public:
 
-    float pressure;
-    float temperature;
+    float readPressure();
+    float readTemperature();
     bool begin(uint8_t address = I2C_ADDR, TwoWire &wirePort = Wire);
     // void begin(uint8_t address = I2C_ADDR, TwoWire &wirePort = Wire);
     void measure(void);

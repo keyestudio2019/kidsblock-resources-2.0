@@ -171,3 +171,15 @@ void LPS331AP::measure(void)
         pressure = 0;
     }
 }
+
+float LPS331AP::readTemperature(){
+    delay(50);
+    measure();
+    return temperature;     
+}
+
+float LPS331AP::readPressure(){
+    delay(50);
+    measure();
+    return pressure;
+}
