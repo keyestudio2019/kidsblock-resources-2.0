@@ -1,9 +1,9 @@
 const MegaPlus = formatMessage => ({
-    name: 'Mega Plus development board',
+    name: 'MEGA 2560 development board',
     deviceId: 'megaplus_arduinoMega2560',
     manufactor: 'keyestudio',
     //leanMore: 'https://www.keyestudio.com/products/2020-new-keyestudio-plus-development-board-with-type-c-interface-usb-cable-compatible-with-arduino-uno-r3',
-    iconURL: 'asset/megaplus.jpg',
+    iconURL: 'asset/mega.jpg',
     description: formatMessage({
         id: 'MegaPlus.description',
         default: 'Mega Plus',

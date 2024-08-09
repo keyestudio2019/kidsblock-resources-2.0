@@ -31,6 +31,7 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logic',
         KS_judge:'%1 %2 %3',
+
     });
     Object.assign(Blockly.ScratchMsgs.locales['de'], {
         KS_VARIABLE_LABEL:'Variablentyp',
@@ -61,6 +62,7 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'Logik',
         KS_judge:'%1 %2 %3',
+   
     });
     Object.assign(Blockly.ScratchMsgs.locales['es'], {
         KS_VARIABLE_LABEL:'Tipo de variable',
@@ -91,6 +93,7 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'lógica',
         KS_judge:'%1 %2 %3',
+     
     });
     Object.assign(Blockly.ScratchMsgs.locales['fr'], {
         KS_VARIABLE_LABEL:'Type de variable',
@@ -121,6 +124,7 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'logique',
          KS_judge:'%1 %2 %3',
+  
     });
     Object.assign(Blockly.ScratchMsgs.locales['ja'], {
         KS_VARIABLE_LABEL:'変数タイプ',
@@ -151,6 +155,7 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'ロジック',
          KS_judge:'%1 %2 %3',
+         
     });
     Object.assign(Blockly.ScratchMsgs.locales['ko'], {
         KS_VARIABLE_LABEL:'변수 유형',
@@ -181,6 +186,7 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'논리',
          KS_judge:'%1 %2 %3',
+
     });
     Object.assign(Blockly.ScratchMsgs.locales['pl'], {
         KS_VARIABLE_LABEL:'Typ zmiennej',
@@ -211,6 +217,7 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'logika',
         KS_judge:'%1%2%3',
+
     });
     Object.assign(Blockly.ScratchMsgs.locales['pt'], {
         KS_VARIABLE_LABEL:'Tipo de variável',
@@ -241,6 +248,7 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL:'lógica',
          KS_judge:'%1 %2 %3',
+
     });
     Object.assign(Blockly.ScratchMsgs.locales['ru'], {
         KS_VARIABLE_LABEL: 'Тип переменной',
@@ -271,6 +279,7 @@ function addMsg (Blockly) {
 
          KS_LOGIC_LABEL: 'логика',
          KS_judge:'%1 %2 %3',
+         
     
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-tw'], {
@@ -303,6 +312,7 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'邏輯',
         KS_judge:'%1 %2 %3',
+
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
         KS_VARIABLE_LABEL:'变量类型',
@@ -334,6 +344,7 @@ function addMsg (Blockly) {
 
         KS_LOGIC_LABEL:'逻辑',
         KS_judge:'%1 %2 %3',
+
     });
     return Blockly;
 }

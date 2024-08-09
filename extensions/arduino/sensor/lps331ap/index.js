@@ -7,7 +7,7 @@ const lps331ap = formatMessage => ({
     extensionId: 'lps331ap',
     version: '1.0.0',
     type: 'arduino',
-    supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560','arduinoEsp32', 'arduinoEsp8266'],
+    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32','arduinoEsp8266'],
     author: 'keyes',
     iconURL: `asset/lps331ap.jpg`,
     description: formatMessage({

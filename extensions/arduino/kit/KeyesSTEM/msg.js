@@ -92,6 +92,8 @@ function addMsg (Blockly) {
         SD_DELETE: 'delete %1',
         SD_READ: 'read %1',
         SD_WRITE: 'write SD File %1 Data %2 NewLine %3',
+        TFTSD_INIT: 'TFT screen displays SD card image initialization',
+        TFTSD_DISPLAY: 'SD card image name %1 X coordinate %2 Y coordinate %3',
     });
     Object.assign(Blockly.ScratchMsgs.locales['de'], {
         KS_VARIABLE_LABEL:'Variablentyp',
@@ -183,6 +185,8 @@ function addMsg (Blockly) {
         SD_DELETE: '%1 löschen',
         SD_READ: '%1 lesen',
         SD_WRITE: 'SD-Datei %1 Daten %2 NewLine %3 schreiben',
+        TFTSD_INIT: 'TFT-Bildschirm zeigt SD-Karten-Bildinitialisierung an',
+        TFTSD_DISPLAY: 'SD-Karten-Bildname %1 X-Koordinate %2 Y-Koordinate %3',
     });
     Object.assign(Blockly.ScratchMsgs.locales['es'], {
         KS_VARIABLE_LABEL:'Tipo de variable',
@@ -274,6 +278,8 @@ function addMsg (Blockly) {
         SD_DELETE: 'eliminar %1',
         SD_READ: 'leer %1',
         SD_WRITE: 'escribir archivo SD %1 Datos %2 NewLine %3',
+        TFTSD_INIT: 'Pantalla TFT muestra inicialización de imagen de tarjeta SD',
+        TFTSD_DISPLAY: 'Nombre de imagen de tarjeta SD %1 Coordenada X %2 Coordenada Y %3',
     });
     Object.assign(Blockly.ScratchMsgs.locales['fr'], {
         KS_VARIABLE_LABEL:'Type de variable',
@@ -365,6 +371,8 @@ function addMsg (Blockly) {
          SD_DELETE: 'supprimer %1',
          SD_READ: 'lire %1',
          SD_WRITE: 'écrire le fichier SD %1 Data %2 NewLine %3',
+         TFTSD_INIT: 'Écran TFT affiche l"initialisation de l"image de la carte SD',
+         TFTSD_DISPLAY: 'Nom de l"image de la carte SD %1 Coordonnée X %2 Coordonnée Y %3',
     });
     Object.assign(Blockly.ScratchMsgs.locales['ja'], {
         KS_VARIABLE_LABEL:'変数タイプ',
@@ -456,6 +464,8 @@ function addMsg (Blockly) {
          SD_DELETE: '%1 を削除',
          SD_READ: '%1 を読み取り',
          SD_WRITE: 'SD ファイル %1 データ %2 NewLine %3 を書き込みます',
+         TFTSD_INIT: 'TFT画面がSDカードの画像初期化を表示',
+         TFTSD_DISPLAY: 'SDカード画像名 %1 X座標 %2 Y座標 %3',
     });
     Object.assign(Blockly.ScratchMsgs.locales['ko'], {
         KS_VARIABLE_LABEL:'변수 유형',
@@ -547,6 +557,8 @@ function addMsg (Blockly) {
          SD_DELETE: '%1 삭제',
          SD_READ: '%1 읽기',
          SD_WRITE: 'SD 파일 %1 데이터 %2 NewLine %3 쓰기',
+         TFTSD_INIT: 'TFT 화면이 SD 카드 이미지 초기화를 표시합니다',
+         TFTSD_DISPLAY: 'SD 카드 이미지 이름 %1 X 좌표 %2 Y 좌표 %3',
     });
     Object.assign(Blockly.ScratchMsgs.locales['pl'], {
         KS_VARIABLE_LABEL:'Typ zmiennej',
@@ -638,6 +650,8 @@ function addMsg (Blockly) {
         SD_DELETE: 'usuń %1',
         SD_READ: 'odczyt %1',
         SD_WRITE: 'zapisz plik SD %1 Dane %2 NewLine %3',
+        TFTSD_INIT: 'Ekran TFT wyświetla inicjalizację obrazu karty SD',
+        TFTSD_DISPLAY: 'Nazwa obrazu karty SD %1 Współrzędna X %2 Współrzędna Y %3',
     });
     Object.assign(Blockly.ScratchMsgs.locales['pt'], {
         KS_VARIABLE_LABEL:'Tipo de variável',
@@ -729,6 +743,8 @@ function addMsg (Blockly) {
          SD_DELETE: 'excluir %1',
          SD_READ: 'ler %1',
          SD_WRITE: 'escrever arquivo SD %1 Data %2 NewLine %3',
+         TFTSD_INIT: 'Tela TFT exibe inicialização da imagem do cartão SD',
+         TFTSD_DISPLAY: 'Nome da imagem do cartão SD %1 Coordenada X %2 Coordenada Y %3',
     });
     Object.assign(Blockly.ScratchMsgs.locales['ru'], {
         KS_VARIABLE_LABEL: 'Тип переменной',
@@ -819,7 +835,9 @@ function addMsg (Blockly) {
          SD_JUDGE: '%1 Файл существует?',
          SD_DELETE: 'удалить %1',
          SD_READ: 'прочитано %1',
-         SD_WRITE: 'записать SD-файл %1 Data %2 NewLine %3',      
+         SD_WRITE: 'записать SD-файл %1 Data %2 NewLine %3',
+         TFTSD_INIT: 'Экран TFT отображает инициализацию изображения карты SD',
+         TFTSD_DISPLAY: 'Имя изображения карты SD %1 X-координата %2 Y-координата %3',
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-tw'], {
         KS_VARIABLE_LABEL:'變量類型',
@@ -912,6 +930,8 @@ function addMsg (Blockly) {
         SD_DELETE: '刪除%1',
         SD_READ: '讀取%1',
         SD_WRITE: '寫入SD 文件%1 數據%2 換行%3',
+        TFTSD_INIT: 'TFT 螢幕顯示SD卡圖片 初始化',
+        TFTSD_DISPLAY: 'SD卡 圖片名稱%1 X座標%2 Y座標%3',
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
         KS_VARIABLE_LABEL:'变量类型',
@@ -1004,6 +1024,10 @@ function addMsg (Blockly) {
         SD_DELETE: '删除%1',
         SD_READ: '读取%1',
         SD_WRITE: '写入SD 文件%1 数据%2 换行%3',
+        TFTSD_INIT: 'TFT 屏显示SD卡图片 初始化',
+        TFTSD_DISPLAY: 'SD卡 图片名称%1 X坐标%2 Y坐标%3',
+        TFTSD_INIT: 'TFT 屏显示SD卡图片 初始化',
+        TFTSD_DISPLAY: 'SD卡 图片名称%1 X坐标%2 Y坐标%3',
     });
     return Blockly;
 }

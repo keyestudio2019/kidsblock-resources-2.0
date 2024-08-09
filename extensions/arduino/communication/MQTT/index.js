@@ -6,7 +6,7 @@ const MQTT = formatMessage => ({
     }),
     extensionId: 'MQTT',
     version: '1.0.0',
-    supportDevice: ['arduinoEsp32','arduinoEsp8266'],
+    supportDevice: ['arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyestudio',
     iconURL: `asset/MQTT.png`,
     description: formatMessage({

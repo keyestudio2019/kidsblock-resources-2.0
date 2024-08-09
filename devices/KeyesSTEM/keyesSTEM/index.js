@@ -18,7 +18,7 @@ const KeyesSTEM = formatMessage => ({
     useAutoScan: false,
     connectionIconURL: 'asset/keyesSTEM_big.svg',
     connectionSmallIconURL: 'asset/keyesSTEM_small.svg',
-    programMode: ['realtime', 'upload'],
+    programMode: ['upload'],
     programLanguage: ['block', 'cpp'],
     tags: ['arduino'],
     deviceExtensions: ['KeyesSTEM'],

@@ -1,3 +1,11 @@
+
+V1.7.0:
+
+Add MP3 Music module<br>
+add TFT Dispaly for Arduino<br>
+add AHT20 Temperature and Humidity Sensor <br>
+add AK8975 electronic compass Sensor
+
 V1.6.9:
 
 Add Keyes STEM development board<br>
@@ -15,9 +23,6 @@ Added German, Spanish, French, Portuguese, Japanese, Russian, Korean, Polish
 
 V1.6.6:
 
-Add Raspberry Pi PICO development board<br>
-Add Maixdock development board based on K210<br>
-Add Maixduino development board based on K210<br>
 Add Sentry module based on AI recognition<br>
 Add to display random images in dot matrix
 

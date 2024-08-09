@@ -5,8 +5,7 @@ const max6675 = formatMessage => ({
     }),
     extensionId: 'max6675',
     version: '1.0.0',
-    supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
+    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32','arduinoEsp8266'],
     author: 'keyes',
     iconURL: `asset/max6675.jpg`,
     description: formatMessage({

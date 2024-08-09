@@ -7,9 +7,9 @@ const ks_servo270 = formatMessage => ({
     extensionId: 'ks_servo270',
     version: '1.0.0',
     type: 'arduino',
-    supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560'],
+    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560'],
     author: 'keyes',
-    iconURL: `asset/servo.jpg`,
+    iconURL: `asset/servo270.jpg`,
     description: formatMessage({
         id: 'ks_servo270.description',
         default: 'Servo driver',

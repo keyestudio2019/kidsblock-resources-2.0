@@ -7,7 +7,7 @@ const motor8833 = formatMessage => ({
     extensionId: 'motor8833',
     version: '1.0.0',
     type: 'arduino',
-    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
+    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32','arduinoEsp8266'],
     author: 'keyestudio',
     iconURL: `asset/8833.jpg`,
     description: formatMessage({

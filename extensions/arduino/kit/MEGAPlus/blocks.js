@@ -5,7 +5,8 @@ function addBlocks (Blockly) {
     const color = '#FF4500';
     const color2 = '#41be8a';
     const color3 = '#573e00';
-    const secondaryColour = '#CD5C5C';
+    
+
     //变量
     Blockly.Blocks.KS_variables_declare = {
         init: function () {
@@ -199,7 +200,6 @@ function addBlocks (Blockly) {
         }
     };
     
-
 
     return Blockly;
 }

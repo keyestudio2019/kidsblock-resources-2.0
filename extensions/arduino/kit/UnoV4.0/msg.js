@@ -23,12 +23,10 @@ function addMsg (Blockly) {
         KS_MATH_UNSIGNED_LONG: 'unsigned long',
         KS_MATH_UNSIGNED_CHAR: 'unsigned char',
         KS_MATH_DOUBLE: 'double',
-
         KS_TEXT_LABEL:'TEXT',
         KS_char: 'char%1',
         KS_string: 'string%1',
         KS_data: '%1',
-
         KS_LOGIC_LABEL:'logic',
         KS_judge:'%1 %2 %3',
     });
@@ -53,12 +51,10 @@ function addMsg (Blockly) {
         KS_MATH_UNSIGNED_LONG: 'unsigned long',
         KS_MATH_UNSIGNED_CHAR: 'unsigned char',
         KS_MATH_DOUBLE: 'double',
-
         KS_TEXT_LABEL:'TEXT',
         KS_char: 'char%1',
         KS_string: 'string%1',
         KS_data: '%1',
-
         KS_LOGIC_LABEL:'Logik',
         KS_judge:'%1 %2 %3',
     });
@@ -83,12 +79,10 @@ function addMsg (Blockly) {
         KS_MATH_UNSIGNED_LONG: 'largo sin firmar',
         KS_MATH_UNSIGNED_CHAR: 'caracter sin firmar',
         KS_MATH_DOUBLE: 'doble',
-
         KS_TEXT_LABEL:'TEXTO',
         KS_char: 'char%1',
         KS_string: 'cadena%1',
         KS_data: '%1',
-
         KS_LOGIC_LABEL:'lógica',
         KS_judge:'%1 %2 %3',
     });
@@ -113,12 +107,10 @@ function addMsg (Blockly) {
          KS_MATH_UNSIGNED_LONG: 'long non signé',
          KS_MATH_UNSIGNED_CHAR: 'caractère non signé',
          KS_MATH_DOUBLE: 'doubler',
-
          KS_TEXT_LABEL:'TEXTE',
          KS_char: 'car%1',
          KS_string: 'chaîne%1',
          KS_data: '%1',
-
          KS_LOGIC_LABEL:'logique',
          KS_judge:'%1 %2 %3',
     });
@@ -143,12 +135,10 @@ function addMsg (Blockly) {
          KS_MATH_UNSIGNED_LONG: '符号なしロング',
          KS_MATH_UNSIGNED_CHAR: '符号なし文字',
          KS_MATH_DOUBLE: '倍精度',
-
          KS_TEXT_LABEL:'テキスト',
          KS_char: 'char%1',
          KS_string: 'string%1',
          KS_data: '%1',
-
          KS_LOGIC_LABEL:'ロジック',
          KS_judge:'%1 %2 %3',
     });
@@ -173,12 +163,10 @@ function addMsg (Blockly) {
          KS_MATH_UNSIGNED_LONG: '부호 없는 롱',
          KS_MATH_UNSIGNED_CHAR: '부호 없는 문자',
          KS_MATH_DOUBLE: '더블',
-
          KS_TEXT_LABEL:'텍스트',
          KS_char: '문자%1',
          KS_string: '문자열%1',
          KS_data: '%1',
-
          KS_LOGIC_LABEL:'논리',
          KS_judge:'%1 %2 %3',
     });
@@ -203,12 +191,10 @@ function addMsg (Blockly) {
         KS_MATH_UNSIGNED_LONG: 'długi bez znaku',
         KS_MATH_UNSIGNED_CHAR: 'znak bez znaku',
         KS_MATH_DOUBLE: 'podwójne',
-
         KS_TEXT_LABEL:'TEKST',
         KS_char: 'znak%1',
         KS_string: 'ciąg%1',
         KS_data: '%1',
-
         KS_LOGIC_LABEL:'logika',
         KS_judge:'%1%2%3',
     });
@@ -233,12 +219,10 @@ function addMsg (Blockly) {
          KS_MATH_UNSIGNED_LONG: 'não assinado longo',
          KS_MATH_UNSIGNED_CHAR: 'caractere não assinado',
          KS_MATH_DOUBLE: 'duplo',
-
          KS_TEXT_LABEL:'TEXT',
          KS_char: 'char%1',
          KS_string: 'string%1',
          KS_data: '%1',
-
          KS_LOGIC_LABEL:'lógica',
          KS_judge:'%1 %2 %3',
     });
@@ -263,12 +247,10 @@ function addMsg (Blockly) {
          KS_MATH_UNSIGNED_LONG: 'длинное без знака',
          KS_MATH_UNSIGNED_CHAR: 'беззнаковый символ',
          KS_MATH_DOUBLE: 'двойной',
-
          KS_TEXT_LABEL:'ТЕКСТ',
          KS_char: 'символ%1',
          KS_string: 'строка%1',
          KS_data: '%1',
-
          KS_LOGIC_LABEL: 'логика',
          KS_judge:'%1 %2 %3',
     });
@@ -294,12 +276,10 @@ function addMsg (Blockly) {
         KS_MATH_UNSIGNED_LONG: '無符號長整數',
         KS_MATH_UNSIGNED_CHAR: '無符號字符',
         KS_MATH_DOUBLE: '雙精度浮點數',
-
         KS_TEXT_LABEL:'文本',
         KS_char: '\'%1\'',
         KS_string: '\"%1\"',
         KS_data: '%1',
-
         KS_LOGIC_LABEL:'邏輯',
         KS_judge:'%1 %2 %3',
     });
@@ -325,12 +305,10 @@ function addMsg (Blockly) {
         KS_MATH_UNSIGNED_LONG: '无符号长整数',
         KS_MATH_UNSIGNED_CHAR: '无符号字符',
         KS_MATH_DOUBLE: '双精度浮点数',
-
         KS_TEXT_LABEL:'文本',
         KS_char: '\'%1\'',
         KS_string: '\"%1\"',
         KS_data: '%1',
-
         KS_LOGIC_LABEL:'逻辑',
         KS_judge:'%1 %2 %3',
     });

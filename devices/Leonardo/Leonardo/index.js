@@ -1,9 +1,9 @@
 const Leonardo = formatMessage => ({
-    name: 'Leonardo development board',
+    name: 'LEONARDO development board',
     deviceId: 'Leonardo_arduinoLeonardo',
     manufactor: 'keyestudio',
     //leanMore: 'https://www.keyestudio.com/products/2020-new-keyestudio-plus-development-board-with-type-c-interface-usb-cable-compatible-with-arduino-uno-r3',
-    iconURL: 'asset/Leonardo.jpg',
+    iconURL: 'asset/Leonardo.png',
     description: formatMessage({
         id: 'Leonardo.description',
         default: 'Leonardo',

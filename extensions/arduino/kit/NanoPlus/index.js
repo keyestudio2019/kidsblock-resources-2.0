@@ -2,7 +2,7 @@ const NanoPlus = formatMessage => ({
     name: 'NanoPlus',
     extensionId: 'NanoPlus',
     version: '1.0.0',
-    supportDevice: ['nanoplus_arduinoUno'],
+    supportDevice: ['NanoPlus_arduinoUno'],
     author: 'keyes',
     description: formatMessage({
         id: 'NanoPlus.description',

@@ -7,7 +7,7 @@ const keypad4_4 = formatMessage => ({
     extensionId: 'keypad4*4',
     version: '1.0.0',
     type: 'arduino',
-    supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoLeonardo', 'arduinoMega2560'],
+    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560'],
     author: 'keyes',
     iconURL: `asset/keypad4.jpg`,
     description: formatMessage({

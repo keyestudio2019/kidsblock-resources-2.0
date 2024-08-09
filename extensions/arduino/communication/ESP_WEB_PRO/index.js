@@ -6,7 +6,7 @@ const ESP_WEB_PRO = formatMessage => ({
     }),
     extensionId: 'ESP_WEB_PRO',
     version: '1.0.0',
-    supportDevice: ['arduinoEsp32','arduinoEsp8266'],
+    supportDevice: ['arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
     iconURL: `asset/webpage.jpg`,
     description: formatMessage({

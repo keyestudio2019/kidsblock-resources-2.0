@@ -5,7 +5,7 @@ const ws2812b = formatMessage => ({
     }),
     extensionId: 'ws2812b',
     version: '1.0.0',
-    supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560'],
+    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560'],
     author: 'keyestudio',
     iconURL: `asset/ws2812b.jpg`,
     description: formatMessage({

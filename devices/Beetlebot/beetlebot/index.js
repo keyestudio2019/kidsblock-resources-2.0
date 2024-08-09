@@ -23,7 +23,7 @@ const Beetlebot = formatMessage => ({
     programLanguage: ['block', 'cpp'],
     tags: ['robot'],
     deviceExtensions: ['Beetlebot'],
-    deviceExtensionsCompatible: 'arduinoNano_arduinoUno',
+    deviceExtensionsCompatible: 'arduinoUno',
     helpLink: 'https://ks0543-keyestudio-beetlebot-3-in1-robot-scratch-tutorials.readthedocs.io/en/latest/'
 });
 

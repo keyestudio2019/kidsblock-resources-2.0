@@ -7,7 +7,7 @@ const ks_rgb = formatMessage => ({
     extensionId: 'ks_rgb',
     version: '1.0.0',
     type: 'arduino',
-    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560'],
+    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560'],
     author: 'keyes',
     iconURL: `asset/ks_rgb.jpg`,
     description: formatMessage({

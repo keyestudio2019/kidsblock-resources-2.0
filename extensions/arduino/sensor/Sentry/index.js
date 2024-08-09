@@ -5,8 +5,7 @@ const Sentry = formatMessage => ({
     }),
     extensionId: 'Sentry',
     version: '1.0.0',
-    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp32'],
+    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32'],
     author: 'keyes',
     iconURL: `asset/icon.jpg`,
     description: formatMessage({

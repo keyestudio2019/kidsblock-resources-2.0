@@ -410,26 +410,25 @@ Blockly.Arduino.matrix_iic_face = function (block) {
 
     Blockly.Arduino.ir_init = function (block) {
         const pin = block.getFieldValue('pin');
-
-        Blockly.Arduino.includes_.ir_init = '#include <IRremoteESP8266.h>\n#include <IRrecv.h>\n#include <IRutils.h>\n';
+    
+        Blockly.Arduino.includes_.ir_init = '#include <IRremote.h>';
         Blockly.Arduino.definitions_.ir_init = 'long ir_item;\nIRrecv irrecv('+pin+');\ndecode_results results;\n';
         Blockly.Arduino.setups_['irrecv'] = 'irrecv.enableIRIn();\n';
-
+    
         return ``;
     };
-
+    
     Blockly.Arduino.ir_data = function () {
         return [`irrecv.decode(&results)`, Blockly.Arduino.ORDER_ATOMIC];
     };
-
+    
     Blockly.Arduino.ir_read = function () {
         return [`results.value`, Blockly.Arduino.ORDER_ATOMIC];
     };
-
+    
     Blockly.Arduino.ir_refresh = function () {
         return 'irrecv.resume();\n';
     };
-
     Blockly.Arduino.wifi_init = function (block) {
         const ssid = Blockly.Arduino.valueToCode(block, 'SSID', Blockly.Arduino.ORDER_ATOMIC);
         const passwd = Blockly.Arduino.valueToCode(block, 'PASSWD', Blockly.Arduino.ORDER_ATOMIC);

@@ -6,7 +6,7 @@ const paj7620 = formatMessage => ({
     }),
     extensionId: 'paj7620',
     version: '1.0.0',
-    supportDevice: ['arduinoUno', 'arduinoNano_arduinoUno', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'], // TODO 待测试
+    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32','arduinoEsp8266'], // TODO 待测试
     author: 'keyestudio',
     iconURL: `asset/paj7620.JPG`,
     description: formatMessage({

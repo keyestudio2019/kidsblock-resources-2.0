@@ -6,8 +6,7 @@ const fourDigitClockDisplay = formatMessage => ({
     extensionId: 'fourDigitClockDisplay',
     version: '1.0.0',
     supportDevice: [''],
-     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32'],
+     supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32','arduinoEsp8266'],
     author: 'keyes',
     iconURL: `asset/fourDigitClockDisplay.jpg`,
     description: formatMessage({

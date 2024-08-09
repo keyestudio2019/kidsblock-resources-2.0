@@ -3,8 +3,8 @@
 /* eslint-disable require-jsdoc */
 function addBlocks (Blockly) {
     const color = '#FF4500';
+    const color1 = '#800000';
     const color2 = '#41be8a';
-    const color3 = '#573e00';
     const secondaryColour = '#CD5C5C';
     //变量
     Blockly.Blocks.KS_variables_declare = {
@@ -132,7 +132,7 @@ function addBlocks (Blockly) {
                     } 
                 ],
                 "tooltip": "获取变量",
-                colour:color2,
+                colour:color1,
                 extensions: ['output_number']
             });
         }     
@@ -149,7 +149,7 @@ function addBlocks (Blockly) {
                     } 
                 ],
                 "tooltip": "获取变量",
-                colour:color2,
+                colour:color1,
                 extensions: ['output_number']
             });
         }     
@@ -166,7 +166,7 @@ function addBlocks (Blockly) {
                     } 
                 ],
                 "tooltip": "获取变量",
-                colour:color2,
+                colour:color1,
                 extensions: ['output_number']
             });
         }
@@ -193,14 +193,11 @@ function addBlocks (Blockly) {
                     },    
                 ],
                 "tooltip": "逻辑比较",
-                colour:color3,
+                colour:color2,
                 extensions: ['output_boolean']
             });
         }
     };
-    
-
-
     return Blockly;
 }
 

@@ -5,7 +5,7 @@ const metaSpeaker = formatMessage => ({
     }),
     extensionId: 'metaSpeaker',
     version: '1.0.0',
-    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo','arduinoMega2560'],
+    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32','arduinoEsp8266'],
     author: 'keyestudio',
     iconURL: `asset/metaSpeaker.jpg`,
     description: formatMessage({

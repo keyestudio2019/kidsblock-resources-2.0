@@ -6,7 +6,7 @@ const ESP_WEB = formatMessage => ({
     }),
     extensionId: 'ESP_WEB',
     version: '1.0.0',
-    supportDevice: ['arduinoEsp32','arduinoEsp8266'],
+    supportDevice: ['arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
     iconURL: `asset/webpage.jpg`,
     description: formatMessage({

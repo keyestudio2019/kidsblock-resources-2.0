@@ -7,7 +7,7 @@ const  blynk= formatMessage => ({
     extensionId: 'blynk',
     version: '1.0.0',
     type: 'arduino',
-    supportDevice: ['arduinoEsp32','arduinoEsp8266'],
+    supportDevice: ['arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
     iconURL: `asset/blynk.jpg`,
     description: formatMessage({

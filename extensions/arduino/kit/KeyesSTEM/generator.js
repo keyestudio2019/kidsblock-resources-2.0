@@ -638,6 +638,27 @@ function addGenerator (Blockly) {
         return code;
     };
 
+    Blockly.Arduino.TFTSD_init = function() {
+      Blockly.Arduino.definitions_['include_'+'LIB1'] = '#include <Adafruit_GFX.h>\n #include <Adafruit_ST7735.h>\n #include <SD.h>\n #include <SPI.h>\n #if defined(__SAM3X8E__)\n     #undef __FlashStringHelper::F(string_literal)\n     #define F(string_literal) string_literal\n #endif\n #define SD_CS    7  \n #define TFT_CS  8  \n #define TFT_DC   10  \n #define TFT_RST  9  \n   Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST);\n   #define BUFFPIXEL 20\n';
+      Blockly.Arduino.definitions_['var_declare_'+'TFT_SD'] = 'void bmpDraw(char *filename, uint8_t x, uint8_t y) {\n   File     bmpFile;\n   int      bmpWidth, bmpHeight;   \n   uint8_t  bmpDepth;              \n   uint32_t bmpImageoffset;        \n   uint32_t rowSize;               \n   uint8_t  sdbuffer[3*BUFFPIXEL]; \n   uint8_t  buffidx = sizeof(sdbuffer); \n   boolean  goodBmp = false;       \n   boolean  flip    = true;        \n   int      w, h, row, col;\n   uint8_t  r, g, b;\n   uint32_t pos = 0, startTime = millis();\n   if((x >= tft.width()) || (y >= tft.height())) return;\n   Serial.println();\n   Serial.print("Loading image");\n   Serial.println(filename);\n   if ((bmpFile = SD.open(filename)) == NULL) {\n     Serial.print("File not found");\n     return;\n   }\n   if(read16(bmpFile) == 0x4D42) { \n     Serial.print("File size: "); Serial.println(read32(bmpFile));\n     (void)read32(bmpFile); \n     bmpImageoffset = read32(bmpFile); \n     Serial.print("Image Offset: "); Serial.println(bmpImageoffset, DEC);\n     Serial.print("Header size: "); Serial.println(read32(bmpFile));\n     bmpWidth  = read32(bmpFile);\n     bmpHeight = read32(bmpFile);\n     if(read16(bmpFile) == 1) { \n       bmpDepth = read16(bmpFile);\n       Serial.print("Bit Depth: "); Serial.println(bmpDepth);\n       if((bmpDepth == 24) && (read32(bmpFile) == 0)) { \n         goodBmp = true; \n         rowSize = (bmpWidth * 3 + 3) & ~3;\n         if(bmpHeight < 0) {\n           bmpHeight = -bmpHeight;\n           flip      = false;\n         }\n         w = bmpWidth;\n         h = bmpHeight;\n         if((x+w-1) >= tft.width())  w = tft.width()  - x;\n         if((y+h-1) >= tft.height()) h = tft.height() - y;\n         tft.startWrite();\n         tft.setAddrWindow(x, y, w, h);\n         for (row=0; row<h; row++) {\n           if(flip)\n             pos = bmpImageoffset + (bmpHeight - 1 - row) * rowSize;\n           else     \n             pos = bmpImageoffset + row * rowSize;\n           if(bmpFile.position() != pos) { \n             tft.endWrite();\n             bmpFile.seek(pos);\n             buffidx = sizeof(sdbuffer); \n           }\n           for (col=0; col<w; col++) { \n             if (buffidx >= sizeof(sdbuffer)) { \n               bmpFile.read(sdbuffer, sizeof(sdbuffer));\n               buffidx = 0; \n               tft.startWrite();\n             }             r = sdbuffer[buffidx++];\n             g = sdbuffer[buffidx++];\n             b = sdbuffer[buffidx++];\n             tft.pushColor(tft.color565(r,g,b));\n           } \n         } \n         tft.endWrite();\n         Serial.print("Loaded in ");\n         Serial.print(millis() - startTime);\n         Serial.println(" ms");\n       }\n     }\n   }\n   bmpFile.close();\n   if(!goodBmp) Serial.println("BMP format not recognized.");\n }\n uint16_t read16(File f) {\n   uint16_t result;\n   ((uint8_t *)&result)[0] = f.read(); \n   ((uint8_t *)&result)[1] = f.read();\n   return result;\n }\n   uint32_t read32(File f) {\n   uint32_t result;\n   ((uint8_t *)&result)[0] = f.read(); \n   ((uint8_t *)&result)[1] = f.read();\n   ((uint8_t *)&result)[2] = f.read();\n   ((uint8_t *)&result)[3] = f.read(); \n   return result;\n }\n';
+      Blockly.Arduino.setups_['SET1'] = '  pinMode(12,INPUT);\n   Serial.begin(9600); \n   tft.initR(INITR_GREENTAB);\n   tft.setRotation(3);\n   Serial.println("OK!");\n   tft.fillScreen(ST7735_BLACK);\n';
+      var code = '';
+      return code;
+    };
+    Blockly.Arduino.TFTSD_display = function() {
+      var value_SD_TUPIAN = Blockly.Arduino.valueToCode(this, 'SD_TUPIAN', Blockly.Arduino.ORDER_ATOMIC);
+      var value_SD_X = Blockly.Arduino.valueToCode(this, 'SD_X', Blockly.Arduino.ORDER_ATOMIC);
+      var value_SD_Y = Blockly.Arduino.valueToCode(this, 'SD_Y', Blockly.Arduino.ORDER_ATOMIC);
+      var code = '    Serial.print("Initializing SD card...");\n     if (!SD.begin(SD_CS)) {\n       Serial.println("failed!");\n       tft.setTextSize(2);\n       tft.fillScreen(ST7735_BLACK);\n       tft.setCursor(0, 0);\n       tft.setTextColor(ST7735_BLUE);\n       tft.print("SD Card init error!");\n       return;\n     }\n'
+                 + 'bmpDraw('
+                 + value_SD_TUPIAN
+                 + ','
+                 + value_SD_X
+                 + ','
+                 + value_SD_Y
+                 + ');';
+      return code;
+    };
     return Blockly;
 }
 

@@ -2,14 +2,15 @@ module.exports = [
 // Buid-in device
      //arduino
     'unov4.0_arduinoUno',
+    'megaplus_arduinoMega2560',
+    'Leonardo_arduinoLeonardo',   
+    'NanoPlus_arduinoUno',
     'unoPlus_arduinoUno',
+    'MotorPlus_arduinoUno',
     'KeyesPlus_arduinoUno',
     'KeyesSTEM_arduinoUno',
     'unoMaker_arduinoUno',
     'UnoMax_arduinoUno',
-    'megaplus_arduinoMega2560',
-    'Leonardo_arduinoLeonardo',   
-    'nanoplus_arduinoUno',
     'kidsUno_arduinoUno',
     
     //Esp32 for arduino
@@ -37,8 +38,8 @@ module.exports = [
    'keybot_arduinoUno',
    'CodingRobot_arduinoUno',
 
-
     // kit
+   
     'RGBcube_arduinoLeonardo',
     'Superstarterkit_arduinoUno',
     '37Sensorkit_arduinoUno',
@@ -46,6 +47,7 @@ module.exports = [
     'Smarthome_arduinoUno',
     'Inventor_arduinoUno',
     'Codingbox_arduinoUno',
+    'codingbox_arduinoEsp32',
     'Inventor_arduinoEsp32',
     'Beetlebot_arduinoEsp32',
     'Smarthome_arduinoEsp32',
@@ -53,7 +55,6 @@ module.exports = [
 
     //'arduinoUno',
     //'arduinoMega2560',
-    //'arduinoMini',
     //'arduinoLeonardo',    
     //'microbit',
      

@@ -593,7 +593,25 @@ function addToolbox () {
             </shadow>
         </value>
     </block>
-
+    <block type="TFTSD_init">
+    </block>
+    <block type="TFTSD_display">
+    <value name="SD_TUPIAN">
+      <shadow type="text">
+        <field name="TEXT">x.bmp</field>
+      </shadow>
+    </value>
+    <value name="SD_X">
+       <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+    </value>
+    <value name="SD_Y">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+    </value>
+  </block>
 </category>
 `;
 }

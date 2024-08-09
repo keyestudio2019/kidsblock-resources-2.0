@@ -1,5 +1,6 @@
 module.exports = {
     'en': {
+        'ESP32codingbox.description': 'Coding box based on ESP32 for STEM education',
         'KeyesSTEM.description':'STEM programming education development board with on board 1.8-inch TFT screen',
         'ECO.description':'Eco-friendly house kit for arduino',
         'RGBcube.description':'RGB LED Cube Kit',
@@ -13,9 +14,9 @@ module.exports = {
         'Codingbox.description':'Coding box Based on Arduino STEM Education',
 
         'ESP8266.description':'ESP8266 low-power Wi-Fi SOC control board.',
-        'NanoPlus.description': 'Classic NanoPlus small control panel for building projects.',
+        'NanoPlus.description': 'Classic Nano small control panel for building projects.',
         'Leonardo.description': 'Classic Leonardo development board, can be used as a mouse or keyboard.',
-        'MegaPlus.description': '8-bit MegaPlus control board with 54 digital pins, 16 analog inputs, and 4 serial ports.',
+        'MegaPlus.description': '8-bit Mega control board with 54 digital pins, 16 analog inputs, and 4 serial ports.',
         'KeyesPlus.description': 'Entry-level electronic programming control board.',
         'EasyCoding.description': 'A micro:bit compatible control board with Wi-Fi and Bluetooth.',
         'unov4.description': 'A very good entry-level control board for electronic programming.',
@@ -24,6 +25,7 @@ module.exports = {
         'kidsIOT.description': 'kids STEM education main control board based on ESP32.',
         'kidsUno.description': 'kids STEM education main control board based on UNO.',
         'unoPlus.description': 'The classic programming entry Plus control board for easy connection of sensors.',
+        'MotorPlus.description': 'A control board integrated with dual motor drivers for easy DIY smart car projects.',
         'unoMaker.description': 'A starter control board that can be programmed to connect sensors using alligator clips.',
         'UnoMax.description': 'A programming entry-level control board with built-in dot matrix, sound, light and other sensors.',
 
@@ -131,6 +133,7 @@ module.exports = {
         'keypad4_4.description': '4*4 Key pad module',
     },
     'es': {
+       'ESP32codingbox.description':'Coding box basado en ESP32 para la educación STEM',
        'KeyesSTEM.description':'Placa de desarrollo educativo de programación STEM con pantalla TFT integrada de 1,8 pulgadas',
        'ECO.description':'Kit de casa ecológico para arduino',
        'RGBcube.description': 'Kit de cubo LED RGB',
@@ -144,9 +147,9 @@ module.exports = {
        'Codingbox.description': 'Cuadro de codificación basado en Arduino STEM Education',
 
        'ESP8266.description':'Placa de control SOC Wi-Fi de bajo consumo ESP8266.',
-       'NanoPlus.description': 'Panel de control pequeño NanoPlus clásico para proyectos de construcción.',
+       'NanoPlus.description': 'Panel de control pequeño Nano clásico para proyectos de construcción.',
        'Leonardo.description': 'Placa de desarrollo Leonardo clásica, se puede usar como mouse o teclado.',
-       'MegaPlus.description': 'Placa de control MegaPlus de 8 bits con 54 pines digitales, 16 entradas analógicas y 4 puertos seriales.',
+       'MegaPlus.description': 'Placa de control Mega de 8 bits con 54 pines digitales, 16 entradas analógicas y 4 puertos seriales.',
        'KeyesPlus.description': 'Placa de control de programación electrónica de nivel de entrada.',
        'EasyCoding.description': 'Un tablero de control compatible con micro:bit con Wi-Fi y Bluetooth.',
        'unov4.description': 'Una placa de control de nivel de entrada muy buena para la programación electrónica.',
@@ -155,6 +158,7 @@ module.exports = {
        'kidsIOT.description': 'tablero de control principal de educación STEM para niños basado en ESP32.',
        'kidsUno.description': 'tablero de control principal de educación STEM para niños basado en UNO.',
        'unoPlus.description': 'La clásica placa de control de entrada de programación Plus para una fácil conexión de sensores.',
+       'MotorPlus.description': 'Una placa de control integrada con dos controladores de motor para proyectos sencillos de coches inteligentes DIY.',
        'unoMaker.description': 'Un tablero de control de arranque que se puede programar para conectar sensores usando pinzas de cocodrilo.',
        'UnoMax.description': 'Un tablero de control básico de programación con matriz de puntos, sonido, luz y otros sensores integrados.',
 
@@ -263,6 +267,7 @@ module.exports = {
     },
 
     'de': {
+        'ESP32codingbox.description':'Coding box basierend auf ESP32 für STEM-Bildung',
         'KeyesSTEM.description':'Entwicklungsboard für die STEM-Programmierausbildung mit integriertem 1,8-Zoll-TFT-Bildschirm',
         'ECO.description':'Umweltfreundliches Hausset für Arduino',
         'RGBcube.description':'RGB LED Cube Kit',
@@ -276,9 +281,9 @@ module.exports = {
         'Codingbox.description':'Codierungsbox basierend auf Arduino STEM Education',
 
         'ESP8266.description':'ESP8266 WLAN-SOC-Steuerplatine mit geringem Stromverbrauch.',
-        'NanoPlus.description': 'Klassische NanoPlus-Kleinsteuerung für Bauprojekte.',
+        'NanoPlus.description': 'Klassische Nano-Kleinsteuerung für Bauprojekte.',
         'Leonardo.description': 'Klassisches Leonardo-Entwicklungsboard, kann als Maus oder Tastatur verwendet werden.',
-        'MegaPlus.description': '8-Bit-MegaPlus-Steuerplatine mit 54 digitalen Pins, 16 analogen Eingängen und 4 seriellen Ports.',
+        'MegaPlus.description': '8-Bit-Mega-Steuerplatine mit 54 digitalen Pins, 16 analogen Eingängen und 4 seriellen Ports.',
         'KeyesPlus.description': 'Steuerplatine für elektronische Programmierung der Einstiegsklasse.',
         'EasyCoding.description': 'Eine micro:bit-kompatible Steuerplatine mit Wi-Fi und Bluetooth.',
         'unov4.description': 'Eine sehr gute Einsteiger-Steuerplatine für die elektronische Programmierung.',
@@ -287,6 +292,7 @@ module.exports = {
         'kidsIOT.description': 'Hauptsteuerplatine für die MINT-Ausbildung für Kinder basierend auf ESP32.',
         'kidsUno.description': 'Hauptkontrolltafel für die MINT-Ausbildung für Kinder basierend auf UNO.',
         'unoPlus.description': 'Die klassische Programmier-Einstiegs-Plus-Steuerplatine zum einfachen Anschluss von Sensoren.',
+        'MotorPlus.description': 'Eine Steuerplatine mit integrierten dualen Motortreibern für einfache DIY-Smart-Car-Projekte.',
         'unoMaker.description': 'Eine Starter-Steuerplatine, die so programmiert werden kann, dass Sensoren mithilfe von Krokodilklemmen angeschlossen werden.',
         'UnoMax.description': 'Eine Programmier-Einstiegssteuerplatine mit integrierter Punktmatrix, Ton, Licht und anderen Sensoren.',
 
@@ -393,6 +399,7 @@ module.exports = {
          'keypad4_4.description': '4*4 Tastaturmodul',
     },
     'fr': {
+        'ESP32codingbox.description':'Coding box basée sur ESP32 pour l"éducation STEM',
         'KeyesSTEM.description':'Carte de développement de l"éducation à la programmation STEM avec écran TFT de 1,8 pouces intégré',
         'ECO.description':'Kit maison écologique pour arduino',
         'RGBcube.description':'Kit Cube LED RVB',
@@ -406,9 +413,9 @@ module.exports = {
         'Codingbox.description':'Boîte de codage basée sur Arduino STEM Education',
 
         'ESP8266.description':'Carte de contrôle SOC Wi-Fi basse consommation ESP8266.',
-        'NanoPlus.description': 'Petit panneau de contrôle NanoPlus classique pour les projets de construction.',
+        'NanoPlus.description': 'Petit panneau de contrôle Nano classique pour les projets de construction.',
         'Leonardo.description': 'Carte de développement Leonardo classique, peut être utilisée comme souris ou clavier.',
-        'MegaPlus.description': 'Carte de contrôle MegaPlus 8 bits avec 54 broches numériques, 16 entrées analogiques et 4 ports série.',
+        'MegaPlus.description': 'Carte de contrôle Mega 8 bits avec 54 broches numériques, 16 entrées analogiques et 4 ports série.',
         'KeyesPlus.description': 'Carte de contrôle de programmation électronique d"entrée de gamme.',
         'EasyCoding.description': 'Une carte de contrôle compatible micro:bit avec Wi-Fi et Bluetooth.',
         'unov4.description': 'Une très bonne carte de contrôle d"entrée de gamme pour la programmation électronique.',
@@ -417,6 +424,7 @@ module.exports = {
         'kidsIOT.description': 'tableau de commande principal de l"éducation STEM pour enfants basé sur ESP32.',
         'kidsUno.description': 'tableau de contrôle principal de l"éducation STEM pour enfants basé sur UNO.',
         'unoPlus.description': 'La carte de commande d"entrée de programmation classique Plus pour une connexion facile des capteurs.',
+        'MotorPlus.description': 'Une carte de contrôle intégrant deux drivers de moteur pour des projets simples de voiture intelligente DIY.',
         'unoMaker.description': 'Une carte de contrôle de démarrage qui peut être programmée pour connecter des capteurs à l"aide de pinces crocodiles.',
         'UnoMax.description': 'Une carte de contrôle d"entrée de gamme avec matrice de points intégrée, son, lumière et autres capteurs.',
 
@@ -523,6 +531,7 @@ module.exports = {
          'keypad4_4.description': 'Module de clavier 4*4',
     },
     'ja': {
+        'ESP32codingbox.description':'ESP32をベースにしたSTEM教育用のコーディングボックス',
         'KeyesSTEM.description':'1.8 インチ TFT スクリーンを搭載した STEM プログラミング教育開発ボード',
         'ECO.description':'Arduino用の環境に優しいハウスキット',
         'RGBcube.description':'RGB LED キューブ キット',
@@ -536,9 +545,9 @@ module.exports = {
         'Codingbox.description':'Arduino STEM 教育に基づくコーディング ボックス',
 
         'ESP8266.description':'ESP8266 低電力 Wi-Fi SOC コントロール ボード。',
-        'NanoPlus.description': 'プロジェクト構築用のクラシックな NanoPlus 小型コントロール パネル。',
+        'NanoPlus.description': 'プロジェクト構築用のクラシックな Nano 小型コントロール パネル。',
         'Leonardo.description': 'クラシックな Leonardo 開発ボード。マウスまたはキーボードとして使用できます。',
-        'MegaPlus.description': '54 デジタル ピン、16 アナログ入力、および 4 シリアル ポートを備えた 8 ビット MegaPlus コントロール ボード。',
+        'MegaPlus.description': '54 デジタル ピン、16 アナログ入力、および 4 シリアル ポートを備えた 8 ビット Mega コントロール ボード。',
         'KeyesPlus.description': 'エントリーレベルの電子プログラミング制御ボード。',
         'EasyCoding.description': 'Wi-Fi と Bluetooth を備えた micro:bit 互換のコントロール ボード。',
         'unov4.description': '電子プログラミング用の非常に優れたエントリーレベルの制御ボードです。',
@@ -547,6 +556,7 @@ module.exports = {
         'kidsIOT.description': 'ESP32 に基づく子供向け STEM 教育メイン制御ボード。',
         'kidsUno.description': 'UNO に基づく子供向け STEM 教育メイン制御ボード。',
         'unoPlus.description': 'センサーを簡単に接続できるクラシックなプログラミングエントリーPlusコントロールボード。',
+        'MotorPlus.description': 'デュアルモータードライバーを搭載した、簡単なDIYスマートカー用制御ボードです。',
         'unoMaker.description': 'ワニ口クリップを使用してセンサーを接続するようにプログラムできるスターター コントロール ボード。',
         'UnoMax.description': 'ドット マトリクス、サウンド、光、その他のセンサーを内蔵したプログラミングのエントリーレベルのコントロール ボード。',
 
@@ -654,6 +664,7 @@ module.exports = {
          'keypad4_4.description': '4*4 キーパッドモジュール',
     },
     'ko': {
+        'ESP32codingbox.description':'STEM 교육을 위한 ESP32 기반 코딩 박스',
         'KeyesSTEM.description': '1.8인치 TFT 화면이 내장된 STEM 프로그래밍 교육 개발 보드',
         'ECO.description':'아두이노용 친환경 하우스 키트',
         'RGBcube.description':'RGB LED 큐브 키트',
@@ -667,9 +678,9 @@ module.exports = {
         'Codingbox.description':'아두이노 STEM 교육을 기반으로 한 코딩 상자',
 
         'ESP8266.description':'ESP8266 저전력 Wi-Fi SOC 제어 보드.',
-        'NanoPlus.description': '프로젝트 구축을 위한 클래식 NanoPlus 소형 제어판',
+        'NanoPlus.description': '프로젝트 구축을 위한 클래식 Nano 소형 제어판',
         'Leonardo.description': '클래식 Leonardo 개발 보드, 마우스나 키보드로 사용할 수 있습니다.',
-        'MegaPlus.description': '54개의 디지털 핀, 16개의 아날로그 입력 및 4개의 직렬 포트가 있는 8비트 MegaPlus 제어 보드.',
+        'MegaPlus.description': '54개의 디지털 핀, 16개의 아날로그 입력 및 4개의 직렬 포트가 있는 8비트 Mega 제어 보드.',
         'KeyesPlus.description': '입문용 전자 프로그래밍 제어 보드.',
         'EasyCoding.description': 'Wi-Fi 및 Bluetooth를 지원하는 micro:bit 호환 제어 보드.',
         'unov4.description': '전자 프로그래밍을 위한 매우 우수한 보급형 제어 보드입니다.',
@@ -678,6 +689,7 @@ module.exports = {
         'kidsIOT.description': 'ESP32 기반의 어린이 STEM 교육 메인 컨트롤 보드.',
         'kidsUno.description': 'UNO 기반의 어린이 STEM 교육 메인 컨트롤 보드',
         'unoPlus.description': '손쉬운 센서 연결을 위한 고전적인 프로그래밍 항목 플러스 제어 보드.',
+        'MotorPlus.description': '듀얼 모터 드라이버가 통합된 쉬운 DIY 스마트 자동차 제어 보드입니다.',
         'unoMaker.description': '악어 클립을 사용하여 센서를 연결하도록 프로그래밍할 수 있는 스타터 제어 보드',
         'UnoMax.description': '도트 매트릭스, 사운드, 조명 및 기타 센서가 내장된 프로그래밍 엔트리 레벨 제어 보드입니다.',
 
@@ -784,6 +796,7 @@ module.exports = {
          'keypad4_4.description': '4*4 키패드 모듈',
     },
     'pl': {
+        'ESP32codingbox.description':'Pudełko do kodowania oparte na ESP32 do edukacji STEM',
         'KeyesSTEM.description':'Płyta rozwojowa programowania STEM z wbudowanym ekranem TFT o przekątnej 1,8 cala',
         'ECO.description':'Ekologiczny zestaw domowy dla Arduino',
         'RGBcube.description':'Zestaw kostki LED RGB',
@@ -797,9 +810,9 @@ module.exports = {
         'Codingbox.description': 'Pudełko kodowania oparte na edukacji Arduino STEM',
 
         'ESP8266.description':'Płyta kontrolna SOC Wi-Fi małej mocy ESP8266.',
-        'NanoPlus.description': 'Klasyczny mały panel kontrolny NanoPlus do projektów budowlanych.',
+        'NanoPlus.description': 'Klasyczny mały panel kontrolny Nano do projektów budowlanych.',
         'Leonardo.description': 'Klasyczna płytka rozwojowa Leonardo, może być używana jako mysz lub klawiatura.',
-        'MegaPlus.description': '8-bitowa płyta kontrolna MegaPlus z 54 pinami cyfrowymi, 16 wejściami analogowymi i 4 portami szeregowymi.',
+        'MegaPlus.description': '8-bitowa płyta kontrolna Mega z 54 pinami cyfrowymi, 16 wejściami analogowymi i 4 portami szeregowymi.',
         'KeyesPlus.description': 'Płyta sterująca programowaniem elektronicznym klasy podstawowej.',
         'EasyCoding.description': 'Płyta kontrolna kompatybilna z micro:bit z Wi-Fi i Bluetooth.',
         'unov4.description': 'Bardzo dobra podstawowa płytka sterująca do programowania elektronicznego.',
@@ -808,6 +821,7 @@ module.exports = {
         'kidsIOT.description': 'główna tablica kontrolna edukacji STEM dla dzieci oparta na ESP32.',
         'kidsUno.description': 'główna tablica kontrolna edukacji STEM dla dzieci oparta na UNO.',
         'unoPlus.description': 'Klasyczna płyta kontrolna Plus do łatwego podłączania czujników.',
+        'MotorPlus.description': 'Zintegrowana płytka sterująca z dwoma sterownikami silników do łatwych projektów DIY inteligentnych samochodów.',
         'unoMaker.description': 'Płytka kontrolna rozrusznika, którą można zaprogramować do podłączania czujników za pomocą zacisków krokodylkowych.',
         'UnoMax.description': 'Programująca podstawowa płyta sterująca z wbudowaną matrycą punktową, czujnikami dźwięku, światła i innymi.',
 
@@ -914,6 +928,7 @@ module.exports = {
          'keypad4_4.description': '4*4 Moduł klawiatury',
     },
     'pt': {
+        'ESP32codingbox.description':'Caixa de codificação baseada em ESP32 para educação STEM',
         'KeyesSTEM.description':'Placa de desenvolvimento educacional de programação STEM com tela TFT de 1,8 polegadas integrada',
         'ECO.description':'Kit doméstico ecológico para arduino',
         'RGBcube.description':'RGB LED Cube Kit',
@@ -927,9 +942,9 @@ module.exports = {
         'Codingbox.description':'Caixa de codificação baseada no Arduino STEM Education',
 
         'ESP8266.description': 'Placa de controle ESP8266 Wi-Fi SOC de baixa potência.',
-        'NanoPlus.description': 'Painel de controle clássico NanoPlus pequeno para projetos de construção.',
+        'NanoPlus.description': 'Painel de controle clássico Nano pequeno para projetos de construção.',
         'Leonardo.description': 'Placa de desenvolvimento Classic Leonardo, pode ser usada como mouse ou teclado.',
-        'MegaPlus.description': 'placa de controle MegaPlus de 8 bits com 54 pinos digitais, 16 entradas analógicas e 4 portas seriais.',
+        'MegaPlus.description': 'placa de controle Mega de 8 bits com 54 pinos digitais, 16 entradas analógicas e 4 portas seriais.',
         'KeyesPlus.description': 'Placa de controle de programação eletrônica de nível básico.',
         'EasyCoding.description': 'Uma placa de controle compatível com micro:bit com Wi-Fi e Bluetooth.',
         'unov4.description': 'Uma boa placa de controle de nível básico para programação eletrônica.',
@@ -938,6 +953,7 @@ module.exports = {
         'kidsIOT.description': 'placa de controle principal de educação STEM infantil baseada em ESP32.',
         'kidsUno.description': 'placa de controle principal de educação STEM para crianças baseada em UNO.',
         'unoPlus.description': 'A placa de controle Plus de entrada de programação clássica para fácil conexão de sensores.',
+        'MotorPlus.description': 'Uma placa de controle integrada com dois drivers de motor para projetos simples de carros inteligentes DIY.',
         'unoMaker.description': 'Uma placa de controle inicial que pode ser programada para conectar sensores usando garras jacaré.',
         'UnoMax.description': 'Uma placa de controle de nível de entrada de programação com matriz de pontos, som, luz e outros sensores integrados.',
 
@@ -1045,6 +1061,7 @@ module.exports = {
          'keypad4_4.description': 'Módulo de teclado 4*4',
     },
     'ru': {
+        'ESP32codingbox.description':'Коробка для кодирования на основе ESP32 для STEM-образования',
         'KeyesSTEM.description':'Плата для разработки образовательных программ STEM со встроенным 1,8-дюймовым TFT-экраном',
         'ECO.description':'Экологичный домашний комплект для Arduino',
         'RGBcube.description':'Набор светодиодных кубов RGB',
@@ -1058,9 +1075,9 @@ module.exports = {
         'Codingbox.description':'Блок кодирования на базе Arduino STEM Education',
 
         'ESP8266.description':'Плата управления ESP8266 Wi-Fi SOC с низким энергопотреблением.',
-        'NanoPlus.description': 'Классическая небольшая панель управления NanoPlus для строительных проектов.',
+        'NanoPlus.description': 'Классическая небольшая панель управления Nano для строительных проектов.',
         'Leonardo.description': 'Классическая макетная плата Leonardo, может использоваться как мышь или клавиатура.',
-        'MegaPlus.description': '8-битная плата управления MegaPlus с 54 цифровыми контактами, 16 аналоговыми входами и 4 последовательными портами.',
+        'MegaPlus.description': '8-битная плата управления Mega с 54 цифровыми контактами, 16 аналоговыми входами и 4 последовательными портами.',
         'KeyesPlus.description': 'Плата управления электронным программированием начального уровня.',
         'EasyCoding.description': 'Плата управления, совместимая с micro:bit, с Wi-Fi и Bluetooth.',
         'unov4.description': 'Очень хорошая плата управления начального уровня для электронного программирования.',
@@ -1069,6 +1086,7 @@ module.exports = {
         'kidsIOT.description': 'Основная плата управления обучением STEM для детей на основе ESP32.',
         'kidsUno.description': 'Основная плата управления для обучения детей STEM на базе UNO.',
         'unoPlus.description': 'Классический вход для программирования. Плата управления Plus для простого подключения датчиков.',
+        'MotorPlus.description': 'Интегрированная плата управления для удобного DIY умного автомобиля с двумя моторными драйверами.',
         'unoMaker.description': 'Плата управления пусковым устройством, которую можно запрограммировать для подключения датчиков с помощью зажимов типа "крокодил".',
         'UnoMax.description': 'Плата управления начального уровня для программирования со встроенной точечной матрицей, датчиками звука, света и другими датчиками.',
 
@@ -1176,6 +1194,7 @@ module.exports = {
     },
 
     'zh-cn': {
+        'ESP32codingbox.description':'基于ESP32的STEM编程工具箱',
         'KeyesSTEM.description':'板载1.8英寸TFT屏STEM编程教育开发板',
         'ECO.description':'基于Arduino的生态小屋学习套装',
         'RGBcube.description':'RGB 光立方套装',
@@ -1189,9 +1208,9 @@ module.exports = {
         'Codingbox.description':'STEM 编程工具箱',
 
         'ESP8266.description':'ESP8266 低功耗 Wi-Fi SOC 控制板.',
-        'NanoPlus.description':'用于构建项目的经典NanoPlus小控制板.',
+        'NanoPlus.description':'用于构建项目的经典Nano小控制板.',
         'Leonardo.description':'经典的Leonardo开发板,可以用作鼠标或键盘.',
-        'MegaPlus.description':'拥有54个数字引脚,16个模拟输入,和4个串口的8位MegaPlus控制板.',
+        'MegaPlus.description':'拥有54个数字引脚,16个模拟输入,和4个串口的8位Mega控制板.',
         'KeyesPlus.description':'入门级电子编程控制板.',
         'EasyCoding.description':'兼容micro:bit且带有 Wi-Fi 和 蓝牙的控制板.',
         'unov4.description':'很好的电子编程入门控制板.',
@@ -1200,6 +1219,7 @@ module.exports = {
         'kidsIOT.description':'基于ESP32的少儿STEM教育主控板.',
         'kidsUno.description':'基于UNO的少儿STEM教育主控板.',
         'unoPlus.description':'方便连接传感器的经典编程入门Plus控制板.',
+        'MotorPlus.description':'集成了两路电机驱动的方便DIY智能小车的控制板.',
         'unoMaker.description':'可以使用鳄鱼夹连接传感器的编程入门控制板.',
         'UnoMax.description':'内置了点阵,声音,光线等传感器的编程入门控制板.',
 
@@ -1218,7 +1238,6 @@ module.exports = {
         'softwareSerial.description': '使Arduino可以使用其他数字口进行串口通信.',
         'cooperativeScheduler.name': '多任务调度器',
         'cooperativeScheduler.description': '使Arduino可以运行多个应用.',
-
         'l298n.description': 'L298N 电机驱动模块.',
         'servo.name': '舵机',
         'servo.description': '让Microbit可以控制普通的舵机.',
@@ -1239,7 +1258,6 @@ module.exports = {
         'ks_servo.description': '驱动舵机',
         'ks_stepper': '步进电机',
         'ks_stepper.description': '驱动步进电机驱动',
-
         'BEMFA.description': '巴法云 IOT',
         'ESP_WEB_PRO.description': '网页编译PRO',
         'remote': '红外接收模块',
@@ -1248,7 +1266,6 @@ module.exports = {
         'IR_send.description': '红外发射模块',
         'wifi_01': 'esp8266 wifi',
         'wifi_01.description': 'esp8266 wifi mDNS',
-
         'four_tube': '4位数码管TM1650_IIC',
         'four_tube.description': '4位数码管,使用IIC通讯',
         'iic_matrix': '8*8点阵 IIC',
@@ -1294,8 +1311,8 @@ module.exports = {
         'digital_compass.description': 'HMC5883L 三轴磁性电子罗盘模块',
         'ds3231': 'DS3231 时钟',
         'ds3231.description': 'DS3231 实时时钟模块 ',
-        'ks_encoder': '选择编码器',
-        'ks_encoder.description': '选择编码器模块',
+        'ks_encoder': '旋转编码器',
+        'ks_encoder.description': '旋转编码器模块',
         'gesture_recognition': '手势识别',
         'gesture_recognition.description': '手势识别模块',
         'ks_hc_sr04': '超声波传感器',
@@ -1304,8 +1321,11 @@ module.exports = {
         'heart_rate.description': '心率心跳传感器',
         'keypad4*4': '4*4 按键',
         'keypad4_4.description': '4*4 矩阵按键',
+        'motor8833': '8833两路电机驱动',
+        'motor8833.description': '可以驱动两路直流电机的8833电机驱动模块',
     },
     'zh-tw': {
+        'ESP32codingbox.description':'基於ESP32的STEM編程工具箱',
         'KeyesSTEM.description':'板载1.8英寸TFT屏STEM编程教育开发板',
         'ECO.description':'基於Arduino的生態小屋學習套裝',
         'RGBcube.description':'RGB 光立方套裝',
@@ -1319,9 +1339,9 @@ module.exports = {
         'Codingbox.description':'STEM 編程工具箱',
 
         'ESP8266.description':'ESP8266 低功耗 Wi-Fi SOC 控制板.',
-        'NanoPlus.description':'用於構建項目的經典NanoPlus小控制板.',
+        'NanoPlus.description':'用於構建項目的經典Nano小控制板.',
         'Leonardo.description':'經典的Leonardo開發板,可以用作鼠標或鍵盤.',
-        'MegaPlus.description':'擁有54個數字引腳,16個模擬輸入,和4個串口的8位MegaPlus控制板.',
+        'MegaPlus.description':'擁有54個數字引腳,16個模擬輸入,和4個串口的8位Mega控制板.',
         'KeyesPlus.description':'入門級電子編程控制板.',
         'EasyCoding.description':'兼容micro:bit且帶有 Wi-Fi 和 藍牙的控制板.',
         'unov4.description':'很好的電子編程入門控制板.',
@@ -1330,6 +1350,7 @@ module.exports = {
         'kidsIOT.description':'基於ESP32的少兒STEM教育主控板.',
         'kidsUno.description':'基於UNO的少兒STEM教育主控板.',
         'unoPlus.description':'方便連接傳感器的經典編程入門Plus控制板.',
+        'MotorPlus.description': '一個集成了雙馬達驅動器的方便DIY智慧小車控制板.',
         'unoMaker.description':'可以使用鱷魚夾連接傳感器的編程入門控制板.',
         'UnoMax.description':'內置了點陣,聲音,光線等傳感器的編程入門控制板.',
 
@@ -1424,8 +1445,8 @@ module.exports = {
         'digital_compass.description': 'HMC5883L 三軸磁性電子羅盤模塊',
         'ds3231': 'DS3231 時鐘',
         'ds3231.description': 'DS3231 實時時鐘模塊 ',
-        'ks_encoder': '選擇編碼器',
-        'ks_encoder.description': '選擇編碼器模塊',
+        'ks_encoder': '旋轉編碼器',
+        'ks_encoder.description': '旋轉編碼器模塊',
         'gesture_recognition': '手勢識別',
         'gesture_recognition.description': '手勢識別模塊',
         'ks_hc_sr04': '超聲波傳感器',

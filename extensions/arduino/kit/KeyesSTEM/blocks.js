@@ -1467,6 +1467,61 @@ function addBlocks (Blockly) {
         }
     };
 
+    Blockly.Blocks.TFTSD_init = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.TFTSD_INIT,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: sdIconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                
+                colour: color5,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+    Blockly.Blocks.TFTSD_display = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.TFTSD_DISPLAY,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: sdIconUrl,
+                        width: 50,
+                        height: 27
+                    }
+                ],
+                args1: [
+                    { 
+                        type: "input_value", 
+                        name: "SD_TUPIAN" 
+                    },
+                    { 
+                        type: "input_value", 
+                        name: "SD_X" 
+                    },
+                    { 
+                        type: "input_value", 
+                        name: "SD_Y" 
+                    }
+                    
+                ],
+                "tooltip": "",
+                colour: color5,
+                colourTertiary: '#C0C0C0',
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
     return Blockly;
 }
 

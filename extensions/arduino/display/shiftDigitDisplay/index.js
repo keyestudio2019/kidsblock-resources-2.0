@@ -6,7 +6,7 @@ const shiftDigitDisplay = formatMessage => ({
     extensionId: 'shiftDigitDisplay',
     version: '1.0.0',
     supportDevice: [''],
-    // supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo',
+    // supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
     //     'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32'],
     author: 'keyes',
     iconURL: `asset/shiftDigitDisplay.jpg`,

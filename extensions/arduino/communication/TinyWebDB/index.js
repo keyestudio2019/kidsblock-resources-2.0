@@ -6,7 +6,7 @@ const TinyWebDB = formatMessage => ({
     }),
     extensionId: 'TinyWebDB',
     version: '1.0.0',
-    supportDevice: ['arduinoEsp32','arduinoEsp8266'],
+    supportDevice: ['arduinoEsp32', 'arduinoEsp8266'],
     author: 'keyes',
     iconURL: `asset/TinyWebDB.jpg`,
     description: formatMessage({
