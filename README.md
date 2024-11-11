@@ -1,3 +1,7 @@
+V1.7.1:
+
+Add Motor PLUS development board<br>
+Fixed the issue with the OLED display graphics
 
 V1.7.0:
 
