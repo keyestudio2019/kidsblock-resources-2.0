@@ -89,11 +89,11 @@ function addToolbox () {
 
 <category name="%{BKY_LED_CATEGORY}" id="BKY_LED_CATEGORY" colour="#573e00" secondaryColour="#573e00">
     <block type="LED_setLEDState" id="LED_setLEDState">
-        <field name="pin">IO2</field>
+        <field name="pin">5</field>
     </block>
     
     <block type="led_analog" id="led_analog">
-    <field name="PIN">IO2</field>>
+    <field name="PIN">5</field>>
 
     <value name="VAL">
         <shadow type="math_uint8_number">
@@ -105,7 +105,7 @@ function addToolbox () {
 
 <category name="%{BKY_ATBUZZER_CATEGORY}" id="BKY_ATBUZZER_CATEGORY" colour="#00bfff" secondaryColour="#00bfff">
     <block type="ATbuzzerState" id="ATbuzzerState">
-        <field name="pin">IO9</field>
+        <field name="pin">25</field>
     </block>
 </category>
 
@@ -132,35 +132,35 @@ function addToolbox () {
 
 <category name="%{BKY_BUTTON_CATEGORY}" id="BUTTON_CATEGORY" colour="#7fff00" secondaryColour="#7fff00" >
     <block type="Button_readState" id="Button_readState">
-        <field name="pin">IO3</field>
+        <field name="pin">25</field>
     </block>
     <block type="Button_readValue" id="Button_readValue">
-        <field name="pin">IO3</field>
+        <field name="pin">25</field>
     </block>
 </category>
 
 <category name="%{BKY_PIR_CATEGORY}" id="PIR_CATEGORY" colour="#9acd32" secondaryColour="#9acd32" >
     <block type="pir_readValue" id="pir_readValue">
-        <field name="pin">IO3</field>
+        <field name="pin">25</field>
     </block>
 </category>
 
 <category name="%{BKY_LIGHTSENSOR_CATEGORY}" id="LIGHTSENSOR_CATEGORY" colour="#556b2f" secondaryColour="#556b2f">
     <block type="lightSensor_readValue" id="lightSensor_readValue">
-        <field name="pin">IO33</field>
+        <field name="pin">34</field>
     </block>
 </category>
 
 
 <category name="%{BKY_POTSENSOR_CATEGORY}" id="POTSENSOR_CATEGORY" colour="#008b8b" secondaryColour="#008b8b">
     <block type="PotSensor_readValue" id="PotSensor_readValue">
-        <field name="pin">IO33</field>
+        <field name="pin">34</field>
     </block>
 </category>
 
 <category name="%{BKY_SOUNDSENSOR_CATEGORY}" id="SOUNDSENSOR_CATEGORY" colour="#ff1493" secondaryColour="#ff1493">
     <block type="SoundSensor_readValue" id="SoundSensor_readValue">
-        <field name="pin">IO33</field>
+        <field name="pin">34</field>
     </block>
 </category>
 
@@ -183,7 +183,7 @@ function addToolbox () {
 <category name="%{BKY_KS_SERVO_CATEGORY}" id="KS_SERVO_CATEGORY" colour="#7b68ee" secondaryColour="#7b68ee">
    <block type="ks_servo_angle" id="ks_servo_angle">
 
-   <field name="pin">IO5</field>>
+   <field name="pin">5</field>>
    <field name="CH">CH0</field>>
 
    <value name="angle">
@@ -199,7 +199,7 @@ function addToolbox () {
 </block>
 
 <block type="ks_servo_read" id="ks_servo_read">
-<field name="pin">IO5</field>>
+<field name="pin">5</field>>
 </block>
 
 </category>
@@ -436,6 +436,23 @@ function addToolbox () {
     <block type="ir_refresh" id="ir_refresh">
 
     </block>
+</category>
+<category name="%{BKY_WIFI_CATEGORY}" id="WIFI_CATEGORY" colour="#2f4f4f" secondaryColour="#2f4f4f">
+    <block type="wifi_init" id="wifi_init">
+        <value name="SSID">
+            <shadow type="text">
+                <field name="TEXT">ChinaNet_2.4G</field>
+            </shadow>
+        </value>
+        <value name="PASSWD">
+            <shadow type="text">
+                <field name="TEXT">ChinaNet@233</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="wifi_read_ip" id="wifi_read_ip"></block>
+
 </category>
 `;
 }

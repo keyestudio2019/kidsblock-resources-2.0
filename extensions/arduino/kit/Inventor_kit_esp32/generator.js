@@ -114,7 +114,8 @@ function addGenerator (Blockly) {
         const pin = block.getFieldValue('pin');
         const state = this.getFieldValue('state');
 
-        Blockly.Arduino.setups_.Led_init = `pinMode(${pin}, OUTPUT);`;
+    // 使用唯一键存储每个引脚的 pinMode 设置
+    Blockly.Arduino.setups_[`Led_init_${pin}`] = `pinMode(${pin}, OUTPUT);`;
 
         return `digitalWrite(${pin}, ${state});\n`;
 };
@@ -618,24 +619,24 @@ Blockly.Arduino.ir_refresh = function () {
 };
 
 
-// Blockly.Arduino.wifi_init = function (block) {
-//     const ssid = Blockly.Arduino.valueToCode(block, 'SSID', Blockly.Arduino.ORDER_ATOMIC);
-//     const passwd = Blockly.Arduino.valueToCode(block, 'PASSWD', Blockly.Arduino.ORDER_ATOMIC);
+Blockly.Arduino.wifi_init = function (block) {
+    const ssid = Blockly.Arduino.valueToCode(block, 'SSID', Blockly.Arduino.ORDER_ATOMIC);
+    const passwd = Blockly.Arduino.valueToCode(block, 'PASSWD', Blockly.Arduino.ORDER_ATOMIC);
 
-//     Blockly.Arduino.includes_.wifi_init = '#include <WiFi.h>\n#include <ESPmDNS.h>\n#include <WiFiClient.h>\n';
-//     Blockly.Arduino.definitions_.wifi_init = 'const char* ssid = '+ssid+';\nconst char* password = '+passwd+';\nWiFiServer server(80);\n';
-//     Blockly.Arduino.setups_['wifi_setup'] = 'Serial.begin(115200);\n   WiFi.begin(ssid, password);\n   while (WiFi.status() != WL_CONNECTED) {\n   delay(500);\n   Serial.print(".");\n    }\n    Serial.println("");\n    Serial.print("Connected to ");\n    Serial.println(ssid);\n    Serial.print("IP address: ");\n    Serial.println(WiFi.localIP());\n    server.begin();\n    Serial.println("TCP server started");\n    MDNS.addService("http", "tcp", 80);\n';
+    Blockly.Arduino.includes_.wifi_init = '#include <WiFi.h>\n';
+    Blockly.Arduino.definitions_.wifi_init = 'const char* ssid = '+ssid+';\nconst char* password = '+passwd+';\n';
+    Blockly.Arduino.setups_['wifi_setup'] = 'WiFi.begin(ssid, password);\n  while (WiFi.status() != WL_CONNECTED) {\n    delay(500);\n  }';
 
-//     return `WiFiClient client = server.available();\n    if (!client) {\n        return;\n    }\n    while(client.connected() && !client.available()){\n        delay(1);\n    }\n    String req = client.readStringUntil('\\r');\n    int addr_start = req.indexOf(' ');\n    int addr_end = req.indexOf(' ', addr_start + 1);\n    if (addr_start == -1 || addr_end == -1) {\n        Serial.print("Invalid request: ");\n        Serial.println(req);\n        return;\n    }\nreq = req.substring(addr_start + 1, addr_end);\n`;
-// };
-
-
-
-// Blockly.Arduino.wifi_read = function () {
-//     return [`req`, Blockly.Arduino.ORDER_ATOMIC];
+    return '';
+};
 
 
-// };
+
+Blockly.Arduino.wifi_read_ip = function () {
+    return [`WiFi.localIP()`, Blockly.Arduino.ORDER_ATOMIC];
+
+
+};
    
     return Blockly;
 }

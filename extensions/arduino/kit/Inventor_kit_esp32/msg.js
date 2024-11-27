@@ -106,9 +106,9 @@ function addMsg (Blockly) {
         IR_DATA: 'Received data',
         IR_READ: 'Read the data',
         IR_REFRESH: 'Refresh data',
-        // WIFI_CATEGORY: 'ESP32 WIFI',
-        // WIFI_INIT: 'wifi connect ssid:%1 password:%2',
-        // WIFI_READ: 'WiFi read',
+        WIFI_CATEGORY: 'ESP32 WIFI',
+        WIFI_INIT: 'wifi connect ssid:%1 password:%2',
+        WIFI_READ_IP: 'WiFi read',
    
     });
     Object.assign(Blockly.ScratchMsgs.locales['de'], {
@@ -215,9 +215,9 @@ function addMsg (Blockly) {
         IR_DATA: 'Empfangene Daten',
         IR_READ: 'Daten lesen',
         IR_REFRESH: 'Daten aktualisieren',
-        // WIFI_CATEGORY: 'ESP32 WIFI',
-        // WIFI_INIT: 'wifi connect ssid:%1 passwort:%2',
-        // WIFI_READ: 'WiFi lesen',
+        WIFI_CATEGORY: 'ESP32 WIFI',
+        WIFI_INIT: 'wifi connect ssid:%1 passwort:%2',
+        WIFI_READ_IP: 'WiFi lesen',
     });
     Object.assign(Blockly.ScratchMsgs.locales['es'], {
         KS_VARIABLE_LABEL:'Tipo de variable',
@@ -323,9 +323,9 @@ function addMsg (Blockly) {
         IR_DATA: 'Datos recibidos',
         IR_READ: 'Leer los datos',
         IR_REFRESH: 'Actualizar datos',
-        // CATEGORIA_WIFI: 'ESP32 WIFI',
-        // WIFI_INIT: 'wifi connect ssid:%1 contraseña:%2',
-        // WIFI_READ: 'Lectura WiFi',
+        CATEGORIA_WIFI: 'ESP32 WIFI',
+        WIFI_INIT: 'wifi connect ssid:%1 contraseña:%2',
+        WIFI_READ_IP: 'Lectura WiFi ip',
     });
     Object.assign(Blockly.ScratchMsgs.locales['fr'], {
         KS_VARIABLE_LABEL:'Type de variable',
@@ -431,9 +431,9 @@ function addMsg (Blockly) {
          IR_DATA: 'Données reçues',
          IR_READ: 'Lire les données',
          IR_REFRESH: 'Actualiser les données',
-         // WIFI_CATEGORY : 'ESP32 WIFI',
-         // WIFI_INIT : 'wifi connect ssid:%1 password:%2',
-         // WIFI_READ : 'WiFi lu',
+         WIFI_CATEGORY : 'ESP32 WIFI',
+         WIFI_INIT : 'wifi connect ssid:%1 password:%2',
+         WIFI_READ_IP : 'WiFi lu ip',
     });
     Object.assign(Blockly.ScratchMsgs.locales['ja'], {
         KS_VARIABLE_LABEL:'変数タイプ',
@@ -539,9 +539,9 @@ function addMsg (Blockly) {
          IR_DATA: '受信データ',
          IR_READ: 'データを読み取る',
          IR_REFRESH: 'データを更新',
-         // WIFI_CATEGORY: 'ESP32 WIFI',
-         // WIFI_INIT: 'wifi 接続 ssid:%1 パスワード:%2',
-         // WIFI_READ: 'WiFi 読み取り',
+         WIFI_CATEGORY: 'ESP32 WIFI',
+         WIFI_INIT: 'wifi 接続 ssid:%1 パスワード:%2',
+         WIFI_READ_IP: '読み取り WiFi ip',
     });
     Object.assign(Blockly.ScratchMsgs.locales['ko'], {
         KS_VARIABLE_LABEL:'변수 유형',
@@ -647,9 +647,9 @@ function addMsg (Blockly) {
          IR_DATA: '데이터 수신',
          IR_READ: '데이터 읽기',
          IR_REFRESH: '데이터 새로 고침',
-         // WIFI_CATEGORY: 'ESP32 와이파이',
-         // WIFI_INIT: 'wifi 연결 ssid:%1 비밀번호:%2',
-         // WIFI_READ: '와이파이 읽기',
+         WIFI_CATEGORY: 'ESP32 와이파이',
+         WIFI_INIT: 'wifi 연결 ssid:%1 비밀번호:%2',
+         WIFI_READ_IP: '와이파이 읽기 ip',
     });
     Object.assign(Blockly.ScratchMsgs.locales['pl'], {
         KS_VARIABLE_LABEL:'Typ zmiennej',
@@ -755,9 +755,9 @@ function addMsg (Blockly) {
         IR_DATA: 'Otrzymane dane',
         IR_READ: 'Odczytaj dane',
         IR_REFRESH: 'Odśwież dane',
-        // WIFI_CATEGORY: 'ESP32 WIFI',
-        // WIFI_INIT: 'wi-fi connect ssid:%1 hasło:%2',
-        // WIFI_READ: 'Odczyt Wi-Fi',
+        WIFI_CATEGORY: 'ESP32 WIFI',
+        WIFI_INIT: 'wi-fi connect ssid:%1 hasło:%2',
+        WIFI_READ_IP: 'Odczyt Wi-Fi ip',
     });
     Object.assign(Blockly.ScratchMsgs.locales['pt'], {
         KS_VARIABLE_LABEL:'Tipo de variável',
@@ -863,9 +863,9 @@ function addMsg (Blockly) {
          IR_DATA: 'Dados recebidos',
          IR_READ: 'Ler os dados',
          IR_REFRESH: 'Atualizar dados',
-         // WIFI_CATEGORY: 'ESP32 WIFI',
-         // WIFI_INIT: 'wifi connect ssid:%1 senha:%2',
-         // WIFI_READ: 'leitura WiFi',
+         WIFI_CATEGORY: 'ESP32 WIFI',
+         WIFI_INIT: 'wifi connect ssid:%1 senha:%2',
+         WIFI_READ_IP: 'leitura WiFi ip',
     });
     Object.assign(Blockly.ScratchMsgs.locales['ru'], {
         KS_VARIABLE_LABEL: 'Тип переменной',
@@ -971,9 +971,9 @@ function addMsg (Blockly) {
          IR_DATA: 'Полученные данные',
          IR_READ: 'Прочитать данные',
          IR_REFRESH: 'Обновить данные',
-         // WIFI_CATEGORY: 'ESP32 WIFI',
-         // WIFI_INIT: 'ssid для подключения к Wi-Fi:%1, пароль:%2',
-         // WIFI_READ: 'Чтение WiFi',
+         WIFI_CATEGORY: 'ESP32 WIFI',
+         WIFI_INIT: 'ssid для подключения к Wi-Fi:%1, пароль:%2',
+         WIFI_READ_IP: 'Чтение WiFi ip',
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-tw'], {
         KS_VARIABLE_LABEL:'變量類型',
@@ -1080,9 +1080,9 @@ function addMsg (Blockly) {
         IR_DATA: '接收到紅外遙控的數據',
         IR_READ: '讀取紅外接收數據',
         IR_REFRESH: '刷新紅外接收數據',
-        // WIFI_CATEGORY: 'ESP32 WIFI',
-        // WIFI_INIT: '連接WiFi 名稱%1 密碼%2',
-        // WIFI_READ: 'WiFi 讀取數據',
+        WIFI_CATEGORY: 'ESP32 WIFI',
+        WIFI_INIT: '連接WiFi 名稱%1 密碼%2',
+        WIFI_READ_IP: 'WiFi ip 讀取',
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
         KS_VARIABLE_LABEL:'变量类型',
@@ -1189,9 +1189,9 @@ function addMsg (Blockly) {
         IR_DATA: '接收到红外遥控的数据',
         IR_READ: '读取红外接收数据',
         IR_REFRESH: '刷新红外接收数据',
-        // WIFI_CATEGORY: 'ESP32 WIFI',
-        // WIFI_INIT: '连接WiFi 名称%1 密码%2',
-        // WIFI_READ: 'WiFi 读取数据',
+        WIFI_CATEGORY: 'ESP32 WIFI',
+        WIFI_INIT: '连接WiFi 名称%1 密码%2',
+        WIFI_READ_IP: '读取 WiFi ip',
         
     });
     return Blockly;

@@ -1,5 +1,10 @@
 V1.7.1:
 
+Added ESP32 Coding Box<br>
+add Wi-Fi control function to ESP32 Inventor Kit 
+
+V1.7.1:
+
 Add Motor PLUS development board<br>
 Fixed the issue with the OLED display graphics
 
