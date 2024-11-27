@@ -1,4 +1,4 @@
-V1.7.1:
+V1.7.2:
 
 Added ESP32 Coding Box<br>
 add Wi-Fi control function to ESP32 Inventor Kit 
