@@ -56,6 +56,11 @@ function addMsg (Blockly) {
         BLUEBUTTON_READ_STATE: '接口%1蓝色按钮被按下?',
         BLUEBUTTON_READ_VALUE: '接口%1蓝色按钮的状态值'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        BLUEBUTTON_CATEGORY: 'Pulsante Blu',
+        BLUEBUTTON_READ_STATE: 'Il pulsante blu dell\'interfaccia %1 è stato premuto?',
+        BLUEBUTTON_READ_VALUE: 'Il valore dello stato del pulsante blu nell\'interfaccia %1'
+    });
     return Blockly;
 }
 

@@ -45,6 +45,10 @@ function addMsg (Blockly) {
         ANALOGVOICE_CATEGORY: '模拟声音传感器',
         ANALOGVOICE_READ_VALUE: '读取接口 %1 声音强度'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        ANALOGVOICE_CATEGORY: 'Sensore di voce analogico',
+        ANALOGVOICE_READ_VALUE: 'Leggi il valore dell\'interfaccia %1'
+    });
     return Blockly;
 }
 

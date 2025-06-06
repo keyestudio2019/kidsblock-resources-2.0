@@ -189,6 +189,23 @@ function addMsg (Blockly) {
         PS2_START: '开始',
         PS2_GETJOYSTICK: 'PS2获取摇杆 %1'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        PS2_CATEGORY: 'PS2',
+        PS2_INIT: 'Inizializza ricevitore PS2 Pin DIN %1 DOUT %2 CS %3 CLK %4',
+        PS2_READDATA: 'Leggi dati ricevitore PS2',
+        PS2_GETBUTTON: 'PS2 %1 Tasto premuto?',
+        PS2_UP: 'Su',
+        PS2_DOWN: 'Giù',
+        PS2_LEFT: 'Sinistra',
+        PS2_RIGHT: 'Destra',
+        PS2_TRIANGLE: 'Triangolo',
+        PS2_CIRCLE: 'Cerchio',
+        PS2_CROSS: 'Croce',
+        PS2_SQUARE: 'Quadrato',
+        PS2_SELECT: 'Seleziona',
+        PS2_START: 'Inizia',
+        PS2_GETJOYSTICK: 'PS2 Ottieni joystick %1',        
+    });
     return Blockly;
 }
 

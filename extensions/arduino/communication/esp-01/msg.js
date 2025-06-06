@@ -45,7 +45,10 @@ function addMsg (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
         KS8266_CATEGORY: 'esp8266_wifi',
         KS8266_INIT: 'ESP8266 连接wifi 名称 %1 密码 %2',
-
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        KS8266_CATEGORY: 'esp8266_wifi',
+        KS8266_INIT: 'ESP8266 Connessione WiFi Nome %1 Password %2',        
     });
     return Blockly;
 }

@@ -45,6 +45,10 @@ function addMsg (Blockly) {
         LIGHTSENSOR_CATEGORY: '光线传感器',
         LIGHTSENSOR_READ_VALUE: '读取接口%1光线强度'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        LIGHTSENSOR_CATEGORY: 'Sensore di luce',
+        LIGHTSENSOR_READ_VALUE: 'Leggi il valore dell\'interfaccia %1'
+    });
     return Blockly;
 }
 

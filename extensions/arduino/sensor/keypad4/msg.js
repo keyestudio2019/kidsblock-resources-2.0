@@ -56,6 +56,11 @@ function addMsg (Blockly) {
         KEYPAD_INIT: '初始化矩阵键盘',
         KEYPAD_READ: '读取矩阵键盘的值',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        KEYPAD_CATEGORY: 'Tastiera 4*4',
+        KEYPAD_INIT: 'Inizializza tastiera 4*4',
+        KEYPAD_READ: 'Leggi valore tasto tastiera 4*4'
+    });
     return Blockly;
 }
 

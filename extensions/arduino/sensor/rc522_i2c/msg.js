@@ -56,6 +56,11 @@ function addMsg (Blockly) {
         RC522_INIT: '初始化 RFID',
         RC522_READ: '读取卡值'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        RC522_CATEGORY: 'RFID',  
+        RC522_INIT: 'inizializza RFID',  
+        RC522_READ: 'Leggi il valore della carta'
+    });
     return Blockly;
 }
 

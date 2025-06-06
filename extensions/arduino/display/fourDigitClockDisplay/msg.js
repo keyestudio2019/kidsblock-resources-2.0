@@ -144,6 +144,19 @@ function addMsg (Blockly) {
         FOURDIGITCLOCKDISPLAY_SETPOINT_TOOLTIP: '将在下次更新显示后生效.',
         FOURDIGITCLOCKDISPLAY_CLEAR: '清空'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        FOURDIGITCLOCKDISPLAY_CATEGORY: 'Display orologio a 4 cifre',
+        FOURDIGITCLOCKDISPLAY_INIT: 'Inizializza display orologio a 4 cifre pin DIO %1 CLK %2',
+        FOURDIGITCLOCKDISPLAY_SETBRIGHTNESS: 'Imposta la luminosità %1',
+        FOURDIGITCLOCKDISPLAY_DISPLAYNUMBER: 'Mostra numero %1',
+        FOURDIGITCLOCKDISPLAY_DISPLAYSTRING: 'Mostra carattere %1',
+        FOURDIGITCLOCKDISPLAY_DISPLAY: 'Mostra %1 alla posizione %2',
+        FOURDIGITCLOCKDISPLAY_SETPOINT: 'Imposta punto %1',
+        FOURDIGITCLOCKDISPLAY_STATE_ON: 'Acceso',
+        FOURDIGITCLOCKDISPLAY_STATE_OFF: 'Spento',
+        FOURDIGITCLOCKDISPLAY_SETPOINT_TOOLTIP: 'Questo sarà applicato al prossimo aggiornamento del display.',
+        FOURDIGITCLOCKDISPLAY_CLEAR: 'Pulisci',        
+    });
     return Blockly;
 }
 

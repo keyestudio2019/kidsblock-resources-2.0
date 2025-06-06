@@ -16,7 +16,7 @@ const TankRobotv2 = formatMessage => ({
     toolbox: 'toolbox.js',
     msg: 'msg.js',
     library: 'lib',
-    helpLink: 'https://www.keyestudio.com/'
+    helpLink: 'https://www.keyesrobot.cn/projects/KE0170/zh-cn/latest/'
 });
 
 module.exports = TankRobotv2;

@@ -325,14 +325,41 @@ function addMsg (Blockly) {
         KS_MATH_UNSIGNED_LONG: '无符号长整数',
         KS_MATH_UNSIGNED_CHAR: '无符号字符',
         KS_MATH_DOUBLE: '双精度浮点数',
-
         KS_TEXT_LABEL:'文本',
         KS_char: '\'%1\'',
         KS_string: '\"%1\"',
         KS_data: '%1',
-
         KS_LOGIC_LABEL:'逻辑',
         KS_judge:'%1 %2 %3',
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        KS_VARIABLE_LABEL: 'Tipo di variabile',
+        KS_variables_declare: 'Dichiara variabile numerica %1 tipo %2 nome %3 valore %4',
+        KS_variables_declare2: 'Dichiara variabile stringa %1 tipo %2 nome %3 valore %4',
+        KS_variables_set: 'Imposta variabile %1 su %2',
+        KS_variables_change: 'Imposta variabile %1 modalità %2',
+        KS_variables_value: 'Variabile %1',
+        KS_variables_setString: 'Imposta variabile stringa %1 su %2',
+        KS_global: 'Globale',
+        KS_local: 'Locale',
+        KS_MATH_INT: 'Intero',
+        KS_MATH_LONG: 'Intero lungo',
+        KS_MATH_FLOAT: 'Decimale',
+        KS_MATH_BOOLEAN: 'Booleano',
+        KS_MATH_BYTE: 'Byte',
+        KS_MATH_CHAR: 'Carattere',
+        KS_MATH_STRING: 'Stringa',
+        KS_MATH_UNSIGNED_INT: 'Intero senza segno',
+        KS_MATH_WORD: 'Parola',
+        KS_MATH_UNSIGNED_LONG: 'Intero lungo senza segno',
+        KS_MATH_UNSIGNED_CHAR: 'Carattere senza segno',
+        KS_MATH_DOUBLE: 'Numero in virgola mobile doppia precisione',
+        KS_TEXT_LABEL: 'TESTO',  
+        KS_char: 'carattere%1',  
+        KS_string: 'stringa%1',  
+        KS_data: '%1', 
+        KS_LOGIC_LABEL: 'Logica',
+        KS_judge: '%1 %2 %3'
     });
     return Blockly;
 }

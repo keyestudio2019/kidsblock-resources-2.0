@@ -67,6 +67,12 @@ function addMsg (Blockly) {
         FOURTUBE_DOT: '数码管TM1650第%1个 小数点%2',
         FOURTUBE_STATE: '数码管TM1650 %1'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        FOURTUBE_CATEGORY: 'Display a 4 cifre',
+        FOURTUBE_STRING: 'Display TM1650 mostra stringa %1',
+        FOURTUBE_DOT: 'Display TM1650 numero %1 punto decimale %2',
+        FOURTUBE_STATE: 'Display TM1650 %1',        
+    });
     return Blockly;
 }
 

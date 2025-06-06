@@ -94,51 +94,86 @@ function addToolbox () {
 <category name="%{BKY_ROBOT_CATEGORY}" id="ROBOT_CATEGORY" colour="#0000ff" secondaryColour="#0000ff">
 
      <block type="robot_forward" id="robot_forward">
-       <value name="SPEED">
+       <value name="SPEED1">
          <shadow type="math_uint8_number">
             <field name="NUM">200</field>
         </shadow>
       </value>
+      <value name="SPEED2">
+         <shadow type="math_uint8_number">
+         <field name="NUM">200</field>
+         </shadow>
+       </value>
     </block>
     <block type="robot_back" id="robot_back">
-      <value name="SPEED">
-       <shadow type="math_uint8_number">
-           <field name="NUM">200</field>
-       </shadow>
-      </value>
-    </block>
-
-    <block type="robot_left" id="robot_left">
-      <value name="SPEED">
+      <value name="SPEED1">
         <shadow type="math_uint8_number">
            <field name="NUM">200</field>
         </shadow>
       </value>
+      <value name="SPEED2">
+        <shadow type="math_uint8_number">
+            <field name="NUM">200</field>
+        </shadow>
+      </value>
+    </block>
+
+    <block type="robot_left" id="robot_left">
+     <value name="SPEED1">
+        <shadow type="math_uint8_number">
+           <field name="NUM">200</field>
+        </shadow>
+     </value>
+     <value name="SPEED2">
+        <shadow type="math_uint8_number">
+            <field name="NUM">200</field>
+        </shadow>
+     </value>
     </block>
 
   <block type="robot_right" id="robot_right">
-    <value name="SPEED">
-      <shadow type="math_uint8_number">
-       <field name="NUM">200</field>
-      </shadow>
+    <value name="SPEED1">
+     <shadow type="math_uint8_number">
+        <field name="NUM">200</field>
+     </shadow>
+    </value>
+    <value name="SPEED2">
+     <shadow type="math_uint8_number">
+        <field name="NUM">200</field>
+     </shadow>
     </value>
   </block>
 
   <block type="robot_stop" id="robot_stop">
   </block>
-
 </category>
+
+<category name="%{BKY_LED_CATEGORY}" id="BKY_LED_CATEGORY" colour="#00bfff" secondaryColour="#00bfff">
+    <block type="LED_setLEDState" id="LED_setLEDState">
+        <field name="pin">9</field>
+    </block>
+    <block type="led_analog" id="led_analog">
+    <field name="PIN">9</field>>
+
+    <value name="val">
+        <shadow type="math_uint8_number">
+            <field name="NUM">255</field>
+        </shadow>
+    </value>
+    </block>
+</category>
+
 
 <category name="%{BKY_MOTOR130_CATEGORY}" id="MOTOR130_CATEGORY" colour="#00bfff" secondaryColour="#00bfff">
     <block type="motor130_digital" id="motor130_digital">
-        <field name="IN1">13</field>
-        <field name="IN2">11</field>
+        <field name="IN1">4</field>
+        <field name="IN2">5</field>
     </block>
 
     <block type="motor130_analog" id="motor130_analog">
-        <field name="IN1">13</field>
+        <field name="IN1">4</field>
 
-        <field name="IN2">11</field>
+        <field name="IN2">5</field>
 
         <value name="SPEED2">
             <shadow type="math_uint8_number">
@@ -151,7 +186,7 @@ function addToolbox () {
 
 <category name="%{BKY_KS_SERVO_CATEGORY}" id="KS_SERVO_CATEGORY" colour="#32cd32" secondaryColour="#32cd32">
     <block type="ks_servo_angle" id="ks_servo_angle">
-        <field name="pin">9</field>>
+        <field name="pin">10</field>>
         <value name="angle">
             <shadow type="math_number">
                 <field name="NUM">90</field>
@@ -165,15 +200,21 @@ function addToolbox () {
     </block>
 
     <block type="ks_servo_read" id="ks_servo_read">
-        <field name="pin">9</field>>
+        <field name="pin">10</field>>
     </block>
 
 </category>
 
+<category name="%{BKY_LIGHTSENSOR_CATEGORY}" id="LIGHTSENSOR_CATEGORY" colour="#008b8b" secondaryColour="#008b8b">
+    <block type="lightSensor_readValue" id="lightSensor_readValue">
+        <field name="pin">A1</field>
+    </block>
+</category>
+
 <category name="%{BKY_HC_SR04_CATEGORY}" id="HC_SR04_CATEGORY" colour="#008b8b" secondaryColour="#008b8b">
                 <block type="hc_sr04_read_distance" id="hc_sr04_read_distance">
-                    <field name="trig_pin">5</field>>
-                    <field name="echo_pin">4</field>>
+                    <field name="trig_pin">12</field>>
+                    <field name="echo_pin">13</field>>
                 </block>
 </category>
 
@@ -212,10 +253,9 @@ function addToolbox () {
 
 </category>
 
-
 <category name="%{BKY_IR_CATEGORY}" id="IR_CATEGORY" colour="#4b0082" secondaryColour="#4b0082">
     <block type="ir_init" id="ir_init">
-        <field name="pin">A0</field>>
+        <field name="pin">3</field>>
     </block>
     <block type="ir_data" id="ir_data">
 
@@ -228,6 +268,11 @@ function addToolbox () {
     </block>
 </category>
 
+<category name="%{BKY_BLE_SERIAL_CATEGORY}" id="BLE_SERIAL_CATEGORY" colour="#4b0082" secondaryColour="#4b0082">
+    <block type="ble_serial" id="ble_serial">
+
+    </block>
+</category>
 `;
 }
 

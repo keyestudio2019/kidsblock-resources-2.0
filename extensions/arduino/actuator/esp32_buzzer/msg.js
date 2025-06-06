@@ -68,6 +68,12 @@ function addMsg (Blockly) {
         BUZZER_MUSIC: '蜂鸣器 引脚%1 播放音乐%2',
         BUZZER_NOTONE: '结束声音 引脚%1',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        BUZZER_CATEGORY: 'Buzzer passivo',
+        BUZZER_TONE_D: 'Riproduci suono Pin%1 frequenza%2 battito%3',
+        BUZZER_MUSIC: 'Buzzer Pin%1 riproduci musica%2',
+        BUZZER_NOTONE: 'Ferma suono Pin%1',        
+    });
     return Blockly;
 }
 

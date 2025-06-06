@@ -56,6 +56,11 @@ function addMsg (Blockly) {
         BH_INIT: '初始化 光强度传感器BH1750',
         BH_READ: '读取光强度值',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        BH_CATEGORY: 'Intensità luminosa',
+        BH_INIT: 'Inizializza sensore BH1750',
+        BH_READ: 'Leggi BH1750'
+    });
     return Blockly;
 }
 

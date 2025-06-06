@@ -89,6 +89,14 @@ function addMsg (Blockly) {
         SHIFTDIGITDISPLAY_SHOW: '移位数码管显示 %1 ms',
         SHIFTDIGITDISPLAY_REFRESH_TOOLTIP: '这条指令将会阻塞程序，推荐在每个循环中运行1ms.'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        SHIFTDIGITDISPLAY_CATEGORY: 'Display a cifra spostata',
+        SHIFTDIGITDISPLAY_INIT: 'Inizializza display a cifra spostata lunghezza %1 pin SCLK %2 RCLK %3 DIO %4',
+        SHIFTDIGITDISPLAY_DISPLAYNUMBER: 'Visualizza numero sul display a cifra spostata %1 con %2 cifre decimali',
+        SHIFTDIGITDISPLAY_DISPLAYSTRING: 'Visualizza stringa sul display a cifra spostata %1',
+        SHIFTDIGITDISPLAY_SHOW: 'Mostra sul display a cifra spostata per %1 ms',
+        SHIFTDIGITDISPLAY_REFRESH_TOOLTIP: 'Questo comando bloccherà il programma. Si consiglia di eseguirlo ogni 1 ms in ogni ciclo.'        
+    });
     return Blockly;
 }
 

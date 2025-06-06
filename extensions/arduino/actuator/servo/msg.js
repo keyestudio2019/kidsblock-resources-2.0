@@ -57,6 +57,11 @@ function addMsg (Blockly) {
         KS_SERVO_ANGLE: '舵机 引脚%1 角度%2 延时(毫秒)%3',
         KS_SERVO_READ: '舵机 引脚%1 读取度数',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        KS_SERVO_CATEGORY: 'Servo',
+        KS_SERVO_ANGLE: 'Servo Pin%1 angolo%2 ritardo (millisecondi)%3',
+        KS_SERVO_READ: 'Servo Pin%1 leggi angolo',   
+    });
     return Blockly;
 }
 

@@ -56,6 +56,11 @@ function addMsg (Blockly) {
         ONEINIT: '初始化一位数码管 引脚a~dp:2~9',
         ONETUBE_NUMBER: '一位数码管显示数字(0~9)%1 小数点%2',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        ONETUBE_CATEGORY: 'Display a 1 cifra',
+        ONEINIT: 'Inizializza display a 1 cifra pin a~dp:2~9',
+        ONETUBE_NUMBER: 'Visualizza numero (0~9) sul display a 1 cifra %1 Punto decimale %2',        
+    });
     return Blockly;
 }
 

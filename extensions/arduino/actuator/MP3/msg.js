@@ -266,6 +266,30 @@ function addMsg (Blockly) {
         EQ_CLASSIC: '古典',
         EQ_BASS: '低音',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        MP3_CATEGORY: 'MP3',
+        MP3_CONTROL: 'Modulo MP3 Pin TX%1 Pin RX%2 imposta a%3',
+        MP3_LOOP: 'Modulo MP3 Pin TX%1 Pin RX%2 modalità di loop%3',
+        MP3_EQ: 'Modulo MP3 Pin TX%1 Pin RX%2 impostazione audio%3',
+        MP3_VOL: 'Modulo MP3 Pin TX%1 Pin RX%2 volume a%3',
+        MP3_PLAY: 'Modulo MP3 Pin TX%1 Pin RX%2 riproduci la traccia %3',
+        play: 'Riproduci',
+        pause: 'Pausa',
+        next: 'Traccia successiva',
+        prev: 'Traccia precedente',
+        volumeUp: 'Aumenta volume',
+        volumeDn: 'Diminuisci volume',
+        LOOP_ALL: 'Ripeti tutto',
+        LOOP_FOLDER: 'Ripeti cartella',
+        LOOP_ONE: 'Ripeti singola traccia',
+        LOOP_RAM: 'Riproduzione casuale',
+        EQ_NORMAL: 'Normale',
+        EQ_POP: 'Pop',
+        EQ_ROCK: 'Rock',
+        EQ_JAZZ: 'Jazz',
+        EQ_CLASSIC: 'Classica',
+        EQ_BASS: 'Bassi',        
+    });
     return Blockly;
 }
 

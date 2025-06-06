@@ -88,7 +88,14 @@ function addMsg (Blockly) {
         QDP_web_microdatabase_delete_tags:'网络微数据库 删除标签 标签名 %1',
         QDP_web_microdatabase_get_tags:'网络微数据库 获取标签 标签名 %1 的值',
         QDP_web_microdatabase_count_tags:'网络微数据库 查询标签数',
-
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        QH_DATABASE_CATEGORY: 'Database micro di rete',
+        QDP_network_microdatabase_initialization: 'Inizializzazione del database micro di rete Nome utente %1 Password %2',
+        QDP_web_microdatabase_update_tags: 'Aggiorna etichetta del database micro di rete Nome etichetta %1 Valore %2',
+        QDP_web_microdatabase_delete_tags: 'Elimina etichetta del database micro di rete Nome etichetta %1',
+        QDP_web_microdatabase_get_tags: 'Ottieni etichetta del database micro di rete Valore etichetta %1',
+        QDP_web_microdatabase_count_tags: 'Conta le etichette nel database micro di rete',        
     });
     return Blockly;
 }

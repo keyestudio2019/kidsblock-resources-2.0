@@ -79,6 +79,13 @@ function addMsg (Blockly) {
         KS_SERVO_ANGLE: '舵机 引脚%1 通道%2 角度%3',
         KS_SERVO_READ: '舵机 引脚%1 读取度数',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        KS_SERVO_CATEGORY: 'Servo 270 gradi',
+        KS_SERVO_ATTACH: 'Servo Pin%1 imposta la gamma di impulsi (%2 , %3)',
+        KS_SERVO_WRITE2: 'Servo Pin%1 angolo%2',
+        KS_SERVO_ANGLE: 'Servo Pin%1 canale%2 angolo%3',
+        KS_SERVO_READ: 'Servo Pin%1 leggi angolo',        
+    });
     return Blockly;
 }
 

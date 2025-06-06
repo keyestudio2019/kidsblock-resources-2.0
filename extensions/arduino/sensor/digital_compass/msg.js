@@ -67,6 +67,12 @@ function addMsg (Blockly) {
         COMPASS_SET: '设置 电子罗盘',
         COMPASS_READ: '读取 电子罗盘 %1',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        COMPASS_CATEGORY: 'Compaso digitale',
+        COMPASS_INIT: 'inizializza HMC5883',
+        COMPASS_SET: 'Imposta HMC5883',
+        COMPASS_READ: 'leggi HMC5883 %1'
+    });
     return Blockly;
 }
 

@@ -397,7 +397,42 @@ function addMsg (Blockly) {
         status:'状态',
         joystick:'摇杆'
     });
-
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        QH_WEB_PRO_CATEGORY: 'Editor di Pagina Web PRO',
+        espdashpro_display_components: 'Aggiorna componente Etichetta componente %1 Unità componente %2 Tipo componente %3 ID componente %4 Valore %5',
+        temperature: 'Temperatura',
+        humidity: 'Umidità',
+        air_pressure: 'Pressione atmosferica',
+        energy: 'Energia',
+        progress_bar: 'Barra di progresso',
+        tags: 'Etichette personalizzate',
+        espdashpro_state_component: 'Imposta componente stato Etichetta componente %1 Icona componente %2 ID componente %3 Valore %4',
+        success: 'Normale',
+        warning: 'Avviso',
+        danger: 'Pericolo',
+        idle: 'Inattivo',
+        espdashpro_update_chart: 'Aggiorna grafico Intestazione grafico %1 Tipo componente %2 ID componente %3 Fonte dati %4 Fonte dati Y %5',
+        BAR_CHART: 'Grafico a barre',
+        LINE_CHART: 'Grafico a linee',
+        AREA_CHART: 'Grafico ad area',
+        PIE_CHART: 'Grafico a torta',
+        espdashpro_display_components1: 'Aggiorna componente Etichetta componente %1 Tipo componente %2 ID componente %3 Valore %4',
+        BUTTON_CARD: 'Pulsante',
+        SLIDER_CARD: 'Slider',
+        TEXT_INPUT_CARD: 'Testo',
+        espdashpro_get_component_value: 'Ottieni valore componente Etichetta componente %1 Tipo componente %2 ID componente %3 Ritorna valore %4 %5',
+        espdashpro_get_joystick_value: 'Ottieni valore joystick Etichetta componente %1 Tipo componente %2 ID componente %3 Ritorna x,y %4 %5',
+        bothway: 'Bidirezionale',
+        lockx: 'Bloccato orizzontale',
+        locky: 'Bloccato verticale',
+        espdashpro_set_title: 'Imposta titolo pagina web su %1',
+        espdashpro_setting_permissions: 'Imposta nome utente accesso %1 Password %2',
+        espdashpro_add_page: 'Aggiungi pagina %1 ID pagina %2',
+        espdashpro_add_statistics: 'Aggiungi statistiche Etichetta statistica %1 Valore %2 ID %3',
+        espdashpro_set_component_page: 'Imposta pagina componente Tipo componente %1 ID componente %2 ID pagina %3',
+        status: 'Stato',
+        joystick: 'Joystick'        
+    });
     return Blockly;
 }
 

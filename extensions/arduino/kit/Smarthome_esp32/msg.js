@@ -76,11 +76,15 @@ function addMsg (Blockly) {
         LCD_SATE_HIDE: 'hide',
         LCD_STYLE_BLINK: 'blink',
         LCD_STYLE_NOBLINK: 'no-blink',
-        WIFI_CATEGORY: 'ESP32 WIFI',
+        
+        WIFI_CATEGORY: 'WIFI',
         WIFI_INIT: 'wifi connect ssid:%1 password:%2',
-        WIFI_READ: 'WiFi read',
-        CLIENT_PRINT: ' WIFI print %1',
-        DHT_PRINT: ' WIFI print DHT %1', 
+        // WIFI_READ: 'WiFi read',
+        WIFI_READ_IP: 'WiFi read ip',
+        WIFI_CLIENT_INIT: 'WiFi client init',
+        WIFI_CLIENT_CONNECTED: 'WiFi not connected to client',
+        WIFI_READ_DATA: 'WiFi read data',
+        WIFI_SEND_DATA: 'WiFi send data'
 
      
 
@@ -157,11 +161,15 @@ function addMsg (Blockly) {
         LCD_SATE_HIDE: 'verstecken',
         LCD_STYLE_BLINK: 'blinkt',
         LCD_STYLE_NOBLINK: 'kein Blinken',
-        WIFI_CATEGORY: 'ESP32 WIFI',
+        
+        WIFI_CATEGORY: 'WIFI',
         WIFI_INIT: 'wifi connect ssid:%1 passwort:%2',
-        WIFI_READ: 'WiFi lesen',
-        CLIENT_PRINT: 'WLAN-Druck %1',
-        DHT_PRINT: 'WLAN druckt DHT %1',
+        // WIFI_READ: 'WiFi lesen',
+        WIFI_READ_IP: 'WiFi liest IP',
+        WIFI_CLIENT_INIT: 'WiFi-Client-Init',
+        WIFI_CLIENT_CONNECTED: 'WiFi nicht mit Client verbunden',
+        WIFI_READ_DATA: 'WiFi-Lesedaten',
+        WIFI_SEND_DATA: 'WiFi-Sendedaten'
     });
     Object.assign(Blockly.ScratchMsgs.locales['es'], {
         KS_VARIABLE_LABEL:'Tipo de variable',
@@ -235,11 +243,15 @@ function addMsg (Blockly) {
         LCD_SATE_HIDE: 'ocultar',
         LCD_STYLE_BLINK: 'parpadeo',
         LCD_STYLE_NOBLINK: 'sin parpadeo',
-        WIFI_CATEGORÍA: 'ESP32 WIFI',
+        
+        WIFI_CATEGORÍA: 'WIFI',
         WIFI_INIT: 'wifi connect ssid:%1 contraseña:%2',
-        WIFI_READ: 'Lectura WiFi',
-        CLIENT_PRINT: 'Impresión WIFI %1',
-        DHT_PRINT: 'WIFI imprimir DHT %1',
+        // WIFI_READ: 'Lectura WiFi',
+        WIFI_READ_IP: 'WiFi leer ip',
+        WIFI_CLIENT_INIT: 'Iniciar cliente WiFi',
+        WIFI_CLIENT_CONNECTED: 'WiFi no conectado al cliente',
+        WIFI_READ_DATA: 'WiFi leer datos',
+        WIFI_SEND_DATA: 'WiFi enviar datos'
     });
     Object.assign(Blockly.ScratchMsgs.locales['fr'], {
         KS_VARIABLE_LABEL:'Type de variable',
@@ -313,11 +325,15 @@ function addMsg (Blockly) {
          LCD_SATE_HIDE: 'masquer',
          LCD_STYLE_BLINK: 'clignote',
          LCD_STYLE_NOBLINK: 'pas de clignotement',
-         WIFI_CATEGORY: 'ESP32 WIFI',
+         
+         WIFI_CATEGORY: 'WIFI',
          WIFI_INIT: 'ssid de connexion wifi:%1 mot de passe:%2',
-         WIFI_READ: 'Lecture Wi-Fi',
-         CLIENT_PRINT: 'Impression Wi-Fi %1',
-         DHT_PRINT: 'Impression Wi-Fi DHT %1',
+         // WIFI_READ : 'WiFi lu',
+         WIFI_READ_IP: 'IP de lecture WiFi',
+         WIFI_CLIENT_INIT: 'Initiation du client WiFi',
+         WIFI_CLIENT_CONNECTED: 'WiFi non connecté au client',
+         WIFI_READ_DATA: 'WiFi lire les données',
+         WIFI_SEND_DATA: 'WiFi envoie des données'
     });
     Object.assign(Blockly.ScratchMsgs.locales['ja'], {
         KS_VARIABLE_LABEL:'変数タイプ',
@@ -391,11 +407,15 @@ function addMsg (Blockly) {
          LCD_SATE_HIDE: '非表示',
          LCD_STYLE_BLINK: '点滅',
          LCD_STYLE_NOBLINK: 'まばたきなし',
-         WIFI_CATEGORY: 'ESP32 WIFI',
+         
+         WIFI_CATEGORY: 'WIFI',
          WIFI_INIT: 'WiFi 接続 ssid:%1 パスワード:%2',
-         WIFI_READ: 'WiFi 読み取り',
-         CLIENT_PRINT: ' WIFI 印刷 %1',
-         DHT_PRINT: ' WIFI 印刷 DHT %1',
+         // WIFI_READ: 'WiFi 読み取り',
+         WIFI_READ_IP: 'WiFi 読み取り IP',
+         WIFI_CLIENT_INIT: 'WiFi クライアントの初期化',
+         WIFI_CLIENT_CONNECTED: 'WiFi がクライアントに接続されていません',
+         WIFI_READ_DATA: 'WiFi 読み取りデータ',
+         WIFI_SEND_DATA: 'WiFi 送信データ'
     });
     Object.assign(Blockly.ScratchMsgs.locales['ko'], {
         KS_VARIABLE_LABEL:'변수 유형',
@@ -469,11 +489,15 @@ function addMsg (Blockly) {
          LCD_SATE_HIDE: '숨기기',
          LCD_STYLE_BLINK: '깜박임',
          LCD_STYLE_NOBLINK: '깜박이지 않음',
-         WIFI_CATEGORY: 'ESP32 와이파이',
+         
+         WIFI_CATEGORY: '와이파이',
          WIFI_INIT: 'wifi 연결 ssid:%1 비밀번호:%2',
-         WIFI_READ: '와이파이 읽기',
-         CLIENT_PRINT: ' WIFI 인쇄 %1',
-         DHT_PRINT: ' WIFI DHT %1 인쇄',
+         // WIFI_READ: '와이파이 읽기',
+         WIFI_READ_IP: 'WiFi 읽기 IP',
+         WIFI_CLIENT_INIT: 'WiFi 클라이언트 초기화',
+         WIFI_CLIENT_CONNECTED: 'WiFi가 클라이언트에 연결되지 않음',
+         WIFI_READ_DATA: '와이파이 읽기 데이터',
+         WIFI_SEND_DATA: '와이파이 전송 데이터'
     });
     Object.assign(Blockly.ScratchMsgs.locales['pl'], {
         KS_VARIABLE_LABEL:'Typ zmiennej',
@@ -547,11 +571,15 @@ function addMsg (Blockly) {
         LCD_SATE_HIDE: 'ukryj',
         LCD_STYLE_BLINK: 'miga',
         LCD_STYLE_NOBLINK: 'brak mrugnięcia',
-        WIFI_CATEGORY: 'ESP32 WIFI',
+        
+        WIFI_CATEGORY: 'WIFI',
         WIFI_INIT: 'identyfikator SSID połączenia Wi-Fi:%1 hasło:%2',
-        WIFI_READ: 'Odczyt Wi-Fi',
-        CLIENT_PRINT: 'Wydruk WIFI %1',
-        DHT_PRINT: 'DRUK WIFI DHT %1',
+        // WIFI_READ: 'Odczyt Wi-Fi',
+        WIFI_READ_IP: 'Odczyt IP Wi-Fi',
+        WIFI_CLIENT_INIT: 'Inicjalizacja klienta WiFi',
+        WIFI_CLIENT_CONNECTED: 'WiFi nie jest połączone z klientem',
+        WIFI_READ_DATA: 'Odczyt danych Wi-Fi',
+        WIFI_SEND_DATA: 'Wi-Fi wysyła dane'
     });
     Object.assign(Blockly.ScratchMsgs.locales['pt'], {
         KS_VARIABLE_LABEL:'Tipo de variável',
@@ -625,11 +653,15 @@ function addMsg (Blockly) {
          LCD_SATE_HIDE: 'ocultar',
          LCD_STYLE_BLINK: 'piscar',
          LCD_STYLE_NOBLINK: 'sem piscar',
-         WIFI_CATEGORY: 'ESP32 WIFI',
+         
+         WIFI_CATEGORY: 'WIFI',
          WIFI_INIT: 'wifi connect ssid:%1 senha:%2',
-         WIFI_READ: 'Leitura WiFi',
-         CLIENT_PRINT: 'Impressão WIFI %1',
-         DHT_PRINT: 'WIFI imprimir DHT %1',
+         // WIFI_READ: 'leitura WiFi',
+         WIFI_READ_IP: 'WiFi read ip',
+         WIFI_CLIENT_INIT: 'inicialização do cliente WiFi',
+         WIFI_CLIENT_CONNECTED: 'WiFi não conectado ao cliente',
+         WIFI_READ_DATA: 'dados de leitura WiFi',
+         WIFI_SEND_DATA: 'WiFi enviar dados'
     });
     Object.assign(Blockly.ScratchMsgs.locales['ru'], {
         KS_VARIABLE_LABEL: 'Тип переменной',
@@ -703,11 +735,15 @@ function addMsg (Blockly) {
          LCD_SATE_HIDE: 'скрыть',
          LCD_STYLE_BLINK: 'мигать',
          LCD_STYLE_NOBLINK: 'не мигает',
-         WIFI_CATEGORY: "ESP32 WIFI",
+         
+         WIFI_CATEGORY: "WI-FI",
          WIFI_INIT: 'ssid для подключения к Wi-Fi:%1, пароль:%2',
-         WIFI_READ: 'Чтение WiFi',
-         CLIENT_PRINT: 'WIFI печать %1',
-         DHT_PRINT: 'WIFI распечатывает DHT %1',
+         // WIFI_READ: 'Чтение WiFi',
+         WIFI_READ_IP: 'IP-адрес чтения WiFi',
+         WIFI_CLIENT_INIT: 'Инициализация клиента WiFi',
+         WIFI_CLIENT_CONNECTED: 'WiFi не подключен к клиенту',
+         WIFI_READ_DATA: 'Данные чтения WiFi',
+         WIFI_SEND_DATA: 'Отправка данных WiFi'
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-tw'], {
         KS_VARIABLE_LABEL:'變量類型',
@@ -778,11 +814,15 @@ function addMsg (Blockly) {
         LCD_SATE_HIDE: '隱藏',
         LCD_STYLE_BLINK: '閃爍',
         LCD_STYLE_NOBLINK: '不閃爍',
-        WIFI_CATEGORY: 'ESP32 WIFI',
+        
+        WIFI_CATEGORY: 'WIFI',
         WIFI_INIT: '連接WiFi 名稱%1 密碼%2',
-        WIFI_READ: 'WiFi 讀取數據',
-        CLIENT_PRINT: ' WIFI 打印 %1', 
-        DHT_PRINT: ' WIFI 打印溫濕度 %1',
+        // WIFI_READ: 'WiFi 讀取數據',
+        WIFI_READ_IP: 'WiFi 讀取IP',
+        WIFI_CLIENT_INIT: 'WiFi 初始化客戶端',
+        WIFI_CLIENT_CONNECTED: 'WiFi 沒有連接客戶端',
+        WIFI_READ_DATA: 'WiFi 讀取數據',
+        WIFI_SEND_DATA: 'WiFi 發送數據'
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {     
         KS_VARIABLE_LABEL:'变量类型',
@@ -853,13 +893,102 @@ function addMsg (Blockly) {
         LCD_SATE_HIDE: '隐藏',
         LCD_STYLE_BLINK: '闪烁',
         LCD_STYLE_NOBLINK: '不闪烁',
-        WIFI_CATEGORY: 'ESP32 WIFI',
-        WIFI_INIT: '连接WiFi 名称%1 密码%2',
-        WIFI_READ: 'WiFi 读取数据',
-        CLIENT_PRINT: ' WIFI 打印 %1', 
-        DHT_PRINT: ' WIFI 打印温湿度 %1', 
         
-
+        WIFI_CATEGORY: 'WIFI',
+        WIFI_INIT: '连接WiFi 名称%1 密码%2',
+        // WIFI_READ: 'WiFi 读取数据',
+        WIFI_READ_IP: 'WiFi 读取IP',
+        WIFI_CLIENT_INIT: 'WiFi 初始化客户端',
+        WIFI_CLIENT_CONNECTED: 'WiFi 没有连接客户端',
+        WIFI_READ_DATA: 'WiFi 读取数据',
+        WIFI_SEND_DATA: 'WiFi 发送数据'
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {     
+        KS_VARIABLE_LABEL: 'Tipo di variabile',
+        KS_variables_declare: 'Dichiara variabile numerica %1 tipo %2 nome %3 valore %4',
+        KS_variables_declare2: 'Dichiara variabile stringa %1 tipo %2 nome %3 valore %4',
+        KS_variables_set: 'Imposta variabile %1 su %2',
+        KS_variables_change: 'Imposta variabile %1 modalità %2',
+        KS_variables_value: 'Variabile %1',
+        KS_variables_setString: 'Imposta variabile stringa %1 su %2',
+        KS_global: 'Globale',
+        KS_local: 'Locale',
+        KS_MATH_INT: 'Intero',
+        KS_MATH_LONG: 'Intero lungo',
+        KS_MATH_FLOAT: 'Decimale',
+        KS_MATH_BOOLEAN: 'Booleano',
+        KS_MATH_BYTE: 'Byte',
+        KS_MATH_CHAR: 'Carattere',
+        KS_MATH_STRING: 'Stringa',
+        KS_MATH_UNSIGNED_INT: 'Intero senza segno',
+        KS_MATH_WORD: 'Parola',
+        KS_MATH_UNSIGNED_LONG: 'Intero lungo senza segno',
+        KS_MATH_UNSIGNED_CHAR: 'Carattere senza segno',
+        KS_MATH_DOUBLE: 'Numero in virgola mobile doppia precisione',
+        KS_TEXT_LABEL: 'TESTO',  
+        KS_char: 'carattere%1',  
+        KS_string: 'stringa%1',  
+        KS_data: '%1', 
+        KS_LOGIC_LABEL: 'Logica',
+        KS_judge: '%1 %2 %3',
+        
+        BUZZER_CATEGORY: 'Cicalino',
+        BUZZER_TONE: 'Suona il cicalino su Pin %1 con frequenza %2',
+        BUZZER_TONE_D: 'Suona il cicalino su Pin %1 con frequenza %2 e battito %3',
+        BUZZER_MUSIC: 'Cicalino su Pin %1 suona musica %2',
+        BUZZER_NOTONE: 'Ferma il suono su Pin %1',
+        
+        MOTOR130_CATEGORY: 'Piccola ventola',
+        MOTOR130: 'Ventola INA#%1 Livello %2 INB#%3 Uscita analogica %4',
+        
+        BT_SERIAL_CATEGORY: 'Leggi informazioni Bluetooth',
+        BLE_DATA: 'Ricevi dati Bluetooth fino a quando non riceve #',
+        
+        KS_SERVO_CATEGORY: 'Servo',
+        KS_SERVO1_ANGLE: 'Servo1 Pin %1 Canale %2 Angolo %3 Ritardo (millisecondi) %4',
+        KS_SERVO1_READ: 'Leggi angolo del Servo1 Pin %1',
+        KS_SERVO2_ANGLE: 'Servo2 Pin %1 Canale %2 Angolo %3 Ritardo (millisecondi) %4',
+        KS_SERVO2_READ: 'Leggi angolo del Servo2 Pin %1',
+        
+        BBRGBLEDSTRIP_CATEGORY: 'Striscia RGB di atmosfera',
+        BBRGBLEDSTRIP_INIT: 'Inizializza striscia RGB numero di pixel %1 Pin %2',
+        BBRGBLEDSTRIP_SETPIXELCOLOR: 'Imposta pixel %1 colore %2',
+        BBRGBLEDSTRIP_FILL: 'Riempie da pixel %1 a pixel %2 colore %3',
+        BBRGBLEDSTRIP_COLOR: 'Colore della striscia RGB R %1 G %2 B %3',
+        BBRGBLEDSTRIP_SETBRIGHTNESS: 'Imposta luminosità %1',
+        BBRGBLEDSTRIP_CLEAR: 'Pulisci tutto',
+        BBRGBLEDSTRIP_SHOW: 'Aggiorna',
+        
+        RC522_CATEGORY: 'Modulo RFID',
+        RC522_INIT: 'Inizializza RFID',
+        RC522_READ: 'Leggi valore della carta',
+        
+        DHT_CATEGORY: 'Sensore temperatura e umidità',
+        DHT_init: 'Sensore di temperatura e umidità Pin %1 Modello %2',
+        KE_DHT: 'Ottieni temperatura e umidità %1',
+        
+        LCD_CATEGORY: 'Modulo LCD1602',
+        LCD_INIT: 'Inizializza LCD I2C Indirizzo %1',
+        LCD_SETCURSORPOSITION: 'Imposta posizione cursore LCD x: %1 y: %2',
+        LCD_PRINT: 'Stampa su LCD %1',
+        LCD_CLEAR: 'Pulisci LCD',
+        LCD_SETBACKLIGHT: 'Imposta retroilluminazione LCD %1',
+        LCD_SATE_ON: 'Accendi',
+        LCD_SATE_OFF: 'Spegni',
+        LCD_SETCURSORSTYLE: 'Imposta stile cursore LCD %1 tipo %2',
+        LCD_SATE_DISPLAY: 'Visualizza',
+        LCD_SATE_HIDE: 'Nascondi',
+        LCD_STYLE_BLINK: 'Lampeggia',
+        LCD_STYLE_NOBLINK: 'Non lampeggia',
+        
+        WIFI_CATEGORY: 'WIFI',
+        WIFI_INIT: '连接WiFi 名称%1 密码%2',
+        // WIFI_READ: 'WiFi 读取数据',
+        WIFI_READ_IP: 'WiFi 读取IP',
+        WIFI_CLIENT_INIT: 'WiFi 初始化客户端',
+        WIFI_CLIENT_CONNECTED: 'WiFi 没有连接客户端',
+        WIFI_READ_DATA: 'WiFi 读取数据',
+        WIFI_SEND_DATA: 'WiFi 发送数据'
     });
     return Blockly;
 }

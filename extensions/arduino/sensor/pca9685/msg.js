@@ -111,6 +111,16 @@ function addMsg (Blockly) {
         PCA9685_SETCHANNELPWM: 'pca9685 设置通道 %1 pwm 值 %2',
         PCA9685_SETALLCHANNELPWM: 'pca9685 设置所有通道 pwm 值 %1'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        PCA9685_CATEGORY: 'PCA9685',  
+        PCA9685_INIT: 'inizializza pca9685 indirizzo iic %1',  
+        PCA9685_SETTOSERVOMODE: 'pca9685 impostato in modalità servo',  
+        PCA9685_SETSERVOANGLE: 'pca9685 imposta angolo servo canale %1 %2',  
+        PCA9685_SETALLSERVOANGLE: 'pca9685 imposta angolo di tutti i servi %1',  
+        PCA9685_SETPWMFREQUENCY: 'pca9685 imposta frequenza pwm %1',  
+        PCA9685_SETCHANNELPWM: 'pca9685 imposta valore pwm canale %1 %2',  
+        PCA9685_SETALLCHANNELPWM: 'pca9685 imposta valore pwm di tutti i canali %1'
+    });
     return Blockly;
 }
 

@@ -298,13 +298,11 @@ return `
 </category>
 
 
-
-
-<category name="%{BKY_WIFI_CATEGORY}" id="WIFI_CATEGORY" colour="#AE00AE" secondaryColour="#930093">
+<category name="%{BKY_WIFI_CATEGORY}" id="WIFI_CATEGORY" colour="#8fbc8b" secondaryColour="#8fbc8b">
     <block type="wifi_init" id="wifi_init">
         <value name="SSID">
             <shadow type="text">
-                <field name="TEXT">ChinaNet-2.4G-0DF0</field>
+                <field name="TEXT">ChinaNet_2.4G</field>
             </shadow>
         </value>
         <value name="PASSWD">
@@ -313,26 +311,17 @@ return `
             </shadow>
         </value>
     </block>
+    <block type="wifi_read_ip" id="wifi_read_ip"></block>
 
-   <block type="wifi_read" id="wifi_read">
-   </block>
+    <block type="wifi_client_init" id="wifi_client_init"></block>
 
-   
-<block type="client_print" id="client_print">
-   <value name="DATA">
-       <shadow type="text">
-           <field name="TEXT">'turn on the LED'</field>
-       </shadow>
-   </value>
-</block>
+    <block type="wifi_client_connected" id="wifi_client_connected"></block>
 
-<block type="dht_print" id="dht_print">
-     <value name="SATA">
-    
+    <block type="wifi_send_data" id="wifi_send_data"></block>
 
-</value>
-</block>
+    <block type="wifi_read_data" id="wifi_read_data"></block>
 
-</category>`;
+</category>  
+`;
 }
 exports = addToolbox;

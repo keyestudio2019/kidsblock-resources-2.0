@@ -1,3 +1,8 @@
+V1.7.3:
+
+Add Foxbit development board<br>
+Add Add Sentry2 module based on AI recognition
+
 V1.7.2:
 
 Add ESP32 Coding Box<br>
@@ -32,7 +37,7 @@ Add German, Spanish, French, Portuguese, Japanese, Russian, Korean, Polish
 
 V1.6.6:
 
-Add Sentry module based on AI recognition<br>
+Add Sentry1 module based on AI recognition<br>
 Add to display random images in dot matrix
 
 V1.6.5:

@@ -67,6 +67,12 @@ function addMsg (Blockly) {
         HEARTRATE_SET: '设置 心率传感器',
         HEARTRATE_READ: '读取心率传感器的值 %1'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        HEARTRATE_CATEGORY: 'Sensore del battito cardiaco',
+        HEARTRATE_INIT: 'inizializza sensore del battito cardiaco',
+        HEARTRATE_SET: 'Imposta battito cardiaco',
+        HEARTRATE_READ: 'leggi sensore battito cardiaco %1'
+    });
     return Blockly;
 }
 

@@ -67,6 +67,12 @@ function addMsg (Blockly) {
         MPU6050_REFRESH: 'MPU6050 刷新数据',
         MPU6050_READ: '读取MPU6050 %1'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        MPU6050_CATEGORY: 'MPU6050',  
+        MPU6050_INIT: 'inizializza MPU6050',  
+        MPU6050_REFRESH: 'MPU6050 aggiorna dati',  
+        MPU6050: 'MPU605 leggi %1',
+    });
     return Blockly;
 }
 

@@ -111,6 +111,16 @@ function addMsg (Blockly) {
         RGBLEDSTRIP_CLEAR: '清除所有',
         RGBLEDSTRIP_SHOW: '刷新'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        RGBLEDSTRIP_CATEGORY: 'Striscia LED RGB',
+        RGBLEDSTRIP_INIT: 'Inizializza striscia LED RGB lunghezza %1 pin %2',
+        RGBLEDSTRIP_SETPIXELCOLOR: 'Imposta il colore del pixel %1 a %2',
+        RGBLEDSTRIP_FILL: 'Dalla posizione del pixel %1 riempi %2 con il colore %3',
+        RGBLEDSTRIP_COLOR: 'Colore striscia LED RGB R %1 G %2 B %3',
+        RGBLEDSTRIP_SETBRIGHTNESS: 'Imposta la luminosità a %1',
+        RGBLEDSTRIP_CLEAR: 'Pulisci tutto',
+        RGBLEDSTRIP_SHOW: 'Aggiorna'        
+    });
     return Blockly;
 }
 

@@ -144,6 +144,19 @@ function addMsg (Blockly) {
         APDS9960_ISPROXIMITYAVAILABLE: 'apds9960 接近值可用？',
         APDS9960_READPROXIMITY: 'apds9960 读取接近值'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        APDS9960_CATEGORY: 'APDS9960',
+        APDS9960_INIT: 'Inizializza apds9960',
+        APDS9960_ISGESTUREAVAILABLE: 'Dati del gesto apds9960 disponibili?',
+        APDS9960_READGESTURE: 'Leggi gesto apds9960',
+        APDS9960_ISGESTURE: 'Leggi gesto apds9960 %1?',
+        APDS9960_GESTURE_UP: 'Su',
+        APDS9960_GESTURE_DOWN: 'Giù',
+        APDS9960_GESTURE_LEFT: 'Sinistra',
+        APDS9960_GESTURE_RIGHT: 'Destra',
+        APDS9960_ISPROXIMITYAVAILABLE: 'Dati di colore apds9960 disponibili?',
+        APDS9960_READPROXIMITY: 'Leggi prossimità apds9960'
+    });
     return Blockly;
 }
 

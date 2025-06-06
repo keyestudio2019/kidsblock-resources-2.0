@@ -56,6 +56,11 @@ function addMsg (Blockly) {
         MLX_INIT: '初始化 非接触红外测温传感器',
         MLX_READ: '读取温度值 %1',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        MLX_CATEGORY: 'Temperatura a infrarossi',  
+        MLX_INIT: 'Inizializza MLX90614',  
+        MLX_READ: 'leggi MLX90614 %1',
+    });
     return Blockly;
 }
 

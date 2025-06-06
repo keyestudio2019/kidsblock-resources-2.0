@@ -221,6 +221,26 @@ function addMsg (Blockly) {
         MFRC522_PRINTSECTORDATA: 'mfrc522 打印扇区 %1 数据',
         MFRC522_HALT: 'mfrc522 挂起'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        MFRC522_CATEGORY: 'MFRC522',  
+        MFRC522_INIT: 'inizializza mfrc522 pin CS %1 RST %2',  
+        MFRC522_ISNEWCARDPRESENT: 'nuova carta presente?',  
+        MFRC522_READCARDSERIAL: 'mfrc522 ha letto con successo il numero di serie della carta?',  
+        MFRC522_GETCARDTYPENAME: 'mfrc522 ottieni il nome del tipo di carta',  
+        MFRC522_GETCARDUID: 'mfrc522 ottieni l\'UID della carta',  
+        MFRC522_NUMBERTOHEXSTRING: 'mfrc522 %1 in stringa esadecimale',  
+        MFRC522_SETKEY: 'mfrc522 imposta chiave segreta %1',  
+        MFRC522_VERIFICATIONKEY: 'mfrc522 il blocco %1 chiave di verifica è corretto?',  
+        MFRC522_READBLOCKDATA: 'mfrc522 leggi blocco %1',  
+        MFRC522_GETBLOCKDATA: 'mfrc522 dati del blocco (tipo %1)',  
+        MFRC522_DATATYPE_NUBMER: 'numero',  
+        MFRC522_DATATYPE_STRING: 'stringa',  
+        MFRC522_GETBLOCKDATA_TOOLTIP: 'La lunghezza della stringa è inferiore a 16 byte.',  
+        MFRC522_WRITEBLOCKDATA: 'mfrc522 scrivi %1 nel blocco %2 (tipo %3)',  
+        MFRC522_WRITEKEYTOSECTOR: 'mfrc522 scrivi chiave %1 nel settore %2',  
+        MFRC522_PRINTSECTORDATA: 'mfrc522 stampa settore %1 dati',  
+        MFRC522_HALT: 'mfrc522 fermati'
+    });
     return Blockly;
 }
 

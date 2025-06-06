@@ -56,6 +56,11 @@ function addMsg (Blockly) {
         SHARPIR_INIT: '初始化夏普红外传感器 %1 引脚 %2 型号 %3',
         SHARPIR_READDISTANCE: '夏普红外传感器 %1 读取距离'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        SHARPIR_CATEGORY: 'Sharp IR',  
+        SHARPIR_INIT: 'inizializza sensore IR sharp %1 pin %2 modello %3',  
+        SHARPIR_READDISTANCE: 'sensore IR sharp %1 leggi distanza'
+    });
     return Blockly;
 }
 

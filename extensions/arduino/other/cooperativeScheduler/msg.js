@@ -67,6 +67,12 @@ function addMsg (Blockly) {
         COOPERATIVESCHEDULER_SETUP: '任务 %1 setup',
         COOPERATIVESCHEDULER_SLEEP: '任务延时 %1 ms'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        COOPERATIVESCHEDULER_CATEGORY: 'Pianificatore multitasking',
+        COOPERATIVESCHEDULER_START: 'Avvia pianificatore multitasking',
+        COOPERATIVESCHEDULER_SETUP: 'Imposta task %1',
+        COOPERATIVESCHEDULER_SLEEP: 'Ritardo task %1 ms'
+    });
     return Blockly;
 }
 

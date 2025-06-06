@@ -57,6 +57,11 @@ function addMsg (Blockly) {
         MOTOR130_DIGITAL: '直流电机 INA#%1 电平为%2 INB#%3 电平为%4',
         MOTOR130_ANALOG: '直流电机 INA#%1 模拟输出值%2 INB#%3 模拟输出值%4',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        MOTOR130_CATEGORY: 'Motore DC',
+        MOTOR130_DIGITAL: 'Motore DC INA#%1 livello%2 INB#%3 livello%4',
+        MOTOR130_ANALOG: 'Motore DC INA#%1 valore di uscita analogico%2 INB#%3 valore di uscita analogico%4',        
+    });
     return Blockly;
 }
 

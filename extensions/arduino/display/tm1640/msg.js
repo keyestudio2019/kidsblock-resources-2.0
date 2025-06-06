@@ -153,14 +153,14 @@ function addMsg (Blockly) {
         TM1640_MODE_0: 'Реверс',
         TM1640_SETBRIGHTNESS: 'Установить светодиодную матрицу %1 Яркость %2',
         TM1640_SHOWSTR: 'Светодиодная матрица %1 X %2 Y (0-15) %3 строка рисования %4',
-        ТМ1640_0: '0',
-        ТМ1640_1: '1',
-        ТМ1640_2: '2',
-        ТМ1640_3: '3',
-        ТМ1640_4: '4',
-        ТМ1640_5: '5',
-        ТМ1640_6: '6',
-        ТМ1640_7: '7',
+        TM1640_0: '0',
+        TM1640_1: '1',
+        TM1640_2: '2',
+        TM1640_3: '3',
+        TM1640_4: '4',
+        TM1640_5: '5',
+        TM1640_6: '6',
+        TM1640_7: '7',
         TM1640_8: '8'
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-tw'], {
@@ -198,6 +198,24 @@ function addMsg (Blockly) {
         TM1640_6: '6',
         TM1640_7: '7',
         TM1640_8: '8'
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        TM1640_CATEGORY: 'Matrice LED 8x16',
+        TM1640_INIT: 'Inizializzazione matrice LED %1 CLK %2 DIO %3',
+        TM1640_SETCOLORINDEX: 'Imposta matrice LED %1 modalità di visualizzazione %2',
+        TM1640_MODE_1: 'Normale',
+        TM1640_MODE_0: 'Invertito',
+        TM1640_SETBRIGHTNESS: 'Imposta matrice LED %1 luminosità %2',
+        TM1640_SHOWSTR: 'Matrice LED %1 X %2 Y (0-15) %3 visualizza stringa %4',
+        TM1640_0: '0',
+        TM1640_1: '1',
+        TM1640_2: '2',
+        TM1640_3: '3',
+        TM1640_4: '4',
+        TM1640_5: '5',
+        TM1640_6: '6',
+        TM1640_7: '7',
+        TM1640_8: '8',        
     });
     return Blockly;
 }

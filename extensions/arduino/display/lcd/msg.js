@@ -175,6 +175,21 @@ function addMsg (Blockly) {
         LCD_STYLE_BLINK: '闪烁',
         LCD_STYLE_NOBLINK: '不闪烁'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+     LCD_CATEGORY: 'LCD1602 IIC',
+     LCD_INIT: 'Inizializza lcd I2C indirizzo %1',
+     LCD_SETCURSORPOSITION: 'Imposta la posizione del cursore lcd x: %1 y: %2',
+     LCD_PRINT: 'Stampa lcd %1',
+     LCD_CLEAR: 'Pulisci lcd',
+     LCD_SETBACKLIGHT: 'Imposta la retroilluminazione lcd %1',
+     LCD_SATE_ON: 'Acceso',
+     LCD_SATE_OFF: 'Spento',
+     LCD_SETCURSORSTYLE: 'Imposta lo stile del cursore lcd %1 stile %2',
+     LCD_SATE_DISPLAY: 'Mostra',
+     LCD_SATE_HIDE: 'Nascondi',
+     LCD_STYLE_BLINK: 'Lampeggia',
+     LCD_STYLE_NOBLINK: 'Non lampeggia',     
+ });
     return Blockly;
 }
 

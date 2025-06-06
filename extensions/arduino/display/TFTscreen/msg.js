@@ -190,6 +190,24 @@ function addMsg (Blockly) {
         TFT_CIRCLE: 'TFT屏 画圆 坐标:X%1 Y%2 半径%3',
         TFT_SCREEN_SD: 'TFT屏 显示SD卡里的图片',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        TFT_CATEGORY: 'Display TFT a colori',
+        TFT_INIT: 'Inizializzazione display TFT colori, definizione dei pin CS%1 DC%2 RST%3',
+        TFT_BG: 'TFT schermata colore di sfondo, Rosso%1 Verde%2 Blu%3',
+        TFT_STROKE: 'TFT schermata colore della penna, Rosso%1 Verde%2 Blu%3',
+        TFT_NOSTROKE: 'TFT schermata senza colore della penna',
+        TFT_FILL: 'TFT schermata colore di riempimento, Rosso%1 Verde%2 Blu%3',
+        TFT_NOFILL: 'TFT schermata senza riempimento colore',
+        TFT_TEXT: 'TFT schermata visualizza carattere %1, coordinata: X%2 Y%3',
+        TFT_TEXT_S: 'TFT schermata imposta dimensione carattere (1-5) %1',
+        TFT_POINT: 'TFT schermata disegna punto, coordinata: X%1 Y%2',
+        TFT_LINE: 'TFT schermata disegna linea, coordinata: inizio X%1 inizio Y%2, fine X%3 fine Y%4',
+        TFT_RECT: 'TFT schermata disegna rettangolo, coordinata: inizio X%1 inizio Y%2, fine X%3 fine Y%4',
+        TFT_WIDTH: 'TFT schermata ottieni larghezza in pixel',
+        TFT_HEIGHT: 'TFT schermata ottieni altezza in pixel',
+        TFT_CIRCLE: 'TFT schermata disegna cerchio, coordinata: X%1 Y%2 raggio%3',
+        TFT_SCREEN_SD: 'TFT schermata visualizza immagine da SD card',        
+    });
     return Blockly;
 }
 

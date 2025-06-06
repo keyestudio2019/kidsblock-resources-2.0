@@ -133,6 +133,18 @@ function addMsg (Blockly) {
         WS2812B_ROTATE: 'RGB灯 接口 %1 循环移动 %2 单位',
         WS2812B_SHOWBARGRAPH: 'RGB灯 接口 %1 灯号 %2 到 %3 显示柱状图 当前值 %4 最大值 %5',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        WS2812B_CATEGORY: 'Lampada RGB WS2812',
+        WS2812B_INIT: 'Inizializzazione lampada RGB WS2812 interfaccia %1 numero di lampade %2',
+        WS2812B_SETBRIGHTNESS: 'Lampada RGB imposta interfaccia %1 luminosità della striscia a %2',
+        WS2812B_CLEAR: 'Lampada RGB interfaccia %1 spegne tutte le luci',
+        WS2812B_SETRANGECOLOR: 'Lampada RGB interfaccia %1 dalla lampada %2 alla %3 mostra colore %4',
+        WS2812B_RGBTOCOLOR: 'Rosso %1 Verde %2 Blu %3',
+        WS2812B_SHOWRAINBOW: 'Lampada RGB interfaccia %1 dalla lampada %2 alla %3 mostra colore arcobaleno da tonalità %4 a %5',
+        WS2812B_SHIFT: 'Lampada RGB interfaccia %1 sposta di %2 unità',
+        WS2812B_ROTATE: 'Lampada RGB interfaccia %1 rotazione ciclica di %2 unità',
+        WS2812B_SHOWBARGRAPH: 'Lampada RGB interfaccia %1 dalla lampada %2 alla %3 mostra grafico a barre valore corrente %4 valore massimo %5',        
+    });
     return Blockly;
 }
 

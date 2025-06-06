@@ -67,6 +67,12 @@ function addMsg (Blockly) {
         AK8975_READ: '读取 AK8975 %1 磁场强度',
         AK8975_DEGREE: '读取 AK8975磁场方向的角度',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        AK8975_CATEGORY: 'AK8975 Bussola elettronica',
+        AK8975_INIT: 'Inizializza AK8975 Bussola elettronica',
+        AK8975_READ: 'Leggi AK8975 %1 Intensità del campo magnetico',
+        AK8975_DEGREE: 'Leggi angolo della direzione del campo magnetico AK8975'
+    });
     return Blockly;
 }
 

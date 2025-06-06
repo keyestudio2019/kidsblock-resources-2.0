@@ -111,6 +111,16 @@ function addMsg (Blockly) {
         LCD128_C_PIXEL: '删除点 坐标 X%1 Y%2',
         LCD128_CLEAR: '清屏',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        LCD128_CATEGORY: 'Display LCD 128*32',
+        LCD128_INIT: 'Inizializza display LCD',
+        LCD128_CURSOR: 'Imposta posizione display LCD riga %1 colonna %2',
+        LCD128_STRING: 'Visualizza carattere su display LCD %1',
+        LCD128_NUMBER: 'Visualizza numero su display LCD %1',
+        LCD128_PIXEL: 'Disegna punto coordinate X%1 Y%2',
+        LCD128_C_PIXEL: 'Rimuovi punto coordinate X%1 Y%2',
+        LCD128_CLEAR: 'Pulisci schermo',        
+    });
     return Blockly;
 }
 

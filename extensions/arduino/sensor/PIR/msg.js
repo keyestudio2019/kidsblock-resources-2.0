@@ -45,6 +45,10 @@ function addMsg (Blockly) {
         PIR_CATEGORY: '红外运动传感器',
         PIR_READ_VALUE: '读取接口 %1 热释电红外运动传感器'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        PIR_CATEGORY: 'pir',  
+        PIR_READ_VALUE: 'leggi interfaccia %1 sensore di movimento ad infrarossi termoelettrici'
+    });
     return Blockly;
 }
 

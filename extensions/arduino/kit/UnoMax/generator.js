@@ -395,9 +395,9 @@ function addGenerator (Blockly) {
 //****************显示文本和数字滚动*******************************
     Blockly.Arduino.MatrixDisplay_show_loop = function (block) {
         const number = Blockly.Arduino.valueToCode(block, 'NUMBER', Blockly.Arduino.ORDER_ATOMIC);
-    
+        const place = Blockly.Arduino.valueToCode(block, 'place', Blockly.Arduino.ORDER_ATOMIC);
       
-        return `matrix.setTextSize(1);\nmatrix.setTextWrap(false);\nmatrix.setTextColor(LED_ON);\nmatrix.setRotation(1);\nfor(int8_t x=7; x>=-36; x--)\n{matrix.clear();\nmatrix.setCursor(x,0);\nmatrix.print(${number});\nmatrix.writeDisplay();\ndelay(100);};\n`;
+        return `matrix.setTextSize(1);\nmatrix.setTextWrap(false);\nmatrix.setTextColor(LED_ON);\nmatrix.setRotation(1);\nfor(int8_t x=7; x>=-(6*${place}); x--)\n{matrix.clear();\nmatrix.setCursor(x,0);\nmatrix.print(${number});\nmatrix.writeDisplay();\ndelay(100);};\n`;
              
     };
 //****************显示自定义图形*******************************

@@ -100,6 +100,15 @@ function addMsg (Blockly) {
         MATRIX8_16_REFRESH: '点阵 刷新显示',
         MATRIX8_16_CLEAR: '点阵8*16清屏',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        MATRIX8_16_CATEGORY: 'Display a matrice 8*16',
+        MATRIX8_16_INIT: 'Inizializza display a matrice AiP1640 SDA%1 SCL%2',
+        MATRIX8_16_DISPLAY: 'Display a matrice %1 visualizza %2 Gruppo %3 di immagini Nome %4',
+        MATRIX8_16_FACE: 'Display matrice mostra %1',
+        MATRIX8_16_PIEXL: 'Display matrice disegna punto su X %1 Y %2 livello %3',
+        MATRIX8_16_REFRESH: 'Aggiorna display matrice',
+        MATRIX8_16_CLEAR: 'Pulisci display matrice 8*16',        
+    });
     return Blockly;
 }
 

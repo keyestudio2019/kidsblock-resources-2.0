@@ -155,6 +155,19 @@ function addMsg (Blockly) {
         LCD_PIN_STYLE_BLINK: '闪烁',
         LCD_PIN_STYLE_NOBLINK: '不闪烁'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        LCD_PIN_CATEGORY: 'LCD_PIN1602',
+        LCD_PIN_INIT: 'Inizializza LCD1602 RS%1 EN%2 D4%3 D5%4 D6%5 D7%6',
+        LCD_PIN_PRINT: 'LCD1602 stampa nella riga %1 colonna %2 %3',
+        LCD_PIN_CLEAR: 'Schermo LCD1602 %1',
+        LCD_PIN_SATE_ON: 'Acceso',
+        LCD_PIN_SATE_OFF: 'Spento',
+        LCD_PIN_SETCURSORSTYLE: 'Imposta lo stile del cursore lcd %1 stile %2',
+        LCD_PIN_SATE_DISPLAY: 'Mostra',
+        LCD_PIN_SATE_HIDE: 'Nascondi',
+        LCD_PIN_STYLE_BLINK: 'Lampeggia',
+        LCD_PIN_STYLE_NOBLINK: 'Non lampeggia',        
+    });
     return Blockly;
 }
 

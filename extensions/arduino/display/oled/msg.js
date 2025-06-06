@@ -331,6 +331,36 @@ function addMsg (Blockly) {
         OLED_SCROLL_DIAGLEFT: '左对角',
         OLED_STOPSCROLL: '停止滚动'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        OLED_CATEGORY: 'OLED',
+        OLED_INIT: 'Inizializza OLED larghezza %1 altezza %2 indirizzo I2C %3',
+        OLED_DRAWLINE: 'Disegna linea x0: %1 y0: %2, x1: %3 y1: %4 colore %5',
+        OLED_COLOR_WHITE: 'Bianco',
+        OLED_COLOR_BLACK: 'Nero',
+        OLED_COLOR_INVERSE: 'Inverti',
+        OLED_DRAWRECT: 'Disegna rettangolo x: %1 y: %2 larghezza %3 altezza %4 colore %5',
+        OLED_FILLRECT: 'Riempi rettangolo x: %1 y: %2 larghezza %3 altezza %4 colore %5',
+        OLED_DRAWCIRCLE: 'Disegna cerchio x: %1 y: %2 raggio %3 colore %4',
+        OLED_FILLCIRCLE: 'Riempi cerchio x: %1 y: %2 raggio %3 colore %4',
+        OLED_DRAWROUNDRECT: 'Disegna rettangolo arrotondato x: %1 y: %2 larghezza %3 altezza %4 raggio %5 colore %6',
+        OLED_FILLROUNDRECT: 'Riempi rettangolo arrotondato x: %1 y: %2 larghezza %3 altezza %4 raggio %5 colore %6',
+        OLED_DRAWTRIANGLE: 'Disegna triangolo x0: %1 y0: %2, x1: %3 y1: %4, x2: %5 y2: %6 colore %7',
+        OLED_FILLTRIANGLE: 'Riempi triangolo x0: %1 y0: %2, x1: %3 y1: %4, x2: %5 y2: %6 colore %7',
+        OLED_SETTEXT: 'Imposta dimensione carattere %1 colore %2 colore sfondo %3',
+        OLED_SETCURSOR: 'Imposta cursore x: %1 y: %2',
+        OLED_PRINT: 'Stampa %1 %2',
+        OLED_EOL_WARP: 'Nuova riga',
+        OLED_EOL_NOWARP: 'Non andare a capo',
+        OLED_IMAGE: 'OLED mostra immagine %1',
+        OLED_CLEAR: 'Pulisci OLED',
+        OLED_REFRESH: 'Aggiorna OLED',
+        OLED_STARTSCROLL: 'Inizia scroll %1 y0: %2 y1: %3',
+        OLED_SCROLL_RIGHT: 'Verso destra',
+        OLED_SCROLL_LEFT: 'Verso sinistra',
+        OLED_SCROLL_DIAGRIGHT: 'Diagonale destra',
+        OLED_SCROLL_DIAGLEFT: 'Diagonale sinistra',
+        OLED_STOPSCROLL: 'Ferma scroll'        
+    });
     return Blockly;
 }
 

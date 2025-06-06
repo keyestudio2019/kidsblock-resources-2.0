@@ -45,6 +45,10 @@ function addMsg (Blockly) {
         ADXL345_CATEGORY: 'ADXL345',
         ADXL345_READ: '读取ADXL345 %1'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        ADXL345_CATEGORY: 'ADXL345',
+        ADXL345_READ: 'Leggi ADXL345 %1'
+    });
     return Blockly;
 }
 

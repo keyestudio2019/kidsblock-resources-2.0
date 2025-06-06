@@ -367,6 +367,11 @@ function addToolbox () {
                      <field name="NUM">123456789</field>
                 </shadow>
            </value>
+           <value name="place">
+           <shadow type="math_whole_number">
+                <field name="NUM">9</field>
+           </shadow>
+      </value>
     </block>
 
     <block type="MatrixDisplay_image" id="MatrixDisplay_image">

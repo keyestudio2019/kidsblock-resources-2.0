@@ -78,6 +78,13 @@ function addMsg (Blockly) {
         KSENCODER_WRITE: '旋转编码器 %1 赋值为 %2',
         KSENCODER_BUTTON: '读旋转编码器按钮值 引脚# %1',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        KSENCODER_CATEGORY: 'Encoder',
+        KSENCODER_INIT: 'inizializza encoder %1 DT %2 CLK %3',
+        KSENCODER_READ: 'leggi encoder %1',
+        KSENCODER_WRITE: 'encoder %1 scrivi %2',
+        KSENCODER_BUTTON: 'Leggi il pulsante dell\'encoder rotativo PIN# %1'
+    });
     return Blockly;
 }
 

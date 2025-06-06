@@ -89,6 +89,14 @@ function addMsg (Blockly) {
         println:'换行',
         tcp_device_cloud_theme_push:'巴法云物联网 推送 %1 密钥 %2 主题 %3 内容 %4'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        BEMFA_CATEGORY: 'Bafa Cloud',
+        tcp_device_cloud_subscription: 'Bafa Cloud IoT %1 chiave %2 tema %3 %4 messaggio ricevuto %5',
+        serialPrint: 'Stampa su porta seriale %1 %2',
+        print: 'Senza andare a capo',
+        println: 'Con andare a capo',
+        tcp_device_cloud_theme_push: 'Bafa Cloud IoT invia %1 chiave %2 tema %3 contenuto %4',        
+    });
     return Blockly;
 }
 

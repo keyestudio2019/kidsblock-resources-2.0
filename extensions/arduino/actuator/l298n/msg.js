@@ -90,6 +90,22 @@ function addMsg (Blockly) {
         L298N_BACK: '后',
         L298N_STOP: '通道 %1 停止'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
+        L298N_CATEGORY: 'L298N',
+        L298N_INIT: '初始化通道 %1 引脚 IN1 %2 IN2 %3 EN %4',
+        L298N_RUN: '通道 %1 向 %2 速度 %3',
+        L298N_FORWARD: '前',
+        L298N_BACK: '后',
+        L298N_STOP: '通道 %1 停止'
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        L298N_CATEGORY: 'L298N',
+        L298N_INIT: 'Inizializza canale %1 Pin IN1 %2 IN2 %3 EN %4',
+        L298N_RUN: 'Canale %1 verso %2 velocità %3',
+        L298N_FORWARD: 'Avanti',
+        L298N_BACK: 'Indietro',
+        L298N_STOP: 'Canale %1 fermato',        
+    });
     return Blockly;
 }
 

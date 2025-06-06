@@ -57,6 +57,11 @@ function addMsg (Blockly) {
         RGB_DIGITAL: 'RGB灯 红#%1 电平为%2 绿#%3 电平为%4 蓝#%5 电平为%6',
         RGB_ANALOG: 'RGB灯 红#%1 模拟输出%2 绿#%3 模拟输出%4 蓝#%5 模拟输出%6',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        RGB_CATEGORY: 'LED RGB',
+        RGB_DIGITAL: 'LED RGB Rosso#%1 livello%2 Verde#%3 livello%4 Blu#%5 livello%6',
+        RGB_ANALOG: 'LED RGB Rosso#%1 uscita analogica%2 Verde#%3 uscita analogica%4 Blu#%5 uscita analogica%6',        
+    });
     return Blockly;
 }
 

@@ -57,6 +57,11 @@ function addMsg (Blockly) {
         MQTT_received_the_news:'當收到主題 %1 消息',
         MQTT_publish:'MQTT發送消息 %1 到主題 %2'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        MQTT_subscribe_plus: 'Crea un client MQTT e connetti Indirizzo server %1 Porta proxy %2 ID client %3 Nome utente %4 Password %5',
+        MQTT_received_the_news: 'Quando ricevi un messaggio dal tema %1',
+        MQTT_publish: 'Invia messaggio MQTT %1 al tema %2',        
+    });
     return Blockly;
 }
 

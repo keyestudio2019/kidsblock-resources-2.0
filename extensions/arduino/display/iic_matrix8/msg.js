@@ -155,6 +155,20 @@ function addMsg (Blockly) {
         MATRIX_IIC_REFRESH: '点阵屏 刷新显示',
         MATRIX_IIC_CLEAR: '点阵屏 清屏',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        MATRIX_IIC_CATEGORY: 'Matrice HT16K33',
+        MATRIX_IIC_INIT: 'Inizializza la matrice',
+        MATRIX_IIC_PIEXL: 'Mostra punto sulla matrice X asse %1 Y asse %2 livello %3',
+        matrix_iic_DRAWLINE: 'Disegna linea sulla matrice x0: %1 y0: %2, x1: %3 y1: %4',
+        matrix_iic_DRAWRECTANGLE: 'Disegna rettangolo sulla matrice x: %1 y: %2 larghezza: %3 lunghezza: %4',
+        matrix_iic_DRAWCIRCLE: 'Disegna cerchio sulla matrice x: %1 y: %2 raggio: %3',
+        matrix_iic_SHOWCHAR: 'Mostra carattere o numero sulla matrice: %1',
+        matrix_iic_SHOW_LOOP: 'Scorrimento matrice mostra: %1 velocità: %2',
+        MATRIX_IIC_DISPLAY: 'Matrice %1 mostra %2 gruppo %3 nome %4',
+        MATRIX_IIC_FACE: 'Matrice mostra immagine %1',
+        MATRIX_IIC_REFRESH: 'Aggiorna la matrice',
+        MATRIX_IIC_CLEAR: 'Pulisci la matrice'        
+    });
     return Blockly;
 }
 

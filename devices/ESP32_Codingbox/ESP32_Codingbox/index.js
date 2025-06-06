@@ -21,7 +21,7 @@ const ESP32codingbox = formatMessage => ({
     connectionSmallIconURL: 'asset/esp32codingbox_small.svg',
     programMode: ['upload'],
     programLanguage: ['block', 'cpp'],
-    tags: ['kit'],
+    tags: ['kit','kidsbits'],
     deviceExtensions: ['codingbox_ESP32'],
     deviceExtensionsCompatible: 'arduinoEsp32',
     helpLink: 'https://fks0001-keyestudio-esp32-core-board-scratch.readthedocs.io/en/latest/'

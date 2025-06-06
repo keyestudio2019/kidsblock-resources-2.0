@@ -140,9 +140,9 @@ function addMsg (Blockly) {
         TM1650_CLEAR: 'очистить',
         TM1650_LIGHT: 'ярче',
         TM1650_UNLIGHT: 'затемнить',
-        ТМ1650_1: '1',
-        ТМ1650_2: '2',
-        ТМ1650_3: '3',
+        TM1650_1: '1',
+        TM1650_2: '2',
+        TM1650_3: '3',
         TM1650_4: '4'
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-tw'], {
@@ -176,6 +176,22 @@ function addMsg (Blockly) {
         TM1650_2: '2',
         TM1650_3: '3',
         TM1650_4: '4'
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        TM1650_CATEGORY: 'Display a 4 cifre',
+        TM1650_INIT: 'Inizializzazione display TM1650 a 4 cifre %1',
+        TM1650_SCREENSET: 'Imposta display TM1650 a 4 cifre %1 %2',
+        TM1650_SHOW: 'Display TM1650 a 4 cifre %1 mostra %2',
+        TM1650_SETDOT: 'Display TM1650 a 4 cifre %1 Punto decimale %2 %3',
+        TM1650_ON: 'Acceso',
+        TM1650_OFF: 'Spento',
+        TM1650_CLEAR: 'Pulisci schermo',
+        TM1650_LIGHT: 'Luminoso',
+        TM1650_UNLIGHT: 'Non luminoso',
+        TM1650_1: '1',
+        TM1650_2: '2',
+        TM1650_3: '3',
+        TM1650_4: '4',        
     });
     return Blockly;
 }

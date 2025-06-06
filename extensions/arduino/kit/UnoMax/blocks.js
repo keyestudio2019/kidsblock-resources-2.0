@@ -1080,6 +1080,10 @@ Blockly.Blocks.rgbLedStrip_show = {
                     {
                         type: 'input_value',
                         name: 'NUMBER'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'place'
                     }
                 ],
                 colour: color8,

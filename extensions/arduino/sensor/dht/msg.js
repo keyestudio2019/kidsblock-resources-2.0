@@ -67,6 +67,12 @@ function addMsg (Blockly) {
         DHT_READ_TEMPERATURE: 'dht %1 读取温度 %2',
         DHT_READ_HUMIDITY: 'dht %1 读取湿度'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        DHT_CATEGORY: 'DHT',
+        DHT_INIT: 'inizializza dht %1 pin %2 modalità %3',
+        DHT_READ_TEMPERATURE: 'dht %1 leggi temperatura %2',
+        DHT_READ_HUMIDITY: 'dht %1 leggi umidità'
+    });
     return Blockly;
 }
 

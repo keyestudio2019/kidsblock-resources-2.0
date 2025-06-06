@@ -56,6 +56,11 @@ function addMsg (Blockly) {
         PINFOURTUBE_INIT: '初始化4位数码管 a~dp:6~13 位1~4:2~5',
         PINFOURTUBE_STRING: '数码管数字%1 小数位数%2',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        PINFOURTUBE_CATEGORY: 'Display a 4 cifre',
+        PINFOURTUBE_INIT: 'Inizializza display a 4 cifre a~dp:6~13 posizioni 1~4:2~5',
+        PINFOURTUBE_STRING: 'Display numeri sul display a 4 cifre %1 Numero decimale %2',        
+    });
     return Blockly;
 }
 

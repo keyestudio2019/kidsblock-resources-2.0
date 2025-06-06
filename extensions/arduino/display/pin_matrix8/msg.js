@@ -56,6 +56,11 @@ function addMsg (Blockly) {
         MATRIX_PIN_INIT: '初始化 8*8点阵 行2~9 列10~A3',
         MATRIX_PIN_NUMBER: '点阵 显示%1',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        MATRIX_PIN_CATEGORY: 'Matrice 8*8',
+        MATRIX_PIN_INIT: 'Inizializza matrice 8*8 righe 2~9 colonne 10~A3',
+        MATRIX_PIN_NUMBER: 'Matrice mostra %1',        
+    });
     return Blockly;
 }
 

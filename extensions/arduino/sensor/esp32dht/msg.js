@@ -56,6 +56,11 @@ function addMsg (Blockly) {
         DHT_init: '温湿度引脚 %1 型号 %2',
         KE_DHT: '温湿度获取 %1',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        DHT_CATEGORY: 'Temperatura e umidità',
+        DHT_init: 'inizializza DHT pin %1 modalità %2',
+        KE_DHT: 'DHT ottieni %1'
+    });
     return Blockly;
 }
 

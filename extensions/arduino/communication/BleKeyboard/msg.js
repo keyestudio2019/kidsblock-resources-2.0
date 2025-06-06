@@ -149,7 +149,20 @@ function addMsg (Blockly) {
             
         }
     );
-
+    Object.assign(Blockly.ScratchMsgs.locales["it"],
+        {
+            QH_BLEKEYBOARD_CATEGORY: 'Tastiera Bluetooth',
+            esp32_BleKeyboard_init: 'Inizializza tastiera Bluetooth nome dispositivo %1 produttore dispositivo %2',
+            esp32_BleKeyboard_isConnected: 'Tastiera Bluetooth attivata è connessa?',
+            esp32_BleKeyboard_KeyValue: 'Valore tasto %1',
+            esp32_BleKeyboard_write_press: 'Tastiera Bluetooth %1 valore tasto %2',
+            esp32_BleKeyboard_print: 'Stampa',
+            esp32_BleKeyboard_write: 'Premere',
+            esp32_BleKeyboard_press: 'Tieni premuto',
+            esp32_BleKeyboard_release: 'Rilascia',
+            esp32_BleKeyboard_releaseAll: 'Rilascia tutti',            
+        }
+    );
     return Blockly;
 }
 

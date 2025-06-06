@@ -45,6 +45,10 @@ function addMsg (Blockly) {
         LPS331AP_CATEGORY: '气压传感器',
         LPS331AP_READ: '气压传感器LPS331AP读取 %1'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        LPS331AP_CATEGORY: 'Pressione atmosferica',
+        LPS331AP_READ: 'LPS331AP sensore di pressione atmosferica leggi %1'
+    });
     return Blockly;
 }
 

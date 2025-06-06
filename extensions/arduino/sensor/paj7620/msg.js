@@ -155,6 +155,20 @@ function addMsg (Blockly) {
         PAJ7620_COUNT_CLOCKWISE:'逆时针',
         PAJ7620_WAVE:'挥手',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        PAJ7620_CATEGORY: 'Riconoscimento gesti',  
+        PAJ7620_INIT: 'inizializza paj7620',  
+        PAJ7620_ISGESTURE: 'paj7620 leggi gesto %1？',  
+        PAJ7620_UP: 'su',  
+        PAJ7620_DOWN: 'giù',  
+        PAJ7620_LEFT: 'sinistra',  
+        PAJ7620_RIGHT: 'destra',  
+        PAJ7620_FORWARD: 'avanti',  
+        PAJ7620_BACKWARD: 'indietro',  
+        PAJ7620_CLOCKWISE: 'in senso orario',  
+        PAJ7620_COUNT_CLOCKWISE: 'in senso antiorario',  
+        PAJ7620_WAVE: 'onda',
+    });
     return Blockly;
 }
 

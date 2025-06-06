@@ -68,7 +68,7 @@ function addMsg (Blockly) {
         MatrixDisplay_DRAWRECTANGLE: 'Matrix display draw rectangle x: %1 y: %2 :width %3 length: %4',
         MatrixDisplay_DRAWCIRCLE: 'Matrix display draw circle x: %1 y: %2 :radius %3 ',
         MatrixDisplay_SHOWCHAR: ' Matrix display show char or number: %1',
-        MatrixDisplay_SHOW_LOOP: ' Matrix display loop show : %1',
+        MatrixDisplay_SHOW_LOOP: ' Matrix display loop show : %1 digits %2',
         MatrixDisplay_IMAGE: ' Matrix display image %1'
       
     });
@@ -138,7 +138,7 @@ function addMsg (Blockly) {
         MatrixDisplay_DRAWRECTANGLE: 'Matrix Display zeichnet Rechteck x: %1 y: %2 :width %3 Länge: %4',
         MatrixDisplay_DRAWCIRCLE: 'Matrix display Zeichne Kreis x: %1 y: %2 :radius %3 ',
         MatrixDisplay_SHOWCHAR: 'Matrix display show char or number: %1',
-        MatrixDisplay_SHOW_LOOP: 'Matrix display loop show: %1',
+        MatrixDisplay_SHOW_LOOP: 'Matrix display loop show: %1 Ziffern %2',
         MatrixDisplay_IMAGE: 'Matrix anzeige bild %1'
     });
     Object.assign(Blockly.ScratchMsgs.locales['es'], {
@@ -207,7 +207,7 @@ function addMsg (Blockly) {
         MatrixDisplay_DRAWRECTANGLE: 'Matriz muestra dibujar rectángulo x: %1 y: %2 :ancho %3 largo: %4',
         MatrixDisplay_DRAWCIRCLE: 'Matriz muestra dibujar círculo x: %1 y: %2 :radio %3 ',
         MatrixDisplay_SHOWCHAR: ' Matriz muestra mostrar carácter o número: %1',
-        MatrixDisplay_SHOW_LOOP: ' espectáculo de bucle de visualización Matriz: %1',
+        MatrixDisplay_SHOW_LOOP: ' espectáculo de bucle de visualización Matriz: %1 dígitos %2',
         MatrixDisplay_IMAGE: 'imagen de visualización de Matriz %1'
     });
     Object.assign(Blockly.ScratchMsgs.locales['fr'], {
@@ -276,7 +276,7 @@ function addMsg (Blockly) {
          MatrixDisplay_DRAWRECTANGLE: 'Matrice display draw rectangle x: %1 y: %2 :width %3 length: %4',
          MatrixDisplay_DRAWCIRCLE: 'affichage Matrice dessine cercle x: %1 y: %2 :rayon %3 ',
          MatrixDisplay_SHOWCHAR: 'affichage Matrice afficher le caractère ou le nombre: %1',
-         MatrixDisplay_SHOW_LOOP: 'affichage de la boucle d"affichage Matrice: %1',
+         MatrixDisplay_SHOW_LOOP: 'affichage de la boucle d"affichage Matrice: %1 chiffres %2',
          MatrixDisplay_IMAGE: 'image d"affichage Matrice %1'
     });
     Object.assign(Blockly.ScratchMsgs.locales['ja'], {
@@ -345,7 +345,7 @@ function addMsg (Blockly) {
          MatrixDisplay_DRAWRECTANGLE: 'マトリックス 表示描画四角形 x: %1 y: %2 :幅 %3 長さ: %4',
          MatrixDisplay_DRAWCIRCLE: 'マトリックス表示描画円 x: %1 y: %2 :半径 %3 ',
          MatrixDisplay_SHOWCHAR: ' マトリックス 表示は文字または数値を表示します: %1',
-         MatrixDisplay_SHOW_LOOP: ' マトリックス 表示ループ表示 : %1',
+         MatrixDisplay_SHOW_LOOP: ' マトリックス 表示ループ表示 : %1 桁数 %2',
          MatrixDisplay_IMAGE: ' マトリックス表示イメージ %1'
     });
     Object.assign(Blockly.ScratchMsgs.locales['ko'], {
@@ -414,7 +414,7 @@ function addMsg (Blockly) {
          MatrixDisplay_DRAWRECTANGLE: '매트릭스 디스플레이 그리기 사각형 x: %1 y: %2 :너비 %3 길이: %4',
          MatrixDisplay_DRAWCIRCLE: '매트릭스 디스플레이 그리기 원 x: %1 y: %2 :반지름 %3 ',
          MatrixDisplay_SHOWCHAR: ' 매트릭스 디스플레이 표시 문자 또는 숫자: %1',
-         MatrixDisplay_SHOW_LOOP: ' 매트릭스 디스플레이 루프 쇼: %1',
+         MatrixDisplay_SHOW_LOOP: ' 매트릭스 디스플레이 루프 쇼: %1 자리수 %2',
          MatrixDisplay_IMAGE: ' 매트릭스 디스플레이 이미지 %1'
     });
     Object.assign(Blockly.ScratchMsgs.locales['pl'], {
@@ -483,7 +483,7 @@ function addMsg (Blockly) {
         MatrixDisplay_DRAWRECTANGLE: 'wyświetlacz Macierz rysuje prostokąt x: %1 y: %2 :szerokość %3 długość: %4',
         MatrixDisplay_DRAWCIRCLE: 'Macierz display rysuje okrąg x: %1 y: %2:promień %3',
         MatrixDisplay_SHOWCHAR: 'wyświetlacz Macierz pokazuje znak lub numer: %1',
-        MatrixDisplay_SHOW_LOOP: 'pokaz pętli wyświetlacza Macierz: %1',
+        MatrixDisplay_SHOW_LOOP: 'pokaz pętli wyświetlacza Macierz: %1 cyfry %2',
         MatrixDisplay_IMAGE: 'Macierz wyświetla obraz %1'
     });
     Object.assign(Blockly.ScratchMsgs.locales['pt'], {
@@ -552,7 +552,7 @@ function addMsg (Blockly) {
          MatrixDisplay_DRAWRECTANGLE: 'Matriz display desenhar retângulo x: %1 y: %2 :largura %3 comprimento: %4',
          MatrixDisplay_DRAWCIRCLE: 'Matriz display desenha círculo x: %1 y: %2 :radius %3 ',
          MatrixDisplay_SHOWCHAR: 'exibição Matriz mostra caractere ou número: %1',
-         MatrixDisplay_SHOW_LOOP: 'Matriz display loop show: %1',
+         MatrixDisplay_SHOW_LOOP: 'Matriz display loop show: %1 dígitos %2',
          MatrixDisplay_IMAGE: ' imagem de exibição Matriz %1'
     });
     Object.assign(Blockly.ScratchMsgs.locales['ru'], {
@@ -621,7 +621,7 @@ function addMsg (Blockly) {
          MatrixDisplay_DRAWRECTANGLE: 'прямоугольник рисования отображения матрицы x: %1 y: %2 :width %3 длина: %4',
          MatrixDisplay_DRAWCIRCLE: 'отображение матрицы рисует круг x: %1 y: %2 :радиус %3 ',
          MatrixDisplay_SHOWCHAR: 'отображение матрицы показывает символ или число: %1',
-         MatrixDisplay_SHOW_LOOP: 'показ цикла отображения матрицы: %1',
+         MatrixDisplay_SHOW_LOOP: 'показ цикла отображения матрицы: %1 цифры %2',
          MatrixDisplay_IMAGE: 'отображаемое изображение матрицы %1'
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-tw'], {
@@ -692,7 +692,7 @@ function addMsg (Blockly) {
         MatrixDisplay_DRAWRECTANGLE: '點陣屏繪製長方形 x: %1 y: %2 寬: %3 長: %4',
         MatrixDisplay_DRAWCIRCLE: '點陣屏繪製圓形 x: %1 y: %2 半徑: %3 ',
         MatrixDisplay_SHOWCHAR: '點陣屏 顯示字符或數字: %1',
-        MatrixDisplay_SHOW_LOOP: '點陣屏 滾動顯示: %1',
+        MatrixDisplay_SHOW_LOOP: '點陣屏 滾動顯示: %1 位數 %2',
         MatrixDisplay_IMAGE: '點陣屏顯示圖片 %1'
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
@@ -763,8 +763,81 @@ function addMsg (Blockly) {
         MatrixDisplay_DRAWRECTANGLE: '点阵屏绘制长方形 x: %1 y: %2 宽: %3 长: %4',
         MatrixDisplay_DRAWCIRCLE: '点阵屏绘制圆形 x: %1 y: %2 半径: %3 ',
         MatrixDisplay_SHOWCHAR: '点阵屏 显示字符或数字: %1',
-        MatrixDisplay_SHOW_LOOP: '点阵屏 滚动显示: %1',
+        MatrixDisplay_SHOW_LOOP: '点阵屏 滚动显示: %1 位数%2',
         MatrixDisplay_IMAGE: '点阵屏显示图片 %1' 
+    });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        KS_VARIABLE_LABEL: 'Tipo di variabile',
+        KS_variables_declare: 'Dichiara variabile numerica %1 tipo %2 nome %3 valore %4',
+        KS_variables_declare2: 'Dichiara variabile stringa %1 tipo %2 nome %3 valore %4',
+        KS_variables_set: 'Imposta variabile %1 su %2',
+        KS_variables_change: 'Imposta variabile %1 modalità %2',
+        KS_variables_value: 'Variabile %1',
+        KS_variables_setString: 'Imposta variabile stringa %1 su %2',
+        KS_global: 'Globale',
+        KS_local: 'Locale',
+        KS_MATH_INT: 'Intero',
+        KS_MATH_LONG: 'Intero lungo',
+        KS_MATH_FLOAT: 'Decimale',
+        KS_MATH_BOOLEAN: 'Booleano',
+        KS_MATH_BYTE: 'Byte',
+        KS_MATH_CHAR: 'Carattere',
+        KS_MATH_STRING: 'Stringa',
+        KS_MATH_UNSIGNED_INT: 'Intero senza segno',
+        KS_MATH_WORD: 'Parola',
+        KS_MATH_UNSIGNED_LONG: 'Intero lungo senza segno',
+        KS_MATH_UNSIGNED_CHAR: 'Carattere senza segno',
+        KS_MATH_DOUBLE: 'Numero in virgola mobile doppia precisione',
+    
+        KS_TEXT_LABEL: 'TESTO',  
+        KS_char: 'carattere%1',  
+        KS_string: 'stringa%1',  
+        KS_data: '%1', 
+    
+        KS_LOGIC_LABEL: 'Logica',
+        KS_judge: '%1 %2 %3',
+    
+        LED_CATEGORY: 'LED',
+        LED_SET_LED_STATE: 'Stato del LED %1 su %2',
+        LED_ON: 'Accendi',
+        LED_OFF: 'Spegni',
+        LED_ANALOG: 'LED %1 uscita analogica %2',
+        BUTTON_CATEGORY: 'Pulsante',
+        BUTTON_READ_STATE: 'Il pulsante %1 è premuto?',
+        BUTTON_READ_VALUE: 'Valore dello stato del pulsante %1',
+        LIGHTSENSOR_CATEGORY: 'Sensore di luce',
+        LIGHTSENSOR_READ_VALUE: 'Leggi valore di luminosità dal pin %1',
+        ANALOGVOICE_CATEGORY: 'Sensore di suono',
+        ANALOGVOICE_READ_VALUE: 'Leggi valore di intensità del suono dal pin %1',
+        BUZZER_CATEGORY: 'Cicalino passivo',
+        BUZZER_TONE: 'Riproduci suono pin %1 frequenza %2',
+        BUZZER_TONE_D: 'Riproduci suono pin %1 frequenza %2 battito %3',
+        BUZZER_MUSIC: 'Cicalino pin %1 riproduci musica %2',
+        BUZZER_NOTONE: 'Termina suono pin %1',
+        BBRGBLEDSTRIP_CATEGORY: 'RGB',
+    
+        BBRGBLEDSTRIP_INIT: 'Inizializza RGB numero di LED %1 pin %2',
+        BBRGBLEDSTRIP_SETPIXELCOLOR: 'Imposta pixel %1 colore %2',
+        BBRGBLEDSTRIP_FILL: 'Dal pixel %1 al pixel %2 colore %3',
+        BBRGBLEDSTRIP_COLOR: 'Colore RGB R %1 G %2 B %3',
+        BBRGBLEDSTRIP_SETBRIGHTNESS: 'Imposta luminosità %1',
+        RGB_CHANGE: 'Imposta pin RGB %1 luminosità %2 tempo di cambiamento arcobaleno %3',
+        RGB_LOOP: 'Imposta pin RGB %1 luminosità %2 tempo di ciclo arcobaleno %3',
+        BBRGBLEDSTRIP_CLEAR: 'Pulisci tutti',
+        BBRGBLEDSTRIP_SHOW: 'Mostra',
+        
+        MATRIXDISPLAY_CATEGORY: 'Schermo a matrice',
+        MatrixDisplay_INIT: 'Inizializza schermo a matrice %1',
+        MatrixDisplay_DISPLAY: 'Schermo a matrice %1 mostra %2 gruppo %3 modello %4',
+        MatrixDisplay_DRAWPIXEL: 'Disegna pixel sullo schermo a matrice x: %1 y: %2',
+        MatrixDisplay_COLOR_RED: 'Rosso',
+        MatrixDisplay_COLOR_BLACK: 'Nero',
+        MatrixDisplay_DRAWLINE: 'Disegna linea sullo schermo a matrice x0: %1 y0: %2, x1: %3 y1: %4',
+        MatrixDisplay_DRAWRECTANGLE: 'Disegna rettangolo sullo schermo a matrice x: %1 y: %2 larghezza: %3 altezza: %4',
+        MatrixDisplay_DRAWCIRCLE: 'Disegna cerchio sullo schermo a matrice x: %1 y: %2 raggio: %3',
+        MatrixDisplay_SHOWCHAR: 'Mostra carattere o numero sullo schermo a matrice: %1',
+        MatrixDisplay_SHOW_LOOP: 'Mostra scorrimento sullo schermo a matrice: %1 cifre %2',
+        MatrixDisplay_IMAGE: 'Mostra immagine sullo schermo a matrice %1'
     });
     return Blockly;
 }

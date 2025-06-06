@@ -67,6 +67,12 @@ function addMsg (Blockly) {
         LED_ON: '打开',
         LED_OFF: '关闭'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        LED_CATEGORY: 'LED',
+        LED_SET_LED_STATE: 'Interfaccia %1 LED %2',
+        LED_ON: 'Accendi',
+        LED_OFF: 'Spegni',        
+    });
     return Blockly;
 }
 

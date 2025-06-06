@@ -102,6 +102,15 @@ function addMsg (Blockly) {
         SOFTWARESERIAL_AVAILABLE: '软件串口 %1 可用数据长度',
         SOFTWARESERIAL_READABYTE: '软件串口 %1 读取一个字节'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        SOFTWARESERIAL_CATEGORY: 'Seriale software',
+        SOFTWARESERIAL_BEGIN: 'Inizializza seriale software %1 RX pin %2 TX pin %3 con velocità di baud %4',
+        SOFTWARESERIAL_PRINT: 'Seriale software %1 stampa %2 %3',
+        SOFTWARESERIAL_WARP: 'Vai a capo',
+        SOFTWARESERIAL_NOWARP: 'Non va a capo',
+        SOFTWARESERIAL_AVAILABLE: 'Lunghezza dei dati disponibili su seriale software %1',
+        SOFTWARESERIAL_READABYTE: 'Seriale software %1 legge un byte'
+    });
     return Blockly;
 }
 

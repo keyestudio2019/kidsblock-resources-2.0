@@ -56,6 +56,11 @@ function addMsg (Blockly) {
         GESTURE_INIT: '初始化 手势识别传感器',
         GESTURE_READ: '识别手势 %1',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        GESTURE_CATEGORY: 'Riconoscimento dei gesti',
+        GESTURE_INIT: 'inizializza sensore PAJ7620',
+        GESTURE_READ: 'Leggi PAJ7620 %1'
+    });
     return Blockly;
 }
 

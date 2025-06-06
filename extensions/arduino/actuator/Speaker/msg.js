@@ -287,6 +287,32 @@ function addMsg (Blockly) {
         METASPEAKER_FART2: '放屁2',
         METASPEAKER_FART3: '放屁3'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        METASPEAKER_CATEGORY: 'Amplificatore altoparlante',
+        METASPEAKER_INIT: 'Inizializza interfaccia amplificatore altoparlante %1',
+        METASPEAKER_PLAYTONEFORBEAT: 'Altoparlante amplificato %1 riproduce tono %2 per %3 battiti',
+        METASPEAKER_SETTEMPO: 'Altoparlante amplificato %1 imposta il tempo (bpm) %2',
+        METASPEAKER_PLAYRINGTONE: 'Altoparlante amplificato %1 riproduce suoneria %2',
+        METASPEAKER_CONNECTION: 'Connessione',
+        METASPEAKER_DISCONNECTION: 'Disconnessione',
+        METASPEAKER_DIDI: 'Tasto premuto',
+        METASPEAKER_MODE1: 'Modalità 1',
+        METASPEAKER_MODE2: 'Modalità 2',
+        METASPEAKER_MODE3: 'Modalità 3',
+        METASPEAKER_SURPRISE: 'Sorpresa',
+        METASPEAKER_OHOOH: 'Oh oh',
+        METASPEAKER_OHOOH2: 'Oh oh 2',
+        METASPEAKER_CUDDLY: 'Carino',
+        METASPEAKER_SLEEPING: 'Sta dormendo',
+        METASPEAKER_HAPPY: 'Felice',
+        METASPEAKER_SUPERHAPPY: 'Super felice',
+        METASPEAKER_HAPPYSHORT: 'Felice corto',
+        METASPEAKER_SAD: 'Triste',
+        METASPEAKER_CONFUSED: 'Confuso',
+        METASPEAKER_FART1: 'Peto 1',
+        METASPEAKER_FART2: 'Peto 2',
+        METASPEAKER_FART3: 'Peto 3',        
+    });
     return Blockly;
 }
 

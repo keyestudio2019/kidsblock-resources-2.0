@@ -21,7 +21,7 @@ const kidsUno = formatMessage => ({
     connectionSmallIconURL: 'asset/kidsuno_small.svg',
     programMode: ['realtime', 'upload'],
     programLanguage: ['block', 'cpp'],
-    tags: ['arduino'],
+    tags: ['arduino','kidsbits'],
     deviceExtensions: ['kidsUno'],
     deviceExtensionsCompatible: 'arduinoUno',
     helpLink: 'https://wiki.kidsbits.cc'

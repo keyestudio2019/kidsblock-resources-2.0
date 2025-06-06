@@ -57,6 +57,11 @@ function addMsg (Blockly) {
         IR_SEND: '红外发射%1引脚%2 数值%3 比特数%4',
         IR_SEND_RAW: '红外发射(RAW)引脚%1 数组%2 数组长度%3 频率%4',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        IRSEND_CATEGORY: 'Trasmettitore a infrarossi',
+        IR_SEND: 'Trasmetti infrarossi Pin %1 Valore %2 Numero di bit %3',
+        IR_SEND_RAW: 'Trasmetti infrarossi (RAW) Pin %1 Array %2 Lunghezza dell\'array %3 Frequenza %4',        
+    });
     return Blockly;
 }
 

@@ -684,6 +684,74 @@ function addMsg (Blockly) {
         MATRIX_IIC_REFRESH: '点阵屏 刷新显示',
         MATRIX_IIC_CLEAR: '点阵屏 清屏',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        KS_VARIABLE_LABEL: 'Tipo di variabile',
+        KS_variables_declare: 'Dichiara variabile numerica %1 tipo %2 nome %3 valore %4',
+        KS_variables_declare2: 'Dichiara variabile stringa %1 tipo %2 nome %3 valore %4',
+        KS_variables_set: 'Imposta variabile %1 su %2',
+        KS_variables_change: 'Imposta variabile %1 modalità %2',
+        KS_variables_value: 'Variabile %1',
+        KS_variables_setString: 'Imposta variabile stringa %1 su %2',
+        KS_global: 'Globale',
+        KS_local: 'Locale',
+        KS_MATH_INT: 'Intero',
+        KS_MATH_LONG: 'Intero lungo',
+        KS_MATH_FLOAT: 'Decimale',
+        KS_MATH_BOOLEAN: 'Booleano',
+        KS_MATH_BYTE: 'Byte',
+        KS_MATH_CHAR: 'Carattere',
+        KS_MATH_STRING: 'Stringa',
+        KS_MATH_UNSIGNED_INT: 'Intero senza segno',
+        KS_MATH_WORD: 'Parola',
+        KS_MATH_UNSIGNED_LONG: 'Intero lungo senza segno',
+        KS_MATH_UNSIGNED_CHAR: 'Carattere senza segno',
+        KS_MATH_DOUBLE: 'Numero in virgola mobile doppia precisione',
+    
+        KS_TEXT_LABEL: 'TESTO',  
+        KS_char: 'carattere%1',  
+        KS_string: 'stringa%1',  
+        KS_data: '%1', 
+    
+        KS_LOGIC_LABEL: 'Logica',
+        KS_judge: '%1 %2 %3',
+    
+        ROBOT_CATEGORY: 'Movimento',
+        ROBOT_FORWARD: 'Veicolo avanti con velocità %1',
+        ROBOT_BACK: 'Veicolo indietro con velocità %1',
+        ROBOT_LEFT: 'Veicolo gira a sinistra con velocità %1',
+        ROBOT_RIGHT: 'Veicolo gira a destra con velocità %1',
+        ROBOT_STOP: 'Veicolo fermo',
+    
+        MOTOR130_CATEGORY: 'Motore',
+        MOTOR130_DIGITAL: 'Controllo motore INA#%1 livello %2 INB#%3 livello %4',
+        MOTOR130_ANALOG: 'Controllo motore INA#%1 livello %2 INB#%3 uscita analogica %4',
+    
+        KS_SERVO_CATEGORY: 'Servo',
+        KS_SERVO_ANGLE: 'Servo Pin %1 angolo %2 ritardo (millisecondi) %3',
+        KS_SERVO_READ: 'Leggi angolo del servo Pin %1',
+    
+        HC_SR04_CATEGORY: 'Sensore ultrasonico',
+        HC_SR04_READ_DISTANCE: 'Sensore ultrasonico trig Pin %1 echo Pin %2 leggi distanza %3',
+    
+        IR_CATEGORY: 'Ricevitore Infrarosso',
+        IR_INIT: 'Inizializza ricevitore IR Pin %1',
+        IR_DATA: 'Dati ricevuti dal telecomando IR',
+        IR_READ: 'Leggi dati ricevuti dal ricevitore IR',
+        IR_REFRESH: 'Refresh dati ricevitore IR',
+    
+        MATRIX_IIC_CATEGORY: 'Display a matrice',
+        MATRIX_IIC_INIT: 'Inizializza display a matrice',
+        MATRIX_IIC_PIEXL: 'Matrice display punto X%1 Y%2 livello %3',
+        matrix_iic_DRAWLINE: 'Matrice display disegna linea x0: %1 y0: %2, x1: %3 y1: %4',
+        matrix_iic_DRAWRECTANGLE: 'Matrice display disegna rettangolo x: %1 y: %2 larghezza: %3 altezza: %4',
+        matrix_iic_DRAWCIRCLE: 'Matrice display disegna cerchio x: %1 y: %2 raggio: %3',
+        matrix_iic_SHOWCHAR: 'Matrice display mostra carattere o numero: %1',
+        matrix_iic_SHOW_LOOP: 'Matrice display scorrimento mostra: %1 velocità: %2',
+        MATRIX_IIC_DISPLAY: 'Matrice display %1 mostra %2 gruppo %3 modello %4',
+        MATRIX_IIC_FACE: 'Matrice display mostra immagine %1',
+        MATRIX_IIC_REFRESH: 'Matrice display Refresh',
+        MATRIX_IIC_CLEAR: 'Matrice display cancella schermo'
+    });
     return Blockly;
 }
 

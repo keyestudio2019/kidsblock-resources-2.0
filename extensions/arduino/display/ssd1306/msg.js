@@ -144,6 +144,19 @@ function addMsg (Blockly) {
         SSD1306_3: '3',
         SSD1306_4: '4',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        SSD1306_CATEGORY: 'OLED',
+        SSD1306_INIT: 'OLED %1 inizializzazione indirizzo I2C %2',
+        SSD1306_PRINTLINE: 'OLED %1 riga %2 visualizza %3',
+        SSD1306_PRINT: 'OLED %1 visualizza %4 nelle coordinate X: %2 Y: %3',
+        SSD1306_CLEAR: 'OLED %1 cancella schermo',
+        SSD1306_SETROTAION: 'OLED %1 ruota schermo a %2 gradi',
+        SSD1306_0: '0',
+        SSD1306_1: '1',
+        SSD1306_2: '2',
+        SSD1306_3: '3',
+        SSD1306_4: '4',        
+    });
     return Blockly;
 }
 

@@ -45,6 +45,10 @@ function addMsg (Blockly) {
         AHT20_CATEGORY: '温湿度传感器',
         AHT20_READ: '温湿度传感器AHT20读取 %1'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        AHT20_CATEGORY: 'Sensore di temperatura e umidità',
+        AHT20_READ: 'Leggi sensore di temperatura e umidità AHT20 %1'
+    });
     return Blockly;
 }
 

@@ -89,6 +89,14 @@ function addMsg (Blockly) {
         DS1307_SET_NOW: '设置当前时间对象',
         DS1307_READ: 'DS1307 读取时间 %1'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        DS1307_CATEGORY: 'Orologio',
+        DS1307_INIT: 'inizializza DS1307',
+        DS1307_SET_SYS_TIME: 'Imposta l\'orario del sistema corrente',
+        DS1307_SET_TIME: 'Imposta l\'orario anno%1 mese%2 giorno%3 ora%4 minuto%5 secondo%6',
+        DS1307_SET_NOW: 'Imposta l\'oggetto tempo corrente',
+        DS1307_READ: 'leggi DS1307 %1'
+    });
     return Blockly;
 }
 

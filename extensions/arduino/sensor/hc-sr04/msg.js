@@ -45,6 +45,10 @@ function addMsg (Blockly) {
         HC_SR04_CATEGORY: '超声波传感器',
         HC_SR04_READ_DISTANCE: '超声波传感器 trig 引脚 %1 echo 引脚 %2 读取距离 %3'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        HC_SR04_CATEGORY: 'Ultrasuoni',
+        HC_SR04_READ_DISTANCE: 'HC-SR04 pin trig %1 pin echo %2 leggi distanza %3'
+    });
     return Blockly;
 }
 

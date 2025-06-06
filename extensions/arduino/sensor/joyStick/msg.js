@@ -78,6 +78,13 @@ function addMsg (Blockly) {
         X: 'X',
         Y :'Y'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        JOYSTICK_CATEGORY: 'Modulo Joystick',
+        JOYSTICK_Z_STATE: 'Interfaccia %1, il pulsante joystick (Z) è stato premuto?',
+        JOYSTICK_XY_VALUE: 'Leggi interfaccia %1 joystick, asse %2',
+        X: 'X',
+        Y: 'Y'
+    });
     return Blockly;
 }
 

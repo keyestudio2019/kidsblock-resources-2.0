@@ -21,7 +21,7 @@ const kidsEsp = formatMessage => ({
     connectionSmallIconURL: 'asset/kidsesp_small.svg',
     programMode: ['upload'],
     programLanguage: ['block', 'cpp'],
-    tags: ['arduino'],
+    tags: ['arduino','kidsbits'],
     deviceExtensions: ['kidsEsp_esp32'],
     deviceExtensionsCompatible: 'arduinoEsp32',
     helpLink: 'https://wiki.kidsbits.cc)'

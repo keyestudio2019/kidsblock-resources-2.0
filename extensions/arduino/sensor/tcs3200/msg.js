@@ -133,6 +133,18 @@ function addMsg (Blockly) {
         TCS3200_COLOR_GREEN: '绿色',
         TCS3200_COLOR_BLUE: '蓝色'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        TCS3200_CATEGORY: 'TCS3200',  
+        TCS3200_INIT: 'inizializza tcs3200 pin S0 %1 S1 %2 S2 %3 S3 %4 S5 %5',  
+        TCS3200_INIT_TOOLTIP: 'Il pin di uscita è fisso: pin 5 di Arduino Uno, pin 12 di Arduino Leonardo, pin 47 di Arduino Mega',  
+        TCS3200_CALIBRATEWHITE: 'tcs3200 calibra bianco',  
+        TCS3200_CALIBRATEBLACK: 'tcs3200 calibra nero',  
+        TCS3200_MEASURECOLOR: 'tcs3200 misura colore',  
+        TCS3200_GETCOLORVALUE: 'tcs3200 ottieni valore %1',  
+        TCS3200_COLOR_RED: 'rosso',  
+        TCS3200_COLOR_GREEN: 'verde',  
+        TCS3200_COLOR_BLUE: 'blu'
+    });
     return Blockly;
 }
 

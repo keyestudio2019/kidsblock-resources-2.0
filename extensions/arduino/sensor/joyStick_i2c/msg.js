@@ -89,6 +89,14 @@ function addMsg (Blockly) {
         X: 'X',
         Y: 'Y'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        JOYSTICK_CATEGORY: 'Modulo I2C Joystick',
+        JOYSTICK_I2C: 'Leggi i dati del modulo joystick %1',
+        JOYSTICK_DATA: 'Aggiorna il valore del joystick',
+        BUTTON: 'Pulsante',
+        X: 'X',
+        Y: 'Y'
+    });
     return Blockly;
 }
 

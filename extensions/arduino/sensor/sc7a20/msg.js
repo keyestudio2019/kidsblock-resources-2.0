@@ -56,6 +56,11 @@ function addMsg (Blockly) {
         SC7A20_READ: '读取SC7A20 %1',
         SC7A20_TUMBLE_HANDLE: '摔倒?'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        SC7A20_CATEGORY: 'SC7A20',  
+        SC7A20_READ: 'SC7A20 leggi %1',  
+        SC7A20_TUMBLE_HANDLE: 'rotolamento?'
+    });
     return Blockly;
 }
 

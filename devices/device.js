@@ -14,10 +14,11 @@ module.exports = [
     'kidsUno_arduinoUno',
     
     //Esp32 for arduino
-    'EasyCoding_arduinoEsp32',
+    'FoxBit_arduinoEsp32',
     'ESP32plus_arduinoEsp32',
     'ESP32S_arduinoEsp32',
     'kidsEsp_arduinoEsp32',
+    'EasyCoding_arduinoEsp32',
     'ESP8266_arduinoEsp8266',
 
     //other
@@ -52,6 +53,7 @@ module.exports = [
     'Beetlebot_arduinoEsp32',
     'Smarthome_arduinoEsp32',
     'Smartfarm_arduinoEsp32',
+
 
     //'arduinoUno',
     //'arduinoMega2560',

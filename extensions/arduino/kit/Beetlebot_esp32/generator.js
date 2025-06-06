@@ -258,7 +258,7 @@ function addGenerator (Blockly) {
 
     Blockly.Arduino.matrix_iic_init = function (block) {
         Blockly.Arduino.definitions_[`matrix`] = '#include <Matrix.h>\n'+
-        'Matrix myMatrix(A4,A5);\nuint8_t  LEDArray[8];';
+        'Matrix myMatrix(21,22);\nuint8_t  LEDArray[8];';
         Blockly.Arduino.setups_['matrix_pin_setup'] = 'myMatrix.begin(112);\n  myMatrix.clear();';
         return '';
     };

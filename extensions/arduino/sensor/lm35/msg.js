@@ -45,6 +45,10 @@ function addMsg (Blockly) {
         LM35_CATEGORY: 'LM35温度传感器',
         LM35_READ_TEMPERATURE: '读取LM35温度值 引脚：%1',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        LM35_CATEGORY: 'Temperatura',
+        LM35_READ_TEMPERATURE: 'LM35 leggi temperatura PIN: %1'
+    });
     return Blockly;
 }
 

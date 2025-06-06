@@ -56,6 +56,11 @@ function addMsg (Blockly) {
         TOUCHSWITCH_READ_VALUE: '接口%1检测到触摸?',
         TOUCHSWITCH_STATE: '接口%1触摸开关的状态值'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        TOUCHSWITCH_CATEGORY: 'Interruttore touch',  
+        TOUCHSWITCH_READ_VALUE: 'È stato rilevato un tocco nell\'interfaccia %1?',  
+        TOUCHSWITCH_STATE: 'Il valore di stato dell\'interruttore touch nell\'interfaccia %1?'
+    });
     return Blockly;
 }
 

@@ -56,6 +56,11 @@ function addMsg (Blockly) {
         SINGLEPROBE_READ_STATE: '接口%1单探头巡线传感器检测到白色？',
         SINGLEPROBE_READ_VALUE: '接口%1单探头巡线传感器的状态值'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        SINGLEPROBE_CATEGORY: 'sensore di pattuglia a sonda singola',  
+        SINGLEPROBE_READ_STATE: 'Il bianco è stato rilevato dal sensore di pattuglia a sonda singola nell\'interfaccia %1?',  
+        SINGLEPROBE_READ_VALUE: 'Un valore di stato del sensore di pattuglia a sonda singola nell\'interfaccia %1?'
+    });
     return Blockly;
 }
 

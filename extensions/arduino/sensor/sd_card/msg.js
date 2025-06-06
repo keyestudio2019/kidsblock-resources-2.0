@@ -122,6 +122,17 @@ function addMsg (Blockly) {
         SD_READ: '读取%1',
         SD_WRITE: '写入SD 文件%1 数据%2 换行%3',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        SD_CATEGORY: 'Scheda SD',  
+        SD_INIT: 'inizializza scheda SD PIN MOSI:11 MISO:12 CLK:13 CS: %1',  
+        SD_TYPE: 'Tipo SD cs# %1',  
+        SD_LIST: 'elenca file nella radice SD cs# %1',  
+        SD_VAR: 'SD %1 cs# %2',  
+        SD_JUDGE: '%1 File esiste?',  
+        SD_DELETE: 'elimina %1',  
+        SD_READ: 'leggi %1',  
+        SD_WRITE: 'scrivi File SD %1 Dati %2 NuovaLinea %3',
+    });
     return Blockly;
 }
 

@@ -78,6 +78,13 @@ function addMsg (Blockly) {
         DS3231_SET_TIME: '设置自定义时间 年%1 月%2 日%3 时%4 分%5 秒%6',
         DS3231_READ: 'DS3231 读取时间 %1'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        DS3231_CATEGORY: 'Orologio',
+        DS3231_INIT: 'inizializza DS3231',
+        DS3231_SET_SYS_TIME: 'Imposta l\'orario del sistema corrente',
+        DS3231_SET_TIME: 'Imposta l\'orario anno%1 mese%2 giorno%3 ora%4 minuto%5 secondo%6',
+        DS3231_READ: 'leggi DS3231 %1'
+    });
     return Blockly;
 }
 

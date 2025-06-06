@@ -57,6 +57,11 @@ function addMsg (Blockly) {
         KS_STEPPER_INIT: '初始化 IN1%1 IN2%2 IN3%3 IN4%4 每转步数%5 速度%6',
         KS_STEPPER_STEP: '步进电机 运转步数%1',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        KS_STEPPER_CATEGORY: 'Motore passo-passo 28BYJ-48',
+        KS_STEPPER_INIT: 'Inizializza IN1%1 IN2%2 IN3%3 IN4%4 passi per giro%5 velocità%6',
+        KS_STEPPER_STEP: 'Motore passo-passo numero di passi%1',        
+    });
     return Blockly;
 }
 

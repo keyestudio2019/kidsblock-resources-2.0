@@ -56,6 +56,11 @@ function addMsg (Blockly) {
         MAGNETICSENSOR_READ_STATE: '接口%1检测到磁场?',
         MAGNETICSENSOR_READ_VALUE: '接口%1磁感应传感器的状态值'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        MAGNETICSENSOR_CATEGORY: 'Sensore magnetico',
+        MAGNETICSENSOR_READ_STATE: 'Campo magnetico rilevato attorno all\'interfaccia %1?',
+        MAGNETICSENSOR_READ_VALUE: 'Il valore dello stato del sensore magnetico nell\'interfaccia %1'
+    });
     return Blockly;
 }
 

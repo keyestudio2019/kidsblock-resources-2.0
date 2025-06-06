@@ -111,6 +111,16 @@ function addMsg (Blockly) {
         INSERTSOURCECODE_INSERTININCLUDEAREA: '在引用区插入源代码 %1 %2',
         INSERTSOURCECODE_INSERTINDEFINEAREA: '在定义区插入源代码 %1 %2'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        INSERTSOURCECODE_CATEGORY: 'Inserisci Codice Sorgente',  
+        INSERTSOURCECODE_COMMANDBLOCK: 'inserisci codice sorgente %1 %2',  
+        INSERTSOURCECODE_ESCAPE: 'escape accapo',  
+        INSERTSOURCECODE_DONTESCAPE: 'non escape accapo',  
+        INSERTSOURCECODE_ROUNDBLOCK: 'inserisci codice sorgente %1',  
+        INSERTSOURCECODE_BOOLEANBLOCK: 'inserisci codice sorgente %1',  
+        INSERTSOURCECODE_INSERTININCLUDEAREA: 'inserisci codice sorgente %1 nell\'area di inclusione %2',  
+        INSERTSOURCECODE_INSERTINDEFINEAREA: 'inserisci codice sorgente %1 nell\'area di definizione %2',
+    });
     return Blockly;
 }
 

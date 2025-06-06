@@ -56,6 +56,11 @@ function addMsg (Blockly) {
         TILT_READ_STATE: '接口%1检测到倾斜?',
         TILT_READ_VALUE: '接口%1倾斜检测模块的状态值'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        TILT_CATEGORY: 'Modulo di rilevamento inclinazione',  
+        TILT_READ_STATE: 'È stata rilevata un\'inclinazione nell\'interfaccia %1?',  
+        TILT_READ_VALUE: 'Un valore di stato del modulo di inclinazione nell\'interfaccia %1?'
+    });
     return Blockly;
 }
 

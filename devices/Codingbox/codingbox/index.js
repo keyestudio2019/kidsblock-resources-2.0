@@ -21,7 +21,7 @@ const Codingbox = formatMessage => ({
     connectionSmallIconURL: 'asset/codingbox_small.svg',
     programMode: ['upload'],
     programLanguage: ['block', 'cpp'],
-    tags: ['kit'],
+    tags: ['kit','kidsbits'],
     deviceExtensions: ['Codingbox'],
     deviceExtensionsCompatible: 'arduinoUno',
     helpLink: 'https://wiki.kidsbits.cc/'

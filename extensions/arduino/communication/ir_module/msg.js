@@ -79,6 +79,13 @@ function addMsg (Blockly) {
         IR_READ: '读取红外接收数据',
         IR_REFRESH: '刷新红外接收数据',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        IR_CATEGORY: 'Ricevitore a infrarossi',
+        IR_INIT: 'Inizializza ricevitore a infrarossi Pin %1',
+        IR_DATA: 'Dati ricevuti dal telecomando a infrarossi',
+        IR_READ: 'Leggi i dati del ricevitore a infrarossi',
+        IR_REFRESH: 'Aggiorna i dati del ricevitore a infrarossi',        
+    });
     return Blockly;
 }
 

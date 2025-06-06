@@ -45,6 +45,10 @@ function addMsg (Blockly) {
         T18B20_CATEGORY: 'Temperature',
         T18B20_READ_TEMPERATURE: '18B20 引脚：%1 读取温度%2',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        T18B20_CATEGORY: 'Temperatura',
+        T18B20_READ_TEMPERATURE: '18B20 Pin: %1 leggi temperatura %2'
+    });
     return Blockly;
 }
 

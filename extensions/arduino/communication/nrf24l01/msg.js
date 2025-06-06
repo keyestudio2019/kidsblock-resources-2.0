@@ -144,6 +144,19 @@ function addMsg (Blockly) {
         NRF24L01_VALUEAVAILABLE: 'nrf24l01 数值 %1 可用？',
         NRF24L01_PARSEVALUE: 'nrf24l01 解析数值 %1'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        NRF24L01_CATEGORY: 'NRF24l01',
+        NRF24L01_INIT: 'Inizializza nrf24l01 Pin CE %1 CSN %2 ID %3',
+        NRF24L01_SENDNUMBER: 'nrf24l01 Invia numero %1 a ID %2',
+        NRF24L01_SENDSTRING: 'nrf24l01 Invia stringa %1 a ID %2',
+        NRF24L01_SENDVALUE: 'nrf24l01 Invia valore %1 = %2 a ID %3',
+        NRF24L01_HASDATA: 'nrf24l01 Ricevuti dati?',
+        NRF24L01_READDATA: 'nrf24l01 Leggi dati',
+        NRF24L01_PARSENUMBER: 'nrf24l01 Analizza numero',
+        NRF24L01_PARSESTRING: 'nrf24l01 Analizza stringa',
+        NRF24L01_VALUEAVAILABLE: 'nrf24l01 Valore %1 disponibile?',
+        NRF24L01_PARSEVALUE: 'nrf24l01 Analizza valore %1',        
+    });
     return Blockly;
 }
 

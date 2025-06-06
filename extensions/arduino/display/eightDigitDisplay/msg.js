@@ -78,6 +78,13 @@ function addMsg (Blockly) {
         EIGHTDIGITDISPLAY_SETBRIGHTNESS: '设置亮度 %1',
         EIGHTDIGITDISPLAY_CLEAR: '清空'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        EIGHTDIGITDISPLAY_CATEGORY: 'Display a 8 cifre',
+        EIGHTDIGITDISPLAY_INIT: 'Inizializza display a 8 cifre Pin DIN %1 CS %2 CLK %3',
+        EIGHTDIGITDISPLAY_DISPLAYNUMBER: 'Visualizza numero %1 Mantieni %2 decimali',
+        EIGHTDIGITDISPLAY_SETBRIGHTNESS: 'Imposta luminosità %1',
+        EIGHTDIGITDISPLAY_CLEAR: 'Pulisci',        
+    });
     return Blockly;
 }
 

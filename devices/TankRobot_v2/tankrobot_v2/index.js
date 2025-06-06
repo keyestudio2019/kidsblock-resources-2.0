@@ -1,8 +1,8 @@
 const TankRobotv2 = formatMessage => ({
     name: 'Tank Robot v2.0',
     deviceId: 'TankRobotv2_arduinoUno',
-    manufactor: 'keyestudio',
-    leanMore: 'https://keyestudio-wiki.readthedocs.io/en/latest/docs/arduino/KS0428.html',
+    manufactor: 'keyes',
+    leanMore: 'https://www.keyesrobot.cn/projects/KE0170/zh-cn/latest/',
     iconURL: 'asset/tankRobot.jpg',
     description: formatMessage({
         id: 'TankRobotv2.description',
@@ -24,7 +24,7 @@ const TankRobotv2 = formatMessage => ({
     tags: ['robot'],
     deviceExtensions: ['TankRobotv2'],
     deviceExtensionsCompatible: 'arduinoUno',
-    helpLink: 'https://keyestudio-wiki.readthedocs.io/en/latest/docs/arduino/KS0428.html'
+    helpLink: 'https://www.keyesrobot.cn/projects/KE0170/zh-cn/latest/'
 });
 
 module.exports = TankRobotv2;

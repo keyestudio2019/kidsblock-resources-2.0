@@ -46,6 +46,10 @@ function addMsg (Blockly) {
         KS_SERVO_CATEGORY: '舵机270度',
         SERVO270_ANGLE: '舵机 引脚%1 角度%2',
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        KS_SERVO_CATEGORY: 'Servo 270 gradi',
+        SERVO270_ANGLE: 'Servo Pin%1 angolo%2',        
+    });
     return Blockly;
 }
 

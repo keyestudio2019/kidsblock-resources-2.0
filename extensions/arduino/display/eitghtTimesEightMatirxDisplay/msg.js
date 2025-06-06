@@ -167,6 +167,21 @@ function addMsg (Blockly) {
         EITGHTTIMESEIGHTMATIRXDISPLAY_SETBRIGHTNESS: '8x8点阵屏设置亮度 %1',
         EITGHTTIMESEIGHTMATIRXDISPLAY_SETROTATION: '8x8点阵屏设置旋转 %1'
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        EITGHTTIMESEIGHTMATIRXDISPLAY_CATEGORY: 'Display a matrice 8x8',
+        EITGHTTIMESEIGHTMATIRXDISPLAY_INIT: 'Inizializza display a matrice 8x8 Pin CS %1',
+        EITGHTTIMESEIGHTMATIRXDISPLAY_INIT_TOOLTIP: 'Pin DIN collegato a MOSI, CLK collegato a SCK.',
+        EITGHTTIMESEIGHTMATIRXDISPLAY_DRAWPIXEL: 'Disegna punto sul display a matrice 8x8 x: %1 y: %2 colore %3',
+        EITGHTTIMESEIGHTMATIRXDISPLAY_COLOR_RED: 'Rosso',
+        EITGHTTIMESEIGHTMATIRXDISPLAY_COLOR_BLACK: 'Nero',
+        EITGHTTIMESEIGHTMATIRXDISPLAY_DRAWLINE: 'Disegna linea sul display a matrice 8x8 x0: %1 y0: %2, x1: %3 y1: %4 colore %5',
+        EITGHTTIMESEIGHTMATIRXDISPLAY_SHOWCHAR: 'Mostra carattere sul display a matrice 8x8 %1 colore %2',
+        EITGHTTIMESEIGHTMATIRXDISPLAY_SHOWNUMBER: 'Mostra numero sul display a matrice 8x8 %1 colore %2',
+        EITGHTTIMESEIGHTMATIRXDISPLAY_FILL: 'Riempie colore sul display a matrice 8x8 %1',
+        EITGHTTIMESEIGHTMATIRXDISPLAY_REFRESH: 'Aggiorna display a matrice 8x8',
+        EITGHTTIMESEIGHTMATIRXDISPLAY_SETBRIGHTNESS: 'Imposta luminosità display a matrice 8x8 %1',
+        EITGHTTIMESEIGHTMATIRXDISPLAY_SETROTATION: 'Imposta rotazione display a matrice 8x8 %1',        
+    });
     return Blockly;
 }
 

@@ -47,6 +47,11 @@ function addMsg (Blockly) {
         MOTOR8833_DRIVER: '电机%1 方向为%2 速度%3',
 
     });
+    Object.assign(Blockly.ScratchMsgs.locales['it'], {
+        MOTOR8833_CATEGORY: 'Driver per motore 8833',
+        MOTOR8833_DRIVER: 'Motore%1 direzione%2 velocità%3',        
+
+    });
     return Blockly;
 }
 
