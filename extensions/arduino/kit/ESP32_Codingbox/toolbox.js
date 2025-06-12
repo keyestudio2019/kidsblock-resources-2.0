@@ -231,7 +231,7 @@ function addToolbox () {
         </value>
         <value name="COUNT">
             <shadow type="math_whole_number">
-                <field name="NUM">11</field>
+                <field name="NUM">12</field>
             </shadow>
         </value>
         <value name="COLOR">
@@ -336,7 +336,71 @@ function addToolbox () {
     <block type="oled_refresh" id="oled_refresh">
     </block>
 
+        <block type="oled_drawLine" id="oled_drawLine">
+        <value name="X0">
+            <shadow type="math_whole_number">
+                <field name="NUM">0</field>
+            </shadow>
+        </value>
+        <value name="Y0">
+            <shadow type="math_whole_number">
+                <field name="NUM">0</field>
+            </shadow>
+        </value>
+        <value name="X1">
+            <shadow type="math_whole_number">
+                <field name="NUM">128</field>
+            </shadow>
+        </value>
+        <value name="Y1">
+            <shadow type="math_whole_number">
+                <field name="NUM">64</field>
+            </shadow>
+        </value>
+    </block>
+    <block type="oled_drawRect" id="oled_drawRect">
+        <value name="X">
+            <shadow type="math_whole_number">
+                <field name="NUM">10</field>
+            </shadow>
+        </value>
+        <value name="Y">
+            <shadow type="math_whole_number">
+                <field name="NUM">10</field>
+            </shadow>
+        </value>
+        <value name="W">
+            <shadow type="math_whole_number">
+                <field name="NUM">50</field>
+            </shadow>
+        </value>
+        <value name="H">
+            <shadow type="math_whole_number">
+                <field name="NUM">50</field>
+            </shadow>
+        </value>
+    </block>
+    
+    <block type="oled_drawCircle" id="oled_drawCircle">
+        <value name="X">
+            <shadow type="math_whole_number">
+                <field name="NUM">16</field>
+            </shadow>
+        </value>
+        <value name="Y">
+            <shadow type="math_whole_number">
+                <field name="NUM">16</field>
+            </shadow>
+        </value>
+        <value name="R">
+            <shadow type="math_whole_number">
+                <field name="NUM">8</field>
+            </shadow>
+        </value>
+    </block>
+
 </category>
+
 <category name="%{BKY_WIFI_CATEGORY}" id="WIFI_CATEGORY" colour="#2f4f4f" secondaryColour="#2f4f4f">
     <block type="wifi_init" id="wifi_init">
         <value name="SSID">

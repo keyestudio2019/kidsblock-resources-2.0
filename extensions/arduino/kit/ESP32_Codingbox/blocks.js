@@ -1329,6 +1329,107 @@ Blockly.Blocks.oled_refresh = {
     }
 };
 
+////////////////
+Blockly.Blocks.oled_drawLine = {
+    init: function () {
+        this.jsonInit({
+            message0: Blockly.Msg.OLED_DRAWLINE,
+            args0: [
+                {
+                    type: 'input_value',
+                    name: 'X0'
+                },
+                {
+                    type: 'input_value',
+                    name: 'Y0'
+                },
+                {
+                    type: 'input_value',
+                    name: 'X1'
+                },
+                {
+                    type: 'input_value',
+                    name: 'Y1'
+                }
+            ],
+            colour: color18,
+            secondaryColour: secondaryColour,
+            extensions: ['shape_statement']
+        });
+    }
+};
+Blockly.Blocks.oled_drawRect = {
+    init: function () {
+        this.jsonInit({
+            message0: Blockly.Msg.OLED_DRAWRECT,
+            args0: [
+                {
+                    type: 'input_value',
+                    name: 'X'
+                },
+                {
+                    type: 'input_value',
+                    name: 'Y'
+                },
+                {
+                    type: 'input_value',
+                    name: 'W'
+                },
+                {
+                    type: 'input_value',
+                    name: 'H'
+                },
+                {
+                    type: 'field_dropdown',
+                    name: 'COLOUR',
+                    options: [
+                        ['OLED_FILL', 'OLED_FILL'],
+                        ['OLED_STROKE', 'OLED_STROKE'],
+                        ['OLED_CLEAR', 'OLED_CLEAR']
+                    ]
+                }
+            ],
+            colour: color18,
+            secondaryColour: secondaryColour,
+            extensions: ['shape_statement']
+        });
+    }
+};
+
+Blockly.Blocks.oled_drawCircle = {
+    init: function () {
+        this.jsonInit({
+            message0: Blockly.Msg.OLED_DRAWCIRCLE,
+            args0: [
+                {
+                    type: 'input_value',
+                    name: 'X'
+                },
+                {
+                    type: 'input_value',
+                    name: 'Y'
+                },
+                {
+                    type: 'input_value',
+                    name: 'R'
+                },
+                {
+                    type: 'field_dropdown',
+                    name: 'COLOUR',
+                    options: [
+                        ['OLED_FILL', 'OLED_FILL'],
+                        ['OLED_STROKE', 'OLED_STROKE'],
+                        ['OLED_CLEAR', 'OLED_CLEAR']
+                    ]
+                }
+            ],
+            colour: color18,
+            secondaryColour: secondaryColour,
+            extensions: ['shape_statement']
+        });
+    }
+};
+
 //wifi
 Blockly.Blocks.wifi_init = {
     init: function () {

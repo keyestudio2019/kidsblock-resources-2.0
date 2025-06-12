@@ -277,21 +277,21 @@ Blockly.Arduino.rgbLedStrip_setPixelColor = function (block) {
     return `ledStrip.setPixelColor(${no}, ${colour});\n`;
 };
 
-// Blockly.Arduino.rgbLedStrip_fill = function (block) {
-//     const first = Blockly.Arduino.valueToCode(block, 'FIRST', Blockly.Arduino.ORDER_ATOMIC);
-//     const count = Blockly.Arduino.valueToCode(block, 'COUNT', Blockly.Arduino.ORDER_ATOMIC);
-//     const colour = Blockly.Arduino.valueToCode(block, 'COLOR', Blockly.Arduino.ORDER_ATOMIC).replace('#', '0x');
-
-//     return `ledStrip.fill(${colour}, ${first}, ${count});\n`;
-// };
 Blockly.Arduino.rgbLedStrip_fill = function (block) {
     const first = Blockly.Arduino.valueToCode(block, 'FIRST', Blockly.Arduino.ORDER_ATOMIC);
-    const end = Blockly.Arduino.valueToCode(block, 'COUNT', Blockly.Arduino.ORDER_ATOMIC);
-    const count = end - first + 1;  // 计算需要填充的灯珠数量
+    const count = Blockly.Arduino.valueToCode(block, 'COUNT', Blockly.Arduino.ORDER_ATOMIC);
     const colour = Blockly.Arduino.valueToCode(block, 'COLOR', Blockly.Arduino.ORDER_ATOMIC).replace('#', '0x');
 
     return `ledStrip.fill(${colour}, ${first}, ${count});\n`;
 };
+// Blockly.Arduino.rgbLedStrip_fill = function (block) {
+//     const first = Blockly.Arduino.valueToCode(block, 'FIRST', Blockly.Arduino.ORDER_ATOMIC);
+//     const end = Blockly.Arduino.valueToCode(block, 'COUNT', Blockly.Arduino.ORDER_ATOMIC);
+//     const count = end - first + 1;  // 计算需要填充的灯珠数量
+//     const colour = Blockly.Arduino.valueToCode(block, 'COLOR', Blockly.Arduino.ORDER_ATOMIC).replace('#', '0x');
+
+//     return `ledStrip.fill(${colour}, ${first}, ${count});\n`;
+// };
 
 
 
@@ -447,6 +447,37 @@ Blockly.Arduino.oled_clear = function () {
 Blockly.Arduino.oled_refresh = function () {
     return `oled.update();\n`;
 };
+
+//新增
+//画直线
+Blockly.Arduino.oled_drawLine = function (block) {
+    const x0 = Blockly.Arduino.valueToCode(block, 'X0', Blockly.Arduino.ORDER_ATOMIC);
+    const y0 = Blockly.Arduino.valueToCode(block, 'Y0', Blockly.Arduino.ORDER_ATOMIC);
+    const x1 = Blockly.Arduino.valueToCode(block, 'X1', Blockly.Arduino.ORDER_ATOMIC);
+    const y1 = Blockly.Arduino.valueToCode(block, 'Y1', Blockly.Arduino.ORDER_ATOMIC);
+
+    return `oled.line(${x0}, ${y0}, ${x1}, ${y1});\n`;
+};
+Blockly.Arduino.oled_drawRect = function (block) {
+    const x = Blockly.Arduino.valueToCode(block, 'X', Blockly.Arduino.ORDER_ATOMIC);
+    const y = Blockly.Arduino.valueToCode(block, 'Y', Blockly.Arduino.ORDER_ATOMIC);
+    const w = Blockly.Arduino.valueToCode(block, 'W', Blockly.Arduino.ORDER_ATOMIC);
+    const h = Blockly.Arduino.valueToCode(block, 'H', Blockly.Arduino.ORDER_ATOMIC);
+    const colour = block.getFieldValue('COLOUR');
+
+    return `oled.rect(${x}, ${y}, ${w}, ${h}, ${colour});\n`;
+};
+
+
+Blockly.Arduino.oled_drawCircle = function (block) {
+    const x = Blockly.Arduino.valueToCode(block, 'X', Blockly.Arduino.ORDER_ATOMIC);
+    const y = Blockly.Arduino.valueToCode(block, 'Y', Blockly.Arduino.ORDER_ATOMIC);
+    const r = Blockly.Arduino.valueToCode(block, 'R', Blockly.Arduino.ORDER_ATOMIC);
+    const colour = block.getFieldValue('COLOUR');
+
+    return `oled.circle(${x}, ${y}, ${r}, ${colour});\n`;
+};
+
 
 //wifi
 Blockly.Arduino.wifi_init = function (block) {
