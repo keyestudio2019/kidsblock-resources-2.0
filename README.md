@@ -1,3 +1,9 @@
+V1.7.5:
+
+Added offline voice module <br>
+Added sengo1 AI vision module <br>
+Added sengo2 AI vision module.
+
 V1.7.4:
 
 Fixed the issue where RGB lights in the ESP32 Coding Box could not add variables.<br>
