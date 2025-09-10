@@ -1,5 +1,6 @@
 module.exports = {
     'en': {
+        'SmartschoolESP32.description':'ESP32 Smart School is a campus IoT solution based on the ESP32 microcontroller.',
         'FoxBit.description': 'STEM programming education development board based on ESP32, compatible with Microbit',
         'ESP32codingbox.description': 'Coding box based on ESP32 for STEM education',
         'KeyesSTEM.description':'STEM programming education development board with on board 1.8-inch TFT screen',
@@ -137,6 +138,7 @@ module.exports = {
         "SpeechRecognition.description": "Provides a convenient and economical serial offline speech recognition method."
     },
     'es': {
+        'SmartschoolESP32.description':'ESP32 Smart School es una solución de IoT para campus basada en el microcontrolador ESP32.',
         'FoxBit.description': 'Placa de desarrollo educativa de programación STEM basada en ESP32, compatible con Microbit',
         'ESP32codingbox.description':'Coding box basado en ESP32 para la educación STEM',
         'KeyesSTEM.description':'Placa de desarrollo educativo de programación STEM con pantalla TFT integrada de 1,8 pulgadas',
@@ -274,6 +276,7 @@ module.exports = {
         "SpeechRecognition.description": "Proporciona un método de reconocimiento de voz offline por serial, conveniente y económico."
     },
     'de': {
+        'SmartschoolESP32.description':'ESP32 Smart School ist eine Campus-IoT-Lösung auf Basis des ESP32‑Mikrocontrollers.',
         'FoxBit.description': 'Entwicklungsboard für STEM-Programmierbildung basierend auf ESP32, kompatibel mit Microbit',
         'ESP32codingbox.description':'Coding box basierend auf ESP32 für STEM-Bildung',
         'KeyesSTEM.description':'Entwicklungsboard für die STEM-Programmierausbildung mit integriertem 1,8-Zoll-TFT-Bildschirm',
@@ -411,6 +414,7 @@ module.exports = {
         "SpeechRecognition.description": "Bietet eine bequeme und kostengünstige serielle Offline-Spracherkennungsmethode."
     },
     'fr': {
+        'SmartschoolESP32.description':'ESP32 Smart School est une solution IoT pour campus basée sur le microcontrôleur ESP32.',
         'FoxBit.description': 'Carte de développement éducatif pour l"éducation à la programmation STEM basée sur l"ESP32, compatible avec Microbit',
         'ESP32codingbox.description':'Coding box basée sur ESP32 pour l"éducation STEM',
         'KeyesSTEM.description':'Carte de développement de l"éducation à la programmation STEM avec écran TFT de 1,8 pouces intégré',
@@ -548,6 +552,7 @@ module.exports = {
         "SpeechRecognition.description": "Fournit une méthode de reconnaissance vocale hors ligne par série, pratique et économique."
     },
     'ja': {
+        'SmartschoolESP32.description':'ESP32 Smart School は、ESP32 マイクロコントローラに基づくキャンパス向け IoT ソリューションです。',
         'FoxBit.description': 'ESP32を基にしたSTEMプログラミング教育用開発ボードで、Microbitと互換性があります',
         'ESP32codingbox.description':'ESP32をベースにしたSTEM教育用のコーディングボックス',
         'KeyesSTEM.description':'1.8 インチ TFT スクリーンを搭載した STEM プログラミング教育開発ボード',
@@ -685,6 +690,7 @@ module.exports = {
         "SpeechRecognition.description": "便利で経済的なシリアルオフライン音声認識方法を提供します。"
     },
     'ko': {
+        'SmartschoolESP32.description':'ESP32 Smart School은 ESP32 마이크로컨트롤러 기반의 캠퍼스 IoT 솔루션입니다.',
         'FoxBit.description': 'ESP32 기반의 STEM 프로그래밍 교육 개발 보드로, Microbit와 호환됩니다',
         'ESP32codingbox.description':'STEM 교육을 위한 ESP32 기반 코딩 박스',
         'KeyesSTEM.description': '1.8인치 TFT 화면이 내장된 STEM 프로그래밍 교육 개발 보드',
@@ -822,6 +828,7 @@ module.exports = {
         "SpeechRecognition.description": "편리하고 경제적인 직렬 오프라인 음성 인식 방법을 제공합니다."
     },
     'pl': {
+        'SmartschoolESP32.description':'ESP32 Smart School to rozwiązanie IoT dla kampusu oparte na mikrokontrolerze ESP32.',
         'FoxBit.description': 'Płytka rozwojowa edukacji programowania STEM oparta na ESP32, zgodna z Microbit',
         'ESP32codingbox.description':'Pudełko do kodowania oparte na ESP32 do edukacji STEM',
         'KeyesSTEM.description':'Płyta rozwojowa programowania STEM z wbudowanym ekranem TFT o przekątnej 1,8 cala',
@@ -959,6 +966,7 @@ module.exports = {
         "SpeechRecognition.description": "Oferuje wygodną i ekonomiczną metodę offline rozpoznawania mowy przez szeregowe połączenie."
     },
     'pt': {
+        'SmartschoolESP32.description':'ESP32 Smart School é uma solução de IoT para campus baseada no microcontrolador ESP32.',
         'FoxBit.description': 'Placa de desenvolvimento educacional de programação STEM baseada em ESP32, compatível com Microbit',
         'ESP32codingbox.description':'Caixa de codificação baseada em ESP32 para educação STEM',
         'KeyesSTEM.description':'Placa de desenvolvimento educacional de programação STEM com tela TFT de 1,8 polegadas integrada',
@@ -1096,6 +1104,7 @@ module.exports = {
         "SpeechRecognition.description": "Fornece um método conveniente e econômico de reconhecimento de voz offline por serial."
     },
     'ru': {
+        'SmartschoolESP32.description':'ESP32 Smart School — это кампусное решение IoT на базе микроконтроллера ESP32.',
         'FoxBit.description': 'Учебная плата для STEM-программирования на базе ESP32, совместимая с Microbit',
         'ESP32codingbox.description':'Коробка для кодирования на основе ESP32 для STEM-образования',
         'KeyesSTEM.description':'Плата для разработки образовательных программ STEM со встроенным 1,8-дюймовым TFT-экраном',
@@ -1233,6 +1242,7 @@ module.exports = {
         "SpeechRecognition.description": "Предоставляет удобный и экономичный способ офлайн-распознавания голоса по последовательному соединению."
     },
     'it': {
+        'SmartschoolESP32.description':'ESP32 Smart School è una soluzione IoT per campus basata sul microcontrollore ESP32.',
         'FoxBit.description': 'Scheda di sviluppo per l"educazione alla programmazione STEM basata su ESP32, compatibile con Microbit',
         'ESP32codingbox.description':'Cassetta degli attrezzi per la programmazione STEM basata su ESP32',  
         'KeyesSTEM.description':'Scheda di sviluppo educativa STEM con schermo TFT da 1,8 pollici integrato',  
@@ -1372,6 +1382,7 @@ module.exports = {
         "SpeechRecognition.description": "Fornisce un metodo conveniente ed economico per il riconoscimento vocale offline tramite seriale."
     },
     'zh-cn': {
+        'SmartschoolESP32.description':'ESP32 Smart School 是一款基于 ESP32 微控制器的校园物联网解决方案。',
         'FoxBit.description': '基于ESP32的STEM编程教育开发板,兼容Microbit',
         'ESP32codingbox.description':'基于ESP32的STEM编程工具箱',
         'KeyesSTEM.description':'板载1.8英寸TFT屏STEM编程教育开发板',
@@ -1511,6 +1522,7 @@ module.exports = {
         'SpeechRecognition.description': '提供便捷且经济的串口离线语音识别方法', 
     },
     'zh-tw': {
+        'SmartschoolESP32.description':'ESP32 Smart School 是一款基於 ESP32 微控制器的校園物聯網解決方案。',
         'FoxBit.description': '基於ESP32的STEM程式設計教育開發板,與Microbit相容',
         'ESP32codingbox.description':'基於ESP32的STEM編程工具箱',
         'KeyesSTEM.description':'板载1.8英寸TFT屏STEM编程教育开发板',

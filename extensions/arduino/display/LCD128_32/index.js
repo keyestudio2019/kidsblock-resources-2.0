@@ -7,7 +7,7 @@ const lcd128_32 = formatMessage => ({
     extensionId: 'lcd128_32',
     version: '1.0.0',
     type: 'arduino',
-    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560'],
+    supportDevice: ['arduinoUno','arduinoLeonardo','arduinoMega2560','arduinoEsp32'],
     author: 'keyes',
     iconURL: `asset/lcd128_32.jpg`,
     description: formatMessage({

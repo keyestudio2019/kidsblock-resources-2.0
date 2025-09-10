@@ -141,9 +141,9 @@ function addGenerator (Blockly) {
         const state1 = this.getFieldValue('state1');
         const val2 = Blockly.Arduino.valueToCode(block, 'SPEED2', Blockly.Arduino.ORDER_ATOMIC);
 
-        Blockly.Arduino.setups_[`motor130_left`] = 'pinMode('+pin1+', OUTPUT);\n  ledcSetup(1, 1200, 8);\n  ledcAttachPin('+pin2+', 1);\n';
+        Blockly.Arduino.setups_[`motor130_left`] = 'pinMode('+pin1+', OUTPUT);\n  ledcSetup(4, 1200, 8);\n  ledcAttachPin('+pin2+', 4);\n';
         
-        return 'digitalWrite('+pin1+','+state1+');\nledcWrite(1, '+val2+');\n';
+        return 'digitalWrite('+pin1+','+state1+');\nledcWrite(4, '+val2+');\n';
     };
 
     Blockly.Arduino.motor130_right = function (block) {
@@ -170,8 +170,8 @@ function addGenerator (Blockly) {
         '  int servo_angle = map(angle, 0, 180, 25, 128);\n'+
         '  return servo_angle;\n'+
         '}\n';
-        Blockly.Arduino.setups_[`servo_init_${pin}`] = 'ledcSetup(3, 50, 10);\n  ledcAttachPin('+pin+', 3);\n';
-        return 'ledcWrite(3, set_angle('+angle+'));\n  delay('+time+');\n';
+        Blockly.Arduino.setups_[`servo_init_${pin}`] = 'ledcSetup(6, 50, 10);\n  ledcAttachPin('+pin+', 6);\n';
+        return 'ledcWrite(6, set_angle('+angle+'));\n  delay('+time+');\n';
     };
 
     Blockly.Arduino.ks_servo_read = function (block) {

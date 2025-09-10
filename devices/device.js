@@ -53,6 +53,7 @@ module.exports = [
     'Beetlebot_arduinoEsp32',
     'Smarthome_arduinoEsp32',
     'Smartfarm_arduinoEsp32',
+    'Smartschool_arduinoEsp32',
 
 
     //'arduinoUno',

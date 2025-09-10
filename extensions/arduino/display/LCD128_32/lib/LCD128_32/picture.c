@@ -5,7 +5,11 @@
  * date: 2020-12-4
  * URL: https://github.com/mworkfun/ST7567A_128X32DOT_LCD
  ****************************/
-#include <avr/pgmspace.h> 
+#if defined(ARDUINO_ARCH_AVR)
+#include <avr/pgmspace.h>
+#elif defined(ARDUINO_ARCH_ESP32)
+#include <pgmspace.h> // Arduino-ESP32 提供
+#endif
 
 /********************************************************
  * picture pixel table                                                  

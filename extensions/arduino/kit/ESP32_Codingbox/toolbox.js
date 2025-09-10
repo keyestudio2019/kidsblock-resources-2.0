@@ -231,7 +231,7 @@ function addToolbox () {
         </value>
         <value name="COUNT">
             <shadow type="math_whole_number">
-                <field name="NUM">12</field>
+                <field name="NUM">11</field>
             </shadow>
         </value>
         <value name="COLOR">
