@@ -1,13 +1,18 @@
+V1.7.6:
+
+Add ESP32 smart school kit 
+
+
 V1.7.5:
 
-Added offline voice module <br>
-Added sengo1 AI vision module <br>
-Added sengo2 AI vision module.
+Add offline voice module <br>
+Add sengo1 AI vision module <br>
+Add sengo2 AI vision module.
 
 V1.7.4:
 
 Fixed the issue where RGB lights in the ESP32 Coding Box could not add variables.<br>
-Added functionalities for drawing lines, rectangles, and circles on the OLED in the ESP32 Coding Box.<br>
+Add functionalities for drawing lines, rectangles, and circles on the OLED in the ESP32 Coding Box.<br>
 Resolved some minor issues.
 
 V1.7.3:
