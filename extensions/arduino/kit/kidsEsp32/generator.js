@@ -841,6 +841,7 @@ function addGenerator (Blockly) {
         Blockly.Arduino.definitions_.wifi_init = 'const char* ssid = '+ssid+';\nconst char* password = '+passwd+';\n';
         Blockly.Arduino.setups_['wifi_init'] = 'WiFi.begin(ssid, password);\n'+
         '  while (WiFi.status() != WL_CONNECTED) {\n'+
+        '    Serial.println(".");\n' +
         '    delay(500);\n'+
         '  }\n';
         return '';

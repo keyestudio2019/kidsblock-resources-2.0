@@ -1,3 +1,8 @@
+V1.7.7:
+
+Add soil sensor 
+Add water level sensor 
+
 V1.7.6:
 
 Add ESP32 smart school kit 

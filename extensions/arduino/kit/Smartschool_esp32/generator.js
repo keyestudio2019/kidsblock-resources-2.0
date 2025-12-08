@@ -396,7 +396,7 @@ Blockly.Arduino.wifi_init = function (block) {
 
     Blockly.Arduino.includes_.wifi_init = '#include <WiFi.h>\n';
     Blockly.Arduino.definitions_.wifi_init = 'const char* ssid = '+ssid+';\nconst char* password = '+passwd+';\n';
-    Blockly.Arduino.setups_['wifi_setup'] = 'WiFi.begin(ssid, password);\n  while (WiFi.status() != WL_CONNECTED) {\n    delay(500);\n  }';
+    Blockly.Arduino.setups_['wifi_setup'] = 'WiFi.begin(ssid, password);\n  while (WiFi.status() != WL_CONNECTED) {\n    Serial.println(".");\n     delay(500);\n  }';
 
     return '';
 };
